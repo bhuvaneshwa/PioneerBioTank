@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pioneer Bio Tank</title>
+  <style>
+    :root{ --brand:#13693C; --white:#ffffff; --dark:#0b2a1a; --muted:#6b6b6b; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:#0f1720;color:#111}
+
+    /* Top banner */
+    .top-banner{background:var(--white);color:#000;text-align:center;padding:8px 12px;font-weight:600;font-size:14px}
+
+    /* Header / Nav */
+    header{background:var(--brand);color:var(--white);box-shadow:0 4px 8px rgba(0,0,0,0.15)}
+    .container{max-width:1200px;margin:0 auto;padding:0 18px}
+    .nav-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+    .logo{font-weight:700;font-size:20px}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:18px}
+    nav a, nav button{color:var(--white);text-decoration:none;background:none;border:none;font:inherit;cursor:pointer}
+    nav a:hover, nav button:hover{opacity:0.9}
+
+    /* Dropdown */
+    .dropdown{position:relative}
+    .dropdown-menu{position:absolute;left:0;top:calc(100% + 8px);background:#fff;color:#111;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.12);min-width:220px;display:none;padding:6px 0}
+    .dropdown-menu a{display:block;padding:10px 14px;color:#111;text-decoration:none}
+    .dropdown-menu a:hover{background:#f3f3f3}
+    .dropdown:focus-within .dropdown-menu, .dropdown:hover .dropdown-menu{display:block}
+
+    /* CTA button */
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:8px;font-weight:600}
+    .btn--primary{background:var(--brand);color:#fff;border:2px solid rgba(255,255,255,0.06)}
+    .btn--quote{background:#0b74a9;color:#fff}
+    .btn--outline{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,0.18)}
+
+    /* Intro section (Hero with background image) */
+    .intro{
+  padding:80px 0;
+  background:url('hero-bg.jpg') center/cover no-repeat;
+  position:relative;
+}
+.intro::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.65);
+}
+.intro > .container{position:relative;z-index:2;color:#fff;}
+    .intro-grid{display:flex;gap:28px;align-items:flex-start}
+    .intro-left{flex:1;color:#071011}
+    .eyebrow{font-size:13px;text-transform:uppercase;font-weight:700;color:var(--brand);margin-bottom:12px}
+    .intro-title{font-size:28px;line-height:1.08;margin:0 0 14px;color:#071011}
+    .intro-sub{color:#333;margin-bottom:18px;font-size:15px}
+
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+    .actions .btn{border-radius:8px}
+    .brochure{display:block;margin-top:8px;color:var(--brand);text-decoration:underline;font-size:14px}
+
+    /* proofs */
+    .proofs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+    .proof{display:flex;gap:10px;align-items:center;background:#fff;border-radius:8px;padding:10px;border:1px solid rgba(0,0,0,0.04)}
+    .proof svg{width:20px;height:20px;flex-shrink:0;color:var(--brand)}
+    .proof .p-text{font-size:14px;color:#111}
+
+    /* counters */
+    .counters{display:flex;gap:28px;margin-top:18px}
+    .counter{background:#fff;padding:12px 18px;border-radius:8px;min-width:110px;text-align:center;border:1px solid rgba(0,0,0,0.04)}
+    .counter .num{font-weight:800;font-size:26px;color:var(--brand)}
+    .counter .label{font-size:13px;color:#444}
+
+    /* Trust bar */
+    .trust{background:#fff;padding:10px 0;text-align:center;color:#111;font-weight:600;margin-top:18px;border-top:1px solid rgba(0,0,0,0.03)}
+
+    /* Footer */
+    footer{background:var(--brand);color:var(--white);padding:28px 0;margin-top:36px}
+    footer a{color:rgba(255,255,255,0.9);text-decoration:none}
+    .footer-links{display:flex;gap:18px;justify-content:center;margin-top:12px}
+
+    /* Responsive */
+    @media (max-width:800px){
+      nav ul{flex-direction:column;align-items:flex-start;background:transparent;padding-top:8px}
+      .container{padding:0 14px}
+      .intro-grid{flex-direction:column}
+      .proofs{grid-template-columns:1fr}
+      .counters{flex-direction:row;flex-wrap:wrap;gap:12px}
+    }
+  </style>
+
+   <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+
+  <div class="top-banner">🚚 Free Delivery &amp; Installation Across Tamil Nadu | Call: +91‑98765‑43210</div>
+
+
+  
+    <header>
+  <div class="container">
+    <div class="nav-row">
+      <div class="logo">Pioneer Bio Tank</div>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li class="dropdown">
+            <button aria-haspopup="true" aria-expanded="false">Products ▾</button>
+
+            <div class="dropdown-menu" role="menu">
+              <a role="menuitem" href="Bio-SepticTank.html">FRP Bio-Septic Tank</a>
+              <a role="menuitem" href="UndergroundWaterTank.html">FRP Underground Water Tank</a>
+            </div>
+          </li>
+
+          <li><a href="HowItWorks.html">How It Works</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+
+          <li><a class="btn btn--quote" href="#contact">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Contact Page Hero -->
+<section style="position:relative;background:linear-gradient(135deg,var(--brand),#0d8049);background-size:cover;background-position:center;padding:72px 0;color:#fff;">
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.15),rgba(0,0,0,0.25));"></div>
+  <div style="max-width:1200px;margin:0 auto;padding:0 18px;position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+    <div style="flex:1;min-width:260px;">
+      <h1 style="font-size:32px;margin:0 0 10px;font-weight:800;">Get a free suggestion for the right tank for your home</h1>
+      <p style="margin:0 0 16px;color:rgba(255,255,255,0.95);max-width:680px;">Share a few details. Our team will call you, explain the options and share the brochure on WhatsApp/email.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a href="tel:+919876543210" style="background:#fff;color:var(--brand);padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700;">Call Now</a>
+        <a href="#contact-form" style="border:2px solid rgba(255,255,255,0.8);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700;">Get Suggestion</a>
+      </div>
+    </div>
+
+    <div style="flex:0 0 280px;min-width:220px;text-align:center;">
+      <div style="background:rgba(255,255,255,0.15);padding:12px;border-radius:10px;display:inline-block;">
+        <div style="font-size:12px;color:rgba(255,255,255,0.9);margin-bottom:4px;">Serving</div>
+        <div style="font-weight:800;font-size:15px;">Tamil Nadu • Kerala<br>Karnataka • Andhra Pradesh</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<!-- Contact Section -->
+<section style="padding:60px 0;background:#fff;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 18px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;">
+
+    <!-- Left: Reassurance -->
+    <div>
+      <h2 style="font-size:28px;font-weight:800;color:#111;margin-bottom:12px;">Get a free suggestion for the right tank for your home</h2>
+      <p style="font-size:16px;color:#444;margin-bottom:18px;">Share a few details. Our team will call you, explain the options and share the brochure on WhatsApp/email.</p>
+
+      <ul style="list-style:none;padding:0;margin:0;display:grid;gap:12px;color:#222;font-size:15px;">
+        <li>✔ Expert recommendation for capacity & model</li>
+        <li>✔ Transparent pricing and installation details</li>
+        <li>✔ Brochure sent to your WhatsApp / Email</li>
+        <li>✔ Quick site-assessment scheduling if needed</li>
+      </ul>
+
+      <p style="margin-top:18px;color:#666;font-size:14px;">Prefer to talk now? <a href="tel:+919876543210" style="color:var(--brand);text-decoration:none;font-weight:700">Call +91‑98765‑43210</a></p>
+    </div>
+
+    <!-- Right: Form Card -->
+    <div>
+      <div style="background:#fff;border-radius:12px;padding:22px;box-shadow:0 12px 30px rgba(3,15,9,0.08);">
+        <form id="shortContactForm" style="display:flex;flex-direction:column;gap:12px;">
+          <label style="display:block;font-size:14px;color:#333;">
+            <span style="display:block;margin-bottom:6px;">Name</span>
+            <input name="name" type="text" placeholder="Your full name" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;font-size:15px;" />
+          </label>
+
+          <label style="display:block;font-size:14px;color:#333;">
+            <span style="display:block;margin-bottom:6px;">Mobile number <span style="color:#b21">*</span></span>
+            <input name="mobile" type="tel" required placeholder="+91 98xxxxxxxx" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;font-size:15px;" />
+          </label>
+
+          <label style="display:block;font-size:14px;color:#333;">
+            <span style="display:block;margin-bottom:6px;">Location (Town / District)</span>
+            <input name="location" type="text" placeholder="e.g. Chengalpattu" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;font-size:15px;" />
+          </label>
+
+          <label style="display:block;font-size:14px;color:#333;">
+            <span style="display:block;margin-bottom:6px;">Type</span>
+            <select name="type" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;font-size:15px;">
+              <option value="">Select...</option>
+              <option>Home</option>
+              <option>Apartment</option>
+              <option>School</option>
+              <option>Hospital</option>
+              <option>Industry</option>
+            </select>
+          </label>
+
+          <label style="display:block;font-size:14px;color:#333;">
+            <span style="display:block;margin-bottom:6px;">No. of people using toilets</span>
+            <select name="users" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;font-size:15px;">
+              <option value="">Select range...</option>
+              <option>1–2</option>
+              <option>3–5</option>
+              <option>6–10</option>
+              <option>10+</option>
+            </select>
+          </label>
+
+          <div style="display:flex;gap:12px;align-items:center;margin-top:6px;">
+            <span style="font-size:14px;color:#333;">Preferred contact:</span>
+            <label style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#333;"><input type="radio" name="preferred" value="Call" checked /> Call</label>
+            <label style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#333;"><input type="radio" name="preferred" value="WhatsApp" /> WhatsApp</label>
+          </div>
+
+          <div style="display:flex;gap:10px;align-items:center;margin-top:8px;">
+            <button type="submit" style="background:var(--brand);color:#fff;border:none;padding:10px 16px;border-radius:8px;font-weight:700;cursor:pointer;">Get Suggestion</button>
+            <a href="tel:+919876543210" style="display:inline-flex;align-items:center;padding:10px 14px;border-radius:8px;border:1px solid #e6e6e6;color:#333;text-decoration:none;">Call Now</a>
+          </div>
+
+          <p style="font-size:13px;color:#666;margin-top:8px;">We will only use your phone number to contact you regarding this query.</p>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <footer>
+    <div class="container">
+      <div style="text-align:center">
+        <h3 style="margin:0;color:var(--white);font-size:18px">Pioneer Bio Tank</h3>
+        <p style="color:rgba(255,255,255,0.9);margin:8px 0 0">High‑quality FRP Bio‑Septic Tanks &amp; Underground Water Tanks</p>
+
+        <div class="footer-links" style="margin-top:12px">
+          <a href="index.html">Home</a>
+          <a href="About.html">About Us</a>
+          <a href="Projects.html">Projects</a>
+          <a href="Contact.html">Contact Us</a>
+        </div>
+
+        <p style="margin-top:12px;color:rgba(255,255,255,0.8);font-size:12px">© 2025 Pioneer Bio Tank. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
