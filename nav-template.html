@@ -1,0 +1,95 @@
+<!-- Top Banner -->
+<div class="text-white py-2 text-sm" style="background-color: #003233;">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+        <a href="tel:+919876543210" class="flex items-center hover:text-gray-300">
+          <i class="fas fa-phone mr-2" style="color: #00AD50;"></i>
+          <span class="text-xs sm:text-sm">+91 98765 43210</span>
+        </a>
+        <a href="mailto:info@pioneerbiotank.com" class="flex items-center hover:text-gray-300">
+          <i class="fas fa-envelope mr-2" style="color: #00AD50;"></i>
+          <span class="text-xs sm:text-sm">info@pioneerbiotank.com</span>
+        </a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="#" class="hover:text-gray-300" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='white'"><i class="fab fa-facebook text-sm"></i></a>
+        <a href="#" class="hover:text-gray-300" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='white'"><i class="fab fa-instagram text-sm"></i></a>
+        <a href="#" class="hover:text-gray-300" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='white'"><i class="fab fa-linkedin text-sm"></i></a>
+        <a href="#" class="hover:text-gray-300" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='white'"><i class="fab fa-youtube text-sm"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="bg-white shadow-lg fixed w-full z-50" style="top: 0; margin-top: 40px;">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex items-center">
+        <a href="index.html" class="flex items-center">
+          <span class="text-xl sm:text-2xl font-bold" style="color: #00AD50;">Pioneer BioTank</span>
+        </a>
+      </div>
+      
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="index.html" class="text-gray-700 hover:text-green-600 font-medium">Home</a>
+        <div class="relative group">
+          <button class="text-gray-700 hover:text-green-600 font-medium flex items-center">Products <i class="fas fa-chevron-down ml-1 text-xs"></i></button>
+          <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-64">
+            <a href="Bio-septic.html" class="block px-4 py-2 text-gray-700" style="background-color: transparent;" onmouseover="this.style.backgroundColor='#f0fdf4'" onmouseout="this.style.backgroundColor='transparent'">FRP Bio-Septic Tank</a>
+            <a href="UndergroundWaterTank.html" class="block px-4 py-2 text-gray-700" style="background-color: transparent;" onmouseover="this.style.backgroundColor='#f0fdf4'" onmouseout="this.style.backgroundColor='transparent'">FRP Underground Water Tank</a>
+          </div>
+        </div>
+        <a href="Howitworks.html" class="text-gray-700 hover:text-green-600 font-medium">How It Works</a>
+        <a href="project.html" class="text-gray-700 hover:text-green-600 font-medium">Projects</a>
+        <a href="about.html" class="text-gray-700 hover:text-green-600 font-medium">About Us</a>
+        <a href="contact.html" class="text-gray-700 hover:text-green-600 font-medium">Contact Us</a>
+        <a href="contact.html" class="text-white px-6 py-2 rounded-lg font-medium" style="background-color: #00AD50;" onmouseover="this.style.backgroundColor='#009945'" onmouseout="this.style.backgroundColor='#00AD50'">Get a Quote</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center">
+        <button id="mobile-menu-button" class="text-gray-700 hover:text-green-600 focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      <div class="flex flex-col space-y-3">
+        <a href="index.html" class="text-gray-700 hover:text-green-600 font-medium py-2 border-b">Home</a>
+        <div>
+          <button id="mobile-products-toggle" class="text-gray-700 hover:text-green-600 font-medium py-2 w-full text-left flex justify-between items-center">
+            Products <i class="fas fa-chevron-down text-xs"></i>
+          </button>
+          <div id="mobile-products-menu" class="hidden pl-4 space-y-2 mt-2">
+            <a href="Bio-septic.html" class="block py-2 text-gray-600 hover:text-green-600">FRP Bio-Septic Tank</a>
+            <a href="UndergroundWaterTank.html" class="block py-2 text-gray-600 hover:text-green-600">FRP Underground Water Tank</a>
+          </div>
+        </div>
+        <a href="Howitworks.html" class="text-gray-700 hover:text-green-600 font-medium py-2 border-b">How It Works</a>
+        <a href="project.html" class="text-gray-700 hover:text-green-600 font-medium py-2 border-b">Projects</a>
+        <a href="about.html" class="text-gray-700 hover:text-green-600 font-medium py-2 border-b">About Us</a>
+        <a href="contact.html" class="text-gray-700 hover:text-green-600 font-medium py-2 border-b">Contact Us</a>
+        <a href="contact.html" class="text-white px-6 py-2 rounded-lg font-medium text-center block mt-2" style="background-color: #00AD50;">Get a Quote</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Mobile menu toggle
+  document.getElementById('mobile-menu-button').addEventListener('click', function() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  });
+
+  // Mobile products submenu toggle
+  document.getElementById('mobile-products-toggle').addEventListener('click', function() {
+    const submenu = document.getElementById('mobile-products-menu');
+    submenu.classList.toggle('hidden');
+  });
+</script>

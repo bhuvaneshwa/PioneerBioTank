@@ -1,253 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pioneer Bio Tank</title>
-  <style>
-    :root{ --brand:#13693C; --white:#ffffff; --dark:#0b2a1a; --muted:#6b6b6b; }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:#0f1720;color:#111}
-
-    /* Top banner */
-    .top-banner{background:var(--white);color:#000;text-align:center;padding:8px 12px;font-weight:600;font-size:14px}
-
-    /* Header / Nav */
-    header{background:var(--brand);color:var(--white);box-shadow:0 4px 8px rgba(0,0,0,0.15)}
-    .container{max-width:1200px;margin:0 auto;padding:0 18px}
-    .nav-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
-    .logo{font-weight:700;font-size:20px}
-    nav ul{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:18px}
-    nav a, nav button{color:var(--white);text-decoration:none;background:none;border:none;font:inherit;cursor:pointer}
-    nav a:hover, nav button:hover{opacity:0.9}
-
-    /* Dropdown */
-    .dropdown{position:relative}
-    .dropdown-menu{position:absolute;left:0;top:calc(100% + 8px);background:#fff;color:#111;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.12);min-width:220px;display:none;padding:6px 0}
-    .dropdown-menu a{display:block;padding:10px 14px;color:#111;text-decoration:none}
-    .dropdown-menu a:hover{background:#f3f3f3}
-    .dropdown:focus-within .dropdown-menu, .dropdown:hover .dropdown-menu{display:block}
-
-    /* CTA button */
-    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:8px;font-weight:600}
-    .btn--primary{background:var(--brand);color:#fff;border:2px solid rgba(255,255,255,0.06)}
-    .btn--quote{background:#0b74a9;color:#fff}
-    .btn--outline{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,0.18)}
-
-    /* Intro section (Hero with background image) */
-    .intro{
-  padding:80px 0;
-  background:url('hero-bg.jpg') center/cover no-repeat;
-  position:relative;
-}
-.intro::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,0.65);
-}
-.intro > .container{position:relative;z-index:2;color:#fff;}
-    .intro-grid{display:flex;gap:28px;align-items:flex-start}
-    .intro-left{flex:1;color:#071011}
-    .eyebrow{font-size:13px;text-transform:uppercase;font-weight:700;color:var(--brand);margin-bottom:12px}
-    .intro-title{font-size:28px;line-height:1.08;margin:0 0 14px;color:#071011}
-    .intro-sub{color:#333;margin-bottom:18px;font-size:15px}
-
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:10px}
-    .actions .btn{border-radius:8px}
-    .brochure{display:block;margin-top:8px;color:var(--brand);text-decoration:underline;font-size:14px}
-
-    /* proofs */
-    .proofs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
-    .proof{display:flex;gap:10px;align-items:center;background:#fff;border-radius:8px;padding:10px;border:1px solid rgba(0,0,0,0.04)}
-    .proof svg{width:20px;height:20px;flex-shrink:0;color:var(--brand)}
-    .proof .p-text{font-size:14px;color:#111}
-
-    /* counters */
-    .counters{display:flex;gap:28px;margin-top:18px}
-    .counter{background:#fff;padding:12px 18px;border-radius:8px;min-width:110px;text-align:center;border:1px solid rgba(0,0,0,0.04)}
-    .counter .num{font-weight:800;font-size:26px;color:var(--brand)}
-    .counter .label{font-size:13px;color:#444}
-
-    /* Trust bar */
-    .trust{background:#fff;padding:10px 0;text-align:center;color:#111;font-weight:600;margin-top:18px;border-top:1px solid rgba(0,0,0,0.03)}
-
-    /* Footer */
-    footer{background:var(--brand);color:var(--white);padding:28px 0;margin-top:36px}
-    footer a{color:rgba(255,255,255,0.9);text-decoration:none}
-    .footer-links{display:flex;gap:18px;justify-content:center;margin-top:12px}
-
-    /* Responsive */
-    @media (max-width:800px){
-      nav ul{flex-direction:column;align-items:flex-start;background:transparent;padding-top:8px}
-      .container{padding:0 14px}
-      .intro-grid{flex-direction:column}
-      .proofs{grid-template-columns:1fr}
-      .counters{flex-direction:row;flex-wrap:wrap;gap:12px}
-    }
-  </style>
-
-   <link rel="stylesheet" href="styles.css" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Pioneer BioTank</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="bg-gray-50">
+  <!-- Top Banner -->
+  <div id="top-banner" class="text-white py-2 text-sm transition-transform duration-300" style="background-color: #003233; position: fixed; top: 0; width: 100%; z-index: 100;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+          <a href="tel:+919876543210" class="flex items-center hover:text-gray-300">
+            <i class="fas fa-phone mr-2" style="color: #00AD50;"></i>
+            <span class="text-xs sm:text-sm">+91 98765 43210</span>
+          </a>
+          <a href="mailto:info@pioneerbiotank.com" class="flex items-center hover:text-gray-300">
+            <i class="fas fa-envelope mr-2" style="color: #00AD50;"></i>
+            <span class="text-xs sm:text-sm">info@pioneerbiotank.com</span>
+          </a>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="#" class="hover:text-gray-300" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='white'"><i class="fab fa-facebook text-sm"></i></a>
+          <a href="#" class="hover:text-gray-300" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='white'"><i class="fab fa-instagram text-sm"></i></a>
+          <a href="#" class="hover:text-gray-300" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='white'"><i class="fab fa-linkedin text-sm"></i></a>
+          <a href="#" class="hover:text-gray-300" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='white'"><i class="fab fa-youtube text-sm"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <div class="top-banner">🚚 Free Delivery &amp; Installation Across Tamil Nadu | Call: +91‑98765‑43210</div>
-
-
-  
-    <header>
-  <div class="container">
-    <div class="nav-row">
-      <div class="logo">Pioneer Bio Tank</div>
-
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-
-          <li class="dropdown">
-            <button aria-haspopup="true" aria-expanded="false">Products ▾</button>
-
-            <div class="dropdown-menu" role="menu">
-              <a role="menuitem" href="Bio-SepticTank.html">FRP Bio-Septic Tank</a>
-              <a role="menuitem" href="UndergroundWaterTank.html">FRP Underground Water Tank</a>
+  <!-- Navigation -->
+  <nav id="main-nav" class="bg-white shadow-lg fixed w-full z-50 transition-all duration-300" style="top: 40px;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <span class="text-xl sm:text-2xl font-bold" style="color: #00AD50;">Pioneer BioTank</span>
+          </a>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="text-gray-700 hover:text-green-600 font-medium">Home</a>
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-green-600 font-medium flex items-center">Products <i class="fas fa-chevron-down ml-1 text-xs"></i></button>
+            <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-64" style="top: 100%; left: 0; margin-top: 0.5rem;">
+              <a href="Bio-septic.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 transition-colors">FRP Bio-Septic Tank</a>
+              <a href="UndergroundWaterTank.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 transition-colors">FRP Underground Water Tank</a>
             </div>
-          </li>
-
-          <li><a href="HowItWorks.html">How It Works</a></li>
-          <li><a href="Projects.html">Projects</a></li>
-          <li><a href="About.html">About Us</a></li>
-          <li><a href="Contact.html">Contact Us</a></li>
-
-          <li><a class="btn btn--quote" href="#contact">Get a Quote</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
-
-<!-- Contact Page Hero -->
-<section style="position:relative;background:linear-gradient(135deg,var(--brand),#0d8049);background-size:cover;background-position:center;padding:72px 0;color:#fff;">
-  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.15),rgba(0,0,0,0.25));"></div>
-  <div style="max-width:1200px;margin:0 auto;padding:0 18px;position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
-    <div style="flex:1;min-width:260px;">
-      <h1 style="font-size:32px;margin:0 0 10px;font-weight:800;">Get a free suggestion for the right tank for your home</h1>
-      <p style="margin:0 0 16px;color:rgba(255,255,255,0.95);max-width:680px;">Share a few details. Our team will call you, explain the options and share the brochure on WhatsApp/email.</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;">
-        <a href="tel:+919876543210" style="background:#fff;color:var(--brand);padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700;">Call Now</a>
-        <a href="#contact-form" style="border:2px solid rgba(255,255,255,0.8);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700;">Get Suggestion</a>
-      </div>
-    </div>
-
-    <div style="flex:0 0 280px;min-width:220px;text-align:center;">
-      <div style="background:rgba(255,255,255,0.15);padding:12px;border-radius:10px;display:inline-block;">
-        <div style="font-size:12px;color:rgba(255,255,255,0.9);margin-bottom:4px;">Serving</div>
-        <div style="font-weight:800;font-size:15px;">Tamil Nadu • Kerala<br>Karnataka • Andhra Pradesh</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<!-- Contact Section -->
-<section style="padding:60px 0;background:#fff;">
-  <div style="max-width:1200px;margin:0 auto;padding:0 18px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;">
-
-    <!-- Left: Reassurance -->
-    <div>
-      <h2 style="font-size:28px;font-weight:800;color:#111;margin-bottom:12px;">Get a free suggestion for the right tank for your home</h2>
-      <p style="font-size:16px;color:#444;margin-bottom:18px;">Share a few details. Our team will call you, explain the options and share the brochure on WhatsApp/email.</p>
-
-      <ul style="list-style:none;padding:0;margin:0;display:grid;gap:12px;color:#222;font-size:15px;">
-        <li>✔ Expert recommendation for capacity & model</li>
-        <li>✔ Transparent pricing and installation details</li>
-        <li>✔ Brochure sent to your WhatsApp / Email</li>
-        <li>✔ Quick site-assessment scheduling if needed</li>
-      </ul>
-
-      <p style="margin-top:18px;color:#666;font-size:14px;">Prefer to talk now? <a href="tel:+919876543210" style="color:var(--brand);text-decoration:none;font-weight:700">Call +91‑98765‑43210</a></p>
-    </div>
-
-    <!-- Right: Form Card -->
-    <div>
-      <div style="background:#fff;border-radius:12px;padding:22px;box-shadow:0 12px 30px rgba(3,15,9,0.08);">
-        <form id="shortContactForm" style="display:flex;flex-direction:column;gap:12px;">
-          <label style="display:block;font-size:14px;color:#333;">
-            <span style="display:block;margin-bottom:6px;">Name</span>
-            <input name="name" type="text" placeholder="Your full name" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;font-size:15px;" />
-          </label>
-
-          <label style="display:block;font-size:14px;color:#333;">
-            <span style="display:block;margin-bottom:6px;">Mobile number <span style="color:#b21">*</span></span>
-            <input name="mobile" type="tel" required placeholder="+91 98xxxxxxxx" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;font-size:15px;" />
-          </label>
-
-          <label style="display:block;font-size:14px;color:#333;">
-            <span style="display:block;margin-bottom:6px;">Location (Town / District)</span>
-            <input name="location" type="text" placeholder="e.g. Chengalpattu" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;font-size:15px;" />
-          </label>
-
-          <label style="display:block;font-size:14px;color:#333;">
-            <span style="display:block;margin-bottom:6px;">Type</span>
-            <select name="type" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;font-size:15px;">
-              <option value="">Select...</option>
-              <option>Home</option>
-              <option>Apartment</option>
-              <option>School</option>
-              <option>Hospital</option>
-              <option>Industry</option>
-            </select>
-          </label>
-
-          <label style="display:block;font-size:14px;color:#333;">
-            <span style="display:block;margin-bottom:6px;">No. of people using toilets</span>
-            <select name="users" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;font-size:15px;">
-              <option value="">Select range...</option>
-              <option>1–2</option>
-              <option>3–5</option>
-              <option>6–10</option>
-              <option>10+</option>
-            </select>
-          </label>
-
-          <div style="display:flex;gap:12px;align-items:center;margin-top:6px;">
-            <span style="font-size:14px;color:#333;">Preferred contact:</span>
-            <label style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#333;"><input type="radio" name="preferred" value="Call" checked /> Call</label>
-            <label style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#333;"><input type="radio" name="preferred" value="WhatsApp" /> WhatsApp</label>
           </div>
-
-          <div style="display:flex;gap:10px;align-items:center;margin-top:8px;">
-            <button type="submit" style="background:var(--brand);color:#fff;border:none;padding:10px 16px;border-radius:8px;font-weight:700;cursor:pointer;">Get Suggestion</button>
-            <a href="tel:+919876543210" style="display:inline-flex;align-items:center;padding:10px 14px;border-radius:8px;border:1px solid #e6e6e6;color:#333;text-decoration:none;">Call Now</a>
-          </div>
-
-          <p style="font-size:13px;color:#666;margin-top:8px;">We will only use your phone number to contact you regarding this query.</p>
-        </form>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-  <footer>
-    <div class="container">
-      <div style="text-align:center">
-        <h3 style="margin:0;color:var(--white);font-size:18px">Pioneer Bio Tank</h3>
-        <p style="color:rgba(255,255,255,0.9);margin:8px 0 0">High‑quality FRP Bio‑Septic Tanks &amp; Underground Water Tanks</p>
-
-        <div class="footer-links" style="margin-top:12px">
-          <a href="index.html">Home</a>
-          <a href="About.html">About Us</a>
-          <a href="Projects.html">Projects</a>
-          <a href="Contact.html">Contact Us</a>
+          <a href="Howitworks.html" class="text-gray-700 hover:text-green-600 font-medium">How It Works</a>
+          <a href="project.html" class="text-gray-700 hover:text-green-600 font-medium">Projects</a>
+          <a href="about.html" class="text-gray-700 hover:text-green-600 font-medium">About Us</a>
+          <a href="contact.html" class="text-gray-700 font-medium" style="color: #00AD50;">Contact Us</a>
+          <a href="contact.html" class="text-white px-6 py-2 rounded-lg font-medium" style="background-color: #00AD50;" onmouseover="this.style.backgroundColor='#009945'" onmouseout="this.style.backgroundColor='#00AD50'">Get a Quote</a>
         </div>
 
-        <p style="margin-top:12px;color:rgba(255,255,255,0.8);font-size:12px">© 2025 Pioneer Bio Tank. All rights reserved.</p>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-700 hover:text-green-600 focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col space-y-3">
+          <a href="index.html" class="text-gray-700 hover:text-green-600 font-medium py-2 border-b">Home</a>
+          <div>
+            <button id="mobile-products-toggle" class="text-gray-700 hover:text-green-600 font-medium py-2 w-full text-left flex justify-between items-center">
+              Products <i class="fas fa-chevron-down text-xs"></i>
+            </button>
+            <div id="mobile-products-menu" class="hidden pl-4 space-y-2 mt-2">
+              <a href="Bio-septic.html" class="block py-2 text-gray-600 hover:text-green-600">FRP Bio-Septic Tank</a>
+              <a href="UndergroundWaterTank.html" class="block py-2 text-gray-600 hover:text-green-600">FRP Underground Water Tank</a>
+            </div>
+          </div>
+          <a href="Howitworks.html" class="text-gray-700 hover:text-green-600 font-medium py-2 border-b">How It Works</a>
+          <a href="project.html" class="text-gray-700 hover:text-green-600 font-medium py-2 border-b">Projects</a>
+          <a href="about.html" class="text-gray-700 hover:text-green-600 font-medium py-2 border-b">About Us</a>
+          <a href="contact.html" class="text-gray-700 font-medium py-2 border-b" style="color: #00AD50;">Contact Us</a>
+          <a href="contact.html" class="text-white px-6 py-2 rounded-lg font-medium text-center block mt-2" style="background-color: #00AD50;">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+
+    // Mobile products submenu toggle
+    document.getElementById('mobile-products-toggle').addEventListener('click', function() {
+      const submenu = document.getElementById('mobile-products-menu');
+      submenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Hero Section -->
+  <section class="pt-32 sm:pt-36 pb-16 text-white" style="background: linear-gradient(135deg, #00AD50 0%, #003233 100%); margin-top: 96px;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Get In Touch</h1>
+      <p class="text-base sm:text-lg md:text-xl text-blue-100">We're here to answer your questions and help with your project</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+          <form class="space-y-6">
+            <div>
+              <label class="block text-gray-700 font-semibold mb-2">Full Name *</label>
+              <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600" placeholder="John Doe" required>
+            </div>
+            <div>
+              <label class="block text-gray-700 font-semibold mb-2">Email Address *</label>
+              <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600" placeholder="john@example.com" required>
+            </div>
+            <div>
+              <label class="block text-gray-700 font-semibold mb-2">Phone Number *</label>
+              <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600" placeholder="+91 98765 43210" required>
+            </div>
+            <div>
+              <label class="block text-gray-700 font-semibold mb-2">Product Interest</label>
+              <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600">
+                <option>Select a product</option>
+                <option>Bio-Septic Tank</option>
+                <option>Underground Water Tank</option>
+                <option>Both</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-gray-700 font-semibold mb-2">Project Type</label>
+              <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600">
+                <option>Select project type</option>
+                <option>Residential</option>
+                <option>Commercial</option>
+                <option>Industrial</option>
+                <option>Institutional</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-gray-700 font-semibold mb-2">Message *</label>
+              <textarea rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600" placeholder="Tell us about your requirements..." required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition">
+              <i class="fas fa-paper-plane mr-2"></i>Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="text-blue-600 text-3xl">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Our Office</h3>
+                <p class="text-gray-600">123 Water Solutions Street<br>Business District, Mumbai - 400001<br>Maharashtra, India</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="text-blue-600 text-3xl">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Phone Numbers</h3>
+                <p class="text-gray-600">
+                  Sales: +91 98765 43210<br>
+                  Support: +91 98765 43211<br>
+                  Toll Free: 1800-123-4567
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="text-blue-600 text-3xl">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Email Addresses</h3>
+                <p class="text-gray-600">
+                  General: info@pioneerbiotank.com<br>
+                  Sales: sales@pioneerbiotank.com<br>
+                  Support: support@pioneerbiotank.com
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="text-blue-600 text-3xl">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Business Hours</h3>
+                <p class="text-gray-600">
+                  Monday - Friday: 9:00 AM - 6:00 PM<br>
+                  Saturday: 9:00 AM - 2:00 PM<br>
+                  Sunday: Closed
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="mt-8">
+            <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+            <div class="flex gap-4">
+              <a href="#" class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl hover:bg-blue-700 transition">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="w-12 h-12 bg-blue-400 text-white rounded-full flex items-center justify-center text-xl hover:bg-blue-500 transition">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="w-12 h-12 bg-blue-700 text-white rounded-full flex items-center justify-center text-xl hover:bg-blue-800 transition">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center text-xl hover:bg-pink-700 transition">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center text-xl hover:bg-green-700 transition">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Find Us on Map</h2>
+      <div class="bg-gray-300 rounded-lg overflow-hidden shadow-lg" style="height: 400px;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.14571542316!2d72.71637344999999!3d19.0821978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+          width="100%" 
+          height="400" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <div class="bg-gray-50 rounded-lg p-6">
+          <h3 class="text-xl font-bold mb-2 flex items-center">
+            <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+            How long does installation take?
+          </h3>
+          <p class="text-gray-600 ml-9">Typically, installation takes 2-5 days depending on the size and complexity of the project.</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-6">
+          <h3 class="text-xl font-bold mb-2 flex items-center">
+            <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+            Do you provide warranty?
+          </h3>
+          <p class="text-gray-600 ml-9">Yes, we provide a comprehensive 5-year warranty on all our products and installation.</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-6">
+          <h3 class="text-xl font-bold mb-2 flex items-center">
+            <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+            What maintenance is required?
+          </h3>
+          <p class="text-gray-600 ml-9">Our bio-septic tanks require minimal maintenance - typically an annual inspection is sufficient.</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-6">
+          <h3 class="text-xl font-bold mb-2 flex items-center">
+            <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+            Do you offer customization?
+          </h3>
+          <p class="text-gray-600 ml-9">Yes, we can customize tank sizes and specifications to meet your specific requirements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-gradient-to-r from-blue-600 to-cyan-600 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-bold mb-6">Ready to Get Started?</h2>
+      <p class="text-xl text-blue-100 mb-8">Schedule a free consultation with our experts today</p>
+      <a href="tel:+919876543210" class="bg-white text-blue-600 px-10 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition inline-block">
+        <i class="fas fa-phone mr-2"></i>Call Now: +91 98765 43210
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white py-12" style="background-color: #003233;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold mb-4" style="color: #00AD50;">Pioneer BioTank</h3>
+          <p class="text-gray-300">Leading provider of eco-friendly FRP water storage and bio-septic solutions.</p>
+          <div class="mt-4">
+            <p class="text-sm text-gray-300"><i class="fas fa-phone mr-2" style="color: #00AD50;"></i>+91 98765 43210</p>
+            <p class="text-sm text-gray-300 mt-2"><i class="fas fa-envelope mr-2" style="color: #00AD50;"></i>info@pioneerbiotank.com</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+            <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+            <li><a href="Howitworks.html" class="text-gray-300 hover:text-white">How It Works</a></li>
+            <li><a href="project.html" class="text-gray-300 hover:text-white">Projects</a></li>
+            <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Our Products</h4>
+          <ul class="space-y-2">
+            <li><a href="Bio-septic.html" class="text-gray-300 hover:text-white">FRP Bio-Septic Tank</a></li>
+            <li><a href="UndergroundWaterTank.html" class="text-gray-300 hover:text-white">FRP Underground Water Tank</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Follow Us</h4>
+          <div class="flex space-x-4 mb-4">
+            <a href="#" class="text-gray-300 hover:text-white text-2xl" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-gray-300 hover:text-white text-2xl" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-300 hover:text-white text-2xl" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-gray-300 hover:text-white text-2xl" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-youtube"></i></a>
+          </div>
+          <a href="contact.html" class="inline-block mt-4 text-white px-6 py-2 rounded-lg font-semibold text-sm" style="background-color: #00AD50;" onmouseover="this.style.backgroundColor='#009945'" onmouseout="this.style.backgroundColor='#00AD50'">Get a Quote</a>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 text-center text-gray-300" style="border-top: 1px solid rgba(255,255,255,0.1);">
+        <p>&copy; 2025 Pioneer BioTank. All rights reserved. | Designed for sustainable water solutions.</p>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Floating Scroll to Top Button -->
+  <button id="scroll-to-top" class="hidden fixed bottom-8 right-8 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50" style="background-color: #00AD50;" onmouseover="this.style.backgroundColor='#009945'" onmouseout="this.style.backgroundColor='#00AD50'">
+    <i class="fas fa-arrow-up text-xl"></i>
+  </button>
+
+  <!-- Floating CTA Button -->
+  <a href="tel:+919876543210" id="floating-cta" class="hidden fixed bottom-24 right-8 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 font-semibold" style="background-color: #003233;" onmouseover="this.style.backgroundColor='#00AD50'" onmouseout="this.style.backgroundColor='#003233'">
+    <i class="fas fa-phone mr-2"></i>Call Now
+  </a>
+
+  <script>
+    let lastScrollTop = 0;
+    const banner = document.getElementById('top-banner');
+    const nav = document.getElementById('main-nav');
+    const scrollToTopBtn = document.getElementById('scroll-to-top');
+    const floatingCta = document.getElementById('floating-cta');
+    
+    window.addEventListener('scroll', function() {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // Hide/Show banner on scroll
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        // Scrolling down
+        banner.style.transform = 'translateY(-100%)';
+        nav.style.top = '0';
+      } else {
+        // Scrolling up
+        banner.style.transform = 'translateY(0)';
+        nav.style.top = '40px';
+      }
+      
+      lastScrollTop = scrollTop;
+      
+      // Show/Hide scroll to top button
+      if (scrollTop > 300) {
+        scrollToTopBtn.classList.remove('hidden');
+        floatingCta.classList.remove('hidden');
+      } else {
+        scrollToTopBtn.classList.add('hidden');
+        floatingCta.classList.add('hidden');
+      }
+    });
+    
+    // Scroll to top functionality
+    scrollToTopBtn.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
 </body>
 </html>

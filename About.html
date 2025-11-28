@@ -3,64 +3,351 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="styles.css" />
-
+    <title>About Us - Pioneer BioTank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <div class="top-banner">🚚 Free Delivery &amp; Installation Across Tamil Nadu | Call: +91‑98765‑43210</div>
-
- 
-     <header>
-  <div class="container">
-    <div class="nav-row">
-      <div class="logo">Pioneer Bio Tank</div>
-
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-
-          <li class="dropdown">
-            <button aria-haspopup="true" aria-expanded="false">Products ▾</button>
-
-            <div class="dropdown-menu" role="menu">
-              <a role="menuitem" href="Bio-SepticTank.html">FRP Bio-Septic Tank</a>
-              <a role="menuitem" href="UndergroundWaterTank.html">FRP Underground Water Tank</a>
-            </div>
-          </li>
-
-          <li><a href="HowItWorks.html">How It Works</a></li>
-          <li><a href="Projects.html">Projects</a></li>
-          <li><a href="About.html">About Us</a></li>
-          <li><a href="Contact.html">Contact Us</a></li>
-
-          <li><a class="btn btn--quote" href="#contact">Get a Quote</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
-    About
-
-
-    <footer>
-    <div class="container">
-      <div style="text-align:center">
-        <h3 style="margin:0;color:var(--white);font-size:18px">Pioneer Bio Tank</h3>
-        <p style="color:rgba(255,255,255,0.9);margin:8px 0 0">High‑quality FRP Bio‑Septic Tanks &amp; Underground Water Tanks</p>
-
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="About.html">About Us</a>
-          <a href="Projects.html">Projects</a>
-          <a href="Contact.html">Contact Us</a>
+<body class="bg-gray-50">
+  <!-- Top Banner -->
+  <div id="top-banner" class="text-white py-2 text-sm transition-transform duration-300" style="background-color: #003233; position: fixed; top: 0; width: 100%; z-index: 100;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+          <a href="tel:+919876543210" class="flex items-center hover:text-gray-300">
+            <i class="fas fa-phone mr-2" style="color: #00AD50;"></i>
+            <span class="text-xs sm:text-sm">+91 98765 43210</span>
+          </a>
+          <a href="mailto:info@pioneerbiotank.com" class="flex items-center hover:text-gray-300">
+            <i class="fas fa-envelope mr-2" style="color: #00AD50;"></i>
+            <span class="text-xs sm:text-sm">info@pioneerbiotank.com</span>
+          </a>
         </div>
-
-        <p style="margin-top:12px;color:rgba(255,255,255,0.8);font-size:12px">© 2025 Pioneer Bio Tank. All rights reserved.</p>
+        <div class="flex items-center gap-3">
+          <a href="#" class="hover:text-gray-300" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='white'"><i class="fab fa-facebook text-sm"></i></a>
+          <a href="#" class="hover:text-gray-300" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='white'"><i class="fab fa-instagram text-sm"></i></a>
+          <a href="#" class="hover:text-gray-300" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='white'"><i class="fab fa-linkedin text-sm"></i></a>
+          <a href="#" class="hover:text-gray-300" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='white'"><i class="fab fa-youtube text-sm"></i></a>
+        </div>
       </div>
     </div>
-  </footer>
-    
-  <script src="script.js"></script>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="bg-white shadow-lg fixed w-full z-50 transition-all duration-300" style="top: 40px;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <span class="text-2xl font-bold" style="color: #00AD50;">Pioneer BioTank</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-green-600 font-medium">Home</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-green-600 font-medium flex items-center">Products <i class="fas fa-chevron-down ml-1 text-xs"></i></button>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-64" style="top: 100%; left: 0; margin-top: 0.5rem;">
+                            <a href="Bio-septic.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 transition-colors">FRP Bio-Septic Tank</a>
+                            <a href="UndergroundWaterTank.html" class="block px-4 py-2 text-gray-700 hover:bg-green-50 transition-colors">FRP Underground Water Tank</a>
+                        </div>
+                    </div>
+                    <a href="Howitworks.html" class="text-gray-700 hover:text-green-600 font-medium">How It Works</a>
+                    <a href="project.html" class="text-gray-700 hover:text-green-600 font-medium">Projects</a>
+                    <a href="about.html" class="font-medium" style="color: #00AD50;">About Us</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-green-600 font-medium">Contact Us</a>
+                    <a href="contact.html" class="text-white px-6 py-2 rounded-lg font-medium" style="background-color: #00AD50;" onmouseover="this.style.backgroundColor='#009945'" onmouseout="this.style.backgroundColor='#00AD50'">Get a Quote</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-green-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-gray-700 hover:text-green-600 font-medium py-2 border-b">Home</a>
+                    <div>
+                        <button id="mobile-products-toggle" class="text-gray-700 hover:text-green-600 font-medium py-2 w-full text-left flex justify-between items-center">
+                            Products <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div id="mobile-products-menu" class="hidden pl-4 space-y-2 mt-2">
+                            <a href="Bio-septic.html" class="block py-2 text-gray-600 hover:text-green-600">FRP Bio-Septic Tank</a>
+                            <a href="UndergroundWaterTank.html" class="block py-2 text-gray-600 hover:text-green-600">FRP Underground Water Tank</a>
+                        </div>
+                    </div>
+                    <a href="Howitworks.html" class="text-gray-700 hover:text-green-600 font-medium py-2 border-b">How It Works</a>
+                    <a href="project.html" class="text-gray-700 hover:text-green-600 font-medium py-2 border-b">Projects</a>
+                    <a href="about.html" class="font-medium py-2 border-b" style="color: #00AD50;">About Us</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-green-600 font-medium py-2 border-b">Contact Us</a>
+                    <a href="contact.html" class="text-white px-6 py-2 rounded-lg font-medium text-center block mt-2" style="background-color: #00AD50;">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Mobile products submenu toggle
+        document.getElementById('mobile-products-toggle').addEventListener('click', function() {
+            const submenu = document.getElementById('mobile-products-menu');
+            submenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 text-white" style="background: linear-gradient(135deg, #00AD50 0%, #003233 100%); margin-top: 96px;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold mb-4">About Pioneer BioTank</h1>
+            <p class="text-xl text-blue-100">Leading the way in sustainable water management solutions</p>
+        </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600" alt="Our Company" class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
+                    <p class="text-gray-600 mb-4 text-lg">Pioneer BioTank was founded with a vision to revolutionize water storage and waste management through innovative, eco-friendly solutions. With over a decade of experience, we have become a trusted name in the industry.</p>
+                    <p class="text-gray-600 mb-4 text-lg">Our journey began with a simple idea: to create sustainable products that benefit both our customers and the environment. Today, we proudly serve thousands of satisfied clients across the region.</p>
+                    <p class="text-gray-600 text-lg">We combine cutting-edge technology with traditional craftsmanship to deliver products that stand the test of time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:scale-105 transition-all duration-300">
+                    <div class="text-5xl mb-4" style="color: #00AD50;">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4">Our Mission</h3>
+                    <p class="text-gray-600 text-lg">To provide innovative, eco-friendly water storage and waste management solutions that improve quality of life while protecting our environment for future generations.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:scale-105 transition-all duration-300">
+                    <div class="text-5xl mb-4" style="color: #3F8BCF;">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4">Our Vision</h3>
+                    <p class="text-gray-600 text-lg">To be the leading provider of sustainable water management solutions globally, setting industry standards for quality, innovation, and environmental responsibility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Core Values</h2>
+                <p class="text-xl text-gray-600">The principles that guide everything we do</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center p-6 hover:scale-105 transition-all duration-300">
+                    <div class="text-4xl mb-4" style="color: #00AD50;">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Integrity</h4>
+                    <p class="text-gray-600">We conduct business with honesty and transparency</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Innovation</h4>
+                    <p class="text-gray-600">Continuously improving and developing new solutions</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Excellence</h4>
+                    <p class="text-gray-600">Committed to the highest quality in everything</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Sustainability</h4>
+                    <p class="text-gray-600">Protecting the environment for future generations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Why Choose Us?</h2>
+                <p class="text-xl text-blue-100">Experience the Pioneer BioTank difference</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-6xl font-bold mb-2">10+</div>
+                    <div class="text-xl text-blue-100">Years of Experience</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl font-bold mb-2">5000+</div>
+                    <div class="text-xl text-blue-100">Successful Installations</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl font-bold mb-2">24/7</div>
+                    <div class="text-xl text-blue-100">Customer Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Expert Team</h2>
+                <p class="text-xl text-gray-600">Dedicated professionals committed to your success</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300" alt="Team Member" class="w-40 h-40 rounded-full mx-auto mb-4 object-cover">
+                    <h4 class="text-xl font-bold mb-2">John Doe</h4>
+                    <p class="text-blue-600 font-semibold mb-2">CEO & Founder</p>
+                    <p class="text-gray-600">Leading the vision with 15+ years of industry experience</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300" alt="Team Member" class="w-40 h-40 rounded-full mx-auto mb-4 object-cover">
+                    <h4 class="text-xl font-bold mb-2">Jane Smith</h4>
+                    <p class="text-blue-600 font-semibold mb-2">Technical Director</p>
+                    <p class="text-gray-600">Expert in water management systems and innovation</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300" alt="Team Member" class="w-40 h-40 rounded-full mx-auto mb-4 object-cover">
+                    <h4 class="text-xl font-bold mb-2">Mike Johnson</h4>
+                    <p class="text-blue-600 font-semibold mb-2">Operations Manager</p>
+                    <p class="text-gray-600">Ensuring quality delivery and customer satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Ready to Work With Us?</h2>
+            <p class="text-xl text-gray-600 mb-8">Let's discuss how we can help with your water management needs</p>
+            <a href="contact.html" class="bg-blue-600 text-white px-10 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition inline-block">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-12" style="background-color: #003233;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4" style="color: #00AD50;">Pioneer BioTank</h3>
+                    <p class="text-gray-300">Leading provider of eco-friendly FRP water storage and bio-septic solutions.</p>
+                    <div class="mt-4">
+                        <p class="text-sm text-gray-300"><i class="fas fa-phone mr-2" style="color: #00AD50;"></i>+91 98765 43210</p>
+                        <p class="text-sm text-gray-300 mt-2"><i class="fas fa-envelope mr-2" style="color: #00AD50;"></i>info@pioneerbiotank.com</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="Howitworks.html" class="text-gray-300 hover:text-white">How It Works</a></li>
+                        <li><a href="project.html" class="text-gray-300 hover:text-white">Projects</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Our Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="Bio-septic.html" class="text-gray-300 hover:text-white">FRP Bio-Septic Tank</a></li>
+                        <li><a href="UndergroundWaterTank.html" class="text-gray-300 hover:text-white">FRP Underground Water Tank</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-300 hover:text-white text-2xl" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white text-2xl" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white text-2xl" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white text-2xl" style="transition: color 0.3s;" onmouseover="this.style.color='#00AD50'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <a href="contact.html" class="inline-block mt-4 text-white px-6 py-2 rounded-lg font-semibold text-sm" style="background-color: #00AD50;" onmouseover="this.style.backgroundColor='#009945'" onmouseout="this.style.backgroundColor='#00AD50'">Get a Quote</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 text-center text-gray-300" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                <p>&copy; 2025 Pioneer BioTank. All rights reserved. | Designed for sustainable water solutions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Scroll to Top Button -->
+    <button id="scroll-to-top" class="hidden fixed bottom-8 right-8 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50" style="background-color: #00AD50;" onmouseover="this.style.backgroundColor='#009945'" onmouseout="this.style.backgroundColor='#00AD50'">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <!-- Floating CTA Button -->
+    <a href="contact.html" id="floating-cta" class="hidden fixed bottom-24 right-8 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 font-semibold" style="background-color: #003233;" onmouseover="this.style.backgroundColor='#00AD50'" onmouseout="this.style.backgroundColor='#003233'">
+        <i class="fas fa-phone mr-2"></i>Get Quote
+    </a>
+
+    <script>
+        let lastScrollTop = 0;
+        const banner = document.getElementById('top-banner');
+        const nav = document.getElementById('main-nav');
+        const scrollToTopBtn = document.getElementById('scroll-to-top');
+        const floatingCta = document.getElementById('floating-cta');
+        
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Hide/Show banner on scroll
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // Scrolling down
+                banner.style.transform = 'translateY(-100%)';
+                nav.style.top = '0';
+            } else {
+                // Scrolling up
+                banner.style.transform = 'translateY(0)';
+                nav.style.top = '40px';
+            }
+            
+            lastScrollTop = scrollTop;
+            
+            // Show/Hide scroll to top button
+            if (scrollTop > 300) {
+                scrollToTopBtn.classList.remove('hidden');
+                floatingCta.classList.remove('hidden');
+            } else {
+                scrollToTopBtn.classList.add('hidden');
+                floatingCta.classList.add('hidden');
+            }
+        });
+        
+        // Scroll to top functionality
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>
