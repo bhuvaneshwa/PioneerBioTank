@@ -129,24 +129,28 @@
     </div>
   </nav>
 
-  <!-- MAIN CONTENT WRAPPER (padding top for fixed header) -->
-  <main class="pt-[120px] lg:pt-[128px]">
+  <!-- MAIN CONTENT WRAPPER -->
+  <main class="pt-[120px] lg:pt-[100px]">
 
     <!-- Hero Section -->
     <section class="relative overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-br from-emerald-50 via-sky-50 to-white"></div>
+      <div class="absolute inset-0 bg-gradient-to-br from-emerald-600 via-emerald-700 to-slate-900"></div>
       <div class="absolute -right-32 -top-32 w-72 h-72 rounded-full bg-emerald-200/40 blur-3xl"></div>
       <div class="absolute -left-32 bottom-0 w-80 h-80 rounded-full bg-sky-200/40 blur-3xl"></div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
         <div class="max-w-3xl">
-          <p class="text-xs tracking-[0.25em] uppercase text-emerald-500 mb-3">
-            Contact Pioneer BioTank
-          </p>
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 mb-4">
+          <div class="inline-flex items-center gap-2 px-4 py-2 mb-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-300"></span>
+            </span>
+            <span class="text-xs font-semibold text-white uppercase tracking-wider">About Pioneer BioTank</span>
+          </div>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-4">
             Let’s plan the right Bio-Septic system for your site.
           </h1>
-          <p class="text-sm sm:text-base text-slate-600 max-w-xl">
+          <p class="text-sm sm:text-base text-white max-w-xl">
             Share your site details and sewage load, and our team will get back with a
             tailored FRP Bio-Septic solution, pricing, and installation plan.
           </p>
@@ -159,38 +163,62 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-3 gap-8">
 
-          <!-- Contact Form Card -->
+          <!-- Contact Form Card (unchanged) -->
           <div
-            class="lg:col-span-2 bg-white/80 backdrop-blur-xl border border-slate-100 rounded-3xl shadow-[0_18px_60px_rgba(15,23,42,0.12)] p-6 sm:p-8"
+            class="lg:col-span-2 bg-white/90 backdrop-blur-xl border border-slate-200/50 rounded-3xl
+                   shadow-[0_20px_70px_rgba(15,23,42,0.15)] hover:shadow-[0_25px_80px_rgba(15,23,42,0.18)]
+                   p-8 sm:p-10 transition-all duration-500"
           >
-            <h2 class="text-xl sm:text-2xl font-semibold text-slate-900 mb-1">
+            <div class="inline-flex items-center gap-2 px-4 py-2 mb-4 rounded-full bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200/50">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
+              </span>
+              <span class="text-xs font-semibold text-emerald-700 uppercase tracking-wide">Get Free Consultation</span>
+            </div>
+
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
               Tell us about your requirement
             </h2>
-            <p class="text-sm text-slate-500 mb-6">
-              Fill in a few details and we’ll contact you within 24 hours.
+            <p class="text-sm text-slate-600 mb-8">
+              Fill in a few details and we'll contact you within <span class="font-semibold text-emerald-600">24 hours</span>.
             </p>
 
-            <form action="#" method="POST" class="space-y-5">
-              <div class="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label class="block text-xs font-semibold text-slate-600 mb-1">Full Name</label>
-                  <input
-                    type="text"
-                    name="name"
-                    required
-                    class="w-full rounded-xl border border-slate-200 bg-white/70 px-3 py-2.5 text-sm outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500"
-                    placeholder="Enter your name"
-                  />
+            <form action="#" method="POST" class="space-y-6">
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div class="relative">
+                  <label class="block text-xs font-bold text-slate-700 mb-2 uppercase tracking-wider">Full Name *</label>
+                  <div class="relative">
+                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-emerald-500">
+                      <i class="fas fa-user text-sm"></i>
+                    </span>
+                    <input
+                      type="text"
+                      name="name"
+                      required
+                      class="w-full rounded-2xl border-2 border-slate-200 bg-white pl-11 pr-4 py-3.5 text-sm font-medium
+                             outline-none transition-all duration-300
+                             focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 focus:shadow-lg focus:shadow-emerald-500/5"
+                      placeholder="Enter your full name"
+                    />
+                  </div>
                 </div>
-                <div>
-                  <label class="block text-xs font-semibold text-slate-600 mb-1">Phone Number</label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    required
-                    class="w-full rounded-xl border border-slate-200 bg-white/70 px-3 py-2.5 text-sm outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500"
-                    placeholder="+91 XXXXX XXXXX"
-                  />
+                <div class="relative">
+                  <label class="block text-xs font-bold text-slate-700 mb-2 uppercase tracking-wider">Phone Number *</label>
+                  <div class="relative">
+                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-emerald-500">
+                      <i class="fas fa-phone text-sm"></i>
+                    </span>
+                    <input
+                      type="tel"
+                      name="phone"
+                      required
+                      class="w-full rounded-2xl border-2 border-slate-200 bg-white pl-11 pr-4 py-3.5 text-sm font-medium
+                             outline-none transition-all duration-300
+                             focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 focus:shadow-lg focus:shadow-emerald-500/5"
+                      placeholder="+91 XXXXX XXXXX"
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -252,125 +280,131 @@
                 ></textarea>
               </div>
 
-              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-2">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-4">
                 <button
                   type="submit"
-                  class="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white shadow-md hover:shadow-lg transition"
-                  style="background-color:#00AD50;"
+                  class="group inline-flex items-center justify-center gap-3 rounded-2xl px-8 py-4
+                         text-sm font-bold text-white shadow-xl
+                         bg-gradient-to-r from-emerald-600 to-emerald-500
+                         hover:from-emerald-700 hover:to-emerald-600
+                         hover:shadow-2xl hover:shadow-emerald-500/30
+                         hover:scale-105 active:scale-95
+                         transition-all duration-300"
                 >
-                  <i class="fas fa-paper-plane"></i>
+                  <i class="fas fa-paper-plane group-hover:rotate-12 transition-transform duration-300"></i>
                   Submit Enquiry
+                  <i class="fas fa-arrow-right text-xs opacity-0 group-hover:opacity-100 -ml-2 group-hover:ml-0 transition-all duration-300"></i>
                 </button>
-                <p class="text-[11px] sm:text-xs text-slate-500 max-w-xs">
-                  By submitting this form, you agree to be contacted by phone / email for solution design and pricing.
+                <p class="text-[11px] sm:text-xs text-slate-500 max-w-xs leading-relaxed">
+                  <i class="fas fa-lock text-emerald-600 mr-1"></i>
+                  Your data is secure. We'll contact you via phone/email for solution design and pricing.
                 </p>
               </div>
             </form>
           </div>
 
-          <!-- Contact Info Card -->
+          <!-- PREMIUM Contact Info Card (UPDATED WITH IMAGE DATA) -->
           <aside
             class="bg-slate-900 text-slate-50 rounded-3xl p-6 sm:p-7 lg:p-8 relative overflow-hidden"
           >
             <div class="absolute -top-10 -right-10 w-32 h-32 rounded-full bg-emerald-500/30 blur-2xl"></div>
             <div class="absolute bottom-0 -left-6 w-28 h-28 rounded-full bg-sky-500/25 blur-2xl"></div>
 
-            <h3 class="text-lg sm:text-xl font-semibold mb-4 relative z-10">
-              Talk to our team
+            <h3 class="text-lg sm:text-xl font-semibold mb-2 relative z-10">
+              India’s No.1 FRP Bio Septic & Water Storage Tanks
             </h3>
-            <p class="text-sm text-slate-300 mb-6 relative z-10">
-              Prefer WhatsApp or a direct call? Reach out using the details below
-              and we’ll guide you on tank sizing, costs, and installation.
+            <p class="text-xs sm:text-sm text-emerald-100 mb-4 relative z-10">
+              <span class="font-semibold">“We are eager to serve you. Get in touch with us.”</span>
             </p>
 
-            <div class="space-y-4 text-sm relative z-10">
-              <div class="flex items-start gap-3">
-                <div
-                  class="w-9 h-9 rounded-2xl bg-white/10 flex items-center justify-center border border-white/15"
-                >
-                  <i class="fas fa-phone text-emerald-400"></i>
-                </div>
-                <div>
-                  <p class="text-slate-300 text-xs uppercase tracking-wide mb-0.5">
-                    Call
-                  </p>
-                  <a href="tel:+919876543210" class="font-semibold text-white hover:text-emerald-300">
-                    +91 98765 43210
-                  </a>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-3">
-                <div
-                  class="w-9 h-9 rounded-2xl bg-white/10 flex items-center justify-center border border-white/15"
-                >
-                  <i class="fas fa-envelope text-emerald-400"></i>
-                </div>
-                <div>
-                  <p class="text-slate-300 text-xs uppercase tracking-wide mb-0.5">
-                    Email
-                  </p>
-                  <a href="mailto:info@pioneerbiotank.com" class="font-semibold text-white break-all hover:text-emerald-300">
-                    info@pioneerbiotank.com
-                  </a>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-3">
-                <div
-                  class="w-9 h-9 rounded-2xl bg-white/10 flex items-center justify-center border border-white/15"
-                >
-                  <i class="fas fa-location-dot text-emerald-400"></i>
-                </div>
-                <div>
-                  <p class="text-slate-300 text-xs uppercase tracking-wide mb-0.5">
-                    Primary service regions
-                  </p>
-                  <p class="font-medium text-slate-50 text-sm">
-                    Tamil Nadu, Kerala, Karnataka, Andhra Pradesh
-                  </p>
+            <!-- State-wise Helpline -->
+            <div class="space-y-4 text-sm relative z-10 mb-6">
+              <div>
+                <p class="text-[11px] uppercase tracking-[0.16em] text-slate-400 mb-2">
+                  State-wise helpline
+                </p>
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="inline-flex items-center gap-2 text-xs">
+                      <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                      <span class="font-semibold">Tamil Nadu</span>
+                    </span>
+                    <span class="text-xs sm:text-[13px] font-medium">
+                      +91 97906 66231 / +91 98427 47011
+                    </span>
+                  </div>
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="inline-flex items-center gap-2 text-xs">
+                      <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                      <span class="font-semibold">Karnataka</span>
+                    </span>
+                    <span class="text-xs sm:text-[13px] font-medium">
+                      +91 97906 66231 / +91 98427 47011
+                    </span>
+                  </div>
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="inline-flex items-center gap-2 text-xs">
+                      <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                      <span class="font-semibold">Kerala</span>
+                    </span>
+                    <span class="text-xs sm:text-[13px] font-medium">
+                      +91 98940 41120
+                    </span>
+                  </div>
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="inline-flex items-center gap-2 text-xs">
+                      <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                      <span class="font-semibold">Andhra Pradesh</span>
+                    </span>
+                    <span class="text-xs sm:text-[13px] font-medium">
+                      +91 93454 58885
+                    </span>
+                  </div>
                 </div>
               </div>
 
-              <div class="flex items-start gap-3">
-                <div
-                  class="w-9 h-9 rounded-2xl bg-white/10 flex items-center justify-center border border-white/15"
+              <!-- Email + YouTube -->
+              <div class="pt-2 border-t border-white/10">
+                <p class="text-[11px] uppercase tracking-[0.16em] text-slate-400 mb-1">
+                  Email
+                </p>
+                <a
+                  href="mailto:pioneerbiotank@gmail.com"
+                  class="text-xs sm:text-sm font-semibold text-white break-all hover:text-emerald-300"
                 >
-                  <i class="fas fa-clock text-emerald-400"></i>
-                </div>
-                <div>
-                  <p class="text-slate-300 text-xs uppercase tracking-wide mb-0.5">
-                    Working hours
-                  </p>
-                  <p class="font-medium text-slate-50 text-sm">
-                    Mon – Sat, 9:30 AM to 7:00 PM
-                  </p>
-                </div>
+                  pioneerbiotank@gmail.com
+                </a>
+
+                <p class="text-[11px] uppercase tracking-[0.16em] text-slate-400 mt-4 mb-1">
+                  YouTube
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex items-center gap-2 rounded-full border border-red-400/60 bg-red-500/10 px-3 py-1.5 text-xs text-slate-50 hover:bg-red-500/20"
+                >
+                  <i class="fab fa-youtube text-red-400"></i>
+                  Pioneer Bio Septic Tank
+                </a>
               </div>
             </div>
 
-            <div class="mt-7 border-t border-white/10 pt-5 relative z-10">
+            <!-- Quick Call/WhatsApp CTA -->
+            <div class="mt-2 border-t border-white/10 pt-4 relative z-10">
               <p class="text-xs text-slate-300 mb-3">
-                Also available on:
+                Need to talk right now?
               </p>
               <div class="flex flex-wrap items-center gap-3">
                 <a
-                  href="#"
-                  class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-xs text-slate-50 hover:bg-white/10"
+                  href="tel:+919790666231"
+                  class="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-4 py-2 text-xs font-semibold text-white shadow-md hover:bg-emerald-600 hover:shadow-lg"
                 >
-                  <i class="fab fa-whatsapp text-emerald-400"></i> WhatsApp
+                  <i class="fas fa-phone"></i> Call Tamil Nadu Office
                 </a>
                 <a
                   href="#"
                   class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-xs text-slate-50 hover:bg-white/10"
                 >
-                  <i class="fab fa-facebook-f"></i> Facebook
-                </a>
-                <a
-                  href="#"
-                  class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-xs text-slate-50 hover:bg-white/10"
-                >
-                  <i class="fab fa-instagram"></i> Instagram
+                  <i class="fab fa-whatsapp text-emerald-400"></i> WhatsApp us
                 </a>
               </div>
             </div>
@@ -379,36 +413,113 @@
       </div>
     </section>
 
-    <!-- Map / Service Strip -->
-    <section class="pb-12">
+    <!-- Installed Across South India / Map & Offices (UPDATED) -->
+    <section class="pb-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 text-center">
+          <p class="text-xs tracking-[0.25em] uppercase text-emerald-500 mb-2">
+            Installed across South India
+          </p>
+          <h2 class="text-2xl sm:text-3xl font-semibold text-slate-900 mb-2">
+            Factory-made FRP Bio Septic & Water Storage Tanks – supplied & installed
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 max-w-3xl mx-auto">
+            From individual homes to hotels, hospitals, schools and commercial complexes, Pioneer BioTank
+            serves customers across Tamil Nadu, Kerala, Karnataka and Andhra Pradesh.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-6 mb-8">
+          <!-- Service locations cards -->
+          <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-500 mb-3">Kerala</p>
+            <h3 class="text-sm font-semibold text-slate-900 mb-2">Key locations</h3>
+            <p class="text-sm text-slate-700">
+              Palakkad, Thrissur, Ernakulam, Kannur, Kollam, Thiruvananthapuram, Kozhikode
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-500 mb-3">Karnataka</p>
+            <h3 class="text-sm font-semibold text-slate-900 mb-2">Key locations</h3>
+            <p class="text-sm text-slate-700">
+              Bangalore, Tumkur, Gokarna, Hassan, Mandya, Mysore, Kolar
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-500 mb-3">Andhra Pradesh</p>
+            <h3 class="text-sm font-semibold text-slate-900 mb-2">Key locations</h3>
+            <p class="text-sm text-slate-700">
+              Chittoor, Kadapa, Nellore, Guntur, Tirupathi, Tenali
+            </p>
+          </div>
+        </div>
+
+        <!-- Map + Offices -->
         <div class="bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden">
           <div class="grid md:grid-cols-2">
-            <div class="p-6 sm:p-8">
-              <h3 class="text-lg font-semibold text-slate-900 mb-2">
-                We install across South India
-              </h3>
-              <p class="text-sm text-slate-600 mb-4">
-                Share your Google Pin or address and our team will verify feasibility,
-                soil conditions and space to suggest the correct FRP Bio-Septic model.
+            <!-- Map side -->
+            <div class="bg-slate-900/95 text-slate-50 p-6 sm:p-8 flex flex-col justify-between">
+              <div>
+                <h3 class="text-lg font-semibold mb-2">
+                  South India service coverage
+                </h3>
+                <p class="text-sm text-slate-200 mb-4">
+                  Major districts covered in Tamil Nadu include Chennai, Coimbatore, Erode, Salem, Madurai,
+                  Tiruchirappalli, Thanjavur, Tirunelveli, Kanyakumari and more.
+                </p>
+
+                <ul class="grid grid-cols-2 gap-2 text-xs text-slate-100 mb-4">
+                  <li>Chennai</li><li>Coimbatore</li>
+                  <li>Erode</li><li>Salem</li>
+                  <li>Madurai</li><li>Virudhunagar</li>
+                  <li>Thiruvallur</li><li>Thanjavur</li>
+                  <li>Tiruchirappalli</li><li>Tirunelveli</li>
+                  <li>Kanyakumari</li><li>Nilgiris</li>
+                </ul>
+              </div>
+
+              <p class="text-xs text-emerald-200 mt-2">
+                From first enquiry to final installation, our team coordinates transport, excavation guidance
+                and placement of your FRP tank.
               </p>
-              <ul class="space-y-2 text-sm text-slate-700">
-                <li>• On-call technical consultation</li>
-                <li>• Site visit (where applicable)</li>
-                <li>• Layout & placement suggestions</li>
-                <li>• Supply + installation support</li>
-              </ul>
             </div>
-            <div class="bg-slate-100 h-64 md:h-auto">
-              <!-- Map placeholder – replace src with your actual map embed if needed -->
-              <iframe
-                class="w-full h-full border-0"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890134.999!2d76.5!3d11.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5dfd5c73b8f%3A0x87a48f2c2f9ce0!2sTamil%20Nadu!5e0!3m2!1sen!2sin!4v0000000000000"
-                allowfullscreen=""
-              ></iframe>
+
+            <!-- Map image placeholder / replace src with your brochure-map image -->
+            <div class="bg-slate-100 flex items-center justify-center">
+              <img
+                src="assets/pioneer-south-india-map.jpg"
+                alt="Pioneer BioTank – South India Service Map"
+                class="w-full h-full object-cover"
+              />
+              <!-- If you don't have an image yet, you can comment the <img> and use a grey placeholder instead. -->
             </div>
+          </div>
+        </div>
+
+        <!-- Offices -->
+        <div class="mt-8 grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-500 mb-2">Admin Office</p>
+            <h4 class="text-sm font-semibold text-slate-900 mb-1">Pioneer Bio Tank – It’s Not Just a Tank</h4>
+            <p class="text-sm text-slate-700">
+              #22, Krishnasamy Street,<br>
+              Municipal Colony,<br>
+              Erode – 638 004,<br>
+              Tamil Nadu, India
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-500 mb-2">Factory</p>
+            <h4 class="text-sm font-semibold text-slate-900 mb-1">FRP Bio Septic & Water Storage Tanks</h4>
+            <p class="text-sm text-slate-700">
+              Mappedu, Puthur Village,<br>
+              East Thampuram,<br>
+              Chennai – 600 126,<br>
+              Tamil Nadu, India
+            </p>
           </div>
         </div>
       </div>
@@ -447,8 +558,11 @@
           <p class="text-gray-300 text-sm mb-2">
             <i class="fas fa-phone mr-2" style="color:#00AD50;"></i>+91 98765 43210
           </p>
-          <p class="text-gray-300 text-sm mb-4">
+          <p class="text-gray-300 text-sm mb-2">
             <i class="fas fa-envelope mr-2" style="color:#00AD50;"></i>info@pioneerbiotank.com
+          </p>
+          <p class="text-gray-300 text-sm mb-4">
+            <i class="fas fa-envelope mr-2" style="color:#00AD50;"></i>pioneerbiotank@gmail.com
           </p>
           <div class="flex space-x-3 text-xl">
             <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook"></i></a>

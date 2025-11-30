@@ -166,26 +166,37 @@
             </div>
 
             <!-- Process Steps -->
-            <div class="grid md:grid-cols-4 gap-6 mt-12">
-                <div class="bg-green-50 p-6 rounded-xl text-center">
-                    <div class="bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
-                    <h4 class="font-bold mb-2">Intake</h4>
-                    <p class="text-gray-600">Wastewater enters the primary chamber</p>
+            <div class="relative grid md:grid-cols-4 gap-8 mt-14">
+                <!-- Connecting Line -->
+                <div class="hidden md:block absolute top-8 left-0 right-0 h-1 bg-gradient-to-r from-green-200 via-blue-200 via-purple-200 to-cyan-200 -z-10"></div>
+                
+                <div class="group relative bg-gradient-to-br from-green-50 to-green-100/50 p-8 rounded-3xl text-center
+                           shadow-[0_10px_40px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(34,197,94,0.3)]
+                           hover:-translate-y-3 transition-all duration-500 border border-green-200/50">
+                    <div class="bg-gradient-to-br from-green-500 to-green-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5 shadow-lg shadow-green-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">1</div>
+                    <h4 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-green-600 transition-colors">Intake</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Wastewater enters the primary chamber</p>
                 </div>
-                <div class="bg-blue-50 p-6 rounded-xl text-center">
-                    <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
-                    <h4 class="font-bold mb-2">Separation</h4>
-                    <p class="text-gray-600">Solids settle, oils rise to top</p>
+                <div class="group relative bg-gradient-to-br from-blue-50 to-blue-100/50 p-8 rounded-3xl text-center
+                           shadow-[0_10px_40px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(59,130,246,0.3)]
+                           hover:-translate-y-3 transition-all duration-500 border border-blue-200/50">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5 shadow-lg shadow-blue-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">2</div>
+                    <h4 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-blue-600 transition-colors">Separation</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Solids settle, oils rise to top</p>
                 </div>
-                <div class="bg-purple-50 p-6 rounded-xl text-center">
-                    <div class="bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
-                    <h4 class="font-bold mb-2">Bio-Treatment</h4>
-                    <p class="text-gray-600">Bacteria digest organic matter</p>
+                <div class="group relative bg-gradient-to-br from-purple-50 to-purple-100/50 p-8 rounded-3xl text-center
+                           shadow-[0_10px_40px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(168,85,247,0.3)]
+                           hover:-translate-y-3 transition-all duration-500 border border-purple-200/50">
+                    <div class="bg-gradient-to-br from-purple-500 to-purple-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5 shadow-lg shadow-purple-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">3</div>
+                    <h4 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-purple-600 transition-colors">Bio-Treatment</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Bacteria digest organic matter</p>
                 </div>
-                <div class="bg-cyan-50 p-6 rounded-xl text-center">
-                    <div class="bg-cyan-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">4</div>
-                    <h4 class="font-bold mb-2">Discharge</h4>
-                    <p class="text-gray-600">Clean water exits the system</p>
+                <div class="group relative bg-gradient-to-br from-cyan-50 to-cyan-100/50 p-8 rounded-3xl text-center
+                           shadow-[0_10px_40px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(6,182,212,0.3)]
+                           hover:-translate-y-3 transition-all duration-500 border border-cyan-200/50">
+                    <div class="bg-gradient-to-br from-cyan-500 to-cyan-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5 shadow-lg shadow-cyan-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">4</div>
+                    <h4 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-cyan-600 transition-colors">Discharge</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Clean water exits the system</p>
                 </div>
             </div>
         </div>
@@ -198,27 +209,42 @@
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">System Components</h2>
                 <p class="text-xl text-gray-600">Understanding each part of the system</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <div class="text-green-600 text-4xl mb-4">
-                        <i class="fas fa-filter"></i>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="group relative bg-gradient-to-br from-white to-green-50/30 p-8 rounded-3xl
+                           shadow-[0_12px_40px_rgba(15,23,42,0.1)] hover:shadow-[0_25px_70px_rgba(34,197,94,0.25)]
+                           hover:-translate-y-2 transition-all duration-500 border border-green-100/50 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-500/0 to-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative">
+                        <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-green-400 to-green-600 text-white text-4xl mb-5 shadow-lg shadow-green-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                            <i class="fas fa-filter"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-slate-900 group-hover:text-green-600 transition-colors">Primary Chamber</h3>
+                        <p class="text-slate-600 leading-relaxed">Initial separation of solids and liquids. Heavy particles settle at the bottom while lighter materials float to the top.</p>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Primary Chamber</h3>
-                    <p class="text-gray-600">Initial separation of solids and liquids. Heavy particles settle at the bottom while lighter materials float to the top.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <div class="text-blue-600 text-4xl mb-4">
-                        <i class="fas fa-bacteria"></i>
+                <div class="group relative bg-gradient-to-br from-white to-blue-50/30 p-8 rounded-3xl
+                           shadow-[0_12px_40px_rgba(15,23,42,0.1)] hover:shadow-[0_25px_70px_rgba(59,130,246,0.25)]
+                           hover:-translate-y-2 transition-all duration-500 border border-blue-100/50 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative">
+                        <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 text-white text-4xl mb-5 shadow-lg shadow-blue-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                            <i class="fas fa-bacteria"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-slate-900 group-hover:text-blue-600 transition-colors">Bio-Zone</h3>
+                        <p class="text-slate-600 leading-relaxed">Contains beneficial bacteria that actively break down organic waste through natural biological processes.</p>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Bio-Zone</h3>
-                    <p class="text-gray-600">Contains beneficial bacteria that actively break down organic waste through natural biological processes.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <div class="text-purple-600 text-4xl mb-4">
-                        <i class="fas fa-tint"></i>
+                <div class="group relative bg-gradient-to-br from-white to-purple-50/30 p-8 rounded-3xl
+                           shadow-[0_12px_40px_rgba(15,23,42,0.1)] hover:shadow-[0_25px_70px_rgba(168,85,247,0.25)]
+                           hover:-translate-y-2 transition-all duration-500 border border-purple-100/50 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-500/0 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative">
+                        <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-purple-400 to-purple-600 text-white text-4xl mb-5 shadow-lg shadow-purple-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-slate-900 group-hover:text-purple-600 transition-colors">Clarification Zone</h3>
+                        <p class="text-slate-600 leading-relaxed">Final treatment stage where remaining particles settle and clean water is ready for discharge.</p>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Clarification Zone</h3>
-                    <p class="text-gray-600">Final treatment stage where remaining particles settle and clean water is ready for discharge.</p>
                 </div>
             </div>
         </div>
