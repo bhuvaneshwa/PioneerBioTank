@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - Pioneer BioTank</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              emerald: {
+                50: '#e6f2e6',
+                100: '#ccf0cc',
+                200: '#99db99',
+                300: '#66c466',
+                400: '#33ad33',
+                500: '#004900',
+                600: '#003d00',
+                700: '#003200',
+                800: '#002600',
+                900: '#001a00',
+              }
+            }
+          }
+        }
+      }
+    </script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -14,8 +36,8 @@
     <!-- Top Banner -->
     <div
       id="top-banner"
-      class="text-white py-2 text-xs sm:text-sm fixed top-0 inset-x-0 z-40 transition-transform duration-300"
-      style="background-color: #003233"
+      class="py-2 text-xs sm:text-sm fixed top-0 inset-x-0 z-40 transition-transform duration-300"
+      style="background-color: #ffffff; color: #004900;"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
@@ -26,16 +48,16 @@
           >
             <a
               href="tel:+919876543210"
-              class="flex items-center hover:text-gray-200"
+              class="flex items-center hover:opacity-80" style="color: #004900;"
             >
-              <i class="fas fa-phone mr-2" style="color: #00ad50"></i>
+              <i class="fas fa-phone mr-2" style="color: #004900"></i>
               <span>+91 98765 43210</span>
             </a>
             <a
               href="mailto:info@pioneerbiotank.com"
-              class="flex items-center hover:text-gray-200"
+              class="flex items-center hover:opacity-80" style="color: #004900;"
             >
-              <i class="fas fa-envelope mr-2" style="color: #00ad50"></i>
+              <i class="fas fa-envelope mr-2" style="color: #004900"></i>
               <span>info@pioneerbiotank.com</span>
             </a>
           </div>
@@ -51,15 +73,15 @@
     <!-- Navigation -->
     <nav
       id="main-nav"
-      class="fixed inset-x-0 z-30 bg-white/95 backdrop-blur border-b border-slate-100 shadow-sm transition-all duration-300"
-      style="top: 40px"
+      class="fixed inset-x-0 z-30 backdrop-blur border-b shadow-sm transition-all duration-300"
+      style="top: 40px; background-color: #004900; border-color: rgba(255,255,255,0.1);"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <!-- Logo -->
           <div class="flex items-center">
             <a href="index.html" class="flex items-center gap-2">
-             <img src="./images/Pioneer bio tank png 2.png" class="h-28 w-auto" alt="Pioneer BioTank Logo"  />
+             <img src="./images/Logo.png" class="h-28 w-auto" alt="Pioneer BioTank Logo"  />
             </a>
           </div>
 
@@ -67,12 +89,12 @@
           <div
             class="hidden md:flex items-center space-x-8 text-sm font-medium"
           >
-            <a href="index.html" class="text-slate-600 hover:text-emerald-600"
+            <a href="index.html" class="text-white hover:text-[#b7ed03]"
               >Home</a
             >
             <div class="relative group">
               <button
-                class="flex items-center gap-1 text-slate-600 hover:text-emerald-600 py-2"
+                class="flex items-center gap-1 text-white hover:text-[#b7ed03] py-2"
               >
                 Products <i class="fas fa-chevron-down text-[10px]"></i>
               </button>
@@ -95,10 +117,10 @@
             </div>
             <a
               href="Howitworks.html"
-              class="text-slate-600 hover:text-emerald-600"
+              class="text-white hover:text-[#b7ed03]"
               >How It Works</a
             >
-            <a href="project.html" class="text-slate-600 hover:text-emerald-600"
+            <a href="project.html" class="text-white hover:text-[#b7ed03]"
               >Projects</a
             >
             <a
@@ -108,14 +130,14 @@
             >
             <a
               href="contact.html"
-              class="text-slate-600 hover:text-emerald-600"
+              class="text-white hover:text-[#b7ed03]"
             >
               Contact Us
             </a>
             <a
               href="tel:+919876543210"
-              class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold text-white shadow-md hover:shadow-lg transition"
-              style="background-color: #3f8bcf"
+              class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
+              style="background-color:#b7ed03; color:#004900;"
             >
               <i class="fas fa-phone"></i>  Enquire now
             </a>
@@ -124,7 +146,7 @@
           <!-- Mobile Menu Button -->
           <div class="md:hidden flex items-center">
             <button id="mobile-menu-button"
-              class="text-slate-700 hover:text-emerald-600 focus:outline-none"
+              class="text-white hover:text-[#b7ed03]"
             >
               <i id="menu-icon" class="fas fa-bars text-2xl"></i>
             </button>
@@ -134,17 +156,18 @@
         <!-- Mobile Menu -->
         <div
           id="mobile-menu"
-          class="hidden md:hidden pb-4 border-t border-slate-100"
+          class="hidden md:hidden pb-4 border-t"
+      style="border-color: rgba(255,255,255,0.1);"
         >
           <div class="flex flex-col space-y-2 pt-3 text-sm font-medium">
             <a
               href="index.html"
-              class="py-2 text-slate-700 hover:text-emerald-600"
+              class="py-2 text-white hover:text-[#b7ed03]"
               >Home</a
             >
             <button
               id="mobile-products-toggle"
-              class="py-2 text-slate-700 hover:text-emerald-600 flex justify-between items-center"
+              class="py-2 text-white hover:text-[#b7ed03] flex justify-between items-center"
             >
               <span>Products</span>
               <i class="fas fa-chevron-down text-[10px]"></i>
@@ -152,25 +175,25 @@
             <div id="mobile-products-menu" class="hidden pl-4 space-y-1">
               <a
                 href="Bio-septic.html"
-                class="py-1 text-slate-600 hover:text-emerald-600"
+                class="py-1 text-white hover:text-[#b7ed03]"
               >
                 FRP Bio-Septic Tank
               </a>
               <a
                 href="UndergroundWaterTank.html"
-                class="py-1 text-slate-600 hover:text-emerald-600"
+                class="py-1 text-white hover:text-[#b7ed03]"
               >
                 FRP Underground Water Tank
               </a>
             </div>
             <a
               href="Howitworks.html"
-              class="py-2 text-slate-700 hover:text-emerald-600"
+              class="py-2 text-white hover:text-[#b7ed03]"
               >How It Works</a
             >
             <a
               href="project.html"
-              class="py-2 text-slate-700 hover:text-emerald-600"
+              class="py-2 text-white hover:text-[#b7ed03]"
               >Projects</a
             >
             <a href="about.html" class="py-2 text-emerald-600 font-semibold"
@@ -178,13 +201,13 @@
             >
             <a
               href="contact.html"
-              class="py-2 text-slate-700 hover:text-emerald-600"
+              class="py-2 text-white hover:text-[#b7ed03]"
               >Contact Us</a
             >
             <a
               href="tel:+919876543210"
               class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-2 text-xs font-semibold text-white"
-              style="background-color: #3f8bcf"
+              style="background-color:#b7ed03; color:#004900;"
             >
               <i class="fas fa-phone"></i> Call Now
             </a>
@@ -825,7 +848,7 @@
         <a
           href="contact.html"
           class="inline-flex items-center gap-2 rounded-full px-8 py-3 text-sm sm:text-base font-semibold text-white shadow-md hover:shadow-lg transition"
-          style="background-color: #3f8bcf"
+          style="background-color:#b7ed03; color:#004900;"
         >
           <i class="fas fa-paper-plane"></i>
           Get in touch
@@ -834,11 +857,13 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-white pt-10 pb-8" style="background-color: #003233">
+    <footer
+  class="text-white py-12 font-bold"
+  style="background: linear-gradient(135deg, #004900 0%, #b7ed03 100%);">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 class="text-2xl font-bold mb-3" style="color: #00ad50">
+            <h3 class="text-2xl font-bold mb-3" style="color: #004900">
               Pioneer BioTank
             </h3>
             <p class="text-gray-300 text-sm">
@@ -847,90 +872,90 @@
             </p>
             <div class="mt-4 text-sm text-gray-300 space-y-1">
               <p>
-                <i class="fas fa-phone mr-2" style="color: #00ad50"></i>+91
+                <i class="fas fa-phone mr-2" style="color: #004900"></i>+91
                 98765 43210
               </p>
               <p>
-                <i class="fas fa-envelope mr-2" style="color: #00ad50"></i
+                <i class="fas fa-envelope mr-2" style="color: #004900"></i
                 >info@pioneerbiotank.com
               </p>
             </div>
           </div>
           <div>
-            <h4 class="font-semibold mb-3 text-sm">Quick Links</h4>
+            <h4 class="font-bold mb-4 text-white">Quick Links</h4>
             <ul class="space-y-1.5 text-sm">
               <li>
-                <a href="index.html" class="text-gray-300 hover:text-white"
+                <a href="index.html" class="text-gray-100 hover:text-white"
                   >Home</a
                 >
               </li>
               <li>
-                <a href="about.html" class="text-gray-300 hover:text-white"
+                <a href="about.html" class="text-gray-100 hover:text-white"
                   >About Us</a
                 >
               </li>
               <li>
-                <a href="Howitworks.html" class="text-gray-300 hover:text-white"
+                <a href="Howitworks.html" class="text-gray-100 hover:text-white"
                   >How It Works</a
                 >
               </li>
               <li>
-                <a href="project.html" class="text-gray-300 hover:text-white"
+                <a href="project.html" class="text-gray-100 hover:text-white"
                   >Projects</a
                 >
               </li>
               <li>
-                <a href="contact.html" class="text-gray-300 hover:text-white"
+                <a href="contact.html" class="text-gray-100 hover:text-white"
                   >Contact Us</a
                 >
               </li>
             </ul>
           </div>
           <div>
-            <h4 class="font-semibold mb-3 text-sm">Our Products</h4>
+            <h4 class="font-bold mb-4 text-white">Our Products</h4>
             <ul class="space-y-1.5 text-sm">
               <li>
-                <a href="Bio-septic.html" class="text-gray-300 hover:text-white"
+                <a href="Bio-septic.html" class="text-gray-100 hover:text-white"
                   >FRP Bio-Septic Tank</a
                 >
               </li>
               <li>
                 <a
                   href="UndergroundWaterTank.html"
-                  class="text-gray-300 hover:text-white"
+                  class="text-gray-100 hover:text-white"
                   >FRP Underground Water Tank</a
                 >
               </li>
             </ul>
           </div>
           <div>
-            <h4 class="font-semibold mb-3 text-sm">Follow Us</h4>
+            <h4 class="font-bold mb-4 text-white">Follow Us</h4>
             <div class="flex space-x-4 mb-4 text-xl">
               <a
                 href="#"
-                class="text-gray-300 hover:text-white transition-colors"
+                class="transition-transform hover:scale-110"
                 ><i class="fab fa-facebook"></i
               ></a>
               <a
                 href="#"
-                class="text-gray-300 hover:text-white transition-colors"
+                class="transition-transform hover:scale-110"
                 ><i class="fab fa-instagram"></i
               ></a>
               <a
                 href="#"
-                class="text-gray-300 hover:text-white transition-colors"
+                class="transition-transform hover:scale-110"
                 ><i class="fab fa-linkedin"></i
               ></a>
               <a
                 href="#"
-                class="text-gray-300 hover:text-white transition-colors"
+                class="transition-transform hover:scale-110"
                 ><i class="fab fa-youtube"></i
               ></a>
             </div>
             <a
               href="contact.html"
               class="inline-block mt-2 text-white px-6 py-2 rounded-full font-semibold text-xs shadow-sm"
-              style="background-color: #00ad50"
+              style="background-color: #ffffff; color: #004900;"
             >
               Get a Quote
             </a>
@@ -951,7 +976,7 @@
     <button
       id="scroll-to-top"
       class="hidden fixed bottom-8 right-8 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
-      style="background-color: #00ad50"
+      style="background-color: #ffffff; color: #004900;"
     >
       <i class="fas fa-arrow-up text-xl"></i>
     </button>
