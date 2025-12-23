@@ -31,6 +31,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <style>
+      /* Mobile responsiveness */
+      body { overflow-x: hidden; }
+      img { max-width: 100%; height: auto; }
+      * { box-sizing: border-box; }
+    </style>
   </head>
   <body class="bg-gray-50">
     <!-- Top Banner -->
@@ -78,14 +84,14 @@
     <nav
       id="main-nav"
       class="fixed inset-x-0 z-30 backdrop-blur border-b shadow-sm transition-all duration-300"
-      style="top: 40px; background-color: #004900; border-color: rgba(255,255,255,0.1);"
+      style="top: 36px; background-color: #004900; border-color: rgba(255,255,255,0.1);"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16">
+        <div class="flex justify-between h-12">
           <!-- Logo -->
           <div class="flex items-center">
             <a href="index.html" class="flex items-center gap-2">
-             <img src="./images/Logo.png" class="h-28 w-auto" alt="Pioneer BioTank Logo"  />
+             <img src="./images/Logo.png" alt="Pioneer BioTank Logo" class="h-10 sm:h-12 md:h-14 w-auto object-contain flex-shrink-0" />
             </a>
           </div>
 
@@ -161,15 +167,15 @@
           class="hidden md:hidden pb-4 border-t"
       style="border-color: rgba(255,255,255,0.1);"
         >
-          <div class="flex flex-col space-y-2 pt-3 text-sm font-medium">
+          <div class="flex flex-col space-y-1 pt-3 text-sm font-medium">
             <a
               href="index.html"
-              class="py-2 text-white hover:text-[#b7ed03]"
+              class="py-3 text-white hover:text-[#b7ed03]"
               >Home</a
             >
             <button
               id="mobile-products-toggle"
-              class="py-2 text-emerald-600 font-semibold flex justify-between items-center"
+              class="py-3 text-emerald-600 font-semibold flex justify-between items-center"
             >
               <span>Products</span>
               <i class="fas fa-chevron-down text-[10px]"></i>
@@ -177,40 +183,40 @@
             <div id="mobile-products-menu" class="hidden pl-4 space-y-1">
               <a
                 href="Bio-septic.html"
-                class="py-1 text-white hover:text-[#b7ed03]"
+                class="block py-2 text-white hover:text-[#b7ed03]"
               >
                 FRP Bio-Septic Tank
               </a>
               <a
                 href="UndergroundWaterTank.html"
-                class="py-1 text-white hover:text-[#b7ed03]"
+                class="block py-2 text-white hover:text-[#b7ed03]"
               >
                 FRP Underground Water Tank
               </a>
             </div>
             <a
               href="Howitworks.html"
-              class="py-2 text-white hover:text-[#b7ed03]"
+              class="py-3 text-white hover:text-[#b7ed03]"
               >How It Works</a
             >
             <a
               href="project.html"
-              class="py-2 text-white hover:text-[#b7ed03]"
+              class="py-3 text-white hover:text-[#b7ed03]"
               >Projects</a
             >
             <a
               href="about.html"
-              class="py-2 text-white hover:text-[#b7ed03]"
+              class="py-3 text-white hover:text-[#b7ed03]"
               >About Us</a
             >
             <a
               href="contact.html"
-              class="py-2 text-white hover:text-[#b7ed03]"
+              class="py-3 text-white hover:text-[#b7ed03]"
               >Contact Us</a
             >
             <a
               href="tel:+919876543210"
-              class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-2 text-xs font-semibold text-white"
+              class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-xs font-semibold text-white"
               style="background-color:#b7ed03; color:#004900;"
             >
               <i class="fas fa-phone"></i> Call Now
@@ -257,7 +263,7 @@
   
 
 <!-- Hero Section (Premium – Pioneer BioTank, Wide Card Version) -->
-<section class="relative text-slate-900" style="margin-top: 96px">
+<section class="relative text-slate-900" style="margin-top: 60px">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     
     <!-- Wider Right Column -->
@@ -267,7 +273,7 @@
       <div>
         <!-- Badge -->
         <span
-          class="inline-flex items-center gap-2 rounded-full border border-emerald-200/50 bg-gradient-to-r from-emerald-50 to-emerald-100/50 backdrop-blur-sm px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.15em] sm:tracking-[0.18em] text-emerald-700 shadow-lg shadow-emerald-500/20 hover:scale-105 transition-transform duration-300"
+          class="inline-flex items-center gap-2 rounded-full border border-emerald-200/50 bg-gradient-to-r from-emerald-50 to-emerald-100/50 backdrop-blur-sm px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] sm:tracking-[0.18em] text-emerald-700 shadow-lg shadow-emerald-500/20 hover:scale-105 transition-transform duration-300"
         >
           <span class="relative flex h-2 w-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
@@ -351,7 +357,7 @@
             </div>
 
             <!-- Specs -->
-            <div class="mt-8 grid grid-cols-3 gap-4 text-[11px] sm:text-xs text-slate-600">
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs sm:text-sm text-slate-600">
               <div class="rounded-xl bg-slate-50 px-4 py-3">
                 <div class="font-semibold text-slate-900">50+ years</div>
                 <div class="mt-0.5 text-slate-500">Design life</div>
@@ -372,7 +378,7 @@
                
                 <div>
                   <div class="font-semibold text-slate-900">No bad smell</div>
-                  <p class="text-[10px] text-slate-500">
+                  <p class="text-xs text-slate-500">
                     Biological digestion prevents foul odour around the house.
                   </p>
                 </div>
@@ -383,7 +389,7 @@
                
                 <div>
                   <div class="font-semibold text-slate-900">Almost zero cleaning</div>
-                  <p class="text-[10px] text-slate-500">
+                  <p class="text-xs text-slate-500">
                     Bio-digester reduces solid build-up, reducing septic lorry visits.
                   </p>
                 </div>
@@ -394,7 +400,7 @@
                
                 <div>
                   <div class="font-semibold text-slate-900">Leak-proof FRP body</div>
-                  <p class="text-[10px] text-slate-500">
+                  <p class="text-xs text-slate-500">
                     One-piece FRP mould avoids cracks & prevents seepage.
                   </p>
                 </div>
@@ -405,7 +411,7 @@
                 
                 <div>
                   <div class="font-semibold text-slate-900">5000+ tanks installed</div>
-                  <p class="text-[10px] text-slate-500">
+                  <p class="text-xs text-slate-500">
                     Installed across Tamil Nadu, Kerala, Karnataka & Andhra Pradesh.
                   </p>
                 </div>
@@ -416,7 +422,7 @@
                 
                 <div>
                   <div class="font-semibold text-slate-900">DRDO-based technology</div>
-                  <p class="text-[10px] text-slate-500">
+                  <p class="text-xs text-slate-500">
                     Built using the proven DRDO Bio-Digester standard.
                   </p>
                 </div>
@@ -1303,15 +1309,16 @@
         </div>
 
         <!-- Comparison Table Wrapper -->
-        <div
-          class="bg-white rounded-3xl shadow-[0_24px_70px_rgba(15,23,42,0.12)] border border-slate-100 overflow-hidden"
-        >
+        <div class="overflow-x-auto -mx-4 sm:mx-0">
+          <div
+            class="bg-white rounded-3xl shadow-[0_24px_70px_rgba(15,23,42,0.12)] border border-slate-100 overflow-hidden min-w-[640px] sm:min-w-0"
+          >
           <!-- Header Row -->
           <div
             class="grid grid-cols-3 text-xs sm:text-sm font-semibold text-slate-900 border-b border-slate-100"
           >
             <div
-              class="px-4 sm:px-6 py-4 bg-slate-50 text-slate-500 uppercase tracking-wide text-[10px] sm:text-[11px]"
+              class="px-4 sm:px-6 py-4 bg-slate-50 text-slate-500 uppercase tracking-wide text-xs sm:text-sm"
             >
               Factor
             </div>
@@ -1500,6 +1507,7 @@
             </div>
           </div>
         </div>
+        </div>
 
         <!-- CTA Under Table -->
         <div class="mt-8 text-center">
@@ -1679,5 +1687,45 @@
         });
       });
     </script>
+<!-- Floating WhatsApp Button -->
+ <!-- replace the 919876543210 number with the actual WhatsApp number -->
+<a
+  id="whatsapp-float"
+  href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat on WhatsApp"
+>
+  <i class="fab fa-whatsapp"></i>
+</a>
+<style>
+  #whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 160px;
+    width: 56px;
+    height: 56px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 9999;
+
+    cursor: grab;
+    touch-action: none;
+    user-select: none;
+  }
+
+  #whatsapp-float:active {
+    cursor: grabbing;
+  }
+</style>
+
+
   </body>
 </html>

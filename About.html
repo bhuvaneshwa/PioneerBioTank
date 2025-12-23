@@ -31,6 +31,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <style>
+      /* Mobile responsiveness */
+      body { overflow-x: hidden; }
+      img { max-width: 100%; height: auto; }
+      * { box-sizing: border-box; }
+    </style>
   </head>
   <body class="bg-slate-50">
     <!-- Top Banner -->
@@ -78,14 +84,14 @@
     <nav
       id="main-nav"
       class="fixed inset-x-0 z-30 backdrop-blur border-b shadow-sm transition-all duration-300"
-      style="top: 40px; background-color: #004900; border-color: rgba(255,255,255,0.1);"
+      style="top: 36px; background-color: #004900; border-color: rgba(255,255,255,0.1);"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16">
+        <div class="flex justify-between h-12">
           <!-- Logo -->
           <div class="flex items-center">
             <a href="index.html" class="flex items-center gap-2">
-             <img src="./images/Logo.png" class="h-28 w-auto" alt="Pioneer BioTank Logo"  />
+             <img src="./images/Logo.png" alt="Pioneer BioTank Logo" class="h-10 sm:h-12 md:h-14 w-auto object-contain flex-shrink-0" />
             </a>
           </div>
 
@@ -163,7 +169,7 @@
           class="hidden md:hidden pb-4 border-t"
       style="border-color: rgba(255,255,255,0.1);"
         >
-          <div class="flex flex-col space-y-2 pt-3 text-sm font-medium">
+          <div class="flex flex-col space-y-1 pt-3 text-sm font-medium">
             <a
               href="index.html"
               class="py-2 text-white hover:text-[#b7ed03]"
@@ -179,38 +185,38 @@
             <div id="mobile-products-menu" class="hidden pl-4 space-y-1">
               <a
                 href="Bio-septic.html"
-                class="py-1 text-white hover:text-[#b7ed03]"
+                class="block py-2 text-white hover:text-[#b7ed03]"
               >
                 FRP Bio-Septic Tank
               </a>
               <a
                 href="UndergroundWaterTank.html"
-                class="py-1 text-white hover:text-[#b7ed03]"
+                class="block py-2 text-white hover:text-[#b7ed03]"
               >
                 FRP Underground Water Tank
               </a>
             </div>
             <a
               href="Howitworks.html"
-              class="py-2 text-white hover:text-[#b7ed03]"
+              class="py-3 text-white hover:text-[#b7ed03]"
               >How It Works</a
             >
             <a
               href="project.html"
-              class="py-2 text-white hover:text-[#b7ed03]"
+              class="py-3 text-white hover:text-[#b7ed03]"
               >Projects</a
             >
-            <a href="about.html" class="py-2 text-emerald-600 font-semibold"
+            <a href="about.html" class="py-3 text-emerald-600 font-semibold"
               >About Us</a
             >
             <a
               href="contact.html"
-              class="py-2 text-white hover:text-[#b7ed03]"
+              class="py-3 text-white hover:text-[#b7ed03]"
               >Contact Us</a
             >
             <a
               href="tel:+919876543210"
-              class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-2 text-xs font-semibold text-white"
+              class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-xs font-semibold text-white"
               style="background-color:#b7ed03; color:#004900;"
             >
               <i class="fas fa-phone"></i> Call Now
@@ -256,73 +262,76 @@
     </script>
 
  <!-- ABOUT – PREMIUM HERO -->
-<section class="relative text-slate-900" style="margin-top: 96px">
-  <div class="absolute inset-0 bg-gradient-to-br from-emerald-600 via-emerald-700 to-slate-900"></div>
+<section class="relative text-white" style="margin-top: 60px; background-color:#004900">
 
-  <!-- Soft orbs -->
-  <div class="pointer-events-none absolute -right-24 -bottom-24 w-80 h-80 rounded-full bg-emerald-400/30 blur-3xl"></div>
-  <div class="pointer-events-none absolute -left-24 -top-16 w-72 h-72 rounded-full bg-sky-400/25 blur-3xl"></div>
-
+  
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
     <div class="grid md:grid-cols-[1.15fr_1fr] gap-10 items-center">
 
-      <!-- LEFT: TEXT CONTENT -->
+      <!-- LEFT -->
       <div class="text-white">
+
         <!-- Badge -->
-        <div class="inline-flex items-center gap-2 px-4 py-2 mb-4 rounded-full bg-white/10 backdrop-blur-md border border-white/15 shadow-md">
+        <div class="inline-flex items-center gap-2 px-4 py-2 mb-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-md text-white">
           <span class="relative flex h-2 w-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-300"></span>
           </span>
-          <span class="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.2em]">
+          <span class="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-white">
             About Pioneer BioTank
           </span>
         </div>
 
         <!-- Heading -->
-        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[2.9rem] font-bold leading-tight drop-shadow-xl">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[2.9rem] font-bold leading-tight text-white">
           Engineering
-          <span class="bg-gradient-to-r from-emerald-300 via-teal-200 to-sky-200 bg-clip-text text-transparent">
+          <span class="text-white">
             clean, long-life sewage & water solutions
           </span>
           for modern India.
         </h1>
 
         <!-- Subheading -->
-        <p class="mt-4 text-sm sm:text-base md:text-lg text-emerald-50/90 max-w-xl leading-relaxed">
+        <p class="mt-4 text-sm sm:text-base md:text-lg max-w-xl leading-relaxed text-white">
           We are a specialised FRP systems company focused on Bio-Septic tanks and underground
           water storage — combining proven engineering, DRDO-based bio-digester technology and
           on-ground execution experience across homes, institutions and industries.
         </p>
 
-        <!-- Stats row -->
-        <div class="mt-6 grid grid-cols-2 sm:flex sm:flex-row gap-3 sm:gap-4 text-xs sm:text-sm">
-          <div class="rounded-2xl bg-white/10 border border-white/15 px-4 py-3 backdrop-blur">
-            <div class="font-semibold text-emerald-200 text-sm sm:text-base">5000+ installations</div>
-            <p class="text-emerald-50/80 mt-1">
+        <!-- Stats -->
+        <div class="mt-6 grid grid-cols-2 sm:flex gap-3 sm:gap-4 text-xs sm:text-sm text-white">
+          <div class="rounded-2xl bg-white/10 border border-white/20 px-4 py-3 backdrop-blur">
+            <div class="font-semibold text-white text-sm sm:text-base">
+              5000+ installations
+            </div>
+            <p class="mt-1 text-white">
               Bio-Septic & water tank projects delivered across South India.
             </p>
           </div>
-          <div class="rounded-2xl bg-white/10 border border-white/15 px-4 py-3 backdrop-blur">
-            <div class="font-semibold text-emerald-200 text-sm sm:text-base">10+ years experience</div>
-            <p class="text-emerald-50/80 mt-1">
+
+          <div class="rounded-2xl bg-white/10 border border-white/20 px-4 py-3 backdrop-blur">
+            <div class="font-semibold text-white text-sm sm:text-base">
+              10+ years experience
+            </div>
+            <p class="mt-1 text-white">
               Focused on FRP-based sewage & water management solutions.
             </p>
           </div>
         </div>
 
-        <!-- CTA row -->
+        <!-- CTA -->
         <div class="mt-7 flex flex-col sm:flex-row gap-3 sm:gap-4">
           <a
             href="project.html"
-            class="inline-flex items-center justify-center gap-2 rounded-full bg-white text-emerald-700 px-7 py-3 text-sm sm:text-base font-semibold shadow-[0_18px_40px_rgba(15,23,42,0.45)] hover:bg-slate-50 hover:-translate-y-0.5 transition"
+            class="inline-flex items-center justify-center gap-2 rounded-full bg-white text-[#004900] px-7 py-3 text-sm sm:text-base font-semibold shadow-lg hover:bg-slate-50 transition"
           >
             <i class="fas fa-images text-xs"></i>
             View our projects
           </a>
+
           <a
             href="contact.html"
-            class="inline-flex items-center justify-center gap-2 rounded-full border border-emerald-200/70 bg-white/5 px-7 py-3 text-sm sm:text-base font-semibold text-emerald-50 hover:bg-white/10 hover:-translate-y-0.5 transition"
+            class="inline-flex items-center justify-center gap-2 rounded-full border border-white bg-white/5 px-7 py-3 text-sm sm:text-base font-semibold text-white hover:bg-white/10 transition"
           >
             <i class="fas fa-phone-volume text-xs"></i>
             Talk to our team
@@ -330,82 +339,70 @@
         </div>
       </div>
 
-      <!-- RIGHT: BRAND / IMAGE CARD -->
-      <div class="relative">
-        <!-- Glow -->
-        <div class="absolute -inset-1 bg-gradient-to-br from-emerald-400 via-teal-400 to-sky-400 rounded-3xl blur-2xl opacity-30"></div>
+      <!-- RIGHT -->
+      <div class="relative text-white">
+        <div class="absolute -inset-1 bg-emerald-400/30 rounded-3xl blur-2xl"></div>
 
-        <div class="relative rounded-3xl bg-slate-950/80 border border-white/10 p-5 sm:p-6 backdrop-blur-xl shadow-[0_24px_70px_rgba(15,23,42,0.8)]">
-          <!-- Top label -->
-          <div class="flex items-center justify-between gap-3 mb-4">
-            <div class="inline-flex items-center gap-2 text-[11px] text-emerald-100">
-              <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500/90">
+        <div class="relative rounded-3xl bg-black/60 border border-white/20 p-5 sm:p-6 backdrop-blur-xl shadow-2xl text-white">
+
+          <div class="flex items-center justify-between gap-3 mb-4 text-white">
+            <div class="inline-flex items-center gap-2 text-xs text-white">
+              <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500">
                 <i class="fas fa-recycle text-[11px] text-white"></i>
               </span>
-              <span class="font-semibold uppercase tracking-[0.16em]">
+              <span class="font-semibold uppercase tracking-[0.16em] text-white">
                 FRP Bio-Septic Expertise
               </span>
             </div>
-            <span class="text-[11px] text-emerald-100/70">
-              Since 2015
-            </span>
+            <span class="text-xs text-white">Since 2015</span>
           </div>
 
-          <!-- Image -->
           <div class="relative rounded-2xl overflow-hidden mb-5">
             <img
-              src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=900&q=80&auto=format&fit=crop"
-              alt="Pioneer BioTank team at work"
-              class="w-full h-44 sm:h-52 object-cover hover:scale-[1.03] transition-transform duration-700"
+              src="https://5.imimg.com/data5/SELLER/Default/2022/8/KC/YH/PE/10973584/frp-bio-septic-tank-1000x1000.jpg"
+              alt="FRP Bio Septic Tank"
+              class="w-full h-44 sm:h-52 object-cover"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-900/20 to-transparent"></div>
-            <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] text-emerald-50">
-              <span class="inline-flex items-center gap-2 bg-black/45 rounded-full px-3 py-1 backdrop-blur">
-                <i class="fas fa-users-cog text-[10px] text-emerald-300"></i>
-                Dedicated in-house design & site team
-              </span>
-              <span class="hidden sm:inline-flex items-center gap-1 bg-emerald-500/90 rounded-full px-3 py-1">
-                <i class="fas fa-check-circle text-[10px]"></i>
-                DRDO-based bio-digester know-how
-              </span>
-            </div>
+            <div class="absolute inset-0 bg-black/40"></div>
           </div>
 
-          <!-- Bullet list -->
-          <ul class="space-y-2 text-[12px] sm:text-[13px] text-emerald-50/90">
-            <li class="flex items-start gap-2">
-              <span class="mt-[3px] inline-flex h-4 w-4 items-center justify-center rounded-full bg-emerald-500">
+          <ul class="space-y-2 text-[12px] sm:text-[13px] text-white">
+            <li class="flex gap-2">
+              <span class="mt-[3px] h-4 w-4 flex items-center justify-center rounded-full bg-emerald-500">
                 <i class="fas fa-check text-[9px] text-white"></i>
               </span>
               End-to-end support — sizing, design, installation & guidance.
             </li>
-            <li class="flex items-start gap-2">
-              <span class="mt-[3px] inline-flex h-4 w-4 items-center justify-center rounded-full bg-emerald-500">
+            <li class="flex gap-2">
+              <span class="mt-[3px] h-4 w-4 flex items-center justify-center rounded-full bg-emerald-500">
                 <i class="fas fa-check text-[9px] text-white"></i>
               </span>
-              Products engineered for 50+ years design life with minimal maintenance.
+              Products engineered for 50+ years design life.
             </li>
-            <li class="flex items-start gap-2">
-              <span class="mt-[3px] inline-flex h-4 w-4 items-center justify-center rounded-full bg-emerald-500">
+            <li class="flex gap-2">
+              <span class="mt-[3px] h-4 w-4 flex items-center justify-center rounded-full bg-emerald-500">
                 <i class="fas fa-check text-[9px] text-white"></i>
               </span>
-              Focus on odour-free, leak-proof and groundwater-safe performance.
+              Odour-free, leak-proof & groundwater-safe systems.
             </li>
           </ul>
 
-          <!-- Bottom helper text -->
-          <div class="mt-5 flex items-center gap-2 text-[11px] text-emerald-100/80 border-t border-white/10 pt-3">
-            <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500/90">
-              <i class="fas fa-comments"></i>
+          <div class="mt-5 flex items-center gap-2 text-xs text-white border-t border-white/20 pt-3">
+            <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500">
+              <i class="fas fa-comments text-white"></i>
             </span>
-            <span>Share your site details — our engineers suggest the right Bio-Septic model in simple language.</span>
+            <span>
+              Share your site details — our engineers suggest the right Bio-Septic model.
+            </span>
           </div>
+
         </div>
       </div>
 
     </div>
   </div>
 </section>
+
 
 
     <!-- Company Story -->
@@ -768,73 +765,70 @@
         </div>
 
         <!-- Right: Why Choose Us list -->
-        <div
-          class="bg-slate-900 text-white rounded-3xl p-8 sm:p-10 shadow-[0_24px_60px_rgba(15,23,42,0.45)]"
-        >
-          <h3 class="text-xl sm:text-2xl font-semibold mb-5">
-            Why homeowners choose
-            <span class="text-emerald-300">Pioneer BioTank</span>
-          </h3>
+      <div
+  class="bg-[#004900] text-white rounded-3xl p-8 sm:p-10 shadow-[0_24px_60px_rgba(0,0,0,0.45)]"
+>
+  <h3 class="text-xl sm:text-2xl font-semibold mb-5 text-white">
+    Why homeowners choose
+    <span class="text-white">Pioneer BioTank</span>
+  </h3>
 
-          <ul class="space-y-2 text-sm sm:text-base">
-            <li class="flex items-start gap-3">
-              <span
-                class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500"
-              >
-                <i class="fas fa-check text-[10px] text-white"></i>
-              </span>
-              <span>Maintenance free operation</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span
-                class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500"
-              >
-                <i class="fas fa-check text-[10px] text-white"></i>
-              </span>
-              <span>Odour-free performance</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span
-                class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500"
-              >
-                <i class="fas fa-check text-[10px] text-white"></i>
-              </span>
-              <span>No leakage, no seepage</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span
-                class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500"
-              >
-                <i class="fas fa-check text-[10px] text-white"></i>
-              </span>
-              <span>No electricity required</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span
-                class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500"
-              >
-                <i class="fas fa-check text-[10px] text-white"></i>
-              </span>
-              <span>50 years design life &amp; warranty support</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span
-                class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500"
-              >
-                <i class="fas fa-check text-[10px] text-white"></i>
-              </span>
-              <span>Chemical-free biological treatment</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span
-                class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500"
-              >
-                <i class="fas fa-check text-[10px] text-white"></i>
-              </span>
-              <span>Same-day usage after installation</span>
-            </li>
-          </ul>
-        </div>
+  <ul class="space-y-2 text-sm sm:text-base text-white">
+    <li class="flex items-start gap-3">
+      <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
+        <i class="fas fa-check text-[10px] text-white"></i>
+      </span>
+      <span>Maintenance free operation</span>
+    </li>
+
+    <li class="flex items-start gap-3">
+      <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
+        <i class="fas fa-check text-[10px] text-white"></i>
+      </span>
+      <span>Odour-free performance</span>
+    </li>
+
+    <li class="flex items-start gap-3">
+      <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
+        <i class="fas fa-check text-[10px] text-white"></i>
+      </span>
+      <span>No leakage, no seepage</span>
+    </li>
+
+    <li class="flex items-start gap-3">
+      <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
+        <i class="fas fa-check text-[10px] text-white"></i>
+      </span>
+      <span>No electricity required</span>
+    </li>
+
+    <li class="flex items-start gap-3">
+      <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
+        <i class="fas fa-check text-[10px] text-white"></i>
+      </span>
+      <span>50 years design life &amp; warranty support</span>
+    </li>
+
+    <li class="flex items-start gap-3">
+      <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
+        <i class="fas fa-check text-[10px] text-white"></i>
+      </span>
+      <span>Chemical-free biological treatment</span>
+    </li>
+
+    <li class="flex items-start gap-3">
+      <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
+        <i class="fas fa-check text-[10px] text-white"></i>
+      </span>
+      <span>Same-day usage after installation</span>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
       </div>
     </section>
 
@@ -967,7 +961,7 @@
     <!-- Floating Scroll to Top Button -->
     <button
       id="scroll-to-top"
-      class="hidden fixed bottom-8 right-8 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
+      class="hidden fixed bottom-8 right-8 text-white p-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
       style="background-color: #ffffff; color: #004900;"
     >
       <i class="fas fa-arrow-up text-xl"></i>
@@ -1013,5 +1007,46 @@
         });
       });
     </script>
+<!-- Floating WhatsApp Button -->
+ <!-- replace the 919876543210 number with the actual WhatsApp number -->
+<a
+  id="whatsapp-float"
+  href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat on WhatsApp"
+>
+  <i class="fab fa-whatsapp"></i>
+</a>
+<style>
+  #whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 160px;
+    width: 56px;
+    height: 56px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 9999;
+
+    cursor: grab;
+    touch-action: none;
+    user-select: none;
+  }
+
+  #whatsapp-float:active {
+    cursor: grabbing;
+  }
+</style>
+
+
+
   </body>
 </html>
