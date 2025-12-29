@@ -144,3 +144,4 @@ Edit `backend/server.js` → `formatEmailContent()` function
 ---
 
 **Need help? Check CONTACT_FORM_SETUP.md for detailed docs! 📚**
+
