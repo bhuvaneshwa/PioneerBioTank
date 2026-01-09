@@ -796,6 +796,7 @@
         const nav = document.getElementById('main-nav');
         const scrollToTopBtn = document.getElementById('scroll-to-top');
         const floatingCta = document.getElementById('floating-cta');
+        const mainSection = document.querySelector('section[style*="margin-top"]');
         
         window.addEventListener('scroll', function() {
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -805,10 +806,12 @@
                 // Scrolling down
                 banner.style.transform = 'translateY(-100%)';
                 nav.style.top = '0';
+                if (mainSection) mainSection.style.marginTop = '48px';
             } else {
                 // Scrolling up
                 banner.style.transform = 'translateY(0)';
                 nav.style.top = '40px';
+                if (mainSection) mainSection.style.marginTop = '60px';
             }
             
             lastScrollTop = scrollTop;
