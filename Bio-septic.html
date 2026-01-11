@@ -1,1325 +1,1195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bio-Septic Tank - Pioneer BioTank</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              emerald: {
-                50: '#e6f2e6',
-                100: '#ccf0cc',
-                200: '#99db99',
-                300: '#66c466',
-                400: '#33ad33',
-                500: '#004900',
-                600: '#003d00',
-                700: '#003200',
-                800: '#002600',
-                900: '#001a00',
-              }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bio-Septic Tank - Pioneer BioTank</title>
+  <link rel="stylesheet" href="./styles/common.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emerald: {
+              50: '#e6f2e6',
+              100: '#ccf0cc',
+              200: '#99db99',
+              300: '#66c466',
+              400: '#33ad33',
+              500: '#004900',
+              600: '#003d00',
+              700: '#003200',
+              800: '#002600',
+              900: '#001a00',
             }
           }
         }
       }
-    </script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <style>
-      /* Mobile responsiveness */
-      body { overflow-x: hidden; }
-      img { max-width: 100%; height: auto; }
-      * { box-sizing: border-box; }
-    </style>
-  </head>
-  <body class="bg-gray-50">
-    <!-- Top Banner -->
-    <div
-  id="top-banner"
-  class="py-2 text-xs sm:text-sm fixed top-0 inset-x-0 z-40 transition-transform duration-300"
-  style="background-color: #ffffff; color: #004900;"
->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col sm:flex-row justify-between items-center gap-2">
-      
-      <!-- Left: Contact Info -->
-      <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
-        <a
-          href="tel:+919876543210"
-          class="flex items-center hover:opacity-80"
-          style="color: #004900;"
-        >
-          <i class="fas fa-phone mr-2" style="color: #004900;"></i>
-          <span>+91 98765 43210</span>
-        </a>
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    /* Mobile responsiveness */
+    body {
+      overflow-x: hidden;
+    }
 
-        <a
-          href="mailto:info@pioneerbiotank.com"
-          class="flex items-center hover:opacity-80"
-          style="color: #004900;"
-        >
-          <i class="fas fa-envelope mr-2" style="color: #004900;"></i>
-          <span>info@pioneerbiotank.com</span>
-        </a>
-      </div>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
 
-      <!-- Right: Tagline -->
-      <div class="flex items-center gap-3 text-sm">
-        <span class="hidden sm:inline" style="color: #004900;">
-          Talk to our FRP experts today
-        </span>
-      </div>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
 
-    </div>
-  </div>
-</div>
+<body class="bg-gray-50">
+  <!-- Top Banner -->
+  <div id="top-banner" class="py-2 text-xs sm:text-sm fixed top-0 inset-x-0 z-40 transition-transform duration-300"
+    style="background-color: #ffffff; color: #004900;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-2">
 
-    <!-- Navigation -->
-    <nav
-      id="main-nav"
-      class="fixed inset-x-0 z-30 backdrop-blur border-b shadow-sm transition-all duration-300"
-      style="top: 36px; background-color: #004900; border-color: rgba(255,255,255,0.1);"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-12">
-          <!-- Logo -->
-          <div class="flex items-center">
-            <a href="index.html" class="flex items-center gap-2">
-             <img src="./images/Logo.png" alt="Pioneer BioTank Logo" class="h-10 sm:h-12 md:h-14 w-auto object-contain flex-shrink-0" />
-            </a>
-          </div>
+        <!-- Left: Contact Info -->
+        <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+          <a href="tel:+919876543210" class="flex items-center hover:opacity-80" style="color: #004900;">
+            <i class="fas fa-phone mr-2" style="color: #004900;"></i>
+            <span>+91 98765 43210</span>
+          </a>
 
-          <!-- Desktop Menu -->
-          <div
-            class="hidden md:flex items-center space-x-8 text-sm font-medium"
-          >
-            <a href="index.html" class="text-white hover:text-[#b7ed03]"
-              >Home</a
-            >
-            <div class="relative group">
-              <button
-                class="flex items-center gap-1 text-white font-semibold border-b-2 border-[#b7ed03] pb-1"
-              >
-                Products <i class="fas fa-chevron-down text-[10px]"></i>
-              </button>
-              <div
-                class="absolute left-0 top-full w-64 bg-white shadow-xl rounded-lg py-2 border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
-              >
-                <a
-                  href="bio-septic.html"
-                  class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
-                >
-                  FRP Bio-Septic Tank
-                </a>
-                <a
-                  href="undergroundwatertank.html"
-                  class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
-                >
-                  FRP Underground Water Tank
-                </a>
-              </div>
-            </div>
-            <a
-              href="howitworks.html"
-              class="text-white hover:text-[#b7ed03]"
-              >How It Works</a
-            >
-            <a href="project.html" class="text-white hover:text-[#b7ed03]"
-              >Projects</a
-            >
-            <a href="about.html" class="text-white hover:text-[#b7ed03]"
-              >About Us</a
-            >
-            <a
-              href="contact.html"
-              class="text-white hover:text-[#b7ed03]"
-            >
-              Contact Us
-            </a>
-            <a
-              href="tel:+919876543210"
-              class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
-              style="background-color:#b7ed03; color:#004900;"
-            >
-              <i class="fas fa-phone"></i>  Enquire now
-            </a>
-          </div>
-
-          <!-- Mobile Menu Button -->
-          <div class="md:hidden flex items-center">
-            <button id="mobile-menu-button"
-              class="text-white hover:text-[#b7ed03]"
-            >
-              <i id="menu-icon" class="fas fa-bars text-2xl"></i>
-            </button>
-          </div>
+          <a href="mailto:info@pioneerbiotank.com" class="flex items-center hover:opacity-80" style="color: #004900;">
+            <i class="fas fa-envelope mr-2" style="color: #004900;"></i>
+            <span>info@pioneerbiotank.com</span>
+          </a>
         </div>
 
-        <!-- Mobile Menu -->
-        <div
-          id="mobile-menu"
-          class="hidden md:hidden pb-4 border-t"
-      style="border-color: rgba(255,255,255,0.1);"
-        >
-          <div class="flex flex-col space-y-1 pt-3 text-sm font-medium">
-            <a
-              href="index.html"
-              class="py-3 text-white hover:text-[#b7ed03]"
-              >Home</a
-            >
-            <button
-              id="mobile-products-toggle"
-              class="py-3 text-emerald-600 font-semibold flex justify-between items-center"
-            >
-              <span>Products</span>
-              <i class="fas fa-chevron-down text-[10px]"></i>
+        <!-- Right: Tagline -->
+        <div class="flex items-center gap-3 text-sm">
+          <span class="hidden sm:inline" style="color: #004900;">
+            Talk to our FRP experts today
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+ <!-- Navigation -->
+  <nav id="main-nav" class="fixed inset-x-0 top-9 z-30
+         bg-[#004900]/90 backdrop-blur
+         border-b border-white/10
+         transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-12">
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center gap-2">
+            <img src="./images/PIONEER BIO TANK LOGO WITH NO1 FRP.png" alt="Pioneer BioTank Logo"
+              class="h-10 sm:h-12 md:h-14 w-auto object-contain flex-shrink-0" />
+
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+
+          <a href="index.html" class="text-[#b7ed03] font-semibold pb-1">
+            Home
+          </a>
+
+          <!-- Products Dropdown -->
+          <div class="relative group">
+            <button class="nav-link-color border-b-2 border-[#b7ed03] flex items-center gap-1 text-white hover:text-[#b7ed03] py-2">
+              Products <i class="fas fa-chevron-down text-[10px]"></i>
             </button>
-            <div id="mobile-products-menu" class="hidden pl-4 space-y-1">
-              <a
-                href="bio-septic.html"
-                class="block py-2 text-white hover:text-[#b7ed03]"
-              >
+
+            <div
+              class="absolute left-0 top-full w-64 bg-white shadow-xl rounded-lg py-2 border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <a href="bio-septic.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
                 FRP Bio-Septic Tank
               </a>
-              <a
-                href="undergroundwatertank.html"
-                class="block py-2 text-white hover:text-[#b7ed03]"
-              >
+              <a href="undergroundwatertank.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
                 FRP Underground Water Tank
               </a>
             </div>
-            <a
-              href="howitworks.html"
-              class="py-3 text-white hover:text-[#b7ed03]"
-              >How It Works</a
-            >
-            <a
-              href="project.html"
-              class="py-3 text-white hover:text-[#b7ed03]"
-              >Projects</a
-            >
-            <a
-              href="about.html"
-              class="py-3 text-white hover:text-[#b7ed03]"
-              >About Us</a
-            >
-            <a
-              href="contact.html"
-              class="py-3 text-white hover:text-[#b7ed03]"
-              >Contact Us</a
-            >
-            <a
-              href="tel:+919876543210"
-              class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-xs font-semibold text-white"
-              style="background-color:#b7ed03; color:#004900;"
-            >
-              <i class="fas fa-phone"></i> Call Now
+          </div>
+
+          <a href="howitworks.html" class="nav-link-color hover:text-[#b7ed03]">How It Works</a>
+          <a href="project.html" class="nav-link-color hover:text-[#b7ed03]">Projects</a>
+          <a href="about.html" class="nav-link-color hover:text-[#b7ed03]">About Us</a>
+          <a href="contact.html" class="nav-link-color hover:text-[#b7ed03]">Contact Us</a>
+
+          <!-- CTA -->
+          <a href="tel:+919876543210"
+            class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
+            style="background-color:#b7ed03; color:#004900;">
+            <i class="fas fa-phone"></i> Enquire now
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-[#b7ed03]">
+            <i id="menu-icon" class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4 border-t" style="border-color: rgba(255,255,255,0.1);">
+
+        <div class="flex flex-col space-y-1 pt-3 text-sm font-medium">
+          <a href="index.html" class="py-3 text-[#b7ed03] font-semibold">Home</a>
+
+          <button id="mobile-products-toggle"
+            class="py-3 nav-link-color text-white hover:text-[#b7ed03] flex justify-between items-center">
+            <span>Products</span>
+            <i class="fas fa-chevron-down text-[10px]"></i>
+          </button>
+
+          <div id="mobile-products-menu" class="hidden pl-4 space-y-1">
+            <a href="bio-septic.html" class="nav-link-color py-2 text-white hover:text-[#b7ed03] block">
+              FRP Bio-Septic Tank
+            </a>
+            <a href="undergroundwatertank.html" class="nav-link-color py-2 text-white hover:text-[#b7ed03] block">
+              FRP Underground Water Tank
             </a>
           </div>
-        </div>
-      </div>
-    </nav>
 
-    <script>
-      // Mobile menu toggle
-      const mobileMenuBtn = document.getElementById('mobile-menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const menuIcon = document.getElementById('menu-icon');
-      const mobileProductsToggle = document.getElementById('mobile-products-toggle');
-      const mobileProductsMenu = document.getElementById('mobile-products-menu');
+          <a href="howitworks.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">How It Works</a>
+          <a href="project.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">Projects</a>
+          <a href="about.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">About Us</a>
+          <a href="contact.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">Contact Us</a>
 
-      mobileMenuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        // Toggle icon between bars and times (X)
-        if (mobileMenu.classList.contains('hidden')) {
-          menuIcon.classList.remove('fa-times');
-          menuIcon.classList.add('fa-bars');
-        } else {
-          menuIcon.classList.remove('fa-bars');
-          menuIcon.classList.add('fa-times');
-        }
-      });
-
-      mobileProductsToggle.addEventListener('click', () => {
-        mobileProductsMenu.classList.toggle('hidden');
-      });
-
-      // Close mobile menu when clicking on a link
-      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-      mobileMenuLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
-          menuIcon.classList.remove('fa-times');
-          menuIcon.classList.add('fa-bars');
-        });
-      });
-    </script>
-  
-
-<!-- Hero Section (Premium – Pioneer BioTank, Wide Card Version) -->
-<section class="relative text-slate-900" style="margin-top: 60px">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-    <!-- Wider Right Column -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-[1fr_1.25fr] gap-6 sm:gap-8 md:gap-12 items-center pt-8 sm:pt-12 md:pt-16 pb-10 sm:pb-16 md:pb-20">
-      
-      <!-- LEFT CONTENT -->
-      <div>
-        <!-- Badge -->
-        <span
-          class="inline-flex items-center gap-2 rounded-full border border-emerald-200/50 bg-gradient-to-r from-emerald-50 to-emerald-100/50 backdrop-blur-sm px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] sm:tracking-[0.18em] text-emerald-700 shadow-lg shadow-emerald-500/20 hover:scale-105 transition-transform duration-300"
-        >
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
-          </span>
-          Trusted by 5000+ Families
-        </span>
-
-        <!-- Heading -->
-        <h1 class="mt-4 sm:mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-slate-900">
-          Where modern living<br class="hidden sm:block" />
-          <span class="bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-500 bg-clip-text text-transparent">
-            meets responsible living.
-          </span>
-        </h1>
-
-        <!-- Subheading -->
-        <p class="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg text-slate-600 max-w-xl">
-          Factory-made FRP Bio-Septic Tanks for homes that want a one-time
-          solution for sewage and water – odour-free, leak-proof and designed
-          to work reliably for decades.
-        </p>
-
-    
-        <!-- CTAs -->
-        <div class="mt-7 flex flex-col sm:flex-row gap-3 sm:gap-4">
-          <a
-            href="tel:+919876543210"
-            class="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-600 px-6 sm:px-8 py-3 text-sm sm:text-base font-semibold text-white shadow-[0_18px_40px_rgba(16,185,129,0.5)] hover:bg-emerald-700 hover:-translate-y-0.5 transition"
-          >
-            <i class="fas fa-phone text-xs"></i>
-            Call Now
-          </a>
-
-          <a
-            href="contact.html"
-            class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 px-6 sm:px-8 py-3 text-sm sm:text-base font-semibold text-slate-800 hover:border-emerald-500 hover:text-emerald-700 hover:-translate-y-0.5 transition bg-white/70 backdrop-blur"
-          >
-            <i class="fas fa-clipboard-check text-xs"></i>
-            Get a Free Site Assessment
+          <a href="tel:+919876543210"
+            class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-sm font-semibold"
+            style="background-color:#b7ed03; color:#004900;">
+            <i class="fas fa-phone"></i> Enquire now
           </a>
         </div>
-
-       
       </div>
 
-      <!-- RIGHT: WIDE PRODUCT CARD -->
-      <div class="relative group w-full max-w-[95rem] mx-auto">
-        
-        <!-- Glow -->
-        <div class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-3xl blur-2xl opacity-25 group-hover:opacity-40 transition"></div>
-
-        <div class="relative rounded-3xl bg-gradient-to-br from-emerald-500/20 via-emerald-600/15 to-teal-500/10 p-[3px] shadow-[0_28px_90px_rgba(15,23,42,0.4)] hover:shadow-[0_40px_120px_rgba(16,185,129,0.45)] transition-all duration-500">
-          
-          <div class="rounded-3xl bg-white/95 backdrop-blur-sm overflow-hidden p-8 sm:p-10">
-            
-            <!-- Badge Row -->
-            <div class="flex justify-between items-center mb-4">
-              <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-[11px] font-semibold text-emerald-700">
-                <i class="fas fa-certificate text-[10px]"></i>
-                FRP Bio-Septic Tank
-              </span>
-
-              <span class="text-[11px] text-slate-400">
-                For homes, villas & apartments
-              </span>
-            </div>
-
-            <!-- Image -->
-            <div class="relative rounded-2xl overflow-hidden">
-              <img
-                src="./images/TankInstallation.jpg"
-                class="w-full h-[22rem] sm:h-[26rem] object-cover"
-                alt="Pioneer FRP Bio-Septic Tank Installation"
-              />
-
-              <div class="absolute bottom-3 left-3 rounded-full bg-black/55 px-3 py-1 text-[11px] text-emerald-100 flex items-center gap-2">
-                <i class="fas fa-home text-[10px]"></i>
-                Ideal for 4–25 users (sizes available)
-              </div>
-            </div>
-
-            <!-- Specs -->
-            <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs sm:text-sm text-slate-600">
-              <div class="rounded-xl bg-slate-50 px-4 py-3">
-                <div class="font-semibold text-slate-900">50+ years</div>
-                <div class="mt-0.5 text-slate-500">Design life</div>
-              </div>
-
-              <div class="rounded-xl bg-slate-50 px-4 py-3">
-                <div class="font-semibold text-slate-900">No power</div>
-                <div class="mt-0.5 text-slate-500">Needed to run</div>
-              </div>
-
-              <div class="rounded-xl bg-slate-50 px-4 py-3">
-                <div class="font-semibold text-slate-900">Factory-made</div>
-                <div class="mt-0.5 text-slate-500">Quality controlled</div>
-              </div>
-
-                 <!-- Item -->
-              <div class="flex items-start gap-3 rounded-xl border border-slate-100 bg-slate-50 px-4 py-3 hover:bg-emerald-50 hover:border-emerald-200 hover:shadow-sm hover:-translate-y-[1px] transition">
-               
-                <div>
-                  <div class="font-semibold text-slate-900">No bad smell</div>
-                  <p class="text-xs text-slate-500">
-                    Biological digestion prevents foul odour around the house.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Item -->
-              <div class="flex items-start gap-3 rounded-xl border border-slate-100 bg-slate-50 px-4 py-3 hover:bg-emerald-50 hover:border-emerald-200 hover:shadow-sm hover:-translate-y-[1px] transition">
-               
-                <div>
-                  <div class="font-semibold text-slate-900">Almost zero cleaning</div>
-                  <p class="text-xs text-slate-500">
-                    Bio-digester reduces solid build-up, reducing septic lorry visits.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Item -->
-              <div class="flex items-start gap-3 rounded-xl border border-slate-100 bg-slate-50 px-4 py-3 hover:bg-emerald-50 hover:border-emerald-200 hover:shadow-sm hover:-translate-y-[1px] transition">
-               
-                <div>
-                  <div class="font-semibold text-slate-900">Leak-proof FRP body</div>
-                  <p class="text-xs text-slate-500">
-                    One-piece FRP mould avoids cracks & prevents seepage.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Item -->
-              <div class="flex items-start gap-3 rounded-xl border border-slate-100 bg-white px-4 py-3 hover:bg-emerald-50/70 hover:border-emerald-200 hover:shadow-sm hover:-translate-y-[1px] transition">
-                
-                <div>
-                  <div class="font-semibold text-slate-900">5000+ tanks installed</div>
-                  <p class="text-xs text-slate-500">
-                    Installed across Tamil Nadu, Kerala, Karnataka & Andhra Pradesh.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Item -->
-              <div class="flex items-start gap-3 rounded-xl border border-slate-100 bg-white px-4 py-3 hover:bg-emerald-50/70 hover:border-emerald-200 hover:shadow-sm hover:-translate-y-[1px] transition">
-                
-                <div>
-                  <div class="font-semibold text-slate-900">DRDO-based technology</div>
-                  <p class="text-xs text-slate-500">
-                    Built using the proven DRDO Bio-Digester standard.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-
-      
-          </div>
-        </div>
-
-        <!-- Floating helper bubble -->
-        <div class="hidden sm:flex absolute -bottom-6 right-2 items-center gap-2 rounded-2xl bg-white shadow-[0_16px_40px_rgba(15,23,42,0.25)] px-3 py-2 text-[11px]">
-          <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-600 text-white">
-            <i class="fas fa-comments"></i>
-          </span>
-          <span class="text-slate-600">
-            Talk to our team for sizing help in
-            <span class="font-semibold">under 5 minutes</span>.
-          </span>
-        </div>
-
-      </div>
     </div>
-  </div>
-</section>
+  </nav>
 
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const mobileProductsToggle = document.getElementById('mobile-products-toggle');
+    const mobileProductsMenu = document.getElementById('mobile-products-menu');
 
-
-<!-- PREMIUM – Bio-Septic Tank Overview + Features -->
-<section class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-    <!-- Combined Heading -->
-    <div class="text-center mb-14">
-      <span
-        class="inline-flex items-center gap-2 rounded-full bg-emerald-50 text-emerald-700 px-4 py-1.5 text-xs font-semibold tracking-wide"
-      >
-        <i class="fas fa-biohazard text-[11px]"></i>
-        About the System
-      </span>
-
-      <h2
-        class="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mt-4 leading-tight"
-      >
-        Why Choose a <span class="text-emerald-600">Bio-Septic Tank?</span>
-      </h2>
-
-      <p
-        class="mt-5 text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed"
-      >
-        A next-generation sewage treatment system built using biological
-        technology to remove waste, eliminate odour, and protect groundwater —
-        engineered for Indian soil and designed to last 50+ years with almost
-        zero maintenance.
-      </p>
-    </div>
-
-    <!-- PART 1: 3 Premium Feature Cards -->
-    <div class="grid md:grid-cols-3 gap-8 mb-20">
-      <!-- Eco Friendly -->
-      <div
-        class="group p-8 rounded-3xl bg-gradient-to-br from-white to-emerald-50/30
-               border border-emerald-100 shadow-[0_10px_40px_rgba(15,23,42,0.08)]
-               hover:shadow-[0_20px_60px_rgba(16,185,129,0.25)] hover:-translate-y-2
-               hover:border-emerald-300 transition-all duration-500 overflow-hidden relative"
-      >
-        <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-        <div class="relative">
-          <div
-            class="h-16 w-16 flex items-center justify-center rounded-2xl
-                   bg-gradient-to-br from-emerald-400 to-emerald-600 shadow-lg shadow-emerald-500/50
-                   text-white text-3xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500"
-          >
-            <i class="fas fa-seedling"></i>
-          </div>
-          <h3 class="mt-6 text-xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
-            Eco-Friendly System
-          </h3>
-          <p class="mt-3 text-slate-600 text-sm leading-relaxed">
-            Uses beneficial bacteria to naturally treat sewage without
-            chemicals or electricity.
-          </p>
-        </div>
-      </div>
-
-      <!-- Odour Free -->
-      <div
-        class="group p-8 rounded-3xl bg-gradient-to-br from-white to-blue-50/30
-               border border-blue-100 shadow-[0_10px_40px_rgba(15,23,42,0.08)]
-               hover:shadow-[0_20px_60px_rgba(59,130,246,0.25)] hover:-translate-y-2
-               hover:border-blue-300 transition-all duration-500 overflow-hidden relative"
-      >
-        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-        <div class="relative">
-          <div
-            class="h-16 w-16 flex items-center justify-center rounded-2xl
-                   bg-gradient-to-br from-blue-400 to-blue-600 shadow-lg shadow-blue-500/50
-                   text-white text-3xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500"
-          >
-            <i class="fas fa-wind"></i>
-          </div>
-          <h3 class="mt-6 text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
-            Odour-Free Operation
-          </h3>
-          <p class="mt-3 text-slate-600 text-sm leading-relaxed">
-            Multi-chamber design removes smell completely, keeping surroundings
-            fresh.
-          </p>
-        </div>
-      </div>
-
-      <!-- Low Maintenance -->
-      <div
-        class="group p-8 rounded-3xl bg-gradient-to-br from-white to-purple-50/30
-               border border-purple-100 shadow-[0_10px_40px_rgba(15,23,42,0.08)]
-               hover:shadow-[0_20px_60px_rgba(168,85,247,0.25)] hover:-translate-y-2
-               hover:border-purple-300 transition-all duration-500 overflow-hidden relative"
-      >
-        <div class="absolute inset-0 bg-gradient-to-br from-purple-500/0 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-        <div class="relative">
-          <div
-            class="h-16 w-16 flex items-center justify-center rounded-2xl
-                   bg-gradient-to-br from-purple-400 to-purple-600 shadow-lg shadow-purple-500/50
-                   text-white text-3xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500"
-          >
-            <i class="fas fa-tools"></i>
-          </div>
-          <h3 class="mt-6 text-xl font-bold text-slate-900 group-hover:text-purple-600 transition-colors">
-            Low Maintenance
-          </h3>
-          <p class="mt-3 text-slate-600 text-sm leading-relaxed">
-            Works continuously with almost zero cleaning and no septic lorry visits.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- PART 2: Detailed Feature Grid -->
-    <div class="grid md:grid-cols-2 gap-8">
-      
-      <!-- Natural Treatment -->
-      <div
-        class="group flex gap-5 p-7 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-emerald-300 transition-all"
-      >
-        <div
-          class="h-14 w-14 flex items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 text-2xl group-hover:bg-emerald-100 transition"
-        >
-          <i class="fas fa-bacteria"></i>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-slate-900">
-            Natural Biological Treatment
-          </h3>
-          <p class="text-slate-600 mt-1 text-sm">
-            Special bacteria break down waste in multiple stages, reducing solids drastically.
-          </p>
-        </div>
-      </div>
-
-      <!-- Odour Free -->
-      <div
-        class="group flex gap-5 p-7 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-blue-300 transition-all"
-      >
-        <div
-          class="h-14 w-14 flex items-center justify-center rounded-xl bg-blue-50 text-blue-600 text-2xl group-hover:bg-blue-100 transition"
-        >
-          <i class="fas fa-snowflake"></i>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-slate-900">
-            Odour-Free Technology
-          </h3>
-          <p class="text-slate-600 mt-1 text-sm">
-            Multi-chamber aeration ensures zero smell even after years of usage.
-          </p>
-        </div>
-      </div>
-
-      <!-- Strong FRP -->
-      <div
-        class="group flex gap-5 p-7 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-purple-300 transition-all"
-      >
-        <div
-          class="h-14 w-14 flex items-center justify-center rounded-xl bg-purple-50 text-purple-600 text-2xl group-hover:bg-purple-100 transition"
-        >
-          <i class="fas fa-shield-alt"></i>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-slate-900">
-            Strong FRP Construction
-          </h3>
-          <p class="text-slate-600 mt-1 text-sm">
-            100% leak-proof, corrosion-resistant body designed for 50+ years lifespan.
-          </p>
-        </div>
-      </div>
-
-      <!-- No Electricity -->
-      <div
-        class="group flex gap-5 p-7 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-orange-300 transition-all"
-      >
-        <div
-          class="h-14 w-14 flex items-center justify-center rounded-xl bg-orange-50 text-orange-600 text-2xl group-hover:bg-orange-100 transition"
-        >
-          <i class="fas fa-bolt"></i>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-slate-900">
-            No Electricity Required
-          </h3>
-          <p class="text-slate-600 mt-1 text-sm">
-            Fully passive system—works without motors, blowers, or power supply.
-          </p>
-        </div>
-      </div>
-
-      <!-- Zero Maintenance -->
-      <div
-        class="group flex gap-5 p-7 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-pink-300 transition-all"
-      >
-        <div
-          class="h-14 w-14 flex items-center justify-center rounded-xl bg-pink-50 text-pink-600 text-2xl group-hover:bg-pink-100 transition"
-        >
-          <i class="fas fa-clock"></i>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-slate-900">
-            Almost Zero Maintenance
-          </h3>
-          <p class="text-slate-600 mt-1 text-sm">
-            No septic lorry required for many years — saves money and hassle.
-          </p>
-        </div>
-      </div>
-
-      <!-- Compact -->
-      <div
-        class="group flex gap-5 p-7 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-yellow-300 transition-all"
-      >
-        <div
-          class="h-14 w-14 flex items-center justify-center rounded-xl bg-yellow-50 text-yellow-600 text-2xl group-hover:bg-yellow-100 transition"
-        >
-          <i class="fas fa-home"></i>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-slate-900">
-            Compact & Space Saving
-          </h3>
-          <p class="text-slate-600 mt-1 text-sm">
-            Factory-made, easy to transport, and fits even in tight residential spaces.
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-
-
-<!-- PREMIUM – Image Slider / Gallery -->
-<section class="py-20 bg-gray-50" id="bio-gallery">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- Heading -->
-    <div class="text-center mb-10">
-      <span
-        class="inline-flex items-center gap-2 rounded-full bg-emerald-50 text-emerald-700 px-4 py-1.5 text-xs font-semibold tracking-wide"
-      >
-        <i class="fas fa-images text-[11px]"></i>
-        Installations Gallery
-      </span>
-
-      <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 mt-4">
-        See the <span class="text-emerald-600">Bio-Septic Tank</span> in Action
-      </h2>
-      <p class="mt-3 text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
-        Real installations from homes and sites where our bio-septic tanks are
-        working silently underground — odour-free, eco-friendly, and low-maintenance.
-      </p>
-    </div>
-
-    <!-- Slider Wrapper -->
-    <div class="relative">
-      <!-- Main Slider -->
-      <div class="overflow-hidden rounded-3xl shadow-[0_20px_60px_rgba(15,23,42,0.25)] bg-slate-900">
-        <div id="sliderTrack" class="relative h-[260px] sm:h-[360px] md:h-[420px]">
-          <!-- Slide 1 -->
-          <div class="slider-slide absolute inset-0 opacity-100 scale-100 transition-all duration-700 ease-out">
-            <img
-              src="images/bio-tank-1.jpg"
-              alt="Bio-Septic tank installation – underground placement"
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <!-- Slide 2 -->
-          <div class="slider-slide absolute inset-0 opacity-0 scale-95 transition-all duration-700 ease-out">
-            <img
-              src="images/bio-tank-2.jpg"
-              alt="Bio-Septic tank FRP body close-up"
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <!-- Slide 3 -->
-          <div class="slider-slide absolute inset-0 opacity-0 scale-95 transition-all duration-700 ease-out">
-            <img
-              src="images/bio-tank-3.jpg"
-              alt="Completed site with bio-septic connection"
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <!-- Slide 4 -->
-          <div class="slider-slide absolute inset-0 opacity-0 scale-95 transition-all duration-700 ease-out">
-            <img
-              src="images/bio-tank-4.jpg"
-              alt="Team installing bio-septic tank at residential project"
-              class="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-
-        <!-- Gradient overlay + caption bar (optional) -->
-        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent px-6 py-4 flex items-center justify-between gap-3 pointer-events-none">
-          <div class="text-white text-sm sm:text-base font-medium" id="sliderCaption">
-            Underground installation – compact, space-saving design.
-          </div>
-        </div>
-      </div>
-
-      <!-- Arrows -->
-      <button
-        id="sliderPrev"
-        type="button"
-        class="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 h-10 w-10 sm:h-11 sm:w-11 flex items-center justify-center rounded-full bg-white/90 text-slate-800 shadow-lg hover:bg-emerald-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-emerald-400 transition"
-      >
-        <i class="fas fa-chevron-left text-xs"></i>
-      </button>
-
-      <button
-        id="sliderNext"
-        type="button"
-        class="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 h-10 w-10 sm:h-11 sm:w-11 flex items-center justify-center rounded-full bg-white/90 text-slate-800 shadow-lg hover:bg-emerald-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-emerald-400 transition"
-      >
-        <i class="fas fa-chevron-right text-xs"></i>
-      </button>
-    </div>
-
-    <!-- Thumbnails -->
-    <div class="mt-6 grid grid-cols-4 gap-3">
-      <button
-        class="thumb-btn group relative rounded-2xl overflow-hidden border-2 border-emerald-500"
-        data-slide="0"
-      >
-        <img
-          src="images/bio-tank-1.jpg"
-          alt="Thumb 1"
-          class="w-full h-20 sm:h-24 object-cover group-hover:scale-105 transition-transform duration-300"
-        />
-      </button>
-
-      <button
-        class="thumb-btn group relative rounded-2xl overflow-hidden border-2 border-transparent"
-        data-slide="1"
-      >
-        <img
-          src="images/bio-tank-2.jpg"
-          alt="Thumb 2"
-          class="w-full h-20 sm:h-24 object-cover group-hover:scale-105 transition-transform duration-300"
-        />
-      </button>
-
-      <button
-        class="thumb-btn group relative rounded-2xl overflow-hidden border-2 border-transparent"
-        data-slide="2"
-      >
-        <img
-          src="images/bio-tank-3.jpg"
-          alt="Thumb 3"
-          class="w-full h-20 sm:h-24 object-cover group-hover:scale-105 transition-transform duration-300"
-        />
-      </button>
-
-      <button
-        class="thumb-btn group relative rounded-2xl overflow-hidden border-2 border-transparent"
-        data-slide="3"
-      >
-        <img
-          src="images/bio-tank-4.jpg"
-          alt="Thumb 4"
-          class="w-full h-20 sm:h-24 object-cover group-hover:scale-105 transition-transform duration-300"
-        />
-      </button>
-    </div>
-  </div>
-</section>
-
-<!-- Slider Script (Vanilla JS) -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const slides = document.querySelectorAll(".slider-slide");
-    const thumbs = document.querySelectorAll(".thumb-btn");
-    const prevBtn = document.getElementById("sliderPrev");
-    const nextBtn = document.getElementById("sliderNext");
-    const captionEl = document.getElementById("sliderCaption");
-
-    const captions = [
-      "Underground installation – compact, space-saving design.",
-      "Heavy-duty FRP body – leak-proof and corrosion-resistant.",
-      "Odour-free outlet – clean surroundings even after years.",
-      "Quick and neat installation by trained technicians."
-    ];
-
-    let current = 0;
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        if (i === index) {
-          slide.style.opacity = "1";
-          slide.style.transform = "scale(1)";
-          slide.style.zIndex = "10";
-        } else {
-          slide.style.opacity = "0";
-          slide.style.transform = "scale(0.95)";
-          slide.style.zIndex = "0";
-        }
-      });
-
-      thumbs.forEach((thumb, i) => {
-        if (i === index) {
-          thumb.classList.add("border-emerald-500");
-          thumb.classList.remove("border-transparent");
-        } else {
-          thumb.classList.remove("border-emerald-500");
-          thumb.classList.add("border-transparent");
-        }
-      });
-
-      if (captionEl) {
-        captionEl.textContent = captions[index] || "";
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      // Toggle icon between bars and times (X)
+      if (mobileMenu.classList.contains('hidden')) {
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+      } else {
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-times');
       }
-
-      current = index;
-    }
-
-    function nextSlide() {
-      let next = current + 1;
-      if (next >= slides.length) next = 0;
-      showSlide(next);
-    }
-
-    function prevSlide() {
-      let prev = current - 1;
-      if (prev < 0) prev = slides.length - 1;
-      showSlide(prev);
-    }
-
-    // Event listeners
-    if (nextBtn) nextBtn.addEventListener("click", nextSlide);
-    if (prevBtn) prevBtn.addEventListener("click", prevSlide);
-
-    thumbs.forEach((thumb) => {
-      thumb.addEventListener("click", () => {
-        const index = parseInt(thumb.getAttribute("data-slide"), 10);
-        showSlide(index);
-      });
     });
 
-    // Auto-play (optional – comment this block if you don’t want auto-slide)
-    let autoPlay = setInterval(nextSlide, 6000);
+    mobileProductsToggle.addEventListener('click', () => {
+      mobileProductsMenu.classList.toggle('hidden');
+    });
 
-    // Pause on hover
-    const sliderArea = document.getElementById("sliderTrack")?.parentElement;
-    if (sliderArea) {
-      sliderArea.addEventListener("mouseenter", () => clearInterval(autoPlay));
-      sliderArea.addEventListener("mouseleave", () => {
-        autoPlay = setInterval(nextSlide, 6000);
+    // Close mobile menu when clicking on a link
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
       });
-    }
+    });
+  </script>
 
-    // Init
-    showSlide(0);
-  });
-</script>
+
+  <!-- Hero Section (Premium – Pioneer BioTank, Wide Card Version) -->
+  <section class="relative text-slate-900" style="margin-top: 60px">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Wider Right Column -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-[1fr_1.25fr] gap-6 sm:gap-8 md:gap-12 items-center pt-8 sm:pt-12 md:pt-16 pb-10 sm:pb-16 md:pb-20">
+
+        <!-- LEFT CONTENT -->
+        <div>
+          <!-- Badge -->
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-emerald-200/50 bg-gradient-to-r from-emerald-50 to-emerald-100/50 backdrop-blur-sm px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] sm:tracking-[0.18em] text-emerald-700 shadow-lg shadow-emerald-500/20 hover:scale-105 transition-transform duration-300">
+            <span class="relative flex h-2 w-2">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
+            </span>
+            Trusted by 5000+ Families
+          </span>
+
+          <!-- Heading -->
+          <h1 class="mt-4 sm:mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-slate-900">
+            Where modern living<br class="hidden sm:block" />
+            <span class="bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-500 bg-clip-text text-transparent">
+              meets responsible living.
+            </span>
+          </h1>
+
+          <!-- Subheading -->
+          <p class="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg text-slate-600 max-w-xl">
+            Factory-made FRP Bio-Septic Tanks for homes that want a one-time
+            solution for sewage and water – odour-free, leak-proof and designed
+            to work reliably for decades.
+          </p>
+
+
+          <!-- CTAs -->
+          <div class="mt-7 flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <a href="tel:+919876543210"
+              class="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-600 px-6 sm:px-8 py-3 text-sm sm:text-base font-semibold text-white shadow-[0_18px_40px_rgba(16,185,129,0.5)] hover:bg-emerald-700 hover:-translate-y-0.5 transition">
+              <i class="fas fa-phone text-xs"></i>
+              Call Now
+            </a>
+
+            <a href="contact.html"
+              class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 px-6 sm:px-8 py-3 text-sm sm:text-base font-semibold text-slate-800 hover:border-emerald-500 hover:text-emerald-700 hover:-translate-y-0.5 transition bg-white/70 backdrop-blur">
+              <i class="fas fa-clipboard-check text-xs"></i>
+              Get a Free Site Assessment
+            </a>
+          </div>
+
+
+        </div>
+
+        <!-- RIGHT: WIDE PRODUCT CARD -->
+        <div class="relative group w-full max-w-[95rem] mx-auto">
+
+          <!-- Glow -->
+          <div
+            class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-3xl blur-2xl opacity-25 group-hover:opacity-40 transition">
+          </div>
+
+          <div
+            class="relative rounded-3xl bg-gradient-to-br from-emerald-500/20 via-emerald-600/15 to-teal-500/10 p-[3px] shadow-[0_28px_90px_rgba(15,23,42,0.4)] hover:shadow-[0_40px_120px_rgba(16,185,129,0.45)] transition-all duration-500">
+
+            <div class="rounded-3xl bg-white/95 backdrop-blur-sm overflow-hidden p-8 sm:p-10">
+
+              <!-- Badge Row -->
+              <div class="flex justify-between items-center mb-4">
+                <span
+                  class="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-[11px] font-semibold text-emerald-700">
+                  <i class="fas fa-certificate text-[10px]"></i>
+                  FRP Bio-Septic Tank
+                </span>
+
+                <span class="text-[11px] text-slate-400">
+                  For homes, villas & apartments
+                </span>
+              </div>
+
+              <!-- Image -->
+              <div class="relative rounded-2xl overflow-hidden">
+                <img src="./images/TankInstallation.jpg" class="w-full h-[22rem] sm:h-[26rem] object-cover"
+                  alt="Pioneer FRP Bio-Septic Tank Installation" />
+
+                <div
+                  class="absolute bottom-3 left-3 rounded-full bg-black/55 px-3 py-1 text-[11px] text-emerald-100 flex items-center gap-2">
+                  <i class="fas fa-home text-[10px]"></i>
+                  Ideal for 4–25 users (sizes available)
+                </div>
+              </div>
+
+              <!-- Specs -->
+              <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs sm:text-sm text-slate-600">
+                <div class="rounded-xl bg-slate-50 px-4 py-3">
+                  <div class="font-semibold text-slate-900">50+ years</div>
+                  <div class="mt-0.5 text-slate-500">Design life</div>
+                </div>
+
+                <div class="rounded-xl bg-slate-50 px-4 py-3">
+                  <div class="font-semibold text-slate-900">No power</div>
+                  <div class="mt-0.5 text-slate-500">Needed to run</div>
+                </div>
+
+                <div class="rounded-xl bg-slate-50 px-4 py-3">
+                  <div class="font-semibold text-slate-900">Factory-made</div>
+                  <div class="mt-0.5 text-slate-500">Quality controlled</div>
+                </div>
+
+                <!-- Item -->
+                <div
+                  class="flex items-start gap-3 rounded-xl border border-slate-100 bg-slate-50 px-4 py-3 hover:bg-emerald-50 hover:border-emerald-200 hover:shadow-sm hover:-translate-y-[1px] transition">
+
+                  <div>
+                    <div class="font-semibold text-slate-900">No bad smell</div>
+                    <p class="text-xs text-slate-500">
+                      Biological digestion prevents foul odour around the house.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Item -->
+                <div
+                  class="flex items-start gap-3 rounded-xl border border-slate-100 bg-slate-50 px-4 py-3 hover:bg-emerald-50 hover:border-emerald-200 hover:shadow-sm hover:-translate-y-[1px] transition">
+
+                  <div>
+                    <div class="font-semibold text-slate-900">Almost zero cleaning</div>
+                    <p class="text-xs text-slate-500">
+                      Bio-digester reduces solid build-up, reducing septic lorry visits.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Item -->
+                <div
+                  class="flex items-start gap-3 rounded-xl border border-slate-100 bg-slate-50 px-4 py-3 hover:bg-emerald-50 hover:border-emerald-200 hover:shadow-sm hover:-translate-y-[1px] transition">
+
+                  <div>
+                    <div class="font-semibold text-slate-900">Leak-proof FRP body</div>
+                    <p class="text-xs text-slate-500">
+                      One-piece FRP mould avoids cracks & prevents seepage.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Item -->
+                <div
+                  class="flex items-start gap-3 rounded-xl border border-slate-100 bg-white px-4 py-3 hover:bg-emerald-50/70 hover:border-emerald-200 hover:shadow-sm hover:-translate-y-[1px] transition">
+
+                  <div>
+                    <div class="font-semibold text-slate-900">5000+ tanks installed</div>
+                    <p class="text-xs text-slate-500">
+                      Installed across Tamil Nadu, Kerala, Karnataka & Andhra Pradesh.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Item -->
+                <div
+                  class="flex items-start gap-3 rounded-xl border border-slate-100 bg-white px-4 py-3 hover:bg-emerald-50/70 hover:border-emerald-200 hover:shadow-sm hover:-translate-y-[1px] transition">
+
+                  <div>
+                    <div class="font-semibold text-slate-900">DRDO-based technology</div>
+                    <p class="text-xs text-slate-500">
+                      Built using the proven DRDO Bio-Digester standard.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+
+          <!-- Floating helper bubble -->
+          <div
+            class="hidden sm:flex absolute -bottom-6 right-2 items-center gap-2 rounded-2xl bg-white shadow-[0_16px_40px_rgba(15,23,42,0.25)] px-3 py-2 text-[11px]">
+            <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-600 text-white">
+              <i class="fas fa-comments"></i>
+            </span>
+            <span class="text-slate-600">
+              Talk to our team for sizing help in
+              <span class="font-semibold">under 5 minutes</span>.
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- PREMIUM – Bio-Septic Tank Overview + Features -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Combined Heading -->
+      <div class="text-center mb-14">
+        <span
+          class="inline-flex items-center gap-2 rounded-full bg-emerald-50 text-emerald-700 px-4 py-1.5 text-xs font-semibold tracking-wide">
+          <i class="fas fa-biohazard text-[11px]"></i>
+          About the System
+        </span>
+
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mt-4 leading-tight">
+          Why Choose a <span class="text-emerald-600">Bio-Septic Tank?</span>
+        </h2>
+
+        <p class="mt-5 text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          A next-generation sewage treatment system built using biological
+          technology to remove waste, eliminate odour, and protect groundwater —
+          engineered for Indian soil and designed to last 50+ years with almost
+          zero maintenance.
+        </p>
+      </div>
+
+      <!-- PART 1: 3 Premium Feature Cards -->
+      <div class="grid md:grid-cols-3 gap-8 mb-20">
+        <!-- Eco Friendly -->
+        <div class="group p-8 rounded-3xl bg-gradient-to-br from-white to-emerald-50/30
+               border border-emerald-100 shadow-[0_10px_40px_rgba(15,23,42,0.08)]
+               hover:shadow-[0_20px_60px_rgba(16,185,129,0.25)] hover:-translate-y-2
+               hover:border-emerald-300 transition-all duration-500 overflow-hidden relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+
+          <div class="relative">
+            <div class="h-16 w-16 flex items-center justify-center rounded-2xl
+                   bg-gradient-to-br from-emerald-400 to-emerald-600 shadow-lg shadow-emerald-500/50
+                   text-white text-3xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+              Eco-Friendly System
+            </h3>
+            <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+              Uses beneficial bacteria to naturally treat sewage without
+              chemicals or electricity.
+            </p>
+          </div>
+        </div>
+
+        <!-- Odour Free -->
+        <div class="group p-8 rounded-3xl bg-gradient-to-br from-white to-blue-50/30
+               border border-blue-100 shadow-[0_10px_40px_rgba(15,23,42,0.08)]
+               hover:shadow-[0_20px_60px_rgba(59,130,246,0.25)] hover:-translate-y-2
+               hover:border-blue-300 transition-all duration-500 overflow-hidden relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+
+          <div class="relative">
+            <div class="h-16 w-16 flex items-center justify-center rounded-2xl
+                   bg-gradient-to-br from-blue-400 to-blue-600 shadow-lg shadow-blue-500/50
+                   text-white text-3xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+              <i class="fas fa-wind"></i>
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+              Odour-Free Operation
+            </h3>
+            <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+              Multi-chamber design removes smell completely, keeping surroundings
+              fresh.
+            </p>
+          </div>
+        </div>
+
+        <!-- Low Maintenance -->
+        <div class="group p-8 rounded-3xl bg-gradient-to-br from-white to-purple-50/30
+               border border-purple-100 shadow-[0_10px_40px_rgba(15,23,42,0.08)]
+               hover:shadow-[0_20px_60px_rgba(168,85,247,0.25)] hover:-translate-y-2
+               hover:border-purple-300 transition-all duration-500 overflow-hidden relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-purple-500/0 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+
+          <div class="relative">
+            <div class="h-16 w-16 flex items-center justify-center rounded-2xl
+                   bg-gradient-to-br from-purple-400 to-purple-600 shadow-lg shadow-purple-500/50
+                   text-white text-3xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-slate-900 group-hover:text-purple-600 transition-colors">
+              Low Maintenance
+            </h3>
+            <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+              Works continuously with almost zero cleaning and no septic lorry visits.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PART 2: Detailed Feature Grid -->
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Natural Treatment -->
+        <div
+          class="group flex gap-5 p-7 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-emerald-300 transition-all">
+          <div
+            class="h-14 w-14 flex items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 text-2xl group-hover:bg-emerald-100 transition">
+            <i class="fas fa-bacteria"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-slate-900">
+              Natural Biological Treatment
+            </h3>
+            <p class="text-slate-600 mt-1 text-sm">
+              Special bacteria break down waste in multiple stages, reducing solids drastically.
+            </p>
+          </div>
+        </div>
+
+        <!-- Odour Free -->
+        <div
+          class="group flex gap-5 p-7 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-blue-300 transition-all">
+          <div
+            class="h-14 w-14 flex items-center justify-center rounded-xl bg-blue-50 text-blue-600 text-2xl group-hover:bg-blue-100 transition">
+            <i class="fas fa-snowflake"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-slate-900">
+              Odour-Free Technology
+            </h3>
+            <p class="text-slate-600 mt-1 text-sm">
+              Multi-chamber aeration ensures zero smell even after years of usage.
+            </p>
+          </div>
+        </div>
+
+        <!-- Strong FRP -->
+        <div
+          class="group flex gap-5 p-7 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-purple-300 transition-all">
+          <div
+            class="h-14 w-14 flex items-center justify-center rounded-xl bg-purple-50 text-purple-600 text-2xl group-hover:bg-purple-100 transition">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-slate-900">
+              Strong FRP Construction
+            </h3>
+            <p class="text-slate-600 mt-1 text-sm">
+              100% leak-proof, corrosion-resistant body designed for 50+ years lifespan.
+            </p>
+          </div>
+        </div>
+
+        <!-- No Electricity -->
+        <div
+          class="group flex gap-5 p-7 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-orange-300 transition-all">
+          <div
+            class="h-14 w-14 flex items-center justify-center rounded-xl bg-orange-50 text-orange-600 text-2xl group-hover:bg-orange-100 transition">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-slate-900">
+              No Electricity Required
+            </h3>
+            <p class="text-slate-600 mt-1 text-sm">
+              Fully passive system—works without motors, blowers, or power supply.
+            </p>
+          </div>
+        </div>
+
+        <!-- Zero Maintenance -->
+        <div
+          class="group flex gap-5 p-7 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-pink-300 transition-all">
+          <div
+            class="h-14 w-14 flex items-center justify-center rounded-xl bg-pink-50 text-pink-600 text-2xl group-hover:bg-pink-100 transition">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-slate-900">
+              Almost Zero Maintenance
+            </h3>
+            <p class="text-slate-600 mt-1 text-sm">
+              No septic lorry required for many years — saves money and hassle.
+            </p>
+          </div>
+        </div>
+
+        <!-- Compact -->
+        <div
+          class="group flex gap-5 p-7 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-yellow-300 transition-all">
+          <div
+            class="h-14 w-14 flex items-center justify-center rounded-xl bg-yellow-50 text-yellow-600 text-2xl group-hover:bg-yellow-100 transition">
+            <i class="fas fa-home"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-slate-900">
+              Compact & Space Saving
+            </h3>
+            <p class="text-slate-600 mt-1 text-sm">
+              Factory-made, easy to transport, and fits even in tight residential spaces.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- PREMIUM – Image Slider / Gallery -->
+  <section class="py-20 bg-gray-50" id="bio-gallery">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Heading -->
+      <div class="text-center mb-10">
+        <span
+          class="inline-flex items-center gap-2 rounded-full bg-emerald-50 text-emerald-700 px-4 py-1.5 text-xs font-semibold tracking-wide">
+          <i class="fas fa-images text-[11px]"></i>
+          Installations Gallery
+        </span>
+
+        <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 mt-4">
+          See the <span class="text-emerald-600">Bio-Septic Tank</span> in Action
+        </h2>
+        <p class="mt-3 text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+          Real installations from homes and sites where our bio-septic tanks are
+          working silently underground — odour-free, eco-friendly, and low-maintenance.
+        </p>
+      </div>
+
+      <!-- Slider Wrapper -->
+      <div class="relative">
+        <!-- Main Slider -->
+        <div class="overflow-hidden rounded-3xl shadow-[0_20px_60px_rgba(15,23,42,0.25)] bg-slate-900">
+          <div id="sliderTrack" class="relative h-[260px] sm:h-[360px] md:h-[420px]">
+            <!-- Slide 1 -->
+            <div class="slider-slide absolute inset-0 opacity-100 scale-100 transition-all duration-700 ease-out">
+              <img src="images/bio-tank-1.jpg" alt="Bio-Septic tank installation – underground placement"
+                class="w-full h-full object-cover" />
+            </div>
+            <!-- Slide 2 -->
+            <div class="slider-slide absolute inset-0 opacity-0 scale-95 transition-all duration-700 ease-out">
+              <img src="images/bio-tank-2.jpg" alt="Bio-Septic tank FRP body close-up"
+                class="w-full h-full object-cover" />
+            </div>
+            <!-- Slide 3 -->
+            <div class="slider-slide absolute inset-0 opacity-0 scale-95 transition-all duration-700 ease-out">
+              <img src="images/bio-tank-3.jpg" alt="Completed site with bio-septic connection"
+                class="w-full h-full object-cover" />
+            </div>
+            <!-- Slide 4 -->
+            <div class="slider-slide absolute inset-0 opacity-0 scale-95 transition-all duration-700 ease-out">
+              <img src="images/bio-tank-4.jpg" alt="Team installing bio-septic tank at residential project"
+                class="w-full h-full object-cover" />
+            </div>
+          </div>
+
+          <!-- Gradient overlay + caption bar (optional) -->
+          <div
+            class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent px-6 py-4 flex items-center justify-between gap-3 pointer-events-none">
+            <div class="text-white text-sm sm:text-base font-medium" id="sliderCaption">
+              Underground installation – compact, space-saving design.
+            </div>
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <button id="sliderPrev" type="button"
+          class="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 h-10 w-10 sm:h-11 sm:w-11 flex items-center justify-center rounded-full bg-white/90 text-slate-800 shadow-lg hover:bg-emerald-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-emerald-400 transition">
+          <i class="fas fa-chevron-left text-xs"></i>
+        </button>
+
+        <button id="sliderNext" type="button"
+          class="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 h-10 w-10 sm:h-11 sm:w-11 flex items-center justify-center rounded-full bg-white/90 text-slate-800 shadow-lg hover:bg-emerald-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-emerald-400 transition">
+          <i class="fas fa-chevron-right text-xs"></i>
+        </button>
+      </div>
+
+      <!-- Thumbnails -->
+      <div class="mt-6 grid grid-cols-4 gap-3">
+        <button class="thumb-btn group relative rounded-2xl overflow-hidden border-2 border-emerald-500" data-slide="0">
+          <img src="images/bio-tank-1.jpg" alt="Thumb 1"
+            class="w-full h-20 sm:h-24 object-cover group-hover:scale-105 transition-transform duration-300" />
+        </button>
+
+        <button class="thumb-btn group relative rounded-2xl overflow-hidden border-2 border-transparent" data-slide="1">
+          <img src="images/bio-tank-2.jpg" alt="Thumb 2"
+            class="w-full h-20 sm:h-24 object-cover group-hover:scale-105 transition-transform duration-300" />
+        </button>
+
+        <button class="thumb-btn group relative rounded-2xl overflow-hidden border-2 border-transparent" data-slide="2">
+          <img src="images/bio-tank-3.jpg" alt="Thumb 3"
+            class="w-full h-20 sm:h-24 object-cover group-hover:scale-105 transition-transform duration-300" />
+        </button>
+
+        <button class="thumb-btn group relative rounded-2xl overflow-hidden border-2 border-transparent" data-slide="3">
+          <img src="images/bio-tank-4.jpg" alt="Thumb 4"
+            class="w-full h-20 sm:h-24 object-cover group-hover:scale-105 transition-transform duration-300" />
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slider Script (Vanilla JS) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const slides = document.querySelectorAll(".slider-slide");
+      const thumbs = document.querySelectorAll(".thumb-btn");
+      const prevBtn = document.getElementById("sliderPrev");
+      const nextBtn = document.getElementById("sliderNext");
+      const captionEl = document.getElementById("sliderCaption");
+
+      const captions = [
+        "Underground installation – compact, space-saving design.",
+        "Heavy-duty FRP body – leak-proof and corrosion-resistant.",
+        "Odour-free outlet – clean surroundings even after years.",
+        "Quick and neat installation by trained technicians."
+      ];
+
+      let current = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          if (i === index) {
+            slide.style.opacity = "1";
+            slide.style.transform = "scale(1)";
+            slide.style.zIndex = "10";
+          } else {
+            slide.style.opacity = "0";
+            slide.style.transform = "scale(0.95)";
+            slide.style.zIndex = "0";
+          }
+        });
+
+        thumbs.forEach((thumb, i) => {
+          if (i === index) {
+            thumb.classList.add("border-emerald-500");
+            thumb.classList.remove("border-transparent");
+          } else {
+            thumb.classList.remove("border-emerald-500");
+            thumb.classList.add("border-transparent");
+          }
+        });
+
+        if (captionEl) {
+          captionEl.textContent = captions[index] || "";
+        }
+
+        current = index;
+      }
+
+      function nextSlide() {
+        let next = current + 1;
+        if (next >= slides.length) next = 0;
+        showSlide(next);
+      }
+
+      function prevSlide() {
+        let prev = current - 1;
+        if (prev < 0) prev = slides.length - 1;
+        showSlide(prev);
+      }
+
+      // Event listeners
+      if (nextBtn) nextBtn.addEventListener("click", nextSlide);
+      if (prevBtn) prevBtn.addEventListener("click", prevSlide);
+
+      thumbs.forEach((thumb) => {
+        thumb.addEventListener("click", () => {
+          const index = parseInt(thumb.getAttribute("data-slide"), 10);
+          showSlide(index);
+        });
+      });
+
+      // Auto-play (optional – comment this block if you don’t want auto-slide)
+      let autoPlay = setInterval(nextSlide, 6000);
+
+      // Pause on hover
+      const sliderArea = document.getElementById("sliderTrack")?.parentElement;
+      if (sliderArea) {
+        sliderArea.addEventListener("mouseenter", () => clearInterval(autoPlay));
+        sliderArea.addEventListener("mouseleave", () => {
+          autoPlay = setInterval(nextSlide, 6000);
+        });
+      }
+
+      // Init
+      showSlide(0);
+    });
+  </script>
 
 
   <section class="py-20 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-    <!-- Heading -->
-    <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold text-gray-900 mb-4">
-        FRP Bio-Septic Tank Installation Layout
-      </h2>
-      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-        A simple, clear explanation of how the FRP Bio-Septic Tank is installed at your site — 
-        showing the toilet line, screen chamber, FRP tank, and soak pit connection.
-      </p>
-    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <!-- Illustration Section -->
-    <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-      <img 
-        src="./images/TankInstallation.jpg" 
-        alt="Tank Installation Layout" 
-        class="rounded-xl w-full shadow-md border"
-      >
-    </div>
-
-    <!-- Step-by-step installation explanation -->
-    <div class="grid md:grid-cols-3 gap-10 mt-14">
-      
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
-        <h3 class="text-xl font-bold text-gray-900 mb-3">1. Toilet to Screen Chamber</h3>
-        <p class="text-gray-600">
-          Wastewater from your toilets first enters the **M.S. bar screen chamber**, 
-          where large particles are filtered.
+      <!-- Heading -->
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">
+          FRP Bio-Septic Tank Installation Layout
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          A simple, clear explanation of how the FRP Bio-Septic Tank is installed at your site —
+          showing the toilet line, screen chamber, FRP tank, and soak pit connection.
         </p>
       </div>
 
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
-        <h3 class="text-xl font-bold text-gray-900 mb-3">2. FRP Bio-Septic Tank Placement</h3>
-        <p class="text-gray-600">
-          The FRP tank is placed on a base layer of **quarry dust**, with inlet & outlet pipes aligned 
-          for smooth flow between chambers.
-        </p>
+      <!-- Illustration Section -->
+      <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+        <img src="./images/TankInstallation.jpg" alt="Tank Installation Layout"
+          class="rounded-xl w-full shadow-md border">
       </div>
 
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
-        <h3 class="text-xl font-bold text-gray-900 mb-3">3. Soak Pit / Dispersion System</h3>
-        <p class="text-gray-600">
-          Treated, odor-free water flows to a **soak pit** or recharge chamber, ensuring safe 
-          groundwater percolation.
-        </p>
-      </div>
+      <!-- Step-by-step installation explanation -->
+      <div class="grid md:grid-cols-3 gap-10 mt-14">
 
-    </div>
-
-    <!-- Box with Note -->
-    <div class="mt-12 bg-emerald-700 text-white p-8 rounded-2xl text-center shadow-lg">
-      <p class="text-xl font-semibold">
-        Installation follows DRDO-based design standards used in defence, schools, hospitals, 
-        and residential projects across India.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-   <!-- PREMIUM – Technical Specifications -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Section Header -->
-        <div class="text-center mb-16">
-          <span
-            class="inline-flex items-center gap-2 rounded-full bg-emerald-50 text-emerald-700 px-4 py-1.5 text-xs font-semibold tracking-wide"
-          >
-            <i class="fas fa-list text-[11px]"></i>
-            SPECIFICATIONS
-          </span>
-
-          <h2
-            class="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mt-4 leading-tight"
-          >
-            Technical <span class="text-emerald-600">Specifications</span>
-          </h2>
-
-          <p
-            class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed"
-          >
-            Choose the right capacity based on number of users, space, and
-            installation type.
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">1. Toilet to Screen Chamber</h3>
+          <p class="text-gray-600">
+            Wastewater from your toilets first enters the **M.S. bar screen chamber**,
+            where large particles are filtered.
           </p>
         </div>
 
-        <!-- Table Container -->
-        <div class="overflow-x-auto">
-          <div
-            class="bg-white shadow-xl rounded-3xl border border-slate-200 overflow-hidden"
-          >
-            <table class="w-full text-left">
-              <thead class="bg-emerald-600 text-white">
-                <tr class="text-sm uppercase tracking-wide">
-                  <th class="px-6 py-4 font-semibold">Capacity</th>
-                  <th class="px-6 py-4 font-semibold">
-                    Dimensions (L × W × H)
-                  </th>
-                  <th class="px-6 py-4 font-semibold">Suitable For</th>
-                  <th class="px-6 py-4 font-semibold">Material</th>
-                </tr>
-              </thead>
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">2. FRP Bio-Septic Tank Placement</h3>
+          <p class="text-gray-600">
+            The FRP tank is placed on a base layer of **quarry dust**, with inlet & outlet pipes aligned
+            for smooth flow between chambers.
+          </p>
+        </div>
 
-            
-              <tbody class="text-slate-700 text-sm">
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">3. Soak Pit / Dispersion System</h3>
+          <p class="text-gray-600">
+            Treated, odor-free water flows to a **soak pit** or recharge chamber, ensuring safe
+            groundwater percolation.
+          </p>
+        </div>
 
-  <!-- 1200 L -->
-  <tr class="hover:bg-slate-50 transition border-b border-slate-100">
-    <td class="px-6 py-4 font-medium">1200 Liters</td>
-    <td class="px-6 py-4">5½ ft × 3¼ ft × 4 ft</td>
-    <td class="px-6 py-4">7 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
+      </div>
 
-  <!-- 1500 L -->
-  <tr class="bg-slate-50 hover:bg-slate-100 transition border-b border-slate-100">
-    <td class="px-6 py-4 font-medium">1500 Liters</td>
-    <td class="px-6 py-4">6½ ft × 3¼ ft × 4 ft</td>
-    <td class="px-6 py-4">10 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
+      <!-- Box with Note -->
+      <div class="mt-12 bg-emerald-700 text-white p-8 rounded-2xl text-center shadow-lg">
+        <p class="text-xl font-semibold">
+          Installation follows DRDO-based design standards used in defence, schools, hospitals,
+          and residential projects across India.
+        </p>
+      </div>
 
-  <!-- 2000 L -->
-  <tr class="hover:bg-slate-50 transition border-b border-slate-100">
-    <td class="px-6 py-4 font-medium">2000 Liters</td>
-    <td class="px-6 py-4">6½ ft × 3¾ ft × 4½ ft</td>
-    <td class="px-6 py-4">15 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
+    </div>
+  </section>
 
-  <!-- 3000 L -->
-  <tr class="bg-slate-50 hover:bg-slate-100 transition border-b border-slate-100">
-    <td class="px-6 py-4 font-medium">3000 Liters</td>
-    <td class="px-6 py-4">7½ ft × 4½ ft × 5 ft</td>
-    <td class="px-6 py-4">20 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
+  <!-- PREMIUM – Technical Specifications -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <span
+          class="inline-flex items-center gap-2 rounded-full bg-emerald-50 text-emerald-700 px-4 py-1.5 text-xs font-semibold tracking-wide">
+          <i class="fas fa-list text-[11px]"></i>
+          SPECIFICATIONS
+        </span>
 
-  <!-- 4000 L -->
-  <tr class="hover:bg-slate-50 transition border-b border-slate-100">
-    <td class="px-6 py-4 font-medium">4000 Liters</td>
-    <td class="px-6 py-4">9½ ft × 4½ ft × 4½ ft</td>
-    <td class="px-6 py-4">30 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mt-4 leading-tight">
+          Technical <span class="text-emerald-600">Specifications</span>
+        </h2>
 
-  <!-- 5000 L -->
-  <tr class="bg-slate-50 hover:bg-slate-100 transition border-b border-slate-100">
-    <td class="px-6 py-4 font-medium">5000 Liters</td>
-    <td class="px-6 py-4">12 ft × 4½ ft × 4½ ft</td>
-    <td class="px-6 py-4">40 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
+        <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          Choose the right capacity based on number of users, space, and
+          installation type.
+        </p>
+      </div>
 
-  <!-- 6000 L -->
-  <tr class="hover:bg-slate-50 transition border-b border-slate-100">
-    <td class="px-6 py-4 font-medium">6000 Liters</td>
-    <td class="px-6 py-4">14¼ ft × 4½ ft × 4½ ft</td>
-    <td class="px-6 py-4">50 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
-
-  <!-- 8000 L -->
-  <tr class="bg-slate-50 hover:bg-slate-100 transition border-b border-slate-100">
-    <td class="px-6 py-4 font-medium">8000 Liters</td>
-    <td class="px-6 py-4">13 ft × 5¼ ft × 5½ ft</td>
-    <td class="px-6 py-4">60 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
-
-  <!-- 10000 L -->
-  <tr class="hover:bg-slate-50 transition border-b border-slate-100">
-    <td class="px-6 py-4 font-medium">10000 Liters</td>
-    <td class="px-6 py-4">16¾ ft × 5¼ ft × 5½ ft</td>
-    <td class="px-6 py-4">80 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
-
-  <!-- 12000 L -->
-  <tr class="bg-slate-50 hover:bg-slate-100 transition border-b border-slate-100">
-    <td class="px-6 py-4 font-medium">12000 Liters</td>
-    <td class="px-6 py-4">16 ft × 5¾ ft × 6 ft</td>
-    <td class="px-6 py-4">100 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
-
-  <!-- 15000 L -->
-  <tr class="hover:bg-slate-50 transition border-b border-slate-100">
-    <td class="px-6 py-4 font-medium">15000 Liters</td>
-    <td class="px-6 py-4">20 ft × 5¾ ft × 6 ft</td>
-    <td class="px-6 py-4">150 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
-
-  <!-- 20000 L -->
-  <tr class="bg-slate-50 hover:bg-slate-100 transition border-b border-slate-100">
-    <td class="px-6 py-4 font-medium">20000 Liters</td>
-    <td class="px-6 py-4">18¼ ft × 7 ft × 6 ft</td>
-    <td class="px-6 py-4">200 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
-
-  <!-- 25000 L -->
-  <tr class="hover:bg-slate-50 transition border-b border-slate-100">
-    <td class="px-6 py-4 font-medium">25000 Liters</td>
-    <td class="px-6 py-4">22½ ft × 7 ft × 7½ ft</td>
-    <td class="px-6 py-4">250 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
-
-  <!-- 30000 L -->
-  <tr class="bg-slate-50 hover:bg-slate-100 transition border-b border-slate-100">
-    <td class="px-6 py-4 font-medium">30000 Liters</td>
-    <td class="px-6 py-4">26¾ ft × 7 ft × 7½ ft</td>
-    <td class="px-6 py-4">300 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
-
-  <!-- 35000 L -->
-  <tr class="hover:bg-slate-50 transition border-b border-slate-100">
-    <td class="px-6 py-4 font-medium">35000 Liters</td>
-    <td class="px-6 py-4">31¼ ft × 7 ft × 7½ ft</td>
-    <td class="px-6 py-4">350 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
-
-  <!-- 40000 L -->
-  <tr class="bg-slate-50 hover:bg-slate-100 transition border-b border-slate-100">
-    <td class="px-6 py-4 font-medium">40000 Liters</td>
-    <td class="px-6 py-4">35½ ft × 7 ft × 7½ ft</td>
-    <td class="px-6 py-4">400 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
-
-  <!-- 45000 L -->
-  <tr class="hover:bg-slate-50 transition">
-    <td class="px-6 py-4 font-medium">45000 Liters</td>
-    <td class="px-6 py-4">39½ ft × 7 ft × 7½ ft</td>
-    <td class="px-6 py-4">450 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
-
-  <!-- 50000 L -->
-  <tr class="bg-slate-50 hover:bg-slate-100 transition">
-    <td class="px-6 py-4 font-medium">50000 Liters</td>
-    <td class="px-6 py-4">44¼ ft × 7 ft × 7½ ft</td>
-    <td class="px-6 py-4">500 People</td>
-    <td class="px-6 py-4">FRP</td>
-  </tr>
-
-</tbody>
+      <!-- Table Container -->
+      <div class="overflow-x-auto">
+        <div class="bg-white shadow-xl rounded-3xl border border-slate-200 overflow-hidden">
+          <table class="w-full text-left">
+            <thead class="bg-emerald-600 text-white">
+              <tr class="text-sm uppercase tracking-wide">
+                <th class="px-6 py-4 font-semibold">Capacity</th>
+                <th class="px-6 py-4 font-semibold">
+                  Dimensions (L × W × H)
+                </th>
+                <th class="px-6 py-4 font-semibold">Suitable For</th>
+                <th class="px-6 py-4 font-semibold">Material</th>
+              </tr>
+            </thead>
 
 
+            <tbody class="text-slate-700 text-sm">
 
-            </table>
+              <!-- 1200 L -->
+              <tr class="hover:bg-slate-50 transition border-b border-slate-100">
+                <td class="px-6 py-4 font-medium">1200 Liters</td>
+                <td class="px-6 py-4">5½ ft × 3¼ ft × 4 ft</td>
+                <td class="px-6 py-4">7 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 1500 L -->
+              <tr class="bg-slate-50 hover:bg-slate-100 transition border-b border-slate-100">
+                <td class="px-6 py-4 font-medium">1500 Liters</td>
+                <td class="px-6 py-4">6½ ft × 3¼ ft × 4 ft</td>
+                <td class="px-6 py-4">10 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 2000 L -->
+              <tr class="hover:bg-slate-50 transition border-b border-slate-100">
+                <td class="px-6 py-4 font-medium">2000 Liters</td>
+                <td class="px-6 py-4">6½ ft × 3¾ ft × 4½ ft</td>
+                <td class="px-6 py-4">15 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 3000 L -->
+              <tr class="bg-slate-50 hover:bg-slate-100 transition border-b border-slate-100">
+                <td class="px-6 py-4 font-medium">3000 Liters</td>
+                <td class="px-6 py-4">7½ ft × 4½ ft × 5 ft</td>
+                <td class="px-6 py-4">20 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 4000 L -->
+              <tr class="hover:bg-slate-50 transition border-b border-slate-100">
+                <td class="px-6 py-4 font-medium">4000 Liters</td>
+                <td class="px-6 py-4">9½ ft × 4½ ft × 4½ ft</td>
+                <td class="px-6 py-4">30 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 5000 L -->
+              <tr class="bg-slate-50 hover:bg-slate-100 transition border-b border-slate-100">
+                <td class="px-6 py-4 font-medium">5000 Liters</td>
+                <td class="px-6 py-4">12 ft × 4½ ft × 4½ ft</td>
+                <td class="px-6 py-4">40 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 6000 L -->
+              <tr class="hover:bg-slate-50 transition border-b border-slate-100">
+                <td class="px-6 py-4 font-medium">6000 Liters</td>
+                <td class="px-6 py-4">14¼ ft × 4½ ft × 4½ ft</td>
+                <td class="px-6 py-4">50 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 8000 L -->
+              <tr class="bg-slate-50 hover:bg-slate-100 transition border-b border-slate-100">
+                <td class="px-6 py-4 font-medium">8000 Liters</td>
+                <td class="px-6 py-4">13 ft × 5¼ ft × 5½ ft</td>
+                <td class="px-6 py-4">60 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 10000 L -->
+              <tr class="hover:bg-slate-50 transition border-b border-slate-100">
+                <td class="px-6 py-4 font-medium">10000 Liters</td>
+                <td class="px-6 py-4">16¾ ft × 5¼ ft × 5½ ft</td>
+                <td class="px-6 py-4">80 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 12000 L -->
+              <tr class="bg-slate-50 hover:bg-slate-100 transition border-b border-slate-100">
+                <td class="px-6 py-4 font-medium">12000 Liters</td>
+                <td class="px-6 py-4">16 ft × 5¾ ft × 6 ft</td>
+                <td class="px-6 py-4">100 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 15000 L -->
+              <tr class="hover:bg-slate-50 transition border-b border-slate-100">
+                <td class="px-6 py-4 font-medium">15000 Liters</td>
+                <td class="px-6 py-4">20 ft × 5¾ ft × 6 ft</td>
+                <td class="px-6 py-4">150 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 20000 L -->
+              <tr class="bg-slate-50 hover:bg-slate-100 transition border-b border-slate-100">
+                <td class="px-6 py-4 font-medium">20000 Liters</td>
+                <td class="px-6 py-4">18¼ ft × 7 ft × 6 ft</td>
+                <td class="px-6 py-4">200 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 25000 L -->
+              <tr class="hover:bg-slate-50 transition border-b border-slate-100">
+                <td class="px-6 py-4 font-medium">25000 Liters</td>
+                <td class="px-6 py-4">22½ ft × 7 ft × 7½ ft</td>
+                <td class="px-6 py-4">250 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 30000 L -->
+              <tr class="bg-slate-50 hover:bg-slate-100 transition border-b border-slate-100">
+                <td class="px-6 py-4 font-medium">30000 Liters</td>
+                <td class="px-6 py-4">26¾ ft × 7 ft × 7½ ft</td>
+                <td class="px-6 py-4">300 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 35000 L -->
+              <tr class="hover:bg-slate-50 transition border-b border-slate-100">
+                <td class="px-6 py-4 font-medium">35000 Liters</td>
+                <td class="px-6 py-4">31¼ ft × 7 ft × 7½ ft</td>
+                <td class="px-6 py-4">350 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 40000 L -->
+              <tr class="bg-slate-50 hover:bg-slate-100 transition border-b border-slate-100">
+                <td class="px-6 py-4 font-medium">40000 Liters</td>
+                <td class="px-6 py-4">35½ ft × 7 ft × 7½ ft</td>
+                <td class="px-6 py-4">400 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 45000 L -->
+              <tr class="hover:bg-slate-50 transition">
+                <td class="px-6 py-4 font-medium">45000 Liters</td>
+                <td class="px-6 py-4">39½ ft × 7 ft × 7½ ft</td>
+                <td class="px-6 py-4">450 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+              <!-- 50000 L -->
+              <tr class="bg-slate-50 hover:bg-slate-100 transition">
+                <td class="px-6 py-4 font-medium">50000 Liters</td>
+                <td class="px-6 py-4">44¼ ft × 7 ft × 7½ ft</td>
+                <td class="px-6 py-4">500 People</td>
+                <td class="px-6 py-4">FRP</td>
+              </tr>
+
+            </tbody>
+
+
+
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- WHY PIONEER BIO-SEPTIC TANK (WITH IMAGE) -->
+  <section class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Heading -->
+      <div class="text-center mb-12">
+        <p class="text-xs font-semibold tracking-[0.25em] text-emerald-600 uppercase">
+          Pioneer Bio-Septic Tank
+        </p>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-semibold text-slate-900">
+          8 Reasons Home Owners Choose Pioneer
+        </h2>
+        <p class="mt-3 text-sm sm:text-base text-slate-600 max-w-2xl mx-auto">
+          Factory-made FRP tanks that offer long-term, zero-maintenance performance.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        <!-- LEFT IMAGE -->
+        <div class="flex justify-center">
+          <img src="./images/pioneer-benefits-wheel.png" alt="Pioneer Benefits"
+            class="w-[450px] max-w-full drop-shadow-xl" />
+        </div>
+
+        <!-- RIGHT BENEFITS GRID -->
+        <div class="grid sm:grid-cols-2 gap-6">
+
+          <!-- Benefit Item -->
+          <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition">
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">1. Fit & Forget</h3>
+            <p class="text-sm text-slate-600">
+              Installed once, works for years without attention.
+            </p>
           </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition">
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">2. Nil AMC</h3>
+            <p class="text-sm text-slate-600">
+              No yearly service contract required.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition">
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">3. 100% Leak Proof</h3>
+            <p class="text-sm text-slate-600">
+              FRP body guarantees zero seepage.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition">
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">4. Zero Maintenance</h3>
+            <p class="text-sm text-slate-600">
+              No cleaning, no lorry, no hassle.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition">
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">5. One Day Installation</h3>
+            <p class="text-sm text-slate-600">
+              Ready-to-install factory-made tank.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition">
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">6. Zero Rust / Corrosion</h3>
+            <p class="text-sm text-slate-600">
+              No steel means no rust — long-term durability.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition">
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">7. Zero Pollution</h3>
+            <p class="text-sm text-slate-600">
+              Clean, odour-free, eco-friendly output.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition">
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">8. Long Life</h3>
+            <p class="text-sm text-slate-600">
+              Designed for 40–50+ years of use.
+            </p>
+          </div>
+
         </div>
-      </div>
-    </section>
-
-
-
-
-
-    <!-- WHY PIONEER BIO-SEPTIC TANK (WITH IMAGE) -->
-<section class="py-16 bg-slate-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-    <!-- Heading -->
-    <div class="text-center mb-12">
-      <p class="text-xs font-semibold tracking-[0.25em] text-emerald-600 uppercase">
-        Pioneer Bio-Septic Tank
-      </p>
-      <h2 class="mt-3 text-3xl sm:text-4xl font-semibold text-slate-900">
-        8 Reasons Home Owners Choose Pioneer
-      </h2>
-      <p class="mt-3 text-sm sm:text-base text-slate-600 max-w-2xl mx-auto">
-        Factory-made FRP tanks that offer long-term, zero-maintenance performance.
-      </p>
-    </div>
-
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-
-      <!-- LEFT IMAGE -->
-      <div class="flex justify-center">
-        <img 
-          src="./images/pioneer-benefits-wheel.png"
-          alt="Pioneer Benefits"
-          class="w-[450px] max-w-full drop-shadow-xl"
-        />
-      </div>
-
-      <!-- RIGHT BENEFITS GRID -->
-      <div class="grid sm:grid-cols-2 gap-6">
-
-        <!-- Benefit Item -->
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition">
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">1. Fit & Forget</h3>
-          <p class="text-sm text-slate-600">
-            Installed once, works for years without attention.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition">
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">2. Nil AMC</h3>
-          <p class="text-sm text-slate-600">
-            No yearly service contract required.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition">
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">3. 100% Leak Proof</h3>
-          <p class="text-sm text-slate-600">
-            FRP body guarantees zero seepage.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition">
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">4. Zero Maintenance</h3>
-          <p class="text-sm text-slate-600">
-            No cleaning, no lorry, no hassle.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition">
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">5. One Day Installation</h3>
-          <p class="text-sm text-slate-600">
-            Ready-to-install factory-made tank.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition">
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">6. Zero Rust / Corrosion</h3>
-          <p class="text-sm text-slate-600">
-            No steel means no rust — long-term durability.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition">
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">7. Zero Pollution</h3>
-          <p class="text-sm text-slate-600">
-            Clean, odour-free, eco-friendly output.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition">
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">8. Long Life</h3>
-          <p class="text-sm text-slate-600">
-            Designed for 40–50+ years of use.
-          </p>
-        </div>
-
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
 
- 
-  
 
-    <!-- PREMIUM – The FRP Bio-Septic Solution -->
-    <section class="py-20 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Heading -->
-        <div class="text-center mb-12">
-          <span
-            class="inline-flex items-center gap-2 rounded-full bg-emerald-50 text-emerald-700 px-4 py-1.5 text-xs font-semibold tracking-wide"
-          >
-            <i class="fas fa-exchange-alt text-[11px]"></i>
-            COMPARISON
-          </span>
 
-          <h2
-            class="mt-4 text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 leading-tight"
-          >
-            Switch once.
-            <span class="text-emerald-600"
-              >Forget your septic problem for decades.</span
-            >
-          </h2>
 
-          <p class="mt-4 text-sm sm:text-base text-slate-600 max-w-2xl mx-auto">
-            See how a traditional masonry septic tank compares with a
-            factory-made Pioneer FRP Bio-Septic tank.
-          </p>
-        </div>
+  <!-- PREMIUM – The FRP Bio-Septic Solution -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Heading -->
+      <div class="text-center mb-12">
+        <span
+          class="inline-flex items-center gap-2 rounded-full bg-emerald-50 text-emerald-700 px-4 py-1.5 text-xs font-semibold tracking-wide">
+          <i class="fas fa-exchange-alt text-[11px]"></i>
+          COMPARISON
+        </span>
 
-        <!-- Comparison Table Wrapper -->
-        <div class="overflow-x-auto -mx-4 sm:mx-0">
-          <div
-            class="bg-white rounded-3xl shadow-[0_24px_70px_rgba(15,23,42,0.12)] border border-slate-100 overflow-hidden min-w-[640px] sm:min-w-0"
-          >
+        <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 leading-tight">
+          Switch once.
+          <span class="text-emerald-600">Forget your septic problem for decades.</span>
+        </h2>
+
+        <p class="mt-4 text-sm sm:text-base text-slate-600 max-w-2xl mx-auto">
+          See how a traditional masonry septic tank compares with a
+          factory-made Pioneer FRP Bio-Septic tank.
+        </p>
+      </div>
+
+      <!-- Comparison Table Wrapper -->
+      <div class="overflow-x-auto -mx-4 sm:mx-0">
+        <div
+          class="bg-white rounded-3xl shadow-[0_24px_70px_rgba(15,23,42,0.12)] border border-slate-100 overflow-hidden min-w-[640px] sm:min-w-0">
           <!-- Header Row -->
-          <div
-            class="grid grid-cols-3 text-xs sm:text-sm font-semibold text-slate-900 border-b border-slate-100"
-          >
-            <div
-              class="px-4 sm:px-6 py-4 bg-slate-50 text-slate-500 uppercase tracking-wide text-xs sm:text-sm"
-            >
+          <div class="grid grid-cols-3 text-xs sm:text-sm font-semibold text-slate-900 border-b border-slate-100">
+            <div class="px-4 sm:px-6 py-4 bg-slate-50 text-slate-500 uppercase tracking-wide text-xs sm:text-sm">
               Factor
             </div>
             <div class="px-4 sm:px-6 py-4 bg-slate-50">
@@ -1334,27 +1204,17 @@
           <div class="divide-y divide-slate-100 text-xs sm:text-sm">
             <!-- Smell -->
             <div class="grid grid-cols-3">
-              <div
-                class="px-4 sm:px-6 py-4 bg-slate-50 font-medium text-slate-700"
-              >
+              <div class="px-4 sm:px-6 py-4 bg-slate-50 font-medium text-slate-700">
                 Smell
               </div>
-              <div
-                class="px-4 sm:px-6 py-4 text-slate-600 flex items-center gap-2"
-              >
-                <span
-                  class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-rose-50 text-rose-500"
-                >
+              <div class="px-4 sm:px-6 py-4 text-slate-600 flex items-center gap-2">
+                <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-rose-50 text-rose-500">
                   <i class="fas fa-times text-[10px]"></i>
                 </span>
                 Sometimes / often
               </div>
-              <div
-                class="px-4 sm:px-6 py-4 bg-emerald-50 flex items-center gap-2 text-emerald-900"
-              >
-                <span
-                  class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white"
-                >
+              <div class="px-4 sm:px-6 py-4 bg-emerald-50 flex items-center gap-2 text-emerald-900">
+                <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white">
                   <i class="fas fa-check text-[10px]"></i>
                 </span>
                 Odour-free
@@ -1363,27 +1223,17 @@
 
             <!-- Cleaning -->
             <div class="grid grid-cols-3">
-              <div
-                class="px-4 sm:px-6 py-4 bg-slate-50 font-medium text-slate-700"
-              >
+              <div class="px-4 sm:px-6 py-4 bg-slate-50 font-medium text-slate-700">
                 Cleaning
               </div>
-              <div
-                class="px-4 sm:px-6 py-4 text-slate-600 flex items-center gap-2"
-              >
-                <span
-                  class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-rose-50 text-rose-500"
-                >
+              <div class="px-4 sm:px-6 py-4 text-slate-600 flex items-center gap-2">
+                <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-rose-50 text-rose-500">
                   <i class="fas fa-times text-[10px]"></i>
                 </span>
                 Needs frequent pumping (septic lorry)
               </div>
-              <div
-                class="px-4 sm:px-6 py-4 bg-emerald-50 flex items-center gap-2 text-emerald-900"
-              >
-                <span
-                  class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white"
-                >
+              <div class="px-4 sm:px-6 py-4 bg-emerald-50 flex items-center gap-2 text-emerald-900">
+                <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white">
                   <i class="fas fa-check text-[10px]"></i>
                 </span>
                 Almost zero cleaning
@@ -1392,27 +1242,17 @@
 
             <!-- Leakage -->
             <div class="grid grid-cols-3">
-              <div
-                class="px-4 sm:px-6 py-4 bg-slate-50 font-medium text-slate-700"
-              >
+              <div class="px-4 sm:px-6 py-4 bg-slate-50 font-medium text-slate-700">
                 Leakage
               </div>
-              <div
-                class="px-4 sm:px-6 py-4 text-slate-600 flex items-center gap-2"
-              >
-                <span
-                  class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-rose-50 text-rose-500"
-                >
+              <div class="px-4 sm:px-6 py-4 text-slate-600 flex items-center gap-2">
+                <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-rose-50 text-rose-500">
                   <i class="fas fa-times text-[10px]"></i>
                 </span>
                 May crack or leak into soil
               </div>
-              <div
-                class="px-4 sm:px-6 py-4 bg-emerald-50 flex items-center gap-2 text-emerald-900"
-              >
-                <span
-                  class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white"
-                >
+              <div class="px-4 sm:px-6 py-4 bg-emerald-50 flex items-center gap-2 text-emerald-900">
+                <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white">
                   <i class="fas fa-check text-[10px]"></i>
                 </span>
                 100% leak-proof FRP body
@@ -1421,27 +1261,17 @@
 
             <!-- Life -->
             <div class="grid grid-cols-3">
-              <div
-                class="px-4 sm:px-6 py-4 bg-slate-50 font-medium text-slate-700"
-              >
+              <div class="px-4 sm:px-6 py-4 bg-slate-50 font-medium text-slate-700">
                 Life
               </div>
-              <div
-                class="px-4 sm:px-6 py-4 text-slate-600 flex items-center gap-2"
-              >
-                <span
-                  class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-amber-50 text-amber-500"
-                >
+              <div class="px-4 sm:px-6 py-4 text-slate-600 flex items-center gap-2">
+                <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-amber-50 text-amber-500">
                   <i class="fas fa-exclamation text-[10px]"></i>
                 </span>
                 10–15 years (typical)
               </div>
-              <div
-                class="px-4 sm:px-6 py-4 bg-emerald-50 flex items-center gap-2 text-emerald-900"
-              >
-                <span
-                  class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white"
-                >
+              <div class="px-4 sm:px-6 py-4 bg-emerald-50 flex items-center gap-2 text-emerald-900">
+                <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white">
                   <i class="fas fa-check text-[10px]"></i>
                 </span>
                 50+ years design life
@@ -1450,27 +1280,17 @@
 
             <!-- Electricity -->
             <div class="grid grid-cols-3">
-              <div
-                class="px-4 sm:px-6 py-4 bg-slate-50 font-medium text-slate-700"
-              >
+              <div class="px-4 sm:px-6 py-4 bg-slate-50 font-medium text-slate-700">
                 Electricity
               </div>
-              <div
-                class="px-4 sm:px-6 py-4 text-slate-600 flex items-center gap-2"
-              >
-                <span
-                  class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-amber-50 text-amber-500"
-                >
+              <div class="px-4 sm:px-6 py-4 text-slate-600 flex items-center gap-2">
+                <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-amber-50 text-amber-500">
                   <i class="fas fa-bolt text-[10px]"></i>
                 </span>
                 Sometimes needed for STP / aeration
               </div>
-              <div
-                class="px-4 sm:px-6 py-4 bg-emerald-50 flex items-center gap-2 text-emerald-900"
-              >
-                <span
-                  class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white"
-                >
+              <div class="px-4 sm:px-6 py-4 bg-emerald-50 flex items-center gap-2 text-emerald-900">
+                <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white">
                   <i class="fas fa-check text-[10px]"></i>
                 </span>
                 No electricity required
@@ -1479,27 +1299,17 @@
 
             <!-- Space -->
             <div class="grid grid-cols-3">
-              <div
-                class="px-4 sm:px-6 py-4 bg-slate-50 font-medium text-slate-700"
-              >
+              <div class="px-4 sm:px-6 py-4 bg-slate-50 font-medium text-slate-700">
                 Space Required
               </div>
-              <div
-                class="px-4 sm:px-6 py-4 text-slate-600 flex items-center gap-2"
-              >
-                <span
-                  class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-rose-50 text-rose-500"
-                >
+              <div class="px-4 sm:px-6 py-4 text-slate-600 flex items-center gap-2">
+                <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-rose-50 text-rose-500">
                   <i class="fas fa-times text-[10px]"></i>
                 </span>
                 Bulky on-site construction
               </div>
-              <div
-                class="px-4 sm:px-6 py-4 bg-emerald-50 flex items-center gap-2 text-emerald-900"
-              >
-                <span
-                  class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white"
-                >
+              <div class="px-4 sm:px-6 py-4 bg-emerald-50 flex items-center gap-2 text-emerald-900">
+                <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white">
                   <i class="fas fa-check text-[10px]"></i>
                 </span>
                 Compact, factory-made tank
@@ -1507,225 +1317,209 @@
             </div>
           </div>
         </div>
-        </div>
-
-        <!-- CTA Under Table -->
-        <div class="mt-8 text-center">
-          <p class="text-xs sm:text-sm text-slate-500 mb-3">
-            One decision today can save you years of septic tank headaches.
-          </p>
-          <a
-            href="#contact-form-section"
-            class="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-600 px-8 py-3 text-sm sm:text-base font-semibold text-white shadow-[0_18px_40px_rgba(16,185,129,0.45)] hover:bg-emerald-700 hover:-translate-y-0.5 transition"
-          >
-            Get price for my house
-            <i class="fas fa-arrow-right text-xs"></i>
-          </a>
-        </div>
       </div>
-    </section>
 
-
-
-  
-
-
-
-
-    <!-- Footer -->
-    <footer
-  class="text-white py-12 font-bold"
-  style="background: linear-gradient(135deg, #004900 0%, #b7ed03 100%);"
->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid md:grid-cols-4 gap-8">
-
-      <!-- Brand Info -->
-      <div>
-        <h3 class="text-2xl font-bold mb-4 text-white">
-          Pioneer BioTank
-        </h3>
-        <p class="text-gray-100 font-bold">
-          Leading provider of eco-friendly FRP water storage and bio-septic solutions.
+      <!-- CTA Under Table -->
+      <div class="mt-8 text-center">
+        <p class="text-xs sm:text-sm text-slate-500 mb-3">
+          One decision today can save you years of septic tank headaches.
         </p>
-
-        <div class="mt-4 space-y-2">
-          <p class="text-sm text-gray-100 font-bold">
-            <i class="fas fa-phone mr-2 text-[#004900]"></i>
-            +91 98765 43210
-          </p>
-          <p class="text-sm text-gray-100 font-bold">
-            <i class="fas fa-envelope mr-2 text-[#004900]"></i>
-            info@pioneerbiotank.com
-          </p>
-        </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div>
-        <h4 class="font-bold mb-4 text-white">Quick Links</h4>
-        <ul class="space-y-2 font-bold">
-          <li><a href="index.html" class="text-gray-100 hover:text-white">Home</a></li>
-          <li><a href="about.html" class="text-gray-100 hover:text-white">About Us</a></li>
-          <li><a href="howitworks.html" class="text-gray-100 hover:text-white">How It Works</a></li>
-          <li><a href="project.html" class="text-gray-100 hover:text-white">Projects</a></li>
-          <li><a href="contact.html" class="text-gray-100 hover:text-white">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Products -->
-      <div>
-        <h4 class="font-bold mb-4 text-white">Our Products</h4>
-        <ul class="space-y-2 font-bold">
-          <li>
-            <a href="bio-septic.html" class="text-gray-100 hover:text-white">
-              FRP Bio-Septic Tank
-            </a>
-          </li>
-          <li>
-            <a href="undergroundwatertank.html" class="text-gray-100 hover:text-white">
-              FRP Underground Water Tank
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Social & CTA -->
-      <div>
-        <h4 class="font-bold mb-4 text-white">Follow Us</h4>
-
-        <div class="flex space-x-4 mb-4 text-2xl">
-          <a href="#" class="transition-transform hover:scale-110" style="color:#1877F2;">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="#" class="transition-transform hover:scale-110" style="color:#E4405F;">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" class="transition-transform hover:scale-110" style="color:#0A66C2;">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="#" class="transition-transform hover:scale-110" style="color:#FF0000;">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </div>
-
-        <a
-          href="contact.html"
-          class="inline-block mt-4 px-6 py-2 rounded-lg text-sm font-bold text-white shadow-md transition"
-          style="background-color:#004900;"
-          onmouseover="this.style.backgroundColor='#003800'"
-          onmouseout="this.style.backgroundColor='#004900'"
-        >
-          Get a Quote
+        <a href="#contact-form-section"
+          class="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-600 px-8 py-3 text-sm sm:text-base font-semibold text-white shadow-[0_18px_40px_rgba(16,185,129,0.45)] hover:bg-emerald-700 hover:-translate-y-0.5 transition">
+          Get price for my house
+          <i class="fas fa-arrow-right text-xs"></i>
         </a>
       </div>
     </div>
+  </section>
 
-    <!-- Bottom Bar -->
-    <div
-      class="mt-8 pt-8 text-center text-gray-100 font-bold"
-      style="border-top: 1px solid rgba(0,0,0,0.25);"
-    >
-      <p>
-        &copy; 2025 Pioneer BioTank. All rights reserved |
-        Designed for sustainable water solutions.
-      </p>
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="text-white py-12 font-bold" style="background: linear-gradient(135deg, #004900 0%, #b7ed03 100%);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+
+        <!-- Brand Info -->
+        <div>
+          <h3 class="text-2xl font-bold mb-4 text-white">
+            Pioneer BioTank
+          </h3>
+          <p class="text-gray-100 font-bold">
+            Leading provider of eco-friendly FRP water storage and bio-septic solutions.
+          </p>
+
+          <div class="mt-4 space-y-2">
+            <p class="text-sm text-gray-100 font-bold">
+              <i class="fas fa-phone mr-2 text-[#004900]"></i>
+              +91 98765 43210
+            </p>
+            <p class="text-sm text-gray-100 font-bold">
+              <i class="fas fa-envelope mr-2 text-[#004900]"></i>
+              info@pioneerbiotank.com
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-bold mb-4 text-white">Quick Links</h4>
+          <ul class="space-y-2 font-bold">
+            <li><a href="index.html" class="text-gray-100 hover:text-white">Home</a></li>
+            <li><a href="about.html" class="text-gray-100 hover:text-white">About Us</a></li>
+            <li><a href="howitworks.html" class="text-gray-100 hover:text-white">How It Works</a></li>
+            <li><a href="project.html" class="text-gray-100 hover:text-white">Projects</a></li>
+            <li><a href="contact.html" class="text-gray-100 hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <h4 class="font-bold mb-4 text-white">Our Products</h4>
+          <ul class="space-y-2 font-bold">
+            <li>
+              <a href="bio-septic.html" class="text-gray-100 hover:text-white">
+                FRP Bio-Septic Tank
+              </a>
+            </li>
+            <li>
+              <a href="undergroundwatertank.html" class="text-gray-100 hover:text-white">
+                FRP Underground Water Tank
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social & CTA -->
+        <div>
+          <h4 class="font-bold mb-4 text-white">Follow Us</h4>
+
+          <div class="flex space-x-4 mb-4 text-2xl">
+            <a href="#" class="transition-transform hover:scale-110" style="color:#1877F2;">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="transition-transform hover:scale-110" style="color:#E4405F;">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="transition-transform hover:scale-110" style="color:#0A66C2;">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="transition-transform hover:scale-110" style="color:#FF0000;">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+
+          <a href="contact.html"
+            class="inline-block mt-4 px-6 py-2 rounded-lg text-sm font-bold text-white shadow-md transition"
+            style="background-color:#004900;" onmouseover="this.style.backgroundColor='#003800'"
+            onmouseout="this.style.backgroundColor='#004900'">
+            Get a Quote
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-8 pt-8 text-center text-gray-100 font-bold" style="border-top: 1px solid rgba(0,0,0,0.25);">
+        <p>
+          &copy; 2025 Pioneer BioTank. All rights reserved |
+          Designed for sustainable water solutions.
+        </p>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-    <!-- Floating Scroll to Top Button -->
-    <button
-      id="scroll-to-top"
-      class="hidden fixed bottom-8 right-8 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
-      style="background-color: #ffffff; color: #004900;"
-      onmouseover="this.style.backgroundColor='#009945'"
-      onmouseout="this.style.backgroundColor='#004900'"
-    >
-      <i class="fas fa-arrow-up text-xl"></i>
-    </button>
+  <!-- Floating Scroll to Top Button -->
+  <button id="scroll-to-top"
+    class="hidden fixed bottom-8 right-8 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
+    style="background-color: #ffffff; color: #004900;" onmouseover="this.style.backgroundColor='#009945'"
+    onmouseout="this.style.backgroundColor='#004900'">
+    <i class="fas fa-arrow-up text-xl"></i>
+  </button>
 
-    <script>
-      let lastScrollTop = 0;
-      const banner = document.getElementById("top-banner");
-      const nav = document.getElementById("main-nav");
-      const scrollToTopBtn = document.getElementById("scroll-to-top");
-      const floatingCta = document.getElementById("floating-cta");
+  <script>
+    let lastScrollTop = 0;
+    const banner = document.getElementById("top-banner");
+    const nav = document.getElementById("main-nav");
+    const scrollToTopBtn = document.getElementById("scroll-to-top");
+    const floatingCta = document.getElementById("floating-cta");
 
-      window.addEventListener("scroll", function () {
-        let scrollTop =
-          window.pageYOffset || document.documentElement.scrollTop;
+    window.addEventListener("scroll", function () {
+      let scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
 
-        // Hide/Show banner on scroll
-        if (scrollTop > lastScrollTop && scrollTop > 100) {
-          // Scrolling down
-          banner.style.transform = "translateY(-100%)";
-          nav.style.top = "0";
-        } else {
-          // Scrolling up
-          banner.style.transform = "translateY(0)";
-          nav.style.top = "40px";
-        }
+      // Hide/Show banner on scroll
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        // Scrolling down
+        banner.style.transform = "translateY(-100%)";
+        nav.style.top = "0";
+      } else {
+        // Scrolling up
+        banner.style.transform = "translateY(0)";
+        nav.style.top = "40px";
+      }
 
-        lastScrollTop = scrollTop;
+      lastScrollTop = scrollTop;
 
-        // Show/Hide scroll to top button
-        if (scrollTop > 300) {
-          scrollToTopBtn.classList.remove("hidden");
-          floatingCta.classList.remove("hidden");
-        } else {
-          scrollToTopBtn.classList.add("hidden");
-          floatingCta.classList.add("hidden");
-        }
+      // Show/Hide scroll to top button
+      if (scrollTop > 300) {
+        scrollToTopBtn.classList.remove("hidden");
+        floatingCta.classList.remove("hidden");
+      } else {
+        scrollToTopBtn.classList.add("hidden");
+        floatingCta.classList.add("hidden");
+      }
+    });
+
+    // Scroll to top functionality
+    scrollToTopBtn.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
       });
+    });
+  </script>
+  <!-- Floating WhatsApp Button -->
+  <!-- replace the 919876543210 number with the actual WhatsApp number -->
+  <a id="whatsapp-float"
+    href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
+    target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <style>
+    #whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 160px;
+      width: 56px;
+      height: 56px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
 
-      // Scroll to top functionality
-      scrollToTopBtn.addEventListener("click", function () {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      });
-    </script>
-<!-- Floating WhatsApp Button -->
- <!-- replace the 919876543210 number with the actual WhatsApp number -->
-<a
-  id="whatsapp-float"
-  href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Chat on WhatsApp"
->
-  <i class="fab fa-whatsapp"></i>
-</a>
-<style>
-  #whatsapp-float {
-    position: fixed;
-    right: 20px;
-    bottom: 160px;
-    width: 56px;
-    height: 56px;
-    background-color: #25D366;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    text-decoration: none;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    z-index: 9999;
+      cursor: grab;
+      touch-action: none;
+      user-select: none;
+    }
 
-    cursor: grab;
-    touch-action: none;
-    user-select: none;
-  }
+    #whatsapp-float:active {
+      cursor: grabbing;
+    }
+  </style>
 
-  #whatsapp-float:active {
-    cursor: grabbing;
-  }
-</style>
+  <script src="./scripts/scroll.js"></script>
 
+</body>
 
-  </body>
 </html>

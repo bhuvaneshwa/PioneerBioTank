@@ -1,840 +1,756 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - Pioneer BioTank</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              emerald: {
-                50: '#e6f2e6',
-                100: '#ccf0cc',
-                200: '#99db99',
-                300: '#66c466',
-                400: '#33ad33',
-                500: '#004900',
-                600: '#003d00',
-                700: '#003200',
-                800: '#002600',
-                900: '#001a00',
-              }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Pioneer BioTank</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emerald: {
+              50: '#e6f2e6',
+              100: '#ccf0cc',
+              200: '#99db99',
+              300: '#66c466',
+              400: '#33ad33',
+              500: '#004900',
+              600: '#003d00',
+              700: '#003200',
+              800: '#002600',
+              900: '#001a00',
             }
           }
         }
       }
-    </script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <style>
-      /* Mobile responsiveness */
-      body { overflow-x: hidden; }
-      img { max-width: 100%; height: auto; }
-      * { box-sizing: border-box; }
-    </style>
-  </head>
-  <body class="bg-slate-50">
-    <!-- Top Banner -->
-    <div
-  id="top-banner"
-  class="py-2 text-xs sm:text-sm fixed top-0 inset-x-0 z-40 transition-transform duration-300"
-  style="background-color: #ffffff; color: #004900;"
->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col sm:flex-row justify-between items-center gap-2">
-      
-      <!-- Left: Contact Info -->
-      <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
-        <a
-          href="tel:+919876543210"
-          class="flex items-center hover:opacity-80"
-          style="color: #004900;"
-        >
-          <i class="fas fa-phone mr-2" style="color: #004900;"></i>
-          <span>+91 98765 43210</span>
-        </a>
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="./styles/common.css">
+  <style>
+    /* Mobile responsiveness */
+    body {
+      overflow-x: hidden;
+    }
 
-        <a
-          href="mailto:info@pioneerbiotank.com"
-          class="flex items-center hover:opacity-80"
-          style="color: #004900;"
-        >
-          <i class="fas fa-envelope mr-2" style="color: #004900;"></i>
-          <span>info@pioneerbiotank.com</span>
-        </a>
-      </div>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
 
-      <!-- Right: Tagline -->
-      <div class="flex items-center gap-3 text-sm">
-        <span class="hidden sm:inline" style="color: #004900;">
-          Talk to our FRP experts today
-        </span>
-      </div>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+  <link rel="stylesheet" href="./styles/common.css">
 
-    </div>
-  </div>
-</div>
+</head>
 
-    <!-- Navigation -->
-    <nav
-      id="main-nav"
-      class="fixed inset-x-0 z-30 backdrop-blur border-b shadow-sm transition-all duration-300"
-      style="top: 36px; background-color: #004900; border-color: rgba(255,255,255,0.1);"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-12">
-          <!-- Logo -->
-          <div class="flex items-center">
-            <a href="index.html" class="flex items-center gap-2">
-             <img src="./images/Logo.png" alt="Pioneer BioTank Logo" class="h-10 sm:h-12 md:h-14 w-auto object-contain flex-shrink-0" />
-            </a>
-          </div>
+<body class="bg-slate-50">
+  <!-- Top Banner -->
+  <div id="top-banner" class="py-2 text-xs sm:text-sm fixed top-0 inset-x-0 z-40 transition-transform duration-300"
+    style="background-color: #ffffff; color: #004900;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-2">
 
-          <!-- Desktop Menu -->
-          <div
-            class="hidden md:flex items-center space-x-8 text-sm font-medium"
-          >
-            <a href="index.html" class="text-white hover:text-[#b7ed03]"
-              >Home</a
-            >
-            <div class="relative group">
-              <button
-                class="flex items-center gap-1 text-white hover:text-[#b7ed03] py-2"
-              >
-                Products <i class="fas fa-chevron-down text-[10px]"></i>
-              </button>
-              <div
-                class="absolute left-0 top-full w-64 bg-white shadow-xl rounded-lg py-2 border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
-              >
-                <a
-                  href="bio-septic.html"
-                  class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
-                >
-                  FRP Bio-Septic Tank
-                </a>
-                <a
-                  href="undergroundwatertank.html"
-                  class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
-                >
-                  FRP Underground Water Tank
-                </a>
-              </div>
-            </div>
-            <a
-              href="howitworks.html"
-              class="text-white hover:text-[#b7ed03]"
-              >How It Works</a
-            >
-            <a href="project.html" class="text-white hover:text-[#b7ed03]"
-              >Projects</a
-            >
-            <a
-              href="about.html"
-              class="text-white font-semibold border-b-2 border-[#b7ed03] pb-1"
-              >About Us</a
-            >
-            <a
-              href="contact.html"
-              class="text-white hover:text-[#b7ed03]"
-            >
-              Contact Us
-            </a>
-            <a
-              href="tel:+919876543210"
-              class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
-              style="background-color:#b7ed03; color:#004900;"
-            >
-              <i class="fas fa-phone"></i>  Enquire now
-            </a>
-          </div>
+        <!-- Left: Contact Info -->
+        <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+          <a href="tel:+919876543210" class="flex items-center hover:opacity-80" style="color: #004900;">
+            <i class="fas fa-phone mr-2" style="color: #004900;"></i>
+            <span>+91 98765 43210</span>
+          </a>
 
-          <!-- Mobile Menu Button -->
-          <div class="md:hidden flex items-center">
-            <button id="mobile-menu-button"
-              class="text-white hover:text-[#b7ed03]"
-            >
-              <i id="menu-icon" class="fas fa-bars text-2xl"></i>
-            </button>
-          </div>
+          <a href="mailto:info@pioneerbiotank.com" class="flex items-center hover:opacity-80" style="color: #004900;">
+            <i class="fas fa-envelope mr-2" style="color: #004900;"></i>
+            <span>info@pioneerbiotank.com</span>
+          </a>
         </div>
 
-        <!-- Mobile Menu -->
-        <div
-          id="mobile-menu"
-          class="hidden md:hidden pb-4 border-t"
-      style="border-color: rgba(255,255,255,0.1);"
-        >
-          <div class="flex flex-col space-y-1 pt-3 text-sm font-medium">
-            <a
-              href="index.html"
-              class="py-2 text-white hover:text-[#b7ed03]"
-              >Home</a
-            >
-            <button
-              id="mobile-products-toggle"
-              class="py-2 text-white hover:text-[#b7ed03] flex justify-between items-center"
-            >
-              <span>Products</span>
-              <i class="fas fa-chevron-down text-[10px]"></i>
+        <!-- Right: Tagline -->
+        <div class="flex items-center gap-3 text-sm">
+          <span class="hidden sm:inline" style="color: #004900;">
+            Talk to our FRP experts today
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="fixed inset-x-0 top-9 z-30
+         bg-[#004900]/90 backdrop-blur
+         border-b border-white/10
+         transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-12">
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center gap-2">
+            <img src="./images/PIONEER BIO TANK LOGO WITH NO1 FRP.png" alt="Pioneer BioTank Logo"
+              class="h-10 sm:h-12 md:h-14 w-auto object-contain flex-shrink-0" />
+
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+
+          <a href="index.html" class="text-[#b7ed03] font-semibold pb-1">
+            Home
+          </a>
+
+          <!-- Products Dropdown -->
+          <div class="relative group">
+            <button class="nav-link-color flex items-center gap-1 text-white hover:text-[#b7ed03] py-2">
+              Products <i class="fas fa-chevron-down text-[10px]"></i>
             </button>
-            <div id="mobile-products-menu" class="hidden pl-4 space-y-1">
-              <a
-                href="bio-septic.html"
-                class="block py-2 text-white hover:text-[#b7ed03]"
-              >
+
+            <div
+              class="absolute left-0 top-full w-64 bg-white shadow-xl rounded-lg py-2 border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <a href="bio-septic.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
                 FRP Bio-Septic Tank
               </a>
-              <a
-                href="undergroundwatertank.html"
-                class="block py-2 text-white hover:text-[#b7ed03]"
-              >
+              <a href="undergroundwatertank.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
                 FRP Underground Water Tank
               </a>
             </div>
-            <a
-              href="howitworks.html"
-              class="py-3 text-white hover:text-[#b7ed03]"
-              >How It Works</a
-            >
-            <a
-              href="project.html"
-              class="py-3 text-white hover:text-[#b7ed03]"
-              >Projects</a
-            >
-            <a href="about.html" class="py-3 text-emerald-600 font-semibold"
-              >About Us</a
-            >
-            <a
-              href="contact.html"
-              class="py-3 text-white hover:text-[#b7ed03]"
-              >Contact Us</a
-            >
-            <a
-              href="tel:+919876543210"
-              class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-xs font-semibold text-white"
-              style="background-color:#b7ed03; color:#004900;"
-            >
-              <i class="fas fa-phone"></i> Call Now
+          </div>
+
+          <a href="howitworks.html" class="nav-link-color hover:text-[#b7ed03]">How It Works</a>
+          <a href="project.html" class="nav-link-color hover:text-[#b7ed03]">Projects</a>
+          <a href="about.html" class="nav-link-color border-b-2 border-[#b7ed03]  hover:text-[#b7ed03]">About Us</a>
+          <a href="contact.html" class="nav-link-color hover:text-[#b7ed03]">Contact Us</a>
+
+          <!-- CTA -->
+          <a href="tel:+919876543210"
+            class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
+            style="background-color:#b7ed03; color:#004900;">
+            <i class="fas fa-phone"></i> Enquire now
+          </a>
+        </div>
+
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-[#b7ed03]">
+            <i id="menu-icon" class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4 border-t" style="border-color: rgba(255,255,255,0.1);">
+
+        <div class="flex flex-col space-y-1 pt-3 text-sm font-medium">
+          <a href="index.html" class="py-3 text-[#b7ed03] font-semibold">Home</a>
+
+          <button id="mobile-products-toggle"
+            class="py-3 nav-link-color text-white hover:text-[#b7ed03] flex justify-between items-center">
+            <span>Products</span>
+            <i class="fas fa-chevron-down text-[10px]"></i>
+          </button>
+
+          <div id="mobile-products-menu" class="hidden pl-4 space-y-1">
+            <a href="bio-septic.html" class="nav-link-color py-2 text-white hover:text-[#b7ed03] block">
+              FRP Bio-Septic Tank
+            </a>
+            <a href="undergroundwatertank.html" class="nav-link-color py-2 text-white hover:text-[#b7ed03] block">
+              FRP Underground Water Tank
             </a>
           </div>
-        </div>
-      </div>
-    </nav>
 
-    <script>
-      // Mobile menu toggle
-      const mobileMenuBtn = document.getElementById('mobile-menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const menuIcon = document.getElementById('menu-icon');
-      const mobileProductsToggle = document.getElementById('mobile-products-toggle');
-      const mobileProductsMenu = document.getElementById('mobile-products-menu');
+          <a href="howitworks.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">How It Works</a>
+          <a href="project.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">Projects</a>
+          <a href="about.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">About Us</a>
+          <a href="contact.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">Contact Us</a>
 
-      mobileMenuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        // Toggle icon between bars and times (X)
-        if (mobileMenu.classList.contains('hidden')) {
-          menuIcon.classList.remove('fa-times');
-          menuIcon.classList.add('fa-bars');
-        } else {
-          menuIcon.classList.remove('fa-bars');
-          menuIcon.classList.add('fa-times');
-        }
-      });
-
-      mobileProductsToggle.addEventListener('click', () => {
-        mobileProductsMenu.classList.toggle('hidden');
-      });
-
-      // Close mobile menu when clicking on a link
-      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-      mobileMenuLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
-          menuIcon.classList.remove('fa-times');
-          menuIcon.classList.add('fa-bars');
-        });
-      });
-    </script>
-
- <!-- ABOUT – PREMIUM HERO -->
-<section class="relative text-white" style="margin-top: 60px; background-color:#004900">
-
-  
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
-    <div class="grid md:grid-cols-[1.15fr_1fr] gap-10 items-center">
-
-      <!-- LEFT -->
-      <div class="text-white">
-
-        <!-- Badge -->
-        <div class="inline-flex items-center gap-2 px-4 py-2 mb-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-md text-white">
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-300"></span>
-          </span>
-          <span class="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-white">
-            About Pioneer BioTank
-          </span>
-        </div>
-
-        <!-- Heading -->
-        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[2.9rem] font-bold leading-tight text-white">
-          Engineering
-          <span class="text-white">
-            clean, long-life sewage & water solutions
-          </span>
-          for modern India.
-        </h1>
-
-        <!-- Subheading -->
-        <p class="mt-4 text-sm sm:text-base md:text-lg max-w-xl leading-relaxed text-white">
-          We are a specialised FRP systems company focused on Bio-Septic tanks and underground
-          water storage — combining proven engineering, DRDO-based bio-digester technology and
-          on-ground execution experience across homes, institutions and industries.
-        </p>
-
-        <!-- Stats -->
-        <div class="mt-6 grid grid-cols-2 sm:flex gap-3 sm:gap-4 text-xs sm:text-sm text-white">
-          <div class="rounded-2xl bg-white/10 border border-white/20 px-4 py-3 backdrop-blur">
-            <div class="font-semibold text-white text-sm sm:text-base">
-              5000+ installations
-            </div>
-            <p class="mt-1 text-white">
-              Bio-Septic & water tank projects delivered across South India.
-            </p>
-          </div>
-
-          <div class="rounded-2xl bg-white/10 border border-white/20 px-4 py-3 backdrop-blur">
-            <div class="font-semibold text-white text-sm sm:text-base">
-              10+ years experience
-            </div>
-            <p class="mt-1 text-white">
-              Focused on FRP-based sewage & water management solutions.
-            </p>
-          </div>
-        </div>
-
-        <!-- CTA -->
-        <div class="mt-7 flex flex-col sm:flex-row gap-3 sm:gap-4">
-          <a
-            href="project.html"
-            class="inline-flex items-center justify-center gap-2 rounded-full bg-white text-[#004900] px-7 py-3 text-sm sm:text-base font-semibold shadow-lg hover:bg-slate-50 transition"
-          >
-            <i class="fas fa-images text-xs"></i>
-            View our projects
+          <a href="tel:+919876543210"
+            class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-sm font-semibold"
+            style="background-color:#b7ed03; color:#004900;">
+            <i class="fas fa-phone"></i> Enquire now
           </a>
-
-          <a
-            href="contact.html"
-            class="inline-flex items-center justify-center gap-2 rounded-full border border-white bg-white/5 px-7 py-3 text-sm sm:text-base font-semibold text-white hover:bg-white/10 transition"
-          >
-            <i class="fas fa-phone-volume text-xs"></i>
-            Talk to our team
-          </a>
-        </div>
-      </div>
-
-      <!-- RIGHT -->
-      <div class="relative text-white">
-        <div class="absolute -inset-1 bg-emerald-400/30 rounded-3xl blur-2xl"></div>
-
-        <div class="relative rounded-3xl bg-black/60 border border-white/20 p-5 sm:p-6 backdrop-blur-xl shadow-2xl text-white">
-
-          <div class="flex items-center justify-between gap-3 mb-4 text-white">
-            <div class="inline-flex items-center gap-2 text-xs text-white">
-              <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500">
-                <i class="fas fa-recycle text-[11px] text-white"></i>
-              </span>
-              <span class="font-semibold uppercase tracking-[0.16em] text-white">
-                FRP Bio-Septic Expertise
-              </span>
-            </div>
-            <span class="text-xs text-white">Since 2015</span>
-          </div>
-
-          <div class="relative rounded-2xl overflow-hidden mb-5">
-            <img
-              src="https://5.imimg.com/data5/SELLER/Default/2022/8/KC/YH/PE/10973584/frp-bio-septic-tank-1000x1000.jpg"
-              alt="FRP Bio Septic Tank"
-              class="w-full h-44 sm:h-52 object-cover"
-            />
-            <div class="absolute inset-0 bg-black/40"></div>
-          </div>
-
-          <ul class="space-y-2 text-[12px] sm:text-[13px] text-white">
-            <li class="flex gap-2">
-              <span class="mt-[3px] h-4 w-4 flex items-center justify-center rounded-full bg-emerald-500">
-                <i class="fas fa-check text-[9px] text-white"></i>
-              </span>
-              End-to-end support — sizing, design, installation & guidance.
-            </li>
-            <li class="flex gap-2">
-              <span class="mt-[3px] h-4 w-4 flex items-center justify-center rounded-full bg-emerald-500">
-                <i class="fas fa-check text-[9px] text-white"></i>
-              </span>
-              Products engineered for 50+ years design life.
-            </li>
-            <li class="flex gap-2">
-              <span class="mt-[3px] h-4 w-4 flex items-center justify-center rounded-full bg-emerald-500">
-                <i class="fas fa-check text-[9px] text-white"></i>
-              </span>
-              Odour-free, leak-proof & groundwater-safe systems.
-            </li>
-          </ul>
-
-          <div class="mt-5 flex items-center gap-2 text-xs text-white border-t border-white/20 pt-3">
-            <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500">
-              <i class="fas fa-comments text-white"></i>
-            </span>
-            <span>
-              Share your site details — our engineers suggest the right Bio-Septic model.
-            </span>
-          </div>
-
         </div>
       </div>
 
     </div>
-  </div>
-</section>
+  </nav>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const mobileProductsToggle = document.getElementById('mobile-products-toggle');
+    const mobileProductsMenu = document.getElementById('mobile-products-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      // Toggle icon between bars and times (X)
+      if (mobileMenu.classList.contains('hidden')) {
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+      } else {
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-times');
+      }
+    });
+
+    mobileProductsToggle.addEventListener('click', () => {
+      mobileProductsMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+      });
+    });
+  </script>
+
+  <!-- ABOUT – PREMIUM HERO -->
+  <section class="relative text-white" style="margin-top: 60px; background-color:#004900">
 
 
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
+      <div class="grid md:grid-cols-[1.15fr_1fr] gap-10 items-center">
 
-    <!-- Company Story -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="order-2 md:order-1">
-            <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 mb-5">
-              Our Story
-            </h2>
-            <p class="text-slate-600 mb-4 text-sm sm:text-base leading-relaxed">
-              Pioneer BioTank was founded with a vision to revolutionize water
-              storage and waste management through innovative, eco-friendly
-              solutions. With over a decade of experience, we have become a
-              trusted name in the industry.
-            </p>
-            <p class="text-slate-600 mb-4 text-sm sm:text-base leading-relaxed">
-              Our journey began with a simple idea: to create sustainable
-              products that benefit both our customers and the environment.
-              Today, we proudly serve thousands of satisfied clients across the
-              region.
-            </p>
-            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-              We combine cutting-edge technology with robust engineering to
-              deliver products that stand the test of time, even under
-              challenging field conditions.
-            </p>
+        <!-- LEFT -->
+        <div class="text-white">
+
+          <!-- Badge -->
+          <div
+            class="inline-flex items-center gap-2 px-4 py-2 mb-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-md text-white">
+            <span class="relative flex h-2 w-2">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-300"></span>
+            </span>
+            <span class="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-white">
+              About Pioneer BioTank
+            </span>
           </div>
-          <div class="order-1 md:order-2">
-            <div class="relative group">
-              <!-- Animated Glow -->
-              <div
-                class="absolute -inset-4 rounded-3xl bg-gradient-to-r from-emerald-400 to-teal-400 opacity-30 blur-2xl group-hover:opacity-50 transition-opacity duration-500"
-              ></div>
-              <!-- Frame Border -->
-              <div class="relative p-[2px] rounded-3xl bg-gradient-to-br from-emerald-400 via-emerald-500 to-teal-500">
-                <img
-                  src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=900&q=80"
-                  alt="Our Company"
-                  class="relative rounded-3xl shadow-[0_24px_65px_rgba(15,23,42,0.35)] object-cover w-full group-hover:scale-[1.02] transition-transform duration-500"
-                />
+
+          <!-- Heading -->
+          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[2.9rem] font-bold leading-tight text-white">
+            Engineering
+            <span class="text-white">
+              clean, long-life sewage & water solutions
+            </span>
+            for modern India.
+          </h1>
+
+          <!-- Subheading -->
+          <p class="mt-4 text-sm sm:text-base md:text-lg max-w-xl leading-relaxed text-white">
+            We are a specialised FRP systems company focused on Bio-Septic tanks and underground
+            water storage — combining proven engineering, DRDO-based bio-digester technology and
+            on-ground execution experience across homes, institutions and industries.
+          </p>
+
+          <!-- Stats -->
+          <div class="mt-6 grid grid-cols-2 sm:flex gap-3 sm:gap-4 text-xs sm:text-sm text-white">
+            <div class="rounded-2xl bg-white/10 border border-white/20 px-4 py-3 backdrop-blur">
+              <div class="font-semibold text-white text-sm sm:text-base">
+                5000+ installations
               </div>
+              <p class="mt-1 text-white">
+                Bio-Septic & water tank projects delivered across South India.
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-white/10 border border-white/20 px-4 py-3 backdrop-blur">
+              <div class="font-semibold text-white text-sm sm:text-base">
+                10+ years experience
+              </div>
+              <p class="mt-1 text-white">
+                Focused on FRP-based sewage & water management solutions.
+              </p>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Mission & Vision -->
-    <section class="py-16 bg-slate-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-8">
+          <!-- CTA -->
+          <div class="mt-7 flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <a href="project.html"
+              class="inline-flex items-center justify-center gap-2 rounded-full bg-white text-[#004900] px-7 py-3 text-sm sm:text-base font-semibold shadow-lg hover:bg-slate-50 transition">
+              <i class="fas fa-images text-xs"></i>
+              View our projects
+            </a>
+
+            <a href="contact.html"
+              class="inline-flex items-center justify-center gap-2 rounded-full border border-white bg-white/5 px-7 py-3 text-sm sm:text-base font-semibold text-white hover:bg-white/10 transition">
+              <i class="fas fa-phone-volume text-xs"></i>
+              Talk to our team
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="relative text-white">
+          <div class="absolute -inset-1 bg-emerald-400/30 rounded-3xl blur-2xl"></div>
+
           <div
-            class="bg-white rounded-3xl p-8 shadow-[0_18px_45px_rgba(15,23,42,0.12)] border border-slate-100"
-          >
-            <div
-              class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-emerald-50 border border-emerald-100 mb-5"
-            >
-              <i class="fas fa-bullseye text-emerald-600 text-2xl"></i>
+            class="relative rounded-3xl bg-black/60 border border-white/20 p-5 sm:p-6 backdrop-blur-xl shadow-2xl text-white">
+
+            <div class="flex items-center justify-between gap-3 mb-4 text-white">
+              <div class="inline-flex items-center gap-2 text-xs text-white">
+                <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500">
+                  <i class="fas fa-recycle text-[11px] text-white"></i>
+                </span>
+                <span class="font-semibold uppercase tracking-[0.16em] text-white">
+                  FRP Bio-Septic Expertise
+                </span>
+              </div>
+              <span class="text-xs text-white">Since 2015</span>
             </div>
-            <h3 class="text-2xl font-semibold text-slate-900 mb-3">
-              Our Mission
-            </h3>
-            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Our advance bio septic tank is to provide a pollution free, green
-              environment & clean ground water. We provide lifelong solutions
-              for sewage problem for both commercial as well as residential. To
-              avoid sewage system, making the nation pollution free through Zero
-              Waste Zero Pollution. This outlet water can be used for gardening
-              and irrigation.
-            </p>
-          </div>
-          <div
-            class="bg-white rounded-3xl p-8 shadow-[0_18px_45px_rgba(15,23,42,0.12)] border border-slate-100"
-          >
-            <div
-              class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-blue-50 border border-blue-100 mb-5"
-            >
-              <i class="fas fa-eye text-sky-600 text-2xl"></i>
+
+            <div class="relative rounded-2xl overflow-hidden mb-5">
+              <img
+                src="https://5.imimg.com/data5/SELLER/Default/2022/8/KC/YH/PE/10973584/frp-bio-septic-tank-1000x1000.jpg"
+                alt="FRP Bio Septic Tank" class="w-full h-44 sm:h-52 object-cover" />
+              <div class="absolute inset-0 bg-black/40"></div>
             </div>
-            <h3 class="text-2xl font-semibold text-slate-900 mb-3">
-              Our Policy
-            </h3>
-            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Setting and follow up efficient, effective, economical and
-              sustainable procedures in all environment activities.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- PIONEER BIO TANK SERVICES -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Heading -->
-        <div class="max-w-3xl mx-auto text-center mb-12">
-          <p
-            class="text-xs font-semibold tracking-[0.25em] text-emerald-600 uppercase"
-          >
-            Pioneer Bio Tank
-          </p>
-          <h2 class="mt-3 text-3xl sm:text-4xl font-semibold text-slate-900">
-            Pioneer Bio Tank Services
-          </h2>
-          <p class="mt-4 text-sm sm:text-base text-slate-600">
-            We understand the needs of every customer and are ready to work
-            <span class="font-semibold text-emerald-600">24 × 7</span> to
-            deliver complete satisfaction.
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Industries & Segments -->
-          <div
-            class="bg-slate-50 rounded-2xl p-7 shadow-sm border border-slate-100"
-          >
-            <h3 class="text-lg font-semibold text-slate-900 mb-3">
-              Where We Work
-            </h3>
-            <p class="text-sm text-slate-600 mb-3">
-              We have successfully delivered FRP tanks and sewage solutions
-              across:
-            </p>
-            <ul class="space-y-1.5 text-sm text-slate-700">
-              <li>• Independent houses & villas</li>
-              <li>• Apartments & gated communities</li>
-              <li>• Schools & colleges</li>
-              <li>• Hotels & hospitals</li>
-              <li>• Industries & commercial complexes</li>
-            </ul>
-            <p class="mt-4 text-sm text-slate-600">
-              Our teams are capable of executing these projects
-              <span class="font-semibold text-emerald-600">across India</span>.
-            </p>
-          </div>
-
-          <!-- Service Commitment -->
-          <div
-            class="bg-slate-50 rounded-2xl p-7 shadow-sm border border-slate-100"
-          >
-            <h3 class="text-lg font-semibold text-slate-900 mb-3">
-              Service Commitment
-            </h3>
-            <ul class="space-y-2 text-sm text-slate-600">
-              <li>• Dedicated teams ready to support you round the clock.</li>
-              <li>
-                • Proven track record of executing
-                <span class="font-semibold text-emerald-700"
-                  >orders before time</span
-                >.
+            <ul class="space-y-2 text-[12px] sm:text-[13px] text-white">
+              <li class="flex gap-2">
+                <span class="mt-[3px] h-4 w-4 flex items-center justify-center rounded-full bg-emerald-500">
+                  <i class="fas fa-check text-[9px] text-white"></i>
+                </span>
+                End-to-end support — sizing, design, installation & guidance.
               </li>
-              <li>
-                • Strong coordination between design, manufacturing and on-site
-                execution.
+              <li class="flex gap-2">
+                <span class="mt-[3px] h-4 w-4 flex items-center justify-center rounded-full bg-emerald-500">
+                  <i class="fas fa-check text-[9px] text-white"></i>
+                </span>
+                Products engineered for 50+ years design life.
               </li>
-              <li>
-                • Focus on smooth, worry-free installation for every customer.
+              <li class="flex gap-2">
+                <span class="mt-[3px] h-4 w-4 flex items-center justify-center rounded-full bg-emerald-500">
+                  <i class="fas fa-check text-[9px] text-white"></i>
+                </span>
+                Odour-free, leak-proof & groundwater-safe systems.
               </li>
             </ul>
-          </div>
 
-          <!-- Customer Approach -->
-          <div
-            class="bg-slate-50 rounded-2xl p-7 shadow-sm border border-slate-100"
-          >
-            <h3 class="text-lg font-semibold text-slate-900 mb-3">
-              Customer-First Approach
-            </h3>
-            <p class="text-sm text-slate-600 mb-3">
-              We work with a pool of associate service providers and
-              professional teams who help
-              <span class="font-semibold text-emerald-700"
-                >provide tailored services</span
-              >
-              to suit the preferences of our clients.
-            </p>
-            <p class="text-sm text-slate-600 mb-3">
-              Customers are the prime reason for our existence. We operate with
-              a
-              <span class="font-semibold">customer-centric mindset</span> to
-              achieve complete satisfaction.
-            </p>
-            <p class="text-sm text-slate-600">
-              We warmly invite you to contact us with your requirement. Our team
-              will be happy to guide you.
-            </p>
+            <div class="mt-5 flex items-center gap-2 text-xs text-white border-t border-white/20 pt-3">
+              <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500">
+                <i class="fas fa-comments text-white"></i>
+              </span>
+              <span>
+                Share your site details — our engineers suggest the right Bio-Septic model.
+              </span>
+            </div>
+
           </div>
         </div>
 
-        <!-- Thank You Line -->
-        <div class="text-center mt-12">
-          <p class="italic text-slate-700 text-sm sm:text-base">
-            “Thank you for your valuable support & Contacting”
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Company Story -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 mb-5">
+            Our Story
+          </h2>
+          <p class="text-slate-600 mb-4 text-sm sm:text-base leading-relaxed">
+            Pioneer BioTank was founded with a vision to revolutionize water
+            storage and waste management through innovative, eco-friendly
+            solutions. With over a decade of experience, we have become a
+            trusted name in the industry.
+          </p>
+          <p class="text-slate-600 mb-4 text-sm sm:text-base leading-relaxed">
+            Our journey began with a simple idea: to create sustainable
+            products that benefit both our customers and the environment.
+            Today, we proudly serve thousands of satisfied clients across the
+            region.
+          </p>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            We combine cutting-edge technology with robust engineering to
+            deliver products that stand the test of time, even under
+            challenging field conditions.
           </p>
         </div>
-
-        <!-- Image Block -->
-        <div class="mt-10 flex justify-center">
-          <img
-            src="./images/SERVICES.png"
-            alt="Pioneer Bio Tank"
-            class="w-full max-w-md rounded-2xl shadow-lg"
-          />
+        <div class="order-1 md:order-2">
+          <div class="relative group">
+            <!-- Animated Glow -->
+            <div
+              class="absolute -inset-4 rounded-3xl bg-gradient-to-r from-emerald-400 to-teal-400 opacity-30 blur-2xl group-hover:opacity-50 transition-opacity duration-500">
+            </div>
+            <!-- Frame Border -->
+            <div class="relative p-[2px] rounded-3xl bg-gradient-to-br from-emerald-400 via-emerald-500 to-teal-500">
+              <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=900&q=80" alt="Our Company"
+                class="relative rounded-3xl shadow-[0_24px_65px_rgba(15,23,42,0.35)] object-cover w-full group-hover:scale-[1.02] transition-transform duration-500" />
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Core Values -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-14">
-          <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
-            Our Core Values
-          </h2>
-          <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
-            The principles that guide every product we design and every customer
-            we serve.
+  <!-- Mission & Vision -->
+  <section class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-3xl p-8 shadow-[0_18px_45px_rgba(15,23,42,0.12)] border border-slate-100">
+          <div
+            class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-emerald-50 border border-emerald-100 mb-5">
+            <i class="fas fa-bullseye text-emerald-600 text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-slate-900 mb-3">
+            Our Mission
+          </h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Our advance bio septic tank is to provide a pollution free, green
+            environment & clean ground water. We provide lifelong solutions
+            for sewage problem for both commercial as well as residential. To
+            avoid sewage system, making the nation pollution free through Zero
+            Waste Zero Pollution. This outlet water can be used for gardening
+            and irrigation.
           </p>
         </div>
-        <div class="grid md:grid-cols-4 gap-8">
+        <div class="bg-white rounded-3xl p-8 shadow-[0_18px_45px_rgba(15,23,42,0.12)] border border-slate-100">
           <div
-            class="group relative bg-gradient-to-br from-white to-emerald-50/30 rounded-3xl p-8 text-center
+            class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-blue-50 border border-blue-100 mb-5">
+            <i class="fas fa-eye text-sky-600 text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-slate-900 mb-3">
+            Our Policy
+          </h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Setting and follow up efficient, effective, economical and
+            sustainable procedures in all environment activities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIONEER BIO TANK SERVICES -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Heading -->
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <p class="text-xs font-semibold tracking-[0.25em] text-emerald-600 uppercase">
+          Pioneer Bio Tank
+        </p>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-semibold text-slate-900">
+          Pioneer Bio Tank Services
+        </h2>
+        <p class="mt-4 text-sm sm:text-base text-slate-600">
+          We understand the needs of every customer and are ready to work
+          <span class="font-semibold text-emerald-600">24 × 7</span> to
+          deliver complete satisfaction.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Industries & Segments -->
+        <div class="bg-slate-50 rounded-2xl p-7 shadow-sm border border-slate-100">
+          <h3 class="text-lg font-semibold text-slate-900 mb-3">
+            Where We Work
+          </h3>
+          <p class="text-sm text-slate-600 mb-3">
+            We have successfully delivered FRP tanks and sewage solutions
+            across:
+          </p>
+          <ul class="space-y-1.5 text-sm text-slate-700">
+            <li>• Independent houses & villas</li>
+            <li>• Apartments & gated communities</li>
+            <li>• Schools & colleges</li>
+            <li>• Hotels & hospitals</li>
+            <li>• Industries & commercial complexes</li>
+          </ul>
+          <p class="mt-4 text-sm text-slate-600">
+            Our teams are capable of executing these projects
+            <span class="font-semibold text-emerald-600">across India</span>.
+          </p>
+        </div>
+
+        <!-- Service Commitment -->
+        <div class="bg-slate-50 rounded-2xl p-7 shadow-sm border border-slate-100">
+          <h3 class="text-lg font-semibold text-slate-900 mb-3">
+            Service Commitment
+          </h3>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li>• Dedicated teams ready to support you round the clock.</li>
+            <li>
+              • Proven track record of executing
+              <span class="font-semibold text-emerald-700">orders before time</span>.
+            </li>
+            <li>
+              • Strong coordination between design, manufacturing and on-site
+              execution.
+            </li>
+            <li>
+              • Focus on smooth, worry-free installation for every customer.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Customer Approach -->
+        <div class="bg-slate-50 rounded-2xl p-7 shadow-sm border border-slate-100">
+          <h3 class="text-lg font-semibold text-slate-900 mb-3">
+            Customer-First Approach
+          </h3>
+          <p class="text-sm text-slate-600 mb-3">
+            We work with a pool of associate service providers and
+            professional teams who help
+            <span class="font-semibold text-emerald-700">provide tailored services</span>
+            to suit the preferences of our clients.
+          </p>
+          <p class="text-sm text-slate-600 mb-3">
+            Customers are the prime reason for our existence. We operate with
+            a
+            <span class="font-semibold">customer-centric mindset</span> to
+            achieve complete satisfaction.
+          </p>
+          <p class="text-sm text-slate-600">
+            We warmly invite you to contact us with your requirement. Our team
+            will be happy to guide you.
+          </p>
+        </div>
+      </div>
+
+      <!-- Thank You Line -->
+      <div class="text-center mt-12">
+        <p class="italic text-slate-700 text-sm sm:text-base">
+          “Thank you for your valuable support & Contacting”
+        </p>
+      </div>
+
+      <!-- Image Block -->
+      <div class="mt-10 flex justify-center">
+        <img src="./images/SERVICES.png" alt="Pioneer Bio Tank" class="w-full max-w-md rounded-2xl shadow-lg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
+          Our Core Values
+        </h2>
+        <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+          The principles that guide every product we design and every customer
+          we serve.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="group relative bg-gradient-to-br from-white to-emerald-50/30 rounded-3xl p-8 text-center
                    shadow-[0_8px_30px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(16,185,129,0.25)]
-                   hover:-translate-y-3 transition-all duration-500 border border-emerald-100/50 overflow-hidden"
-          >
-            <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div class="relative">
-              <div
-                class="w-16 h-16 mx-auto mb-5 rounded-2xl flex items-center justify-center
+                   hover:-translate-y-3 transition-all duration-500 border border-emerald-100/50 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div class="relative">
+            <div class="w-16 h-16 mx-auto mb-5 rounded-2xl flex items-center justify-center
                        bg-gradient-to-br from-emerald-400 to-emerald-600 shadow-lg shadow-emerald-500/50
-                       group-hover:scale-110 group-hover:rotate-6 transition-all duration-500"
-              >
-                <i class="fas fa-handshake text-white text-3xl"></i>
-              </div>
-              <h4 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-emerald-600 transition-colors">Integrity</h4>
-              <p class="text-sm text-slate-600 leading-relaxed">
-                We conduct business with honesty, clarity and long-term
-                relationships in mind.
-              </p>
+                       group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+              <i class="fas fa-handshake text-white text-3xl"></i>
             </div>
+            <h4 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-emerald-600 transition-colors">Integrity
+            </h4>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              We conduct business with honesty, clarity and long-term
+              relationships in mind.
+            </p>
           </div>
-          <div
-            class="group relative bg-gradient-to-br from-white to-blue-50/30 rounded-3xl p-8 text-center
+        </div>
+        <div class="group relative bg-gradient-to-br from-white to-blue-50/30 rounded-3xl p-8 text-center
                    shadow-[0_8px_30px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(59,130,246,0.25)]
-                   hover:-translate-y-3 transition-all duration-500 border border-blue-100/50 overflow-hidden"
-          >
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div class="relative">
-              <div
-                class="w-16 h-16 mx-auto mb-5 rounded-2xl flex items-center justify-center
+                   hover:-translate-y-3 transition-all duration-500 border border-blue-100/50 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div class="relative">
+            <div class="w-16 h-16 mx-auto mb-5 rounded-2xl flex items-center justify-center
                        bg-gradient-to-br from-blue-400 to-blue-600 shadow-lg shadow-blue-500/50
-                       group-hover:scale-110 group-hover:rotate-6 transition-all duration-500"
-              >
-                <i class="fas fa-lightbulb text-white text-3xl"></i>
-              </div>
-              <h4 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-blue-600 transition-colors">
-                Innovation
-              </h4>
-              <p class="text-sm text-slate-600 leading-relaxed">
-                Continuously improving and developing new FRP-based solutions for
-                real-world needs.
-              </p>
+                       group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+              <i class="fas fa-lightbulb text-white text-3xl"></i>
             </div>
+            <h4 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-blue-600 transition-colors">
+              Innovation
+            </h4>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Continuously improving and developing new FRP-based solutions for
+              real-world needs.
+            </p>
           </div>
-          <div
-            class="group relative bg-gradient-to-br from-white to-purple-50/30 rounded-3xl p-8 text-center
+        </div>
+        <div class="group relative bg-gradient-to-br from-white to-purple-50/30 rounded-3xl p-8 text-center
                    shadow-[0_8px_30px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(168,85,247,0.25)]
-                   hover:-translate-y-3 transition-all duration-500 border border-purple-100/50 overflow-hidden"
-          >
-            <div class="absolute inset-0 bg-gradient-to-br from-purple-500/0 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div class="relative">
-              <div
-                class="w-16 h-16 mx-auto mb-5 rounded-2xl flex items-center justify-center
-                       bg-gradient-to-br from-purple-400 to-purple-600 shadow-lg shadow-purple-500/50
-                       group-hover:scale-110 group-hover:rotate-6 transition-all duration-500"
-              >
-                <i class="fas fa-star text-white text-3xl"></i>
-              </div>
-              <h4 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-purple-600 transition-colors">
-                Excellence
-              </h4>
-              <p class="text-sm text-slate-600 leading-relaxed">
-                Every tank, every installation and every interaction is held to
-                high standards.
-              </p>
-            </div>
-          </div>
+                   hover:-translate-y-3 transition-all duration-500 border border-purple-100/50 overflow-hidden">
           <div
-            class="group relative bg-gradient-to-br from-white to-teal-50/30 rounded-3xl p-8 text-center
-                   shadow-[0_8px_30px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(20,184,166,0.25)]
-                   hover:-translate-y-3 transition-all duration-500 border border-teal-100/50 overflow-hidden"
-          >
-            <div class="absolute inset-0 bg-gradient-to-br from-teal-500/0 to-teal-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div class="relative">
-              <div
-                class="w-16 h-16 mx-auto mb-5 rounded-2xl flex items-center justify-center
-                       bg-gradient-to-br from-teal-400 to-teal-600 shadow-lg shadow-teal-500/50
-                       group-hover:scale-110 group-hover:rotate-6 transition-all duration-500"
-              >
-                <i class="fas fa-leaf text-white text-3xl"></i>
-              </div>
-              <h4 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-teal-600 transition-colors">
-                Sustainability
-              </h4>
-              <p class="text-sm text-slate-600 leading-relaxed">
-                Protecting groundwater, soil and communities through responsible
-                sewage treatment.
-              </p>
+            class="absolute inset-0 bg-gradient-to-br from-purple-500/0 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div class="relative">
+            <div class="w-16 h-16 mx-auto mb-5 rounded-2xl flex items-center justify-center
+                       bg-gradient-to-br from-purple-400 to-purple-600 shadow-lg shadow-purple-500/50
+                       group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+              <i class="fas fa-star text-white text-3xl"></i>
             </div>
+            <h4 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-purple-600 transition-colors">
+              Excellence
+            </h4>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Every tank, every installation and every interaction is held to
+              high standards.
+            </p>
+          </div>
+        </div>
+        <div class="group relative bg-gradient-to-br from-white to-teal-50/30 rounded-3xl p-8 text-center
+                   shadow-[0_8px_30px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(20,184,166,0.25)]
+                   hover:-translate-y-3 transition-all duration-500 border border-teal-100/50 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-teal-500/0 to-teal-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div class="relative">
+            <div class="w-16 h-16 mx-auto mb-5 rounded-2xl flex items-center justify-center
+                       bg-gradient-to-br from-teal-400 to-teal-600 shadow-lg shadow-teal-500/50
+                       group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+              <i class="fas fa-leaf text-white text-3xl"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-teal-600 transition-colors">
+              Sustainability
+            </h4>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Protecting groundwater, soil and communities through responsible
+              sewage treatment.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Brochure Highlight – Why Pioneer BioTank -->
-    <section class="py-16 bg-white">
-      <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center"
-      >
-        <!-- Left: Product + Taglines -->
-        <div>
-          <span
-            class="inline-flex items-center rounded-full bg-emerald-50 text-emerald-700 px-4 py-1 text-xs font-semibold tracking-wide uppercase"
-          >
-            India’s No.1 FRP Bio-Septic Tank
+  <!-- Brochure Highlight – Why Pioneer BioTank -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
+      <!-- Left: Product + Taglines -->
+      <div>
+        <span
+          class="inline-flex items-center rounded-full bg-emerald-50 text-emerald-700 px-4 py-1 text-xs font-semibold tracking-wide uppercase">
+          India’s No.1 FRP Bio-Septic Tank
+        </span>
+
+        <h2 class="mt-4 text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight">
+          Factory-made
+          <span class="text-emerald-600">Rigid FRP Bio-Septic Tank</span>
+        </h2>
+
+        <p class="mt-3 text-sm sm:text-base text-slate-600 max-w-xl">
+          Single tank solutions from
+          <span class="font-semibold">1.2 KL to 60 KL</span>, designed for
+          homes, villas, apartments and institutions that want a one-time,
+          long-life sewage solution.
+        </p>
+
+
+
+        <div
+          class="mt-6 flex items-center gap-4 rounded-2xl bg-gradient-to-r from-rose-50 to-rose-100 px-5 py-4 text-rose-700 text-sm sm:text-base font-semibold border border-rose-200 shadow-sm">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white shadow-md">
+            <i class="fas fa-ban text-rose-500 text-lg"></i>
           </span>
 
-          <h2
-            class="mt-4 text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight"
-          >
-            Factory-made
-            <span class="text-emerald-600">Rigid FRP Bio-Septic Tank</span>
-          </h2>
-
-          <p class="mt-3 text-sm sm:text-base text-slate-600 max-w-xl">
-            Single tank solutions from
-            <span class="font-semibold">1.2 KL to 60 KL</span>, designed for
-            homes, villas, apartments and institutions that want a one-time,
-            long-life sewage solution.
-          </p>
-
-          
-
-          <div
-  class="mt-6 flex items-center gap-4 rounded-2xl bg-gradient-to-r from-rose-50 to-rose-100 px-5 py-4 text-rose-700 text-sm sm:text-base font-semibold border border-rose-200 shadow-sm"
->
-  <span
-    class="flex h-10 w-10 items-center justify-center rounded-xl bg-white shadow-md"
-  >
-    <i class="fas fa-ban text-rose-500 text-lg"></i>
-  </span>
-
-  <span>
-    Say <span class="text-rose-600 font-bold underline">NO</span> to septic tank
-    lorries — choose long-life, non-filling Bio-Septic technology.
-  </span>
-</div>
-
+          <span>
+            Say <span class="text-rose-600 font-bold underline">NO</span> to septic tank
+            lorries — choose long-life, non-filling Bio-Septic technology.
+          </span>
         </div>
 
-        <!-- Right: Why Choose Us list -->
-      <div
-  class="bg-[#004900] text-white rounded-3xl p-8 sm:p-10 shadow-[0_24px_60px_rgba(0,0,0,0.45)]"
->
-  <h3 class="text-xl sm:text-2xl font-semibold mb-5 text-white">
-    Why homeowners choose
-    <span class="text-white">Pioneer BioTank</span>
-  </h3>
-
-  <ul class="space-y-2 text-sm sm:text-base text-white">
-    <li class="flex items-start gap-3">
-      <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
-        <i class="fas fa-check text-[10px] text-white"></i>
-      </span>
-      <span>Maintenance free operation</span>
-    </li>
-
-    <li class="flex items-start gap-3">
-      <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
-        <i class="fas fa-check text-[10px] text-white"></i>
-      </span>
-      <span>Odour-free performance</span>
-    </li>
-
-    <li class="flex items-start gap-3">
-      <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
-        <i class="fas fa-check text-[10px] text-white"></i>
-      </span>
-      <span>No leakage, no seepage</span>
-    </li>
-
-    <li class="flex items-start gap-3">
-      <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
-        <i class="fas fa-check text-[10px] text-white"></i>
-      </span>
-      <span>No electricity required</span>
-    </li>
-
-    <li class="flex items-start gap-3">
-      <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
-        <i class="fas fa-check text-[10px] text-white"></i>
-      </span>
-      <span>50 years design life &amp; warranty support</span>
-    </li>
-
-    <li class="flex items-start gap-3">
-      <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
-        <i class="fas fa-check text-[10px] text-white"></i>
-      </span>
-      <span>Chemical-free biological treatment</span>
-    </li>
-
-    <li class="flex items-start gap-3">
-      <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
-        <i class="fas fa-check text-[10px] text-white"></i>
-      </span>
-      <span>Same-day usage after installation</span>
-    </li>
-  </ul>
-</div>
-
-
-
-
-
       </div>
-    </section>
 
- 
-    <!-- CTA Section -->
-    <!--
+      <!-- Right: Why Choose Us list -->
+      <div class="bg-[#004900] text-white rounded-3xl p-8 sm:p-10 shadow-[0_24px_60px_rgba(0,0,0,0.45)]">
+        <h3 class="text-xl sm:text-2xl font-semibold mb-5 text-white">
+          Why homeowners choose
+          <span class="text-white">Pioneer BioTank</span>
+        </h3>
+
+        <ul class="space-y-2 text-sm sm:text-base text-white">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
+              <i class="fas fa-check text-[10px] text-white"></i>
+            </span>
+            <span>Maintenance free operation</span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
+              <i class="fas fa-check text-[10px] text-white"></i>
+            </span>
+            <span>Odour-free performance</span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
+              <i class="fas fa-check text-[10px] text-white"></i>
+            </span>
+            <span>No leakage, no seepage</span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
+              <i class="fas fa-check text-[10px] text-white"></i>
+            </span>
+            <span>No electricity required</span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
+              <i class="fas fa-check text-[10px] text-white"></i>
+            </span>
+            <span>50 years design life &amp; warranty support</span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
+              <i class="fas fa-check text-[10px] text-white"></i>
+            </span>
+            <span>Chemical-free biological treatment</span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
+              <i class="fas fa-check text-[10px] text-white"></i>
+            </span>
+            <span>Same-day usage after installation</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500">
+              <i class="fas fa-check text-[10px] text-white"></i>
+            </span>
+            <span>Output water can be used as Fertilized water for agriculture purpose.</span>
+          </li>
+        </ul>
+      </div>
+
+
+
+
+
+    </div>
+  </section>
+
+
+  <!-- CTA Section -->
+  <!--
     <section class="py-16 bg-slate-50">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 mb-4">
@@ -856,197 +772,182 @@
     </section> 
     -->
 
-    <!-- Footer -->
-    <footer
-  class="text-white py-12 font-bold"
-  style="background: linear-gradient(135deg, #004900 0%, #b7ed03 100%);"
->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid md:grid-cols-4 gap-8">
+  <!-- Footer -->
+  <footer class="text-white py-12 font-bold" style="background: linear-gradient(135deg, #004900 0%, #b7ed03 100%);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
 
-      <!-- Brand Info -->
-      <div>
-        <h3 class="text-2xl font-bold mb-4 text-white">
-          Pioneer BioTank
-        </h3>
-        <p class="text-gray-100 font-bold">
-          Leading provider of eco-friendly FRP water storage and bio-septic solutions.
+        <!-- Brand Info -->
+        <div>
+          <h3 class="text-2xl font-bold mb-4 text-white">
+            Pioneer BioTank
+          </h3>
+          <p class="text-gray-100 font-bold">
+            Leading provider of eco-friendly FRP water storage and bio-septic solutions.
+          </p>
+
+          <div class="mt-4 space-y-2">
+            <p class="text-sm text-gray-100 font-bold">
+              <i class="fas fa-phone mr-2 text-[#004900]"></i>
+              +91 98765 43210
+            </p>
+            <p class="text-sm text-gray-100 font-bold">
+              <i class="fas fa-envelope mr-2 text-[#004900]"></i>
+              info@pioneerbiotank.com
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-bold mb-4 text-white">Quick Links</h4>
+          <ul class="space-y-2 font-bold">
+            <li><a href="index.html" class="text-gray-100 hover:text-white">Home</a></li>
+            <li><a href="about.html" class="text-gray-100 hover:text-white">About Us</a></li>
+            <li><a href="howitworks.html" class="text-gray-100 hover:text-white">How It Works</a></li>
+            <li><a href="project.html" class="text-gray-100 hover:text-white">Projects</a></li>
+            <li><a href="contact.html" class="text-gray-100 hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <h4 class="font-bold mb-4 text-white">Our Products</h4>
+          <ul class="space-y-2 font-bold">
+            <li>
+              <a href="bio-septic.html" class="text-gray-100 hover:text-white">
+                FRP Bio-Septic Tank
+              </a>
+            </li>
+            <li>
+              <a href="undergroundwatertank.html" class="text-gray-100 hover:text-white">
+                FRP Underground Water Tank
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social & CTA -->
+        <div>
+          <h4 class="font-bold mb-4 text-white">Follow Us</h4>
+
+          <div class="flex space-x-4 mb-4 text-2xl">
+            <a href="#" class="transition-transform hover:scale-110" style="color:#1877F2;">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="transition-transform hover:scale-110" style="color:#E4405F;">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="transition-transform hover:scale-110" style="color:#0A66C2;">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="transition-transform hover:scale-110" style="color:#FF0000;">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+
+          <a href="contact.html"
+            class="inline-block mt-4 px-6 py-2 rounded-lg text-sm font-bold text-white shadow-md transition"
+            style="background-color:#004900;" onmouseover="this.style.backgroundColor='#003800'"
+            onmouseout="this.style.backgroundColor='#004900'">
+            Get a Quote
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-8 pt-8 text-center text-gray-100 font-bold" style="border-top: 1px solid rgba(0,0,0,0.25);">
+        <p>
+          &copy; 2025 Pioneer BioTank. All rights reserved |
+          Designed for sustainable water solutions.
         </p>
-
-        <div class="mt-4 space-y-2">
-          <p class="text-sm text-gray-100 font-bold">
-            <i class="fas fa-phone mr-2 text-[#004900]"></i>
-            +91 98765 43210
-          </p>
-          <p class="text-sm text-gray-100 font-bold">
-            <i class="fas fa-envelope mr-2 text-[#004900]"></i>
-            info@pioneerbiotank.com
-          </p>
-        </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div>
-        <h4 class="font-bold mb-4 text-white">Quick Links</h4>
-        <ul class="space-y-2 font-bold">
-          <li><a href="index.html" class="text-gray-100 hover:text-white">Home</a></li>
-          <li><a href="about.html" class="text-gray-100 hover:text-white">About Us</a></li>
-          <li><a href="howitworks.html" class="text-gray-100 hover:text-white">How It Works</a></li>
-          <li><a href="project.html" class="text-gray-100 hover:text-white">Projects</a></li>
-          <li><a href="contact.html" class="text-gray-100 hover:text-white">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Products -->
-      <div>
-        <h4 class="font-bold mb-4 text-white">Our Products</h4>
-        <ul class="space-y-2 font-bold">
-          <li>
-            <a href="bio-septic.html" class="text-gray-100 hover:text-white">
-              FRP Bio-Septic Tank
-            </a>
-          </li>
-          <li>
-            <a href="undergroundwatertank.html" class="text-gray-100 hover:text-white">
-              FRP Underground Water Tank
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Social & CTA -->
-      <div>
-        <h4 class="font-bold mb-4 text-white">Follow Us</h4>
-
-        <div class="flex space-x-4 mb-4 text-2xl">
-          <a href="#" class="transition-transform hover:scale-110" style="color:#1877F2;">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="#" class="transition-transform hover:scale-110" style="color:#E4405F;">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" class="transition-transform hover:scale-110" style="color:#0A66C2;">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="#" class="transition-transform hover:scale-110" style="color:#FF0000;">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </div>
-
-        <a
-          href="contact.html"
-          class="inline-block mt-4 px-6 py-2 rounded-lg text-sm font-bold text-white shadow-md transition"
-          style="background-color:#004900;"
-          onmouseover="this.style.backgroundColor='#003800'"
-          onmouseout="this.style.backgroundColor='#004900'"
-        >
-          Get a Quote
-        </a>
       </div>
     </div>
+  </footer>
 
-    <!-- Bottom Bar -->
-    <div
-      class="mt-8 pt-8 text-center text-gray-100 font-bold"
-      style="border-top: 1px solid rgba(0,0,0,0.25);"
-    >
-      <p>
-        &copy; 2025 Pioneer BioTank. All rights reserved |
-        Designed for sustainable water solutions.
-      </p>
-    </div>
-  </div>
-</footer>
+  <!-- Floating Scroll to Top Button -->
+  <button id="scroll-to-top"
+    class="hidden fixed bottom-8 right-8 text-white p-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
+    style="background-color: #ffffff; color: #004900;">
+    <i class="fas fa-arrow-up text-xl"></i>
+  </button>
 
-    <!-- Floating Scroll to Top Button -->
-    <button
-      id="scroll-to-top"
-      class="hidden fixed bottom-8 right-8 text-white p-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
-      style="background-color: #ffffff; color: #004900;"
-    >
-      <i class="fas fa-arrow-up text-xl"></i>
-    </button>
+  <script>
+    let lastScrollTop = 0;
+    const banner = document.getElementById("top-banner");
+    const nav = document.getElementById("main-nav");
+    const scrollToTopBtn = document.getElementById("scroll-to-top");
+    const floatingCta = document.getElementById("floating-cta");
 
-    <script>
-      let lastScrollTop = 0;
-      const banner = document.getElementById("top-banner");
-      const nav = document.getElementById("main-nav");
-      const scrollToTopBtn = document.getElementById("scroll-to-top");
-      const floatingCta = document.getElementById("floating-cta");
+    window.addEventListener("scroll", function () {
+      let scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
 
-      window.addEventListener("scroll", function () {
-        let scrollTop =
-          window.pageYOffset || document.documentElement.scrollTop;
+      // Hide/Show banner on scroll
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        banner.style.transform = "translateY(-100%)";
+        nav.style.top = "0";
+      } else {
+        banner.style.transform = "translateY(0)";
+        nav.style.top = "40px";
+      }
 
-        // Hide/Show banner on scroll
-        if (scrollTop > lastScrollTop && scrollTop > 100) {
-          banner.style.transform = "translateY(-100%)";
-          nav.style.top = "0";
-        } else {
-          banner.style.transform = "translateY(0)";
-          nav.style.top = "40px";
-        }
+      lastScrollTop = scrollTop;
 
-        lastScrollTop = scrollTop;
+      // Show/Hide scroll to top & CTA
+      if (scrollTop > 300) {
+        scrollToTopBtn.classList.remove("hidden");
+        floatingCta.classList.remove("hidden");
+      } else {
+        scrollToTopBtn.classList.add("hidden");
+        floatingCta.classList.add("hidden");
+      }
+    });
 
-        // Show/Hide scroll to top & CTA
-        if (scrollTop > 300) {
-          scrollToTopBtn.classList.remove("hidden");
-          floatingCta.classList.remove("hidden");
-        } else {
-          scrollToTopBtn.classList.add("hidden");
-          floatingCta.classList.add("hidden");
-        }
+    // Scroll to top functionality
+    scrollToTopBtn.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
       });
+    });
+  </script>
+  <!-- Floating WhatsApp Button -->
+  <!-- replace the 919876543210 number with the actual WhatsApp number -->
+  <a id="whatsapp-float"
+    href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
+    target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <style>
+    #whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 160px;
+      width: 56px;
+      height: 56px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
 
-      // Scroll to top functionality
-      scrollToTopBtn.addEventListener("click", function () {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      });
-    </script>
-<!-- Floating WhatsApp Button -->
- <!-- replace the 919876543210 number with the actual WhatsApp number -->
-<a
-  id="whatsapp-float"
-  href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Chat on WhatsApp"
->
-  <i class="fab fa-whatsapp"></i>
-</a>
-<style>
-  #whatsapp-float {
-    position: fixed;
-    right: 20px;
-    bottom: 160px;
-    width: 56px;
-    height: 56px;
-    background-color: #25D366;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    text-decoration: none;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    z-index: 9999;
+      cursor: grab;
+      touch-action: none;
+      user-select: none;
+    }
 
-    cursor: grab;
-    touch-action: none;
-    user-select: none;
-  }
+    #whatsapp-float:active {
+      cursor: grabbing;
+    }
+  </style>
+  <script src="./scripts/scroll.js"></script>
 
-  #whatsapp-float:active {
-    cursor: grabbing;
-  }
-</style>
+</body>
 
-
-
-  </body>
 </html>

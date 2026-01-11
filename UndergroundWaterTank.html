@@ -1,610 +1,629 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Underground Water Tank - Pioneer BioTank</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              emerald: {
-                50: '#e6f2e6',
-                100: '#ccf0cc',
-                200: '#99db99',
-                300: '#66c466',
-                400: '#33ad33',
-                500: '#004900',
-                600: '#003d00',
-                700: '#003200',
-                800: '#002600',
-                900: '#001a00',
-              }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Underground Water Tank - Pioneer BioTank</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emerald: {
+              50: '#e6f2e6',
+              100: '#ccf0cc',
+              200: '#99db99',
+              300: '#66c466',
+              400: '#33ad33',
+              500: '#004900',
+              600: '#003d00',
+              700: '#003200',
+              800: '#002600',
+              900: '#001a00',
             }
           }
         }
       }
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <style>
-      /* Mobile responsiveness */
-      body { overflow-x: hidden; }
-      img { max-width: 100%; height: auto; }
-      * { box-sizing: border-box; }
-    </style>
+    }
+  </script>
+  <link rel="stylesheet" href="./styles/common.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    /* Mobile responsiveness */
+    body {
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+  </style>
 </head>
+
 <body class="bg-gray-50">
-    <!-- Top Banner -->
-    <div
-  id="top-banner"
-  class="py-2 text-xs sm:text-sm fixed top-0 inset-x-0 z-40 transition-transform duration-300"
-  style="background-color: #ffffff; color: #004900;"
->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col sm:flex-row justify-between items-center gap-2">
-      
-      <!-- Left: Contact Info -->
-      <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
-        <a
-          href="tel:+919876543210"
-          class="flex items-center hover:opacity-80"
-          style="color: #004900;"
-        >
-          <i class="fas fa-phone mr-2" style="color: #004900;"></i>
-          <span>+91 98765 43210</span>
-        </a>
+  <!-- Top Banner -->
+  <div id="top-banner" class="py-2 text-xs sm:text-sm fixed top-0 inset-x-0 z-40 transition-transform duration-300"
+    style="background-color: #ffffff; color: #004900;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-2">
 
-        <a
-          href="mailto:info@pioneerbiotank.com"
-          class="flex items-center hover:opacity-80"
-          style="color: #004900;"
-        >
-          <i class="fas fa-envelope mr-2" style="color: #004900;"></i>
-          <span>info@pioneerbiotank.com</span>
-        </a>
-      </div>
+        <!-- Left: Contact Info -->
+        <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+          <a href="tel:+919876543210" class="flex items-center hover:opacity-80" style="color: #004900;">
+            <i class="fas fa-phone mr-2" style="color: #004900;"></i>
+            <span>+91 98765 43210</span>
+          </a>
 
-      <!-- Right: Tagline -->
-      <div class="flex items-center gap-3 text-sm">
-        <span class="hidden sm:inline" style="color: #004900;">
-          Talk to our FRP experts today
-        </span>
-      </div>
-
-    </div>
-  </div>
-</div>
-    <!-- Navigation -->
-    <nav
-      id="main-nav"
-      class="fixed inset-x-0 z-30 backdrop-blur border-b shadow-sm transition-all duration-300"
-      style="top: 36px; background-color: #004900; border-color: rgba(255,255,255,0.1);"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-12">
-          <!-- Logo -->
-          <div class="flex items-center">
-            <a href="index.html" class="flex items-center gap-2">
-             <img src="./images/Logo.png" alt="Pioneer BioTank Logo" class="h-10 sm:h-12 md:h-14 w-auto object-contain flex-shrink-0" />
-            </a>
-          </div>
-
-          <!-- Desktop Menu -->
-          <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
-            <a href="index.html" class="text-white hover:text-[#b7ed03]">Home</a>
-            <div class="relative group">
-              <button class="flex items-center gap-1 text-white font-semibold border-b-2 border-[#b7ed03] pb-1">
-                Products <i class="fas fa-chevron-down text-[10px]"></i>
-              </button>
-              <div
-                class="absolute left-0 top-full w-64 bg-white shadow-xl rounded-lg py-2 border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
-              >
-                <a href="bio-septic.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
-                  FRP Bio-Septic Tank
-                </a>
-                <a href="undergroundwatertank.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
-                  FRP Underground Water Tank
-                </a>
-              </div>
-            </div>
-            <a href="howitworks.html" class="text-white hover:text-[#b7ed03]">How It Works</a>
-            <a href="project.html" class="text-white hover:text-[#b7ed03]">Projects</a>
-            <a href="about.html" class="text-white hover:text-[#b7ed03]">About Us</a>
-            <a href="contact.html" class="text-white hover:text-[#b7ed03]">
-              Contact Us
-            </a>
-            <a
-              href="tel:+919876543210"
-              class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
-              style="background-color:#b7ed03; color:#004900;"
-            >
-              <i class="fas fa-phone"></i>  Enquire now
-            </a>
-          </div>
-
-          <!-- Mobile Menu Button -->
-          <div class="md:hidden flex items-center">
-            <button id="mobile-menu-button" class="text-white hover:text-[#b7ed03]">
-                <i id="menu-icon" class="fas fa-bars text-2xl"></i>
-            </button>
-          </div>
+          <a href="mailto:info@pioneerbiotank.com" class="flex items-center hover:opacity-80" style="color: #004900;">
+            <i class="fas fa-envelope mr-2" style="color: #004900;"></i>
+            <span>info@pioneerbiotank.com</span>
+          </a>
         </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden pb-4 border-t"
-      style="border-color: rgba(255,255,255,0.1);">
-          <div class="flex flex-col space-y-1 pt-3 text-sm font-medium">
-            <a href="index.html" class="py-3 text-white hover:text-[#b7ed03]">Home</a>
+        <!-- Right: Tagline -->
+        <div class="flex items-center gap-3 text-sm">
+          <span class="hidden sm:inline" style="color: #004900;">
+            Talk to our FRP experts today
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Navigation -->
+  <!-- Navigation -->
+  <nav id="main-nav" class="fixed inset-x-0 top-9 z-30
+         bg-[#004900]/90 backdrop-blur
+         border-b border-white/10
+         transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-12">
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center gap-2">
+            <img src="./images/PIONEER BIO TANK LOGO WITH NO1 FRP.png" alt="Pioneer BioTank Logo"
+              class="h-10 sm:h-12 md:h-14 w-auto object-contain flex-shrink-0" />
+
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+
+          <a href="index.html" class="text-[#b7ed03] font-semibold pb-1">
+            Home
+          </a>
+
+          <!-- Products Dropdown -->
+          <div class="relative group">
             <button
-              id="mobile-products-toggle"
-              class="py-3 text-emerald-600 font-semibold flex justify-between items-center"
-            >
-              <span>Products</span> <i class="fas fa-chevron-down text-[10px]"></i>
+              class="nav-link-color border-b-2 border-[#b7ed03] flex items-center gap-1 text-white hover:text-[#b7ed03] py-2">
+              Products <i class="fas fa-chevron-down text-[10px]"></i>
             </button>
-            <div id="mobile-products-menu" class="hidden pl-4 space-y-1">
-              <a href="bio-septic.html" class="block py-2 text-white hover:text-[#b7ed03]">
+
+            <div
+              class="absolute left-0 top-full w-64 bg-white shadow-xl rounded-lg py-2 border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <a href="bio-septic.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
                 FRP Bio-Septic Tank
               </a>
-              <a href="undergroundwatertank.html" class="block py-2 text-white hover:text-[#b7ed03]">
+              <a href="undergroundwatertank.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
                 FRP Underground Water Tank
               </a>
             </div>
-            <a href="howitworks.html" class="py-3 text-white hover:text-[#b7ed03]">How It Works</a>
-            <a href="project.html" class="py-3 text-white hover:text-[#b7ed03]">Projects</a>
-            <a href="about.html" class="py-3 text-white hover:text-[#b7ed03]">About Us</a>
-            <a href="contact.html" class="py-3 text-white hover:text-[#b7ed03]">Contact Us</a>
-            <a
-              href="tel:+919876543210"
-              class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-xs font-semibold text-white"
-              style="background-color:#3F8BCF;"
-            >
-              <i class="fas fa-phone"></i>  Enquire now
+          </div>
+
+          <a href="howitworks.html" class="nav-link-color hover:text-[#b7ed03]">How It Works</a>
+          <a href="project.html" class="nav-link-color hover:text-[#b7ed03]">Projects</a>
+          <a href="about.html" class="nav-link-color hover:text-[#b7ed03]">About Us</a>
+          <a href="contact.html" class="nav-link-color hover:text-[#b7ed03]">Contact Us</a>
+
+          <!-- CTA -->
+          <a href="tel:+919876543210"
+            class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
+            style="background-color:#b7ed03; color:#004900;">
+            <i class="fas fa-phone"></i> Enquire now
+          </a>
+        </div>
+
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-[#b7ed03]">
+            <i id="menu-icon" class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4 border-t" style="border-color: rgba(255,255,255,0.1);">
+
+        <div class="flex flex-col space-y-1 pt-3 text-sm font-medium">
+          <a href="index.html" class="py-3 text-[#b7ed03] font-semibold">Home</a>
+
+          <button id="mobile-products-toggle"
+            class="py-3 nav-link-color text-white hover:text-[#b7ed03] flex justify-between items-center">
+            <span>Products</span>
+            <i class="fas fa-chevron-down text-[10px]"></i>
+          </button>
+
+          <div id="mobile-products-menu" class="hidden pl-4 space-y-1">
+            <a href="bio-septic.html" class="nav-link-color py-2 text-white hover:text-[#b7ed03] block">
+              FRP Bio-Septic Tank
+            </a>
+            <a href="undergroundwatertank.html" class="nav-link-color py-2 text-white hover:text-[#b7ed03] block">
+              FRP Underground Water Tank
             </a>
           </div>
+
+          <a href="howitworks.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">How It Works</a>
+          <a href="project.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">Projects</a>
+          <a href="about.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">About Us</a>
+          <a href="contact.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">Contact Us</a>
+
+          <a href="tel:+919876543210"
+            class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-sm font-semibold"
+            style="background-color:#b7ed03; color:#004900;">
+            <i class="fas fa-phone"></i> Enquire now
+          </a>
         </div>
       </div>
-    </nav>
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
-        const mobileProductsToggle = document.getElementById('mobile-products-toggle');
-        const mobileProductsMenu = document.getElementById('mobile-products-menu');
+    </div>
+  </nav>
 
-        mobileMenuBtn.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
-          // Toggle icon between bars and times (X)
-          if (mobileMenu.classList.contains('hidden')) {
-            menuIcon.classList.remove('fa-times');
-            menuIcon.classList.add('fa-bars');
-          } else {
-            menuIcon.classList.remove('fa-bars');
-            menuIcon.classList.add('fa-times');
-          }
-        });
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const mobileProductsToggle = document.getElementById('mobile-products-toggle');
+    const mobileProductsMenu = document.getElementById('mobile-products-menu');
 
-        mobileProductsToggle.addEventListener('click', () => {
-          mobileProductsMenu.classList.toggle('hidden');
-        });
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      // Toggle icon between bars and times (X)
+      if (mobileMenu.classList.contains('hidden')) {
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+      } else {
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-times');
+      }
+    });
 
-        // Close mobile menu when clicking on a link
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-          link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-            menuIcon.classList.remove('fa-times');
-            menuIcon.classList.add('fa-bars');
-          });
-        });
-    </script>
+    mobileProductsToggle.addEventListener('click', () => {
+      mobileProductsMenu.classList.toggle('hidden');
+    });
 
-    <!-- PREMIUM HERO SECTION – UNDERGROUND WATER TANK -->
-<section class="relative pt-16 pb-24 overflow-hidden">
+    // Close mobile menu when clicking on a link
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+      });
+    });
+  </script>
+
+  <!-- PREMIUM HERO SECTION – UNDERGROUND WATER TANK -->
+  <section class="relative pt-16 pb-24 overflow-hidden">
     <!-- Background Gradient -->
     <div class="absolute inset-0 bg-gradient-to-br from-emerald-600 via-emerald-700 to-slate-900"></div>
 
     <!-- Animated Glow Orbs -->
     <div class="absolute -left-32 -top-20 w-96 h-96 bg-emerald-400/30 blur-3xl rounded-full animate-pulse"></div>
-    <div class="absolute -right-20 bottom-10 w-96 h-96 bg-sky-400/25 blur-3xl rounded-full animate-pulse" style="animation-delay: 1.5s"></div>
+    <div class="absolute -right-20 bottom-10 w-96 h-96 bg-sky-400/25 blur-3xl rounded-full animate-pulse"
+      style="animation-delay: 1.5s"></div>
 
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
 
-            <!-- Left Content -->
-            <div class="text-white">
-                <!-- Animated Badge -->
-                <div class="inline-flex items-center gap-2 px-4 py-2 mb-5 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
-                    <span class="relative flex h-2 w-2">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-300"></span>
-                    </span>
-                    <span class="text-xs font-bold tracking-widest uppercase">Premium FRP Underground Water Storage</span>
-                </div>
+        <!-- Left Content -->
+        <div class="text-white">
+          <!-- Animated Badge -->
+          <div
+            class="inline-flex items-center gap-2 px-4 py-2 mb-5 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-300"></span>
+            </span>
+            <span class="text-xs font-bold tracking-widest uppercase">Premium FRP Underground Water Storage</span>
+          </div>
 
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
-                    Underground Water Tank
-                </h1>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
+            Underground Water Tank
+          </h1>
 
-                <p class="mt-4 text-lg sm:text-xl text-emerald-100/90 max-w-lg">
-                    Strong. Leak-proof. Space-saving.  
-                    Engineered for homes, apartments and institutions needing long-life underground water storage.
-                </p>
+          <p class="mt-4 text-lg sm:text-xl text-emerald-100/90 max-w-lg">
+            Strong. Leak-proof. Space-saving.
+            Engineered for homes, apartments and institutions needing long-life underground water storage.
+          </p>
 
-                <!-- CTA Buttons -->
-                <div class="mt-8 flex flex-col sm:flex-row gap-4">
-                    <a href="contact.html"
-                       class="inline-flex items-center gap-2 px-8 py-3 text-sm font-semibold rounded-full bg-white text-emerald-600 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-                        <i class="fas fa-file-invoice"></i>
-                        Get Quote
-                    </a>
+          <!-- CTA Buttons -->
+          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="contact.html"
+              class="inline-flex items-center gap-2 px-8 py-3 text-sm font-semibold rounded-full bg-white text-emerald-600 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+              <i class="fas fa-file-invoice"></i>
+              Get Quote
+            </a>
 
-                    <a href="project.html"
-                       class="inline-flex items-center gap-2 px-8 py-3 text-sm font-semibold rounded-full border border-white/40 text-white hover:bg-white hover:text-emerald-600 hover:scale-105 transition-all duration-300">
-                        <i class="fas fa-images"></i>
-                        View Projects
-                    </a>
-                </div>
-            </div>
-
-            <!-- Right Image Card -->
-            <div class="relative">
-                <div class="absolute -inset-4 rounded-3xl bg-emerald-200/10 blur-2xl"></div>
-
-                <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,0.35)] backdrop-blur">
-                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=80"
-                         alt="Underground Water Tank"
-                         class="w-full h-full object-cover">
-                </div>
-            </div>
-
+            <a href="project.html"
+              class="inline-flex items-center gap-2 px-8 py-3 text-sm font-semibold rounded-full border border-white/40 text-white hover:bg-white hover:text-emerald-600 hover:scale-105 transition-all duration-300">
+              <i class="fas fa-images"></i>
+              View Projects
+            </a>
+          </div>
         </div>
-    </div>
-</section>
 
+        <!-- Right Image Card -->
+        <div class="relative">
+          <div class="absolute -inset-4 rounded-3xl bg-emerald-200/10 blur-2xl"></div>
 
-   <!-- UG FRP WATER STORAGE TANK – HIGHLIGHT SECTION -->
-<section id="ug-water-tank" class="py-20 bg-slate-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 items-center">
-
-    <!-- LEFT: IMAGE + BADGE -->
-    <div>
-      <div class="inline-flex items-center rounded-full bg-emerald-50 text-emerald-700 px-3 sm:px-4 py-1 text-xs sm:text-sm font-semibold tracking-wide uppercase mb-3 sm:mb-4">
-        India’s No.1 FRP UG Water Storage Tank
-      </div>
-
-      <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-slate-900 leading-tight mb-3">
-        Underground FRP Water Storage Tank
-      </h2>
-
-      <p class="text-sm sm:text-base text-slate-600 mb-6 max-w-xl">
-        Factory-made composite tanks from <span class="font-semibold">2,000 litres to 60,000 litres</span> capacity,
-        designed for safe, hygienic and long-life underground water storage.
-      </p>
-
-      <div class="bg-white rounded-2xl sm:rounded-3xl shadow-[0_18px_45px_rgba(15,23,42,0.12)] border border-slate-100 p-4 sm:p-5">
-        <img
-          src="images/ug-frp-tank.jpg"
-          alt="FRP Underground Water Storage Tank"
-          class="rounded-2xl w-full object-cover"
-        />
-      </div>
-
-      <div class="mt-5 grid grid-cols-2 gap-3 text-xs sm:text-sm text-slate-700">
-        <div class="flex items-center gap-2">
-          <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white text-[10px]">
-            <i class="fas fa-check"></i>
-          </span>
-          Zero leaks
+          <div
+            class="relative rounded-3xl overflow-hidden border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,0.35)] backdrop-blur">
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=80"
+              alt="Underground Water Tank" class="w-full h-full object-cover">
+          </div>
         </div>
-        <div class="flex items-center gap-2">
-          <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white text-[10px]">
-            <i class="fas fa-check"></i>
-          </span>
-          Low maintenance
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white text-[10px]">
-            <i class="fas fa-check"></i>
-          </span>
-          Long lifetime
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white text-[10px]">
-            <i class="fas fa-check"></i>
-          </span>
-          Odourless
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white text-[10px]">
-            <i class="fas fa-check"></i>
-          </span>
-          Occupies less space
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white text-[10px]">
-            <i class="fas fa-check"></i>
-          </span>
-          Cleaning not required
-        </div>
+
       </div>
     </div>
-
-    <!-- RIGHT: SPECIFICATIONS -->
-    <div class="relative bg-gradient-to-br from-white to-slate-50/50 rounded-3xl
-               shadow-[0_20px_60px_rgba(15,23,42,0.15)] hover:shadow-[0_25px_70px_rgba(15,23,42,0.2)]
-               border border-slate-200/50 p-8 sm:p-10 transition-all duration-500 overflow-hidden">
-      <!-- Decorative Element -->
-      <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-emerald-400/10 to-teal-400/10 rounded-full blur-3xl"></div>
-      
-      <div class="relative">
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 mb-4 rounded-full bg-emerald-50 border border-emerald-200/50">
-          <i class="fas fa-water text-emerald-600 text-xs"></i>
-          <span class="text-xs font-bold text-emerald-700 uppercase tracking-wide">Technical Specs</span>
-        </div>
-        <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6 bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text">
-          Tank Specifications
-        </h3>
-      </div>
-      <ul class="space-y-3 text-sm sm:text-base text-slate-700">
-        <li class="flex items-start gap-3">
-          <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
-          <span>Tanks from <strong>2,000 litres to 60,000 litres</strong> with diameters from 4 ft to 8 ft.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
-          <span>Can be installed in a few hours and used <strong>the same day</strong>.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
-          <span>Manufactured and tested as per <strong>international standards (AWWA D 120)</strong> for leak-proof storage and protection from contamination.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
-          <span>Designed for a <strong>minimum life of 50 years</strong>.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
-          <span>No contact with steel in wetted parts – <strong>no corrosion</strong>.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
-          <span>Overhead &amp; aboveground tanks are <strong>protected from UV rays</strong>.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
-          <span>Installation space is hardly <strong>5% more</strong> than the volume of water stored.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
-          <span>Can be <strong>shifted from one place to another</strong>, even after years of usage.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
-          <span>Glossy internal finish helps eliminate growth of algae and other bio-fouling.</span>
-        </li>
-      </ul>
-
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a
-          href="contact.html"
-          class="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-6 py-2.5 text-sm font-semibold text-white shadow-md hover:bg-emerald-700 hover:shadow-lg transition"
-        >
-          <i class="fas fa-phone-volume text-xs"></i>
-          Get sizing &amp; price
-        </a>
-        <span class="text-xs sm:text-sm text-slate-500">
-          Need a custom capacity? Our team can design it for you.
-        </span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-    <!-- CTA Section -->
+  </section>
 
 
-    <!-- Footer -->
-    <footer
-  class="text-white py-12 font-bold"
-  style="background: linear-gradient(135deg, #004900 0%, #b7ed03 100%);"
->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid md:grid-cols-4 gap-8">
+  <!-- UG FRP WATER STORAGE TANK – HIGHLIGHT SECTION -->
+  <section id="ug-water-tank" class="py-20 bg-slate-50">
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 items-center">
 
-      <!-- Brand Info -->
+      <!-- LEFT: IMAGE + BADGE -->
       <div>
-        <h3 class="text-2xl font-bold mb-4 text-white">
-          Pioneer BioTank
-        </h3>
-        <p class="text-gray-100 font-bold">
-          Leading provider of eco-friendly FRP water storage and bio-septic solutions.
+        <div
+          class="inline-flex items-center rounded-full bg-emerald-50 text-emerald-700 px-3 sm:px-4 py-1 text-xs sm:text-sm font-semibold tracking-wide uppercase mb-3 sm:mb-4">
+          India’s No.1 FRP UG Water Storage Tank
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-slate-900 leading-tight mb-3">
+          Underground FRP Water Storage Tank
+        </h2>
+
+        <p class="text-sm sm:text-base text-slate-600 mb-6 max-w-xl">
+          Factory-made composite tanks from <span class="font-semibold">2,000 litres to 60,000 litres</span> capacity,
+          designed for safe, hygienic and long-life underground water storage.
         </p>
 
-        <div class="mt-4 space-y-2">
-          <p class="text-sm text-gray-100 font-bold">
-            <i class="fas fa-phone mr-2 text-[#004900]"></i>
-            +91 98765 43210
-          </p>
-          <p class="text-sm text-gray-100 font-bold">
-            <i class="fas fa-envelope mr-2 text-[#004900]"></i>
-            info@pioneerbiotank.com
-          </p>
+        <div
+          class="bg-white rounded-2xl sm:rounded-3xl shadow-[0_18px_45px_rgba(15,23,42,0.12)] border border-slate-100 p-4 sm:p-5">
+          <img src="images/ug-frp-tank.jpg" alt="FRP Underground Water Storage Tank"
+            class="rounded-2xl w-full object-cover" />
+        </div>
+
+        <div class="mt-5 grid grid-cols-2 gap-3 text-xs sm:text-sm text-slate-700">
+          <div class="flex items-center gap-2">
+            <span
+              class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white text-[10px]">
+              <i class="fas fa-check"></i>
+            </span>
+            Zero leaks
+          </div>
+          <div class="flex items-center gap-2">
+            <span
+              class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white text-[10px]">
+              <i class="fas fa-check"></i>
+            </span>
+            Low maintenance
+          </div>
+          <div class="flex items-center gap-2">
+            <span
+              class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white text-[10px]">
+              <i class="fas fa-check"></i>
+            </span>
+            Long lifetime
+          </div>
+          <div class="flex items-center gap-2">
+            <span
+              class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white text-[10px]">
+              <i class="fas fa-check"></i>
+            </span>
+            Odourless
+          </div>
+          <div class="flex items-center gap-2">
+            <span
+              class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white text-[10px]">
+              <i class="fas fa-check"></i>
+            </span>
+            Occupies less space
+          </div>
+          <div class="flex items-center gap-2">
+            <span
+              class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white text-[10px]">
+              <i class="fas fa-check"></i>
+            </span>
+            Cleaning not required
+          </div>
         </div>
       </div>
 
-      <!-- Quick Links -->
-      <div>
-        <h4 class="font-bold mb-4 text-white">Quick Links</h4>
-        <ul class="space-y-2 font-bold">
-          <li><a href="index.html" class="text-gray-100 hover:text-white">Home</a></li>
-          <li><a href="about.html" class="text-gray-100 hover:text-white">About Us</a></li>
-          <li><a href="howitworks.html" class="text-gray-100 hover:text-white">How It Works</a></li>
-          <li><a href="project.html" class="text-gray-100 hover:text-white">Projects</a></li>
-          <li><a href="contact.html" class="text-gray-100 hover:text-white">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Products -->
-      <div>
-        <h4 class="font-bold mb-4 text-white">Our Products</h4>
-        <ul class="space-y-2 font-bold">
-          <li>
-            <a href="bio-septic.html" class="text-gray-100 hover:text-white">
-              FRP Bio-Septic Tank
-            </a>
-          </li>
-          <li>
-            <a href="undergroundwatertank.html" class="text-gray-100 hover:text-white">
-              FRP Underground Water Tank
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Social & CTA -->
-      <div>
-        <h4 class="font-bold mb-4 text-white">Follow Us</h4>
-
-        <div class="flex space-x-4 mb-4 text-2xl">
-          <a href="#" class="transition-transform hover:scale-110" style="color:#1877F2;">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="#" class="transition-transform hover:scale-110" style="color:#E4405F;">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" class="transition-transform hover:scale-110" style="color:#0A66C2;">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="#" class="transition-transform hover:scale-110" style="color:#FF0000;">
-            <i class="fab fa-youtube"></i>
-          </a>
+      <!-- RIGHT: SPECIFICATIONS -->
+      <div class="relative bg-gradient-to-br from-white to-slate-50/50 rounded-3xl
+               shadow-[0_20px_60px_rgba(15,23,42,0.15)] hover:shadow-[0_25px_70px_rgba(15,23,42,0.2)]
+               border border-slate-200/50 p-8 sm:p-10 transition-all duration-500 overflow-hidden">
+        <!-- Decorative Element -->
+        <div
+          class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-emerald-400/10 to-teal-400/10 rounded-full blur-3xl">
         </div>
 
-        <a
-          href="contact.html"
-          class="inline-block mt-4 px-6 py-2 rounded-lg text-sm font-bold text-white shadow-md transition"
-          style="background-color:#004900;"
-          onmouseover="this.style.backgroundColor='#003800'"
-          onmouseout="this.style.backgroundColor='#004900'"
-        >
-          Get a Quote
-        </a>
+        <div class="relative">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1.5 mb-4 rounded-full bg-emerald-50 border border-emerald-200/50">
+            <i class="fas fa-water text-emerald-600 text-xs"></i>
+            <span class="text-xs font-bold text-emerald-700 uppercase tracking-wide">Technical Specs</span>
+          </div>
+          <h3
+            class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6 bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text">
+            Tank Specifications
+          </h3>
+        </div>
+        <ul class="space-y-3 text-sm sm:text-base text-slate-700">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
+            <span>Tanks from <strong>2,000 litres to 60,000 litres</strong> with diameters from 4 ft to 8 ft.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
+            <span>Can be installed in a few hours and used <strong>the same day</strong>.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
+            <span>Manufactured and tested as per <strong>international standards (AWWA D 120)</strong> for leak-proof
+              storage and protection from contamination.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
+            <span>Designed for a <strong>minimum life of 50 years</strong>.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
+            <span>No contact with steel in wetted parts – <strong>no corrosion</strong>.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
+            <span>Overhead &amp; aboveground tanks are <strong>protected from UV rays</strong>.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
+            <span>Installation space is hardly <strong>5% more</strong> than the volume of water stored.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
+            <span>Can be <strong>shifted from one place to another</strong>, even after years of usage.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-500"><i class="fas fa-check-circle"></i></span>
+            <span>Glossy internal finish helps eliminate growth of algae and other bio-fouling.</span>
+          </li>
+        </ul>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="contact.html"
+            class="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-6 py-2.5 text-sm font-semibold text-white shadow-md hover:bg-emerald-700 hover:shadow-lg transition">
+            <i class="fas fa-phone-volume text-xs"></i>
+            Get sizing &amp; price
+          </a>
+          <span class="text-xs sm:text-sm text-slate-500">
+            Need a custom capacity? Our team can design it for you.
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+
+
+  <!-- Footer -->
+  <footer class="text-white py-12 font-bold" style="background: linear-gradient(135deg, #004900 0%, #b7ed03 100%);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+
+        <!-- Brand Info -->
+        <div>
+          <h3 class="text-2xl font-bold mb-4 text-white">
+            Pioneer BioTank
+          </h3>
+          <p class="text-gray-100 font-bold">
+            Leading provider of eco-friendly FRP water storage and bio-septic solutions.
+          </p>
+
+          <div class="mt-4 space-y-2">
+            <p class="text-sm text-gray-100 font-bold">
+              <i class="fas fa-phone mr-2 text-[#004900]"></i>
+              +91 98765 43210
+            </p>
+            <p class="text-sm text-gray-100 font-bold">
+              <i class="fas fa-envelope mr-2 text-[#004900]"></i>
+              info@pioneerbiotank.com
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-bold mb-4 text-white">Quick Links</h4>
+          <ul class="space-y-2 font-bold">
+            <li><a href="index.html" class="text-gray-100 hover:text-white">Home</a></li>
+            <li><a href="about.html" class="text-gray-100 hover:text-white">About Us</a></li>
+            <li><a href="howitworks.html" class="text-gray-100 hover:text-white">How It Works</a></li>
+            <li><a href="project.html" class="text-gray-100 hover:text-white">Projects</a></li>
+            <li><a href="contact.html" class="text-gray-100 hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <h4 class="font-bold mb-4 text-white">Our Products</h4>
+          <ul class="space-y-2 font-bold">
+            <li>
+              <a href="bio-septic.html" class="text-gray-100 hover:text-white">
+                FRP Bio-Septic Tank
+              </a>
+            </li>
+            <li>
+              <a href="undergroundwatertank.html" class="text-gray-100 hover:text-white">
+                FRP Underground Water Tank
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social & CTA -->
+        <div>
+          <h4 class="font-bold mb-4 text-white">Follow Us</h4>
+
+          <div class="flex space-x-4 mb-4 text-2xl">
+            <a href="#" class="transition-transform hover:scale-110" style="color:#1877F2;">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="transition-transform hover:scale-110" style="color:#E4405F;">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="transition-transform hover:scale-110" style="color:#0A66C2;">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="transition-transform hover:scale-110" style="color:#FF0000;">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+
+          <a href="contact.html"
+            class="inline-block mt-4 px-6 py-2 rounded-lg text-sm font-bold text-white shadow-md transition"
+            style="background-color:#004900;" onmouseover="this.style.backgroundColor='#003800'"
+            onmouseout="this.style.backgroundColor='#004900'">
+            Get a Quote
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-8 pt-8 text-center text-gray-100 font-bold" style="border-top: 1px solid rgba(0,0,0,0.25);">
+        <p>
+          &copy; 2025 Pioneer BioTank. All rights reserved |
+          Designed for sustainable water solutions.
+        </p>
       </div>
     </div>
+  </footer>
 
-    <!-- Bottom Bar -->
-    <div
-      class="mt-8 pt-8 text-center text-gray-100 font-bold"
-      style="border-top: 1px solid rgba(0,0,0,0.25);"
-    >
-      <p>
-        &copy; 2025 Pioneer BioTank. All rights reserved |
-        Designed for sustainable water solutions.
-      </p>
-    </div>
-  </div>
-</footer>
+  <!-- Floating Scroll to Top Button -->
+  <button id="scroll-to-top"
+    class="hidden fixed bottom-8 right-8 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
+    style="background-color: #004900;" onmouseover="this.style.backgroundColor='#009945'"
+    onmouseout="this.style.backgroundColor='#004900'">
+    <i class="fas fa-arrow-up text-xl"></i>
+  </button>
 
-    <!-- Floating Scroll to Top Button -->
-    <button id="scroll-to-top" class="hidden fixed bottom-8 right-8 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50" style="background-color: #004900;" onmouseover="this.style.backgroundColor='#009945'" onmouseout="this.style.backgroundColor='#004900'">
-        <i class="fas fa-arrow-up text-xl"></i>
-    </button>
+  <!-- Floating CTA Button -->
+  <a href="contact.html" id="floating-cta"
+    class="hidden fixed bottom-24 right-8 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 font-semibold"
+    style="background-color: #004900;" onmouseover="this.style.backgroundColor='#004900'"
+    onmouseout="this.style.backgroundColor='#004900'">
+    <i class="fas fa-phone mr-2 text-[#004900]"></i>Get Quote
+  </a>
 
-    <!-- Floating CTA Button -->
-    <a href="contact.html" id="floating-cta" class="hidden fixed bottom-24 right-8 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 font-semibold" style="background-color: #004900;" onmouseover="this.style.backgroundColor='#004900'" onmouseout="this.style.backgroundColor='#004900'">
-        <i class="fas fa-phone mr-2 text-[#004900]"></i>Get Quote
-    </a>
+  <script>
+    let lastScrollTop = 0;
+    const banner = document.getElementById('top-banner');
+    const nav = document.getElementById('main-nav');
+    const scrollToTopBtn = document.getElementById('scroll-to-top');
+    const floatingCta = document.getElementById('floating-cta');
+    const mainSection = document.querySelector('section.relative.pt-16.pb-24.overflow-hidden');
 
-    <script>
-        let lastScrollTop = 0;
-        const banner = document.getElementById('top-banner');
-        const nav = document.getElementById('main-nav');
-        const scrollToTopBtn = document.getElementById('scroll-to-top');
-        const floatingCta = document.getElementById('floating-cta');
-        const mainSection = document.querySelector('section.relative.pt-16.pb-24.overflow-hidden');
-        
-        window.addEventListener('scroll', function() {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            // Hide/Show banner on scroll
-            if (scrollTop > lastScrollTop && scrollTop > 100) {
-                // Scrolling down
-                banner.style.transform = 'translateY(-100%)';
-                nav.style.top = '0';
-                if (mainSection) mainSection.style.paddingTop = '36px';
-            } else {
-                // Scrolling up
-                banner.style.transform = 'translateY(0)';
-                nav.style.top = '40px';
-                if (mainSection) mainSection.style.paddingTop = '64px';
-            }
-            
-            lastScrollTop = scrollTop;
-            
-            // Show/Hide scroll to top button
-            if (scrollTop > 300) {
-                scrollToTopBtn.classList.remove('hidden');
-                floatingCta.classList.remove('hidden');
-            } else {
-                scrollToTopBtn.classList.add('hidden');
-                floatingCta.classList.add('hidden');
-            }
-        });
-        
-        // Scroll to top functionality
-        scrollToTopBtn.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
-<!-- Floating WhatsApp Button -->
-<!-- replace the 919876543210 number with the actual WhatsApp number -->
-<a
-<a
-  id="whatsapp-float"
-  href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Chat on WhatsApp"
->
-  <i class="fab fa-whatsapp"></i>
-</a>
-<style>
-  #whatsapp-float {
-    position: fixed;
-    right: 20px;
-    bottom: 160px;
-    width: 56px;
-    height: 56px;
-    background-color: #25D366;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    text-decoration: none;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    z-index: 9999;
+    window.addEventListener('scroll', function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    cursor: grab;
-    touch-action: none;
-    user-select: none;
-  }
+      // Hide/Show banner on scroll
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        // Scrolling down
+        banner.style.transform = 'translateY(-100%)';
+        nav.style.top = '0';
+        if (mainSection) mainSection.style.paddingTop = '36px';
+      } else {
+        // Scrolling up
+        banner.style.transform = 'translateY(0)';
+        nav.style.top = '40px';
+        if (mainSection) mainSection.style.paddingTop = '64px';
+      }
 
-  #whatsapp-float:active {
-    cursor: grabbing;
-  }
-</style>
+      lastScrollTop = scrollTop;
+
+      // Show/Hide scroll to top button
+      if (scrollTop > 300) {
+        scrollToTopBtn.classList.remove('hidden');
+        floatingCta.classList.remove('hidden');
+      } else {
+        scrollToTopBtn.classList.add('hidden');
+        floatingCta.classList.add('hidden');
+      }
+    });
+
+    // Scroll to top functionality
+    scrollToTopBtn.addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+  <!-- Floating WhatsApp Button -->
+  <!-- replace the 919876543210 number with the actual WhatsApp number -->
+  <a <a id="whatsapp-float"
+    href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
+    target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <style>
+    #whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 160px;
+      width: 56px;
+      height: 56px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
+
+      cursor: grab;
+      touch-action: none;
+      user-select: none;
+    }
+
+    #whatsapp-float:active {
+      cursor: grabbing;
+    }
+  </style>
 
 
+  <script src="./scripts/scroll.js"></script>
 
 </body>
+
 </html>

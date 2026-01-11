@@ -1,673 +1,741 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How It Works - Pioneer BioTank</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              emerald: {
-                50: '#e6f2e6',
-                100: '#ccf0cc',
-                200: '#99db99',
-                300: '#66c466',
-                400: '#33ad33',
-                500: '#004900',
-                600: '#003d00',
-                700: '#003200',
-                800: '#002600',
-                900: '#001a00',
-              }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works - Pioneer BioTank</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles/common.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emerald: {
+              50: '#e6f2e6',
+              100: '#ccf0cc',
+              200: '#99db99',
+              300: '#66c466',
+              400: '#33ad33',
+              500: '#004900',
+              600: '#003d00',
+              700: '#003200',
+              800: '#002600',
+              900: '#001a00',
             }
           }
         }
       }
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <style>
-      /* Mobile responsiveness */
-      body { overflow-x: hidden; }
-      img { max-width: 100%; height: auto; }
-      * { box-sizing: border-box; }
-    </style>
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    /* Mobile responsiveness */
+    body {
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+  </style>
 </head>
+
 <body class="bg-gray-50">
-    <!-- Top Banner -->
-    <div
-  id="top-banner"
-  class="py-2 text-xs sm:text-sm fixed top-0 inset-x-0 z-40 transition-transform duration-300"
-  style="background-color: #ffffff; color: #004900;"
->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col sm:flex-row justify-between items-center gap-2">
-      
-      <!-- Left: Contact Info -->
-      <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
-        <a
-          href="tel:+919876543210"
-          class="flex items-center hover:opacity-80"
-          style="color: #004900;"
-        >
-          <i class="fas fa-phone mr-2" style="color: #004900;"></i>
-          <span>+91 98765 43210</span>
-        </a>
+  <!-- Top Banner -->
+  <div id="top-banner" class="py-2 text-xs sm:text-sm fixed top-0 inset-x-0 z-40 transition-transform duration-300"
+    style="background-color: #ffffff; color: #004900;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-2">
 
-        <a
-          href="mailto:info@pioneerbiotank.com"
-          class="flex items-center hover:opacity-80"
-          style="color: #004900;"
-        >
-          <i class="fas fa-envelope mr-2" style="color: #004900;"></i>
-          <span>info@pioneerbiotank.com</span>
-        </a>
-      </div>
+        <!-- Left: Contact Info -->
+        <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+          <a href="tel:+919876543210" class="flex items-center hover:opacity-80" style="color: #004900;">
+            <i class="fas fa-phone mr-2" style="color: #004900;"></i>
+            <span>+91 98765 43210</span>
+          </a>
 
-      <!-- Right: Tagline -->
-      <div class="flex items-center gap-3 text-sm">
-        <span class="hidden sm:inline" style="color: #004900;">
-          Talk to our FRP experts today
-        </span>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-    <!-- Navigation -->
-    <nav
-      id="main-nav"
-      class="fixed inset-x-0 z-30 backdrop-blur border-b shadow-sm transition-all duration-300"
-      style="top: 36px; background-color: #004900; border-color: rgba(255,255,255,0.1);"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-12">
-          <!-- Logo -->
-          <div class="flex items-center">
-            <a href="index.html" class="flex items-center gap-2">
-             <img src="./images/Logo.png" alt="Pioneer BioTank Logo" class="h-10 sm:h-12 md:h-14 w-auto object-contain flex-shrink-0" />
-            </a>
-          </div>
-
-          <!-- Desktop Menu -->
-          <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
-            <a href="index.html" class="text-white hover:text-[#b7ed03]">Home</a>
-            <div class="relative group">
-              <button class="flex items-center gap-1 text-white hover:text-[#b7ed03] py-2">
-                Products <i class="fas fa-chevron-down text-[10px]"></i>
-              </button>
-              <div
-                class="absolute left-0 top-full w-64 bg-white shadow-xl rounded-lg py-2 border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
-              >
-                <a href="bio-septic.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
-                  FRP Bio-Septic Tank
-                </a>
-                <a href="undergroundwatertank.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
-                  FRP Underground Water Tank
-                </a>
-              </div>
-            </div>
-            <a href="howitworks.html" class="text-white font-semibold border-b-2 border-[#b7ed03] pb-1">How It Works</a>
-            <a href="project.html" class="text-white hover:text-[#b7ed03]">Projects</a>
-            <a href="about.html" class="text-white hover:text-[#b7ed03]">About Us</a>
-            <a href="contact.html" class="text-white hover:text-[#b7ed03]">
-              Contact Us
-            </a>
-            <a
-              href="tel:+919876543210"
-              class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
-              style="background-color:#b7ed03; color:#004900;"
-            >
-              <i class="fas fa-phone"></i>  Enquire now
-            </a>
-          </div>
-
-          <!-- Mobile Menu Button -->
-          <div class="md:hidden flex items-center">
-            <button id="mobile-menu-button" class="text-white hover:text-[#b7ed03]">
-                <i id="menu-icon" class="fas fa-bars text-2xl"></i>
-            </button>
-          </div>
+          <a href="mailto:info@pioneerbiotank.com" class="flex items-center hover:opacity-80" style="color: #004900;">
+            <i class="fas fa-envelope mr-2" style="color: #004900;"></i>
+            <span>info@pioneerbiotank.com</span>
+          </a>
         </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden pb-4 border-t"
-      style="border-color: rgba(255,255,255,0.1);">
-          <div class="flex flex-col space-y-1 pt-3 text-sm font-medium">
-            <a href="index.html" class="py-3 text-white hover:text-[#b7ed03]">Home</a>
-            <button
-              id="mobile-products-toggle"
-              class="py-3 text-white hover:text-[#b7ed03] flex justify-between items-center"
-            >
-              <span>Products</span> <i class="fas fa-chevron-down text-[10px]"></i>
+        <!-- Right: Tagline -->
+        <div class="flex items-center gap-3 text-sm">
+          <span class="hidden sm:inline" style="color: #004900;">
+            Talk to our FRP experts today
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="fixed inset-x-0 top-9 z-30
+         bg-[#004900]/90 backdrop-blur
+         border-b border-white/10
+         transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-12">
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center gap-2">
+            <img src="./images/PIONEER BIO TANK LOGO WITH NO1 FRP.png" alt="Pioneer BioTank Logo"
+              class="h-10 sm:h-12 md:h-14 w-auto object-contain flex-shrink-0" />
+
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+
+          <a href="index.html" class="text-[#b7ed03] font-semibold pb-1">
+            Home
+          </a>
+
+          <!-- Products Dropdown -->
+          <div class="relative group">
+            <button class="nav-link-color flex items-center gap-1 text-white hover:text-[#b7ed03] py-2">
+              Products <i class="fas fa-chevron-down text-[10px]"></i>
             </button>
-            <div id="mobile-products-menu" class="hidden pl-4 space-y-1">
-              <a href="bio-septic.html" class="block py-2 text-white hover:text-[#b7ed03]">
+
+            <div
+              class="absolute left-0 top-full w-64 bg-white shadow-xl rounded-lg py-2 border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <a href="bio-septic.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
                 FRP Bio-Septic Tank
               </a>
-              <a href="undergroundwatertank.html" class="block py-2 text-white hover:text-[#b7ed03]">
+              <a href="undergroundwatertank.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
                 FRP Underground Water Tank
               </a>
             </div>
-            <a href="howitworks.html" class="py-3 text-emerald-600 font-semibold">How It Works</a>
-            <a href="project.html" class="py-3 text-white hover:text-[#b7ed03]">Projects</a>
-            <a href="about.html" class="py-3 text-white hover:text-[#b7ed03]">About Us</a>
-            <a href="contact.html" class="py-3 text-white hover:text-[#b7ed03]">Contact Us</a>
-            <a
-              href="tel:+919876543210"
-              class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-xs font-semibold text-white"
-              style="background-color:#3F8BCF;"
-            >
-              <i class="fas fa-phone"></i>  Enquire now
+          </div>
+
+          <a href="howitworks.html" class="nav-link-color border-b-2 border-[#b7ed03]  hover:text-[#b7ed03]">How It
+            Works</a>
+          <a href="project.html" class="nav-link-color hover:text-[#b7ed03]">Projects</a>
+          <a href="about.html" class="nav-link-color hover:text-[#b7ed03]">About Us</a>
+          <a href="contact.html" class="nav-link-color hover:text-[#b7ed03]">Contact Us</a>
+
+          <!-- CTA -->
+          <a href="tel:+919876543210"
+            class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
+            style="background-color:#b7ed03; color:#004900;">
+            <i class="fas fa-phone"></i> Enquire now
+          </a>
+        </div>
+
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-[#b7ed03]">
+            <i id="menu-icon" class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4 border-t" style="border-color: rgba(255,255,255,0.1);">
+
+        <div class="flex flex-col space-y-1 pt-3 text-sm font-medium">
+          <a href="index.html" class="py-3 text-[#b7ed03] font-semibold">Home</a>
+
+          <button id="mobile-products-toggle"
+            class="py-3 nav-link-color text-white hover:text-[#b7ed03] flex justify-between items-center">
+            <span>Products</span>
+            <i class="fas fa-chevron-down text-[10px]"></i>
+          </button>
+
+          <div id="mobile-products-menu" class="hidden pl-4 space-y-1">
+            <a href="bio-septic.html" class="nav-link-color py-2 text-white hover:text-[#b7ed03] block">
+              FRP Bio-Septic Tank
+            </a>
+            <a href="undergroundwatertank.html" class="nav-link-color py-2 text-white hover:text-[#b7ed03] block">
+              FRP Underground Water Tank
+            </a>
+          </div>
+
+          <a href="howitworks.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">How It Works</a>
+          <a href="project.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">Projects</a>
+          <a href="about.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">About Us</a>
+          <a href="contact.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">Contact Us</a>
+
+          <a href="tel:+919876543210"
+            class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-sm font-semibold"
+            style="background-color:#b7ed03; color:#004900;">
+            <i class="fas fa-phone"></i> Enquire now
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const mobileProductsToggle = document.getElementById('mobile-products-toggle');
+    const mobileProductsMenu = document.getElementById('mobile-products-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      // Toggle icon between bars and times (X)
+      if (mobileMenu.classList.contains('hidden')) {
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+      } else {
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-times');
+      }
+    });
+
+    mobileProductsToggle.addEventListener('click', () => {
+      mobileProductsMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+      });
+    });
+  </script>
+
+
+  <!-- HOW IT WORKS – PREMIUM HERO (MATCHES BIO-SEPTIC HERO STYLE) -->
+  <section class="relative text-slate-900" style="margin-top: 60px">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-[1.05fr_1.2fr] gap-6 sm:gap-8 md:gap-12 items-center pt-8 sm:pt-12 md:pt-16 pb-10 sm:pb-16 md:pb-20">
+
+        <!-- LEFT CONTENT -->
+        <div>
+          <!-- Badge -->
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-emerald-200/60 bg-gradient-to-r from-emerald-50 to-emerald-100/60 backdrop-blur-sm px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.15em] sm:tracking-[0.18em] text-emerald-700 shadow-lg shadow-emerald-500/20">
+            <span class="relative flex h-2 w-2">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
+            </span>
+            How It Works – Bio-Septic System
+          </span>
+
+          <!-- Heading -->
+          <h1 class="mt-4 sm:mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-slate-900">
+            See how your waste
+            <br class="hidden sm:block" />
+            <span class="bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-500 bg-clip-text text-transparent">
+              turns into safe, reusable water.
+            </span>
+          </h1>
+
+          <!-- Subheading -->
+          <p class="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg text-slate-600 max-w-xl">
+            A simple 4-stage process — from toilet flush to clean, treated water — using natural bacteria,
+            smart chamber design and zero electricity. No bad smell, no groundwater pollution, no frequent septic lorry.
+          </p>
+
+          <!-- Quick bullets -->
+          <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-slate-700">
+            <div class="flex items-center gap-2">
+              <span
+                class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 text-[11px]">
+                <i class="fas fa-circle-nodes"></i>
+              </span>
+              4-stage biological treatment
+            </div>
+            <div class="flex items-center gap-2">
+              <span
+                class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 text-[11px]">
+                <i class="fas fa-wind"></i>
+              </span>
+              Odour-free, sealed design
+            </div>
+            <div class="flex items-center gap-2">
+              <span
+                class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 text-[11px]">
+                <i class="fas fa-bolt"></i>
+              </span>
+              No electricity required
+            </div>
+            <div class="flex items-center gap-2">
+              <span
+                class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 text-[11px]">
+                <i class="fas fa-droplet"></i>
+              </span>
+              Treated water for reuse
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="mt-7 flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <a href="#bio-process"
+              class="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-600 px-6 sm:px-8 py-3 text-sm sm:text-base font-semibold text-white shadow-[0_18px_40px_rgba(16,185,129,0.5)] hover:bg-emerald-700 hover:-translate-y-0.5 transition">
+              <i class="fas fa-arrow-down text-xs"></i>
+              View 4-Stage Process
+            </a>
+
+            <a href="contact.html"
+              class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 px-6 sm:px-8 py-3 text-sm sm:text-base font-semibold text-slate-800 hover:border-emerald-500 hover:text-emerald-700 hover:-translate-y-0.5 transition bg-white/80 backdrop-blur">
+              <i class="fas fa-comments text-xs"></i>
+              Talk to an Expert
             </a>
           </div>
         </div>
-      </div>
-    </nav>
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
-        const mobileProductsToggle = document.getElementById('mobile-products-toggle');
-        const mobileProductsMenu = document.getElementById('mobile-products-menu');
-
-        mobileMenuBtn.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
-          // Toggle icon between bars and times (X)
-          if (mobileMenu.classList.contains('hidden')) {
-            menuIcon.classList.remove('fa-times');
-            menuIcon.classList.add('fa-bars');
-          } else {
-            menuIcon.classList.remove('fa-bars');
-            menuIcon.classList.add('fa-times');
-          }
-        });
-
-        mobileProductsToggle.addEventListener('click', () => {
-          mobileProductsMenu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when clicking on a link
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-          link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-            menuIcon.classList.remove('fa-times');
-            menuIcon.classList.add('fa-bars');
-          });
-        });
-    </script>
-
-  
-<!-- HOW IT WORKS – PREMIUM HERO (MATCHES BIO-SEPTIC HERO STYLE) -->
-<section class="relative text-slate-900" style="margin-top: 60px">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-    <div class="grid md:grid-cols-2 lg:grid-cols-[1.05fr_1.2fr] gap-6 sm:gap-8 md:gap-12 items-center pt-8 sm:pt-12 md:pt-16 pb-10 sm:pb-16 md:pb-20">
-      
-      <!-- LEFT CONTENT -->
-      <div>
-        <!-- Badge -->
-        <span
-          class="inline-flex items-center gap-2 rounded-full border border-emerald-200/60 bg-gradient-to-r from-emerald-50 to-emerald-100/60 backdrop-blur-sm px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.15em] sm:tracking-[0.18em] text-emerald-700 shadow-lg shadow-emerald-500/20"
-        >
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
-          </span>
-          How It Works – Bio-Septic System
-        </span>
-
-        <!-- Heading -->
-        <h1 class="mt-4 sm:mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-slate-900">
-          See how your waste
-          <br class="hidden sm:block" />
-          <span class="bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-500 bg-clip-text text-transparent">
-            turns into safe, reusable water.
-          </span>
-        </h1>
-
-        <!-- Subheading -->
-        <p class="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg text-slate-600 max-w-xl">
-          A simple 4-stage process — from toilet flush to clean, treated water — using natural bacteria, 
-          smart chamber design and zero electricity. No bad smell, no groundwater pollution, no frequent septic lorry.
-        </p>
-
-        <!-- Quick bullets -->
-        <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-slate-700">
-          <div class="flex items-center gap-2">
-            <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 text-[11px]">
-              <i class="fas fa-circle-nodes"></i>
-            </span>
-            4-stage biological treatment
+        <!-- RIGHT: PROCESS SUMMARY CARD -->
+        <div class="relative group w-full max-w-[95rem] mx-auto">
+          <!-- Glow -->
+          <div
+            class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-3xl blur-2xl opacity-25 group-hover:opacity-40 transition">
           </div>
-          <div class="flex items-center gap-2">
-            <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 text-[11px]">
-              <i class="fas fa-wind"></i>
-            </span>
-            Odour-free, sealed design
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 text-[11px]">
-              <i class="fas fa-bolt"></i>
-            </span>
-            No electricity required
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 text-[11px]">
-              <i class="fas fa-droplet"></i>
-            </span>
-            Treated water for reuse
-          </div>
-        </div>
 
-        <!-- CTAs -->
-        <div class="mt-7 flex flex-col sm:flex-row gap-3 sm:gap-4">
-          <a
-            href="#bio-process"
-            class="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-600 px-6 sm:px-8 py-3 text-sm sm:text-base font-semibold text-white shadow-[0_18px_40px_rgba(16,185,129,0.5)] hover:bg-emerald-700 hover:-translate-y-0.5 transition"
-          >
-            <i class="fas fa-arrow-down text-xs"></i>
-            View 4-Stage Process
-          </a>
+          <div
+            class="relative rounded-3xl bg-gradient-to-br from-emerald-500/20 via-emerald-600/15 to-teal-500/10 p-[3px] shadow-[0_28px_90px_rgba(15,23,42,0.4)] hover:shadow-[0_40px_120px_rgba(16,185,129,0.45)] transition-all duration-500">
 
-          <a
-            href="contact.html"
-            class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 px-6 sm:px-8 py-3 text-sm sm:text-base font-semibold text-slate-800 hover:border-emerald-500 hover:text-emerald-700 hover:-translate-y-0.5 transition bg-white/80 backdrop-blur"
-          >
-            <i class="fas fa-comments text-xs"></i>
-            Talk to an Expert
-          </a>
-        </div>
-      </div>
+            <div class="rounded-3xl bg-white/95 backdrop-blur-sm overflow-hidden p-8 sm:p-10">
 
-      <!-- RIGHT: PROCESS SUMMARY CARD -->
-      <div class="relative group w-full max-w-[95rem] mx-auto">
-        <!-- Glow -->
-        <div class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-3xl blur-2xl opacity-25 group-hover:opacity-40 transition"></div>
+              <!-- Badge Row -->
+              <div class="flex flex-wrap justify-between items-center gap-3 mb-5">
+                <span
+                  class="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-[11px] font-semibold text-emerald-700">
+                  <i class="fas fa-diagram-project text-[10px]"></i>
+                  4-Stage Treatment Flow
+                </span>
 
-        <div class="relative rounded-3xl bg-gradient-to-br from-emerald-500/20 via-emerald-600/15 to-teal-500/10 p-[3px] shadow-[0_28px_90px_rgba(15,23,42,0.4)] hover:shadow-[0_40px_120px_rgba(16,185,129,0.45)] transition-all duration-500">
-          
-          <div class="rounded-3xl bg-white/95 backdrop-blur-sm overflow-hidden p-8 sm:p-10">
-            
-            <!-- Badge Row -->
-            <div class="flex flex-wrap justify-between items-center gap-3 mb-5">
-              <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-[11px] font-semibold text-emerald-700">
-                <i class="fas fa-diagram-project text-[10px]"></i>
-                4-Stage Treatment Flow
-              </span>
+                <span class="text-[11px] text-slate-400">
+                  From flush to treated water in minutes
+                </span>
+              </div>
 
-              <span class="text-[11px] text-slate-400">
-                From flush to treated water in minutes
-              </span>
+              <!-- 4 Stages Grid -->
+              <div class="grid sm:grid-cols-2 gap-4 text-[11px] sm:text-xs text-slate-600">
+
+                <!-- Stage 1 -->
+                <div class="rounded-xl bg-slate-50 px-4 py-3 flex gap-3 items-start">
+                  <div class="mt-0.5">
+                    <div
+                      class="h-7 w-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-[11px] font-bold">
+                      1
+                    </div>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-slate-900">Intake & Separation</div>
+                    <p class="mt-0.5 text-[10px] text-slate-500">
+                      Wastewater enters the first chamber where solids settle and oils float to the top.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Stage 2 -->
+                <div class="rounded-xl bg-slate-50 px-4 py-3 flex gap-3 items-start">
+                  <div class="mt-0.5">
+                    <div
+                      class="h-7 w-7 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center text-[11px] font-bold">
+                      2
+                    </div>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-slate-900">Bio-Digestion</div>
+                    <p class="mt-0.5 text-[10px] text-slate-500">
+                      Beneficial bacteria break down organic waste under controlled conditions.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Stage 3 -->
+                <div class="rounded-xl bg-slate-50 px-4 py-3 flex gap-3 items-start">
+                  <div class="mt-0.5">
+                    <div
+                      class="h-7 w-7 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-[11px] font-bold">
+                      3
+                    </div>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-slate-900">Clarification</div>
+                    <p class="mt-0.5 text-[10px] text-slate-500">
+                      Remaining fine particles settle, leaving clearer water in the final chamber.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Stage 4 -->
+                <div class="rounded-xl bg-slate-50 px-4 py-3 flex gap-3 items-start">
+                  <div class="mt-0.5">
+                    <div
+                      class="h-7 w-7 rounded-full bg-cyan-100 text-cyan-700 flex items-center justify-center text-[11px] font-bold">
+                      4
+                    </div>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-slate-900">Safe Discharge</div>
+                    <p class="mt-0.5 text-[10px] text-slate-500">
+                      Treated, odour-free water flows to soak pit, recharge pit or reuse line.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom highlight -->
+              <div class="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100 pt-4">
+                <div class="flex items-center gap-2 text-[11px] text-slate-500">
+                  <i class="fas fa-shield-check text-emerald-500"></i>
+                  <span>DRDO-based bio-digester principle</span>
+                </div>
+                <div class="flex items-center gap-2 text-[11px] text-slate-500">
+                  <i class="fas fa-water text-emerald-500"></i>
+                  <span>Protects groundwater & surrounding soil</span>
+                </div>
+              </div>
+
             </div>
-
-            <!-- 4 Stages Grid -->
-            <div class="grid sm:grid-cols-2 gap-4 text-[11px] sm:text-xs text-slate-600">
-              
-              <!-- Stage 1 -->
-              <div class="rounded-xl bg-slate-50 px-4 py-3 flex gap-3 items-start">
-                <div class="mt-0.5">
-                  <div class="h-7 w-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-[11px] font-bold">
-                    1
-                  </div>
-                </div>
-                <div>
-                  <div class="font-semibold text-slate-900">Intake & Separation</div>
-                  <p class="mt-0.5 text-[10px] text-slate-500">
-                    Wastewater enters the first chamber where solids settle and oils float to the top.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Stage 2 -->
-              <div class="rounded-xl bg-slate-50 px-4 py-3 flex gap-3 items-start">
-                <div class="mt-0.5">
-                  <div class="h-7 w-7 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center text-[11px] font-bold">
-                    2
-                  </div>
-                </div>
-                <div>
-                  <div class="font-semibold text-slate-900">Bio-Digestion</div>
-                  <p class="mt-0.5 text-[10px] text-slate-500">
-                    Beneficial bacteria break down organic waste under controlled conditions.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Stage 3 -->
-              <div class="rounded-xl bg-slate-50 px-4 py-3 flex gap-3 items-start">
-                <div class="mt-0.5">
-                  <div class="h-7 w-7 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-[11px] font-bold">
-                    3
-                  </div>
-                </div>
-                <div>
-                  <div class="font-semibold text-slate-900">Clarification</div>
-                  <p class="mt-0.5 text-[10px] text-slate-500">
-                    Remaining fine particles settle, leaving clearer water in the final chamber.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Stage 4 -->
-              <div class="rounded-xl bg-slate-50 px-4 py-3 flex gap-3 items-start">
-                <div class="mt-0.5">
-                  <div class="h-7 w-7 rounded-full bg-cyan-100 text-cyan-700 flex items-center justify-center text-[11px] font-bold">
-                    4
-                  </div>
-                </div>
-                <div>
-                  <div class="font-semibold text-slate-900">Safe Discharge</div>
-                  <p class="mt-0.5 text-[10px] text-slate-500">
-                    Treated, odour-free water flows to soak pit, recharge pit or reuse line.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Bottom highlight -->
-            <div class="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100 pt-4">
-              <div class="flex items-center gap-2 text-[11px] text-slate-500">
-                <i class="fas fa-shield-check text-emerald-500"></i>
-                <span>DRDO-based bio-digester principle</span>
-              </div>
-              <div class="flex items-center gap-2 text-[11px] text-slate-500">
-                <i class="fas fa-water text-emerald-500"></i>
-                <span>Protects groundwater & surrounding soil</span>
-              </div>
-            </div>
-
           </div>
-        </div>
 
-        <!-- Floating helper bubble -->
-        <div class="hidden sm:flex absolute -bottom-6 right-2 items-center gap-2 rounded-2xl bg-white shadow-[0_16px_40px_rgba(15,23,42,0.25)] px-3 py-2 text-[11px]">
-          <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-600 text-white">
-            <i class="fas fa-circle-question"></i>
-          </span>
-          <span class="text-slate-600">
-            Scroll down to see each stage in
-            <span class="font-semibold">full detail.</span>
-          </span>
-        </div>
+          <!-- Floating helper bubble -->
+          <div
+            class="hidden sm:flex absolute -bottom-6 right-2 items-center gap-2 rounded-2xl bg-white shadow-[0_16px_40px_rgba(15,23,42,0.25)] px-3 py-2 text-[11px]">
+            <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-600 text-white">
+              <i class="fas fa-circle-question"></i>
+            </span>
+            <span class="text-slate-600">
+              Scroll down to see each stage in
+              <span class="font-semibold">full detail.</span>
+            </span>
+          </div>
 
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
-    <!-- Bio-Septic Tank Process -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Bio-Septic Tank System</h2>
-                <p class="text-xl text-gray-600">Advanced biological treatment process</p>
-            </div>
-            <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600" alt="Bio-Septic Process" class="w-full max-w-full rounded-lg shadow-lg object-cover">
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold mb-4">Natural Biological Treatment</h3>
-                    <p class="text-gray-600 mb-4 text-lg">Our Bio-Septic Tank uses aerobic and anaerobic bacteria to break down organic waste naturally. This eco-friendly process converts harmful pollutants into harmless byproducts.</p>
-                    <p class="text-gray-600 text-lg">The system requires no chemicals, produces no odor, and generates treated water suitable for irrigation and other non-potable uses.</p>
-                </div>
-            </div>
+  <!-- Bio-Septic Tank Process -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Bio-Septic Tank System</h2>
+        <p class="text-xl text-gray-600">Advanced biological treatment process</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+        <div>
+          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600" alt="Bio-Septic Process"
+            class="w-full max-w-full rounded-lg shadow-lg object-cover">
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Natural Biological Treatment</h3>
+          <p class="text-gray-600 mb-4 text-lg">Our Bio-Septic Tank uses aerobic and anaerobic bacteria to break down
+            organic waste naturally. This eco-friendly process converts harmful pollutants into harmless byproducts.</p>
+          <p class="text-gray-600 text-lg">The system requires no chemicals, produces no odor, and generates treated
+            water suitable for irrigation and other non-potable uses.</p>
+        </div>
+      </div>
 
-            <!-- Process Steps -->
-            <div class="relative grid md:grid-cols-4 gap-8 mt-14">
-                <!-- Connecting Line -->
-                <div class="hidden md:block absolute top-8 left-0 right-0 h-1 bg-gradient-to-r from-green-200 via-blue-200 via-purple-200 to-cyan-200 -z-10"></div>
-                
-                <div class="group relative bg-gradient-to-br from-green-50 to-green-100/50 p-8 rounded-3xl text-center
+      <!-- Process Steps -->
+      <div class="relative grid md:grid-cols-4 gap-8 mt-14">
+        <!-- Connecting Line -->
+        <div
+          class="hidden md:block absolute top-8 left-0 right-0 h-1 bg-gradient-to-r from-green-200 via-blue-200 via-purple-200 to-cyan-200 -z-10">
+        </div>
+
+        <div class="group relative bg-gradient-to-br from-green-50 to-green-100/50 p-8 rounded-3xl text-center
                            shadow-[0_10px_40px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(34,197,94,0.3)]
                            hover:-translate-y-3 transition-all duration-500 border border-green-200/50">
-                    <div class="bg-gradient-to-br from-green-500 to-green-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5 shadow-lg shadow-green-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">1</div>
-                    <h4 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-green-600 transition-colors">Intake</h4>
-                    <p class="text-sm text-slate-600 leading-relaxed">Wastewater enters the primary chamber</p>
-                </div>
-                <div class="group relative bg-gradient-to-br from-blue-50 to-blue-100/50 p-8 rounded-3xl text-center
+          <div
+            class="bg-gradient-to-br from-green-500 to-green-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5 shadow-lg shadow-green-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+            1</div>
+          <h4 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-green-600 transition-colors">Intake</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Wastewater enters the primary chamber</p>
+        </div>
+        <div class="group relative bg-gradient-to-br from-blue-50 to-blue-100/50 p-8 rounded-3xl text-center
                            shadow-[0_10px_40px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(59,130,246,0.3)]
                            hover:-translate-y-3 transition-all duration-500 border border-blue-200/50">
-                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5 shadow-lg shadow-blue-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">2</div>
-                    <h4 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-blue-600 transition-colors">Separation</h4>
-                    <p class="text-sm text-slate-600 leading-relaxed">Solids settle, oils rise to top</p>
-                </div>
-                <div class="group relative bg-gradient-to-br from-purple-50 to-purple-100/50 p-8 rounded-3xl text-center
+          <div
+            class="bg-gradient-to-br from-blue-500 to-blue-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5 shadow-lg shadow-blue-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+            2</div>
+          <h4 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-blue-600 transition-colors">Separation</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Solids settle, oils rise to top</p>
+        </div>
+        <div class="group relative bg-gradient-to-br from-purple-50 to-purple-100/50 p-8 rounded-3xl text-center
                            shadow-[0_10px_40px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(168,85,247,0.3)]
                            hover:-translate-y-3 transition-all duration-500 border border-purple-200/50">
-                    <div class="bg-gradient-to-br from-purple-500 to-purple-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5 shadow-lg shadow-purple-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">3</div>
-                    <h4 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-purple-600 transition-colors">Bio-Treatment</h4>
-                    <p class="text-sm text-slate-600 leading-relaxed">Bacteria digest organic matter</p>
-                </div>
-                <div class="group relative bg-gradient-to-br from-cyan-50 to-cyan-100/50 p-8 rounded-3xl text-center
+          <div
+            class="bg-gradient-to-br from-purple-500 to-purple-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5 shadow-lg shadow-purple-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+            3</div>
+          <h4 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-purple-600 transition-colors">Bio-Treatment
+          </h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Bacteria digest organic matter</p>
+        </div>
+        <div class="group relative bg-gradient-to-br from-cyan-50 to-cyan-100/50 p-8 rounded-3xl text-center
                            shadow-[0_10px_40px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(6,182,212,0.3)]
                            hover:-translate-y-3 transition-all duration-500 border border-cyan-200/50">
-                    <div class="bg-gradient-to-br from-cyan-500 to-cyan-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5 shadow-lg shadow-cyan-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">4</div>
-                    <h4 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-cyan-600 transition-colors">Discharge</h4>
-                    <p class="text-sm text-slate-600 leading-relaxed">Clean water exits the system</p>
-                </div>
-            </div>
+          <div
+            class="bg-gradient-to-br from-cyan-500 to-cyan-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5 shadow-lg shadow-cyan-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+            4</div>
+          <h4 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-cyan-600 transition-colors">Discharge</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">Clean water exits the system</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Key Components -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">System Components</h2>
-                <p class="text-base sm:text-lg md:text-xl text-gray-600">Understanding each part of the system</p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
-                <div class="group relative bg-gradient-to-br from-white to-green-50/30 p-6 sm:p-8 rounded-2xl sm:rounded-3xl
+  <!-- Key Components -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">System Components</h2>
+        <p class="text-base sm:text-lg md:text-xl text-gray-600">Understanding each part of the system</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+        <div
+          class="group relative bg-gradient-to-br from-white to-green-50/30 p-6 sm:p-8 rounded-2xl sm:rounded-3xl
                            shadow-[0_12px_40px_rgba(15,23,42,0.1)] hover:shadow-[0_25px_70px_rgba(34,197,94,0.25)]
                            hover:-translate-y-2 transition-all duration-500 border border-green-100/50 overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-green-500/0 to-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div class="relative">
-                        <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-green-400 to-green-600 text-white text-4xl mb-5 shadow-lg shadow-green-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                            <i class="fas fa-filter"></i>
-                        </div>
-                        <h3 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-slate-900 group-hover:text-green-600 transition-colors">Primary Chamber</h3>
-                        <p class="text-slate-600 leading-relaxed">Initial separation of solids and liquids. Heavy particles settle at the bottom while lighter materials float to the top.</p>
-                    </div>
-                </div>
-                <div class="group relative bg-gradient-to-br from-white to-blue-50/30 p-8 rounded-3xl
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-green-500/0 to-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div class="relative">
+            <div
+              class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-green-400 to-green-600 text-white text-4xl mb-5 shadow-lg shadow-green-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+              <i class="fas fa-filter"></i>
+            </div>
+            <h3
+              class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-slate-900 group-hover:text-green-600 transition-colors">
+              Primary Chamber</h3>
+            <p class="text-slate-600 leading-relaxed">Initial separation of solids and liquids. Heavy particles settle
+              at the bottom while lighter materials float to the top.</p>
+          </div>
+        </div>
+        <div class="group relative bg-gradient-to-br from-white to-blue-50/30 p-8 rounded-3xl
                            shadow-[0_12px_40px_rgba(15,23,42,0.1)] hover:shadow-[0_25px_70px_rgba(59,130,246,0.25)]
                            hover:-translate-y-2 transition-all duration-500 border border-blue-100/50 overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div class="relative">
-                        <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 text-white text-4xl mb-5 shadow-lg shadow-blue-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                            <i class="fas fa-bacteria"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-3 text-slate-900 group-hover:text-blue-600 transition-colors">Bio-Zone</h3>
-                        <p class="text-slate-600 leading-relaxed">Contains beneficial bacteria that actively break down organic waste through natural biological processes.</p>
-                    </div>
-                </div>
-                <div class="group relative bg-gradient-to-br from-white to-purple-50/30 p-8 rounded-3xl
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div class="relative">
+            <div
+              class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 text-white text-4xl mb-5 shadow-lg shadow-blue-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+              <i class="fas fa-bacteria"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-3 text-slate-900 group-hover:text-blue-600 transition-colors">Bio-Zone</h3>
+            <p class="text-slate-600 leading-relaxed">Contains beneficial bacteria that actively break down organic
+              waste through natural biological processes.</p>
+          </div>
+        </div>
+        <div
+          class="group relative bg-gradient-to-br from-white to-purple-50/30 p-8 rounded-3xl
                            shadow-[0_12px_40px_rgba(15,23,42,0.1)] hover:shadow-[0_25px_70px_rgba(168,85,247,0.25)]
                            hover:-translate-y-2 transition-all duration-500 border border-purple-100/50 overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-purple-500/0 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div class="relative">
-                        <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-purple-400 to-purple-600 text-white text-4xl mb-5 shadow-lg shadow-purple-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                            <i class="fas fa-tint"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-3 text-slate-900 group-hover:text-purple-600 transition-colors">Clarification Zone</h3>
-                        <p class="text-slate-600 leading-relaxed">Final treatment stage where remaining particles settle and clean water is ready for discharge.</p>
-                    </div>
-                </div>
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-purple-500/0 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div class="relative">
+            <div
+              class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-purple-400 to-purple-600 text-white text-4xl mb-5 shadow-lg shadow-purple-500/50 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+              <i class="fas fa-tint"></i>
             </div>
+            <h3 class="text-2xl font-bold mb-3 text-slate-900 group-hover:text-purple-600 transition-colors">
+              Clarification Zone</h3>
+            <p class="text-slate-600 leading-relaxed">Final treatment stage where remaining particles settle and clean
+              water is ready for discharge.</p>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Underground Water Tank Process -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Underground Water Storage System</h2>
-                <p class="text-xl text-gray-600">Efficient water conservation and management</p>
-            </div>
-            <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4">Smart Water Storage</h3>
-                    <p class="text-gray-600 mb-4 text-lg">Our underground water tanks provide secure, temperature-controlled storage for drinking water, rainwater harvesting, and treated water reuse.</p>
-                    <p class="text-gray-600 text-lg">The underground installation protects water from contamination, prevents algae growth, and maintains optimal water quality while saving valuable surface space.</p>
-                </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600" alt="Underground Tank" class="w-full max-w-full rounded-lg shadow-lg object-cover">
-                </div>
-            </div>
-
-            <!-- Storage Features -->
-            <div class="grid md:grid-cols-4 gap-6 mt-12">
-                <div class="bg-blue-50 p-6 rounded-xl text-center">
-                    <div class="text-blue-600 text-4xl mb-4">
-                        <i class="fas fa-cloud-rain"></i>
-                    </div>
-                    <h4 class="font-bold mb-2">Rainwater Collection</h4>
-                    <p class="text-gray-600">Capture and store rainwater</p>
-                </div>
-                <div class="bg-cyan-50 p-6 rounded-xl text-center">
-                    <div class="text-cyan-600 text-4xl mb-4">
-                        <i class="fas fa-thermometer-half"></i>
-                    </div>
-                    <h4 class="font-bold mb-2">Temperature Control</h4>
-                    <p class="text-gray-600">Natural cooling system</p>
-                </div>
-                <div class="bg-indigo-50 p-6 rounded-xl text-center">
-                    <div class="text-indigo-600 text-4xl mb-4">
-                        <i class="fas fa-recycle"></i>
-                    </div>
-                    <h4 class="font-bold mb-2">Water Recycling</h4>
-                    <p class="text-gray-600">Reuse treated water</p>
-                </div>
-                <div class="bg-purple-50 p-6 rounded-xl text-center">
-                    <div class="text-purple-600 text-4xl mb-4">
-                        <i class="fas fa-pump-soap"></i>
-                    </div>
-                    <h4 class="font-bold mb-2">Easy Pumping</h4>
-                    <p class="text-gray-600">Efficient water distribution</p>
-                </div>
-            </div>
+  <!-- Underground Water Tank Process -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Underground Water Storage System</h2>
+        <p class="text-xl text-gray-600">Efficient water conservation and management</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Smart Water Storage</h3>
+          <p class="text-gray-600 mb-4 text-lg">Our underground water tanks provide secure, temperature-controlled
+            storage for drinking water, rainwater harvesting, and treated water reuse.</p>
+          <p class="text-gray-600 text-lg">The underground installation protects water from contamination, prevents
+            algae growth, and maintains optimal water quality while saving valuable surface space.</p>
         </div>
-    </section>
-
-    <!-- Installation Process -->
-    <section class="py-16 bg-[#004900] text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold mb-4">Installation Process</h2>
-                <p class="text-xl text-blue-100">Professional installation from start to finish</p>
-            </div>
-            <div class="grid md:grid-cols-5 gap-6">
-                <div class="text-center">
-                    <div class="bg-white text-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
-                    <h4 class="font-bold mb-2">Site Survey</h4>
-                    <p class="text-blue-100">Assess location and soil conditions</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-white text-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
-                    <h4 class="font-bold mb-2">Design Plan</h4>
-                    <p class="text-blue-100">Custom solution based on needs</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-white text-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
-                    <h4 class="font-bold mb-2">Excavation</h4>
-                    <p class="text-blue-100">Prepare the installation site</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-white text-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
-                    <h4 class="font-bold mb-2">Installation</h4>
-                    <p class="text-blue-100">Position and connect system</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-white text-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">5</div>
-                    <h4 class="font-bold mb-2">Testing</h4>
-                    <p class="text-blue-100">Quality checks and commissioning</p>
-                </div>
-            </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600" alt="Underground Tank"
+            class="w-full max-w-full rounded-lg shadow-lg object-cover">
         </div>
-    </section>
+      </div>
 
-    <!-- Benefits Comparison -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose Our Technology?</h2>
-                <p class="text-xl text-gray-600">Advantages over traditional systems</p>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-xl">
-                    <h3 class="text-2xl font-bold mb-6 text-center">Our Systems</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3">
-                            <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
-                            <span class="text-gray-700">Eco-friendly and sustainable</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
-                            <span class="text-gray-700">Low maintenance requirements</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
-                            <span class="text-gray-700">Odorless operation</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
-                            <span class="text-gray-700">Long lifespan (25+ years)</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
-                            <span class="text-gray-700">Efficient water treatment</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
-                            <span class="text-gray-700">Cost-effective operation</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-xl">
-                    <h3 class="text-2xl font-bold mb-6 text-center">Traditional Systems</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3">
-                            <i class="fas fa-times-circle text-red-600 text-xl mt-1"></i>
-                            <span class="text-gray-700">Higher environmental impact</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fas fa-times-circle text-red-600 text-xl mt-1"></i>
-                            <span class="text-gray-700">Frequent maintenance needed</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fas fa-times-circle text-red-600 text-xl mt-1"></i>
-                            <span class="text-gray-700">Unpleasant odors</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fas fa-times-circle text-red-600 text-xl mt-1"></i>
-                            <span class="text-gray-700">Shorter lifespan</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fas fa-times-circle text-red-600 text-xl mt-1"></i>
-                            <span class="text-gray-700">Less efficient treatment</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fas fa-times-circle text-red-600 text-xl mt-1"></i>
-                            <span class="text-gray-700">Higher running costs</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <!-- Storage Features -->
+      <div class="grid md:grid-cols-4 gap-6 mt-12">
+        <div class="bg-blue-50 p-6 rounded-xl text-center">
+          <div class="text-blue-600 text-4xl mb-4">
+            <i class="fas fa-cloud-rain"></i>
+          </div>
+          <h4 class="font-bold mb-2">Rainwater Collection</h4>
+          <p class="text-gray-600">Capture and store rainwater</p>
         </div>
-    </section>
+        <div class="bg-cyan-50 p-6 rounded-xl text-center">
+          <div class="text-cyan-600 text-4xl mb-4">
+            <i class="fas fa-thermometer-half"></i>
+          </div>
+          <h4 class="font-bold mb-2">Temperature Control</h4>
+          <p class="text-gray-600">Natural cooling system</p>
+        </div>
+        <div class="bg-indigo-50 p-6 rounded-xl text-center">
+          <div class="text-indigo-600 text-4xl mb-4">
+            <i class="fas fa-recycle"></i>
+          </div>
+          <h4 class="font-bold mb-2">Water Recycling</h4>
+          <p class="text-gray-600">Reuse treated water</p>
+        </div>
+        <div class="bg-purple-50 p-6 rounded-xl text-center">
+          <div class="text-purple-600 text-4xl mb-4">
+            <i class="fas fa-pump-soap"></i>
+          </div>
+          <h4 class="font-bold mb-2">Easy Pumping</h4>
+          <p class="text-gray-600">Efficient water distribution</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- CTA Section -->
-    <!--<section class="py-16 bg-gray-50">
+  <!-- Installation Process -->
+  <section class="py-16 bg-[#004900] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">Installation Process</h2>
+        <p class="text-xl text-blue-100">Professional installation from start to finish</p>
+      </div>
+      <div class="grid md:grid-cols-5 gap-6">
+        <div class="text-center">
+          <div
+            class="bg-white text-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            1</div>
+          <h4 class="font-bold mb-2">Site Survey</h4>
+          <p class="text-blue-100">Assess location and soil conditions</p>
+        </div>
+        <div class="text-center">
+          <div
+            class="bg-white text-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            2</div>
+          <h4 class="font-bold mb-2">Design Plan</h4>
+          <p class="text-blue-100">Custom solution based on needs</p>
+        </div>
+        <div class="text-center">
+          <div
+            class="bg-white text-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            3</div>
+          <h4 class="font-bold mb-2">Excavation</h4>
+          <p class="text-blue-100">Prepare the installation site</p>
+        </div>
+        <div class="text-center">
+          <div
+            class="bg-white text-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            4</div>
+          <h4 class="font-bold mb-2">Installation</h4>
+          <p class="text-blue-100">Position and connect system</p>
+        </div>
+        <div class="text-center">
+          <div
+            class="bg-white text-blue-600 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            5</div>
+          <h4 class="font-bold mb-2">Testing</h4>
+          <p class="text-blue-100">Quality checks and commissioning</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Comparison -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose Our Technology?</h2>
+        <p class="text-xl text-gray-600">Advantages over traditional systems</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-xl">
+          <h3 class="text-2xl font-bold mb-6 text-center">Our Systems</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
+              <span class="text-gray-700">Eco-friendly and sustainable</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
+              <span class="text-gray-700">Low maintenance requirements</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
+              <span class="text-gray-700">Odorless operation</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
+              <span class="text-gray-700">Long lifespan (25+ years)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
+              <span class="text-gray-700">Efficient water treatment</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-green-600 text-xl mt-1"></i>
+              <span class="text-gray-700">Cost-effective operation</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-xl">
+          <h3 class="text-2xl font-bold mb-6 text-center">Traditional Systems</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <i class="fas fa-times-circle text-red-600 text-xl mt-1"></i>
+              <span class="text-gray-700">Higher environmental impact</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-times-circle text-red-600 text-xl mt-1"></i>
+              <span class="text-gray-700">Frequent maintenance needed</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-times-circle text-red-600 text-xl mt-1"></i>
+              <span class="text-gray-700">Unpleasant odors</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-times-circle text-red-600 text-xl mt-1"></i>
+              <span class="text-gray-700">Shorter lifespan</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-times-circle text-red-600 text-xl mt-1"></i>
+              <span class="text-gray-700">Less efficient treatment</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-times-circle text-red-600 text-xl mt-1"></i>
+              <span class="text-gray-700">Higher running costs</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <!--<section class="py-16 bg-gray-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-4xl font-bold text-gray-900 mb-6">Want to Learn More?</h2>
             <p class="text-xl text-gray-600 mb-8">Our experts are ready to answer your questions and provide detailed information</p>
@@ -678,201 +746,196 @@
         </div>
     </section>-->
 
-    <!-- Footer -->
-    <footer
-  class="text-white py-12 font-bold"
-  style="background: linear-gradient(135deg, #004900 0%, #b7ed03 100%);"
->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid md:grid-cols-4 gap-8">
+  <!-- Footer -->
+  <footer class="text-white py-12 font-bold" style="background: linear-gradient(135deg, #004900 0%, #b7ed03 100%);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
 
-      <!-- Brand Info -->
-      <div>
-        <h3 class="text-2xl font-bold mb-4 text-white">
-          Pioneer BioTank
-        </h3>
-        <p class="text-gray-100 font-bold">
-          Leading provider of eco-friendly FRP water storage and bio-septic solutions.
+        <!-- Brand Info -->
+        <div>
+          <h3 class="text-2xl font-bold mb-4 text-white">
+            Pioneer BioTank
+          </h3>
+          <p class="text-gray-100 font-bold">
+            Leading provider of eco-friendly FRP water storage and bio-septic solutions.
+          </p>
+
+          <div class="mt-4 space-y-2">
+            <p class="text-sm text-gray-100 font-bold">
+              <i class="fas fa-phone mr-2 text-[#004900]"></i>
+              +91 98765 43210
+            </p>
+            <p class="text-sm text-gray-100 font-bold">
+              <i class="fas fa-envelope mr-2 text-[#004900]"></i>
+              info@pioneerbiotank.com
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-bold mb-4 text-white">Quick Links</h4>
+          <ul class="space-y-2 font-bold">
+            <li><a href="index.html" class="text-gray-100 hover:text-white">Home</a></li>
+            <li><a href="about.html" class="text-gray-100 hover:text-white">About Us</a></li>
+            <li><a href="howitworks.html" class="text-gray-100 hover:text-white">How It Works</a></li>
+            <li><a href="project.html" class="text-gray-100 hover:text-white">Projects</a></li>
+            <li><a href="contact.html" class="text-gray-100 hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <h4 class="font-bold mb-4 text-white">Our Products</h4>
+          <ul class="space-y-2 font-bold">
+            <li>
+              <a href="bio-septic.html" class="text-gray-100 hover:text-white">
+                FRP Bio-Septic Tank
+              </a>
+            </li>
+            <li>
+              <a href="undergroundwatertank.html" class="text-gray-100 hover:text-white">
+                FRP Underground Water Tank
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social & CTA -->
+        <div>
+          <h4 class="font-bold mb-4 text-white">Follow Us</h4>
+
+          <div class="flex space-x-4 mb-4 text-2xl">
+            <a href="#" class="transition-transform hover:scale-110" style="color:#1877F2;">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="transition-transform hover:scale-110" style="color:#E4405F;">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="transition-transform hover:scale-110" style="color:#0A66C2;">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="transition-transform hover:scale-110" style="color:#FF0000;">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+
+          <a href="contact.html"
+            class="inline-block mt-4 px-6 py-2 rounded-lg text-sm font-bold text-white shadow-md transition"
+            style="background-color:#004900;" onmouseover="this.style.backgroundColor='#003800'"
+            onmouseout="this.style.backgroundColor='#004900'">
+            Get a Quote
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-8 pt-8 text-center text-gray-100 font-bold" style="border-top: 1px solid rgba(0,0,0,0.25);">
+        <p>
+          &copy; 2025 Pioneer BioTank. All rights reserved |
+          Designed for sustainable water solutions.
         </p>
-
-        <div class="mt-4 space-y-2">
-          <p class="text-sm text-gray-100 font-bold">
-            <i class="fas fa-phone mr-2 text-[#004900]"></i>
-            +91 98765 43210
-          </p>
-          <p class="text-sm text-gray-100 font-bold">
-            <i class="fas fa-envelope mr-2 text-[#004900]"></i>
-            info@pioneerbiotank.com
-          </p>
-        </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div>
-        <h4 class="font-bold mb-4 text-white">Quick Links</h4>
-        <ul class="space-y-2 font-bold">
-          <li><a href="index.html" class="text-gray-100 hover:text-white">Home</a></li>
-          <li><a href="about.html" class="text-gray-100 hover:text-white">About Us</a></li>
-          <li><a href="howitworks.html" class="text-gray-100 hover:text-white">How It Works</a></li>
-          <li><a href="project.html" class="text-gray-100 hover:text-white">Projects</a></li>
-          <li><a href="contact.html" class="text-gray-100 hover:text-white">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Products -->
-      <div>
-        <h4 class="font-bold mb-4 text-white">Our Products</h4>
-        <ul class="space-y-2 font-bold">
-          <li>
-            <a href="bio-septic.html" class="text-gray-100 hover:text-white">
-              FRP Bio-Septic Tank
-            </a>
-          </li>
-          <li>
-            <a href="undergroundwatertank.html" class="text-gray-100 hover:text-white">
-              FRP Underground Water Tank
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Social & CTA -->
-      <div>
-        <h4 class="font-bold mb-4 text-white">Follow Us</h4>
-
-        <div class="flex space-x-4 mb-4 text-2xl">
-          <a href="#" class="transition-transform hover:scale-110" style="color:#1877F2;">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="#" class="transition-transform hover:scale-110" style="color:#E4405F;">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" class="transition-transform hover:scale-110" style="color:#0A66C2;">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="#" class="transition-transform hover:scale-110" style="color:#FF0000;">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </div>
-
-        <a
-          href="contact.html"
-          class="inline-block mt-4 px-6 py-2 rounded-lg text-sm font-bold text-white shadow-md transition"
-          style="background-color:#004900;"
-          onmouseover="this.style.backgroundColor='#003800'"
-          onmouseout="this.style.backgroundColor='#004900'"
-        >
-          Get a Quote
-        </a>
       </div>
     </div>
+  </footer>
 
-    <!-- Bottom Bar -->
-    <div
-      class="mt-8 pt-8 text-center text-gray-100 font-bold"
-      style="border-top: 1px solid rgba(0,0,0,0.25);"
-    >
-      <p>
-        &copy; 2025 Pioneer BioTank. All rights reserved |
-        Designed for sustainable water solutions.
-      </p>
-    </div>
-  </div>
-</footer>
+  <!-- Floating Scroll to Top Button -->
+  <button id="scroll-to-top"
+    class="hidden fixed bottom-8 right-8 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
+    style="background-color: #004900;" onmouseover="this.style.backgroundColor='#009945'"
+    onmouseout="this.style.backgroundColor='#004900'">
+    <i class="fas fa-arrow-up text-xl"></i>
+  </button>
 
-    <!-- Floating Scroll to Top Button -->
-    <button id="scroll-to-top" class="hidden fixed bottom-8 right-8 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50" style="background-color: #004900;" onmouseover="this.style.backgroundColor='#009945'" onmouseout="this.style.backgroundColor='#004900'">
-        <i class="fas fa-arrow-up text-xl"></i>
-    </button>
+  <!-- Floating CTA Button -->
+  <a href="contact.html" id="floating-cta"
+    class="hidden fixed bottom-24 right-8 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 font-semibold"
+    style="background-color: #004900;" onmouseover="this.style.backgroundColor='#004900'"
+    onmouseout="this.style.backgroundColor='#004900'">
+    <i class="fas fa-phone mr-2 text-[#004900]"></i>Get Quote
+  </a>
 
-    <!-- Floating CTA Button -->
-    <a href="contact.html" id="floating-cta" class="hidden fixed bottom-24 right-8 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 font-semibold" style="background-color: #004900;" onmouseover="this.style.backgroundColor='#004900'" onmouseout="this.style.backgroundColor='#004900'">
-        <i class="fas fa-phone mr-2 text-[#004900]"></i>Get Quote
-    </a>
+  <script>
+    let lastScrollTop = 0;
+    const banner = document.getElementById('top-banner');
+    const nav = document.getElementById('main-nav');
+    const scrollToTopBtn = document.getElementById('scroll-to-top');
+    const floatingCta = document.getElementById('floating-cta');
+    const mainSection = document.querySelector('section[style*="margin-top"]');
 
-    <script>
-        let lastScrollTop = 0;
-        const banner = document.getElementById('top-banner');
-        const nav = document.getElementById('main-nav');
-        const scrollToTopBtn = document.getElementById('scroll-to-top');
-        const floatingCta = document.getElementById('floating-cta');
-        const mainSection = document.querySelector('section[style*="margin-top"]');
-        
-        window.addEventListener('scroll', function() {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            // Hide/Show banner on scroll
-            if (scrollTop > lastScrollTop && scrollTop > 100) {
-                // Scrolling down
-                banner.style.transform = 'translateY(-100%)';
-                nav.style.top = '0';
-                if (mainSection) mainSection.style.marginTop = '48px';
-            } else {
-                // Scrolling up
-                banner.style.transform = 'translateY(0)';
-                nav.style.top = '40px';
-                if (mainSection) mainSection.style.marginTop = '60px';
-            }
-            
-            lastScrollTop = scrollTop;
-            
-            // Show/Hide scroll to top button
-            if (scrollTop > 300) {
-                scrollToTopBtn.classList.remove('hidden');
-                floatingCta.classList.remove('hidden');
-            } else {
-                scrollToTopBtn.classList.add('hidden');
-                floatingCta.classList.add('hidden');
-            }
-        });
-        
-        // Scroll to top functionality
-        scrollToTopBtn.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
-<!-- Floating WhatsApp Button -->
-<!-- replace the 919876543210 number with the actual WhatsApp number -->
-<a
-  id="whatsapp-float"
-  href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Chat on WhatsApp"
->
-  <i class="fab fa-whatsapp"></i>
-</a>
-<style>
-  #whatsapp-float {
-    position: fixed;
-    right: 20px;
-    bottom: 160px;
-    width: 56px;
-    height: 56px;
-    background-color: #25D366;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    text-decoration: none;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    z-index: 9999;
+    window.addEventListener('scroll', function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    cursor: grab;
-    touch-action: none;
-    user-select: none;
-  }
+      // Hide/Show banner on scroll
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        // Scrolling down
+        banner.style.transform = 'translateY(-100%)';
+        nav.style.top = '0';
+        if (mainSection) mainSection.style.marginTop = '48px';
+      } else {
+        // Scrolling up
+        banner.style.transform = 'translateY(0)';
+        nav.style.top = '40px';
+        if (mainSection) mainSection.style.marginTop = '60px';
+      }
 
-  #whatsapp-float:active {
-    cursor: grabbing;
-  }
-</style>
+      lastScrollTop = scrollTop;
 
+      // Show/Hide scroll to top button
+      if (scrollTop > 300) {
+        scrollToTopBtn.classList.remove('hidden');
+        floatingCta.classList.remove('hidden');
+      } else {
+        scrollToTopBtn.classList.add('hidden');
+        floatingCta.classList.add('hidden');
+      }
+    });
+
+    // Scroll to top functionality
+    scrollToTopBtn.addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+  <!-- Floating WhatsApp Button -->
+  <!-- replace the 919876543210 number with the actual WhatsApp number -->
+  <a id="whatsapp-float"
+    href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
+    target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <style>
+    #whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 160px;
+      width: 56px;
+      height: 56px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
+
+      cursor: grab;
+      touch-action: none;
+      user-select: none;
+    }
+
+    #whatsapp-float:active {
+      cursor: grabbing;
+    }
+  </style>
+
+  <script src="./scripts/scroll.js"></script>
 
 </body>
+
 </html>
