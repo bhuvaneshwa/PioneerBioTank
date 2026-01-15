@@ -1,5 +1,4 @@
 
-
 const navBar = document.getElementById("main-nav");
 const navLinks = document.getElementsByClassName("nav-link-color");
 window.addEventListener("scroll", () => {
@@ -15,10 +14,10 @@ window.addEventListener("scroll", () => {
   } else {
     // Top state
     navBar.classList.remove("bg-white", "border-slate-200", "shadow-md");
-    navBar.classList.add("bg-[#004900]/90", "border-white/10");
+    navBar.classList.add("bg-white/90", "border-white/10");
     for (let i = 0; i < navLinks.length; i++) {
       ele = navLinks[i];
-      ele.style.color = "white";
+      ele.style.color = "black";
     }
   }
 });

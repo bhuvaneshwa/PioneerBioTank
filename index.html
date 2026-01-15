@@ -16,26 +16,26 @@
 
 
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            emerald: {
-              50: '#e6f2e6',
-              100: '#ccf0cc',
-              200: '#99db99',
-              300: '#66c466',
-              400: '#33ad33',
-              500: '#004900',
-              600: '#003d00',
-              700: '#003200',
-              800: '#002600',
-              900: '#001a00',
-            }
-          }
-        }
-      }
-    }
+    // tailwind.config = {
+    //   theme: {
+    //     extend: {
+    //       colors: {
+    //         emerald: {
+    //           50: '#e6f2e6',
+    //           100: '#ccf0cc',
+    //           200: '#99db99',
+    //           300: '#66c466',
+    //           400: '#33ad33',
+    //           500: '#004900',
+    //           600: '#003d00',
+    //           700: '#003200',
+    //           800: '#002600',
+    //           900: '#001a00',
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
   </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
@@ -208,8 +208,8 @@
 
 
   <!-- Navigation -->
-  <nav id="main-nav" class="fixed inset-x-0 top-9 z-30
-         bg-[#004900]/90 backdrop-blur
+  <nav id="main-nav" class="fixed inset-x-0 z-30
+         bg-white/90 backdrop-blur
          border-b border-white/10
          transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -313,12 +313,12 @@
     <!-- Right side curved image/video area -->
     <div class="absolute inset-0 flex justify-end">
       <div
+        style="background-image: url(./images/Gemini_Generated_Image_1o2nyd1o2nyd1o2n.png); background-position: center; background-repeat: no-repeat; background-size: cover;"
         class="relative h-full w-full md:w-[50%] lg:w-[45%] bg-[#004900] rounded-none md:rounded-l-[120px] lg:rounded-l-[180px] overflow-hidden flex items-center">
 
         <!-- VIDEO -->
-        <video id="heroVideo" class="w-full h-full object-cover" playsinline>
-          <source src="./VIdeo.mp4" type="video/mp4" />
-        </video>
+
+
 
         <!-- PLAY/PAUSE BUTTON -->
         <button onclick="openOverlay()" type="button" id="videoPlayPauseBtn"
@@ -646,9 +646,9 @@
 
       <!-- Bottom region strip -->
       <div class="mt-10 flex justify-center">
-        <div class="inline-flex items-center rounded-full bg-[#e5f5d4] px-6 sm:px-10 py-3
+        <div class="inline-flex rounded-full bg-[#e5f5d4] px-6 sm:px-10 py-3
                text-xs sm:text-sm font-medium text-slate-800 shadow-sm">
-          <span class="mr-2 text-[#004900] font-semibold">Serving</span>
+          <span class="mr-2 text-[#004900] font-semibold inline">Serving</span>
           <span>Tamil Nadu • Kerala • Karnataka • Andhra Pradesh</span>
         </div>
       </div>
@@ -677,83 +677,77 @@
       </div>
 
       <!-- PROBLEM CARDS -->
-      <div class="space-y-8 sm:space-y-10 md:space-y-12">
-        <!-- First row: 3 cards -->
-        <!-- First row: 3 cards (UPDATED) -->
-        <div class="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="mt-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9 sm:gap-9 max-w-6xl mx-auto">
 
           <!-- Card 1 -->
-          <div class="relative bg-white text-slate-900 rounded-2xl sm:rounded-3xl shadow-[0_22px_60px_rgba(15,23,42,0.35)]
-           pt-10 sm:pt-12 pb-6 sm:pb-8 px-5 sm:px-7 text-center">
-            <div class="absolute -top-8 sm:-top-10 left-1/2 -translate-x-1/2 w-16 h-16 sm:w-20 sm:h-20 rounded-full
-             bg-emerald-100 shadow-[0_12px_30px_rgba(15,23,42,0.35)]
-             flex items-center justify-center text-xl sm:text-2xl text-emerald-800">
+          <div class="relative bg-white text-slate-900 rounded-2xl shadow-[0_18px_50px_rgba(15,23,42,0.25)]
+             pt-12 pb-8 px-6 text-center flex flex-col items-center">
+            <div class="absolute -top-8 w-16 h-16 rounded-full bg-emerald-100
+               shadow-[0_10px_25px_rgba(15,23,42,0.25)]
+               flex items-center justify-center text-xl text-emerald-800">
               <i class="fas fa-cloud-meatball"></i>
             </div>
-
-            <p class="mt-2 text-base sm:text-lg font-medium leading-snug">
-              Bad smell near<br />the house
+            <p class="mt-4 text-base sm:text-lg font-medium leading-snug">
+              Bad smell near the house
             </p>
           </div>
 
           <!-- Card 2 -->
-          <div class="relative bg-white text-slate-900 rounded-[32px] shadow-[0_22px_60px_rgba(15,23,42,0.35)]
-           pt-12 pb-8 px-7 text-center">
-            <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full
-             bg-emerald-100 shadow-[0_12px_30px_rgba(15,23,42,0.35)]
-             flex items-center justify-center text-2xl text-emerald-800">
+          <div class="relative bg-white text-slate-900 rounded-2xl shadow-[0_18px_50px_rgba(15,23,42,0.25)]
+             pt-12 pb-8 px-6 text-center flex flex-col items-center">
+            <div class="absolute -top-8 w-16 h-16 rounded-full bg-emerald-100
+               shadow-[0_10px_25px_rgba(15,23,42,0.25)]
+               flex items-center justify-center text-xl text-emerald-800">
               <i class="fas fa-truck"></i>
             </div>
-            <p class="mt-2 text-lg font-medium leading-snug">
-              Frequent septic lorry visits<br />and high cleaning cost
+            <p class="mt-4 text-base sm:text-lg font-medium leading-snug">
+              Frequent septic lorry visits and high cleaning cost
             </p>
           </div>
 
           <!-- Card 3 -->
-          <div class="relative bg-white text-slate-900 rounded-[32px] shadow-[0_22px_60px_rgba(15,23,42,0.35)]
-           pt-12 pb-8 px-7 text-center">
-            <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full
-             bg-emerald-100 shadow-[0_12px_30px_rgba(15,23,42,0.35)]
-             flex items-center justify-center text-2xl text-emerald-800">
+          <div class="relative bg-white text-slate-900 rounded-2xl shadow-[0_18px_50px_rgba(15,23,42,0.25)]
+             pt-12 pb-8 px-6 text-center flex flex-col items-center">
+            <div class="absolute -top-8 w-16 h-16 rounded-full bg-emerald-100
+               shadow-[0_10px_25px_rgba(15,23,42,0.25)]
+               flex items-center justify-center text-xl text-emerald-800">
               <i class="fas fa-tint-slash"></i>
             </div>
-
-            <p class="mt-2 text-lg font-medium leading-snug">
-              Dirty water leaking<br />into your ground and borewell
+            <p class="mt-4 text-base sm:text-lg font-medium leading-snug">
+              Dirty water leaking into your ground and borewell
             </p>
           </div>
 
-        </div>
-
-        <!-- Second row: 2 cards -->
-        <div class="grid gap-6 md:grid-cols-2">
-          <!-- Card -->
-          <div
-            class="relative bg-white text-slate-900 rounded-[32px] shadow-[0_22px_60px_rgba(15,23,42,0.35)] pt-12 pb-8 px-7 text-center">
-            <div
-              class="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full bg-emerald-100 shadow-[0_12px_30px_rgba(15,23,42,0.35)] flex items-center justify-center text-2xl text-emerald-800">
+          <!-- Card 4 -->
+          <div class="relative bg-white text-slate-900 rounded-2xl shadow-[0_18px_50px_rgba(15,23,42,0.25)]
+             pt-12 pb-8 px-6 text-center flex flex-col items-center">
+            <div class="absolute -top-8 w-16 h-16 rounded-full bg-emerald-100
+               shadow-[0_10px_25px_rgba(15,23,42,0.25)]
+               flex items-center justify-center text-xl text-emerald-800">
               <i class="fas fa-house-damage"></i>
             </div>
-            <p class="mt-2 text-lg font-medium leading-snug">
-              Cracks and corrosion<br />
-              in RCC tanks over time
+            <p class="mt-4 text-base sm:text-lg font-medium leading-snug">
+              Cracks and corrosion in RCC tanks over time
             </p>
           </div>
 
-          <!-- Card -->
-          <div
-            class="relative bg-white text-slate-900 rounded-[32px] shadow-[0_22px_60px_rgba(15,23,42,0.35)] pt-12 pb-8 px-7 text-center">
-            <div
-              class="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full bg-emerald-100 shadow-[0_12px_30px_rgba(15,23,42,0.35)] flex items-center justify-center text-2xl text-emerald-800">
+          <!-- Card 5 -->
+          <div class="relative bg-white text-slate-900 rounded-2xl shadow-[0_18px_50px_rgba(15,23,42,0.25)]
+             pt-12 pb-8 px-6 text-center flex flex-col items-center sm:col-span-2 lg:col-span-1">
+            <div class="absolute -top-8 w-16 h-16 rounded-full bg-emerald-100
+               shadow-[0_10px_25px_rgba(15,23,42,0.25)]
+               flex items-center justify-center text-xl text-emerald-800">
               <i class="fas fa-question-circle"></i>
             </div>
-            <p class="mt-2 text-lg font-medium leading-snug">
-              No clear idea if the<br />
-              tank is working properly
+            <p class="mt-4 text-base sm:text-lg font-medium leading-snug">
+              No clear idea if the tank is working properly
             </p>
           </div>
+
         </div>
       </div>
+
 
       <!-- Bottom Quote -->
       <div class="relative mt-14 flex justify-center">
@@ -2042,16 +2036,21 @@
           <h4 class="font-bold mb-4 text-white">Follow Us</h4>
 
           <div class="flex space-x-4 mb-4 text-2xl">
-            <a href="#" class="transition-transform hover:scale-110" style="color:#1877F2;">
+            <a target="_blank" href="	https://www.facebook.com/people/Pioneer-Bio-Tank/100091440451887"
+              class="transition-transform hover:scale-110" style="color:#1877F2;">
               <i class="fab fa-facebook"></i>
             </a>
-            <a href="#" class="transition-transform hover:scale-110" style="color:#E4405F;">
+            <a target="_blank" href="https://www.instagram.com/pioneerbiotank?igsh=bDl0b2xxbzF2OWdw"
+              class="transition-transform hover:scale-110" style="color:#E4405F;">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="#" class="transition-transform hover:scale-110" style="color:#0A66C2;">
+            <a target="_blank"
+              href="https://www.linkedin.com/in/pioneer-biotank-68612b1b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="transition-transform hover:scale-110" style="color:#0A66C2;">
               <i class="fab fa-linkedin"></i>
             </a>
-            <a href="#" class="transition-transform hover:scale-110" style="color:#FF0000;">
+            <a target="_blank" href="https://youtube.com/@aruncp1112?si=UUGdnRbLXWU7TTfq"
+              class="transition-transform hover:scale-110" style="color:#FF0000;">
               <i class="fab fa-youtube"></i>
             </a>
           </div>
