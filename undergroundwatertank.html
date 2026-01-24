@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Underground Water Tank - Pioneer BioTank</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="././scripts/modal.js"></script>
 
   <script>
     tailwind.config = {
@@ -100,7 +101,7 @@
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
 
-          <a href="index.html" class="text-[#b7ed03] font-semibold pb-1">
+          <a href="index.html" class="nav-link-color font-semibold pb-1">
             Home
           </a>
 
@@ -108,7 +109,7 @@
           <div class="relative group">
             <button
               class="nav-link-color border-b-2 border-[#b7ed03] flex items-center gap-1 text-white hover:text-[#b7ed03] py-2">
-              Products <i class="fas fa-chevron-down text-[10px]"></i>
+              Profile <i class="fas fa-chevron-down text-[10px]"></i>
             </button>
 
             <div
@@ -121,7 +122,7 @@
               </a>
             </div>
           </div>
-
+          <a onclick="openModal()" class="nav-link-color hover:text-[#b7ed03] cursor-pointer">Download</a>
           <a href="howitworks.html" class="nav-link-color hover:text-[#b7ed03]">How It Works</a>
           <a href="project.html" class="nav-link-color hover:text-[#b7ed03]">Projects</a>
           <a href="about.html" class="nav-link-color hover:text-[#b7ed03]">About Us</a>
@@ -218,7 +219,7 @@
   </script>
 
   <!-- PREMIUM HERO SECTION – UNDERGROUND WATER TANK -->
-  <section class="relative pt-16 pb-24 overflow-hidden">
+  <section class="relative pt-28 pb-24 overflow-hidden">
     <!-- Background Gradient -->
     <div class="absolute inset-0 bg-gradient-to-br from-emerald-600 via-emerald-700 to-slate-900"></div>
 
