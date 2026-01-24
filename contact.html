@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="./styles/common.css">
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="././scripts/modal.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -92,7 +94,7 @@
         <!-- Logo -->
         <div class="flex items-center">
           <a href="index.html" class="flex items-center gap-2">
-            <img src="./images/PIONEER BIO TANK LOGO WITH NO1 FRP.png" alt="Pioneer BioTank Logo"
+            <img src="./images/PIONEER BIO TANK LOGO.png" alt="Pioneer BioTank Logo"
               class="h-10 sm:h-12 md:h-14 w-auto object-contain flex-shrink-0" />
 
           </a>
@@ -101,14 +103,14 @@
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
 
-          <a href="index.html" class="text-[#b7ed03] font-semibold pb-1">
+          <a href="index.html" class="nav-link-color font-semibold pb-1">
             Home
           </a>
 
           <!-- Products Dropdown -->
           <div class="relative group">
             <button class="nav-link-color flex items-center gap-1 text-white hover:text-[#b7ed03] py-2">
-              Products <i class="fas fa-chevron-down text-[10px]"></i>
+              Profile <i class="fas fa-chevron-down text-[10px]"></i>
             </button>
 
             <div
@@ -121,7 +123,7 @@
               </a>
             </div>
           </div>
-
+          <a onclick="openModal()" class="nav-link-color hover:text-[#b7ed03] cursor-pointer">Download</a>
           <a href="howitworks.html" class="nav-link-color hover:text-[#b7ed03]">How It Works</a>
           <a href="project.html" class="nav-link-color hover:text-[#b7ed03]">Projects</a>
           <a href="about.html" class="nav-link-color hover:text-[#b7ed03]">About Us</a>
@@ -166,6 +168,7 @@
             </a>
           </div>
 
+          <a onclick="openModal()" class="nav-link-color hover:text-[#b7ed03] cursor-pointer">Download</a>
           <a href="howitworks.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">How It Works</a>
           <a href="project.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">Projects</a>
           <a href="about.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">About Us</a>
@@ -338,43 +341,65 @@
           </div>
           <!-- script for Contact Form Card -->
           <script>
-            document.getElementById("submitBtn").addEventListener("click", function () {
+            document.getElementById("submitBtn").addEventListener("click", async function () {
+              try {
+                const templateParams = {
+                  name: document.getElementById("name").value,
+                  phone: document.getElementById("phone").value,
+                  email: document.getElementById("email").value,
+                  location: document.getElementById("location").value,
+                  property_type: document.getElementById("property_type").value,
+                  users: document.getElementById("users").value,
+                  message: document.getElementById("message").value
+                };
 
-              const templateParams = {
-                name: document.getElementById("name").value,
-                phone: document.getElementById("phone").value,
-                email: document.getElementById("email").value,
-                location: document.getElementById("location").value,
-                property_type: document.getElementById("property_type").value,
-                users: document.getElementById("users").value,
-                message: document.getElementById("message").value
-              };
+                // basic validation
+                if (!templateParams.name || !templateParams.phone) {
+                  alert("Please fill required fields.");
+                  return;
+                }
 
-              // basic validation
-              if (!templateParams.name || !templateParams.phone) {
-                alert("Please fill required fields.");
-                return;
-              }
+                const textMessage = `
+                          New Enquiry Received
 
-              emailjs.send(
-                "service_pioneer",
-                "template_biotank",
-                templateParams
-              ).then(
-                function () {
-                  alert("Thank you! We will contact you within 24 hours.");
+                          Name: ${templateParams.name}
+                          Phone: ${templateParams.phone}
+                          Email: ${templateParams.email}
+                          Location: ${templateParams.location}
+                          Property Type: ${templateParams.property_type}
+                          Users: ${templateParams.users}
 
+                          Message:
+                          ${templateParams.message}
+                          `;
+
+                const payload = {
+                  to: templateParams?.email,
+                  subject: "User Requirement",
+                  text: textMessage,
+                };
+                const response = await fetch("http://localhost:8000/send_mail", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify(payload),
+                });
+
+                const result = await response.json();
+
+                if (result?.status === "success") {
+                  alert("Email sent successfully!");
                   // optional reset
                   Object.keys(templateParams).forEach(id => {
                     const el = document.getElementById(id);
                     if (el) el.value = "";
                   });
-                },
-                function (error) {
-                  alert("Failed to send. Please try again.");
-                  console.error("EmailJS Error:", error);
                 }
-              );
+              } catch (err) {
+                alert("Failed to send. Please try again.");
+                console.error("Error:", err);
+              }
             });
           </script>
           <!-- End Contact Form Card -->
@@ -658,16 +683,21 @@
           <h4 class="font-bold mb-4 text-white">Follow Us</h4>
 
           <div class="flex space-x-4 mb-4 text-2xl">
-            <a target="_blank" href="	https://www.facebook.com/people/Pioneer-Bio-Tank/100091440451887" class="transition-transform hover:scale-110" style="color:#1877F2;">
+            <a target="_blank" href="	https://www.facebook.com/people/Pioneer-Bio-Tank/100091440451887"
+              class="transition-transform hover:scale-110" style="color:#1877F2;">
               <i class="fab fa-facebook"></i>
             </a>
-            <a target="_blank" href="https://www.instagram.com/pioneerbiotank?igsh=bDl0b2xxbzF2OWdw" class="transition-transform hover:scale-110" style="color:#E4405F;">
+            <a target="_blank" href="https://www.instagram.com/pioneerbiotank?igsh=bDl0b2xxbzF2OWdw"
+              class="transition-transform hover:scale-110" style="color:#E4405F;">
               <i class="fab fa-instagram"></i>
             </a>
-            <a target="_blank" href="https://www.linkedin.com/in/pioneer-biotank-68612b1b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="transition-transform hover:scale-110" style="color:#0A66C2;">
+            <a target="_blank"
+              href="https://www.linkedin.com/in/pioneer-biotank-68612b1b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="transition-transform hover:scale-110" style="color:#0A66C2;">
               <i class="fab fa-linkedin"></i>
             </a>
-            <a target="_blank" href="https://youtube.com/@aruncp1112?si=UUGdnRbLXWU7TTfq" class="transition-transform hover:scale-110" style="color:#FF0000;">
+            <a target="_blank" href="https://youtube.com/@aruncp1112?si=UUGdnRbLXWU7TTfq"
+              class="transition-transform hover:scale-110" style="color:#FF0000;">
               <i class="fab fa-youtube"></i>
             </a>
           </div>

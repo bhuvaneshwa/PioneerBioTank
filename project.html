@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Projects - Pioneer BioTank</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="././scripts/modal.js"></script>
 
   <script>
     tailwind.config = {
@@ -31,6 +32,9 @@
   </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="./styles/common.css">
+  <link rel="preconnect" href="https://i.ytimg.com">
+  <link rel="preconnect" href="https://www.youtube-nocookie.com">
+
 
   <style>
     /* Mobile responsiveness */
@@ -91,7 +95,7 @@
         <!-- Logo -->
         <div class="flex items-center">
           <a href="index.html" class="flex items-center gap-2">
-            <img src="./images/PIONEER BIO TANK LOGO WITH NO1 FRP.png" alt="Pioneer BioTank Logo"
+            <img src="./images/PIONEER BIO TANK LOGO.png" alt="Pioneer BioTank Logo"
               class="h-10 sm:h-12 md:h-14 w-auto object-contain flex-shrink-0" />
 
           </a>
@@ -100,14 +104,14 @@
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
 
-          <a href="index.html" class="text-[#b7ed03] font-semibold pb-1">
+          <a href="index.html" class="nav-link-color font-semibold pb-1">
             Home
           </a>
 
           <!-- Products Dropdown -->
           <div class="relative group">
             <button class="nav-link-color flex items-center gap-1 text-white hover:text-[#b7ed03] py-2">
-              Products <i class="fas fa-chevron-down text-[10px]"></i>
+              Profile <i class="fas fa-chevron-down text-[10px]"></i>
             </button>
 
             <div
@@ -120,9 +124,9 @@
               </a>
             </div>
           </div>
-
+          <a onclick="openModal()" class="nav-link-color hover:text-[#b7ed03] cursor-pointer">Download</a>
           <a href="howitworks.html" class="nav-link-color hover:text-[#b7ed03]">How It Works</a>
-          <a href="project.html" class="nav-link-color border-b-2 border-[#b7ed03]  hover:text-[#b7ed03]">Projects</a>
+          <a href="project.html" class="nav-link-color border-b-2 border-[#b7ed03] hover:text-[#b7ed03]">Projects</a>
           <a href="about.html" class="nav-link-color hover:text-[#b7ed03]">About Us</a>
           <a href="contact.html" class="nav-link-color hover:text-[#b7ed03]">Contact Us</a>
 
@@ -478,177 +482,899 @@
       <!-- Residential Tab -->
       <div data-tab-panel="residential">
         <h2 class="text-xl font-semibold text-slate-900 mb-6">Residential Installations</h2>
-
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="DItjdChKryg">
+            <img
+              src="https://i.ytimg.com/vi/DItjdChKryg/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBnectaJAuuFhnIDWT5sNf1jquCfw"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="EYOe3YJEUs4">
+            <img
+              src="https://i.ytimg.com/vi/EYOe3YJEUs4/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAH2mtHcAzGP1h0fUfajN4YH5E1dQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="bsfCX1Rdnqk">
+            <img
+              src="https://i.ytimg.com/vi/bsfCX1Rdnqk/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDzOJsMhXcYFDJS5lk-zD8af9P-3g"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="T7-XPrJ3x-w">
+            <img
+              src="https://i.ytimg.com/vi/T7-XPrJ3x-w/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD80W2HR-DXksb9pTBNgNDihY_9oQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="38utghhK_1o">
+            <img
+              src="https://i.ytimg.com/vi/38utghhK_1o/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCShjKnOWqCGUhuPMFMx4qR8hDl3A"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="5B6EF44PESU">
+            <img
+              src="https://i.ytimg.com/vi/5B6EF44PESU/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDdxF8sleF04QcJxwbR6_ZAx6x4gQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
 
 
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/DItjdChKryg" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/EYOe3YJEUs4" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/bsfCX1Rdnqk" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/T7-XPrJ3x-w" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/38utghhK_1o" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/5B6EF44PESU" allowfullscreen></iframe></div>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="ixuDfOQ6SZs">
+            <img
+              src="https://i.ytimg.com/vi/ixuDfOQ6SZs/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLADQQVTKyYW8NnJhfdSAkwAK7zzAA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
 
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/ixuDfOQ6SZs" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/RY-6Flm-DeM" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/d9ne69GD-3o" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/0d8bQmGFiyY" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/IoZpwQDhbdU" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/l44wfsPGuJ4" allowfullscreen></iframe></div>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="RY-6Flm-DeM">
+            <img
+              src="https://i.ytimg.com/vi/RY-6Flm-DeM/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBft-9xmxntigp9-XB3KrfCFmMfgQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
 
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/UnFCJst5I6Q" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/5JHOo18s2uc" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/BtcdYe7ehBY" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/b0AsEkK5q3I" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/SWLF2qA3jwo" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/540VkmqUCyI" allowfullscreen></iframe></div>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="d9ne69GD-3o">
+            <img
+              src="https://i.ytimg.com/vi/d9ne69GD-3o/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA9CwFZvJmmhBzf3fUaXPl9xvumrA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
 
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/gDT3dhL6ZXA" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/FDNsqKR9rrY" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/heOD_Gy3vjE" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/baZzJ1_R9ME" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/OHuIYDsmHdU" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/Dovu6dtyjUQ" allowfullscreen></iframe></div>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="0d8bQmGFiyY">
+            <img
+              src="https://i.ytimg.com/vi/0d8bQmGFiyY/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBMG1dRrKwHPQ9dUvWBfYGy8kc7nQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
 
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/c7XRN9lc5LQ" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/PY1ULiA6c14" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/m8OOkV0Ijr0" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/BP_Khla5mWc" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/LsgrwjrfVN8" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/A3zFHFgqB_s" allowfullscreen></iframe></div>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="IoZpwQDhbdU">
+            <img
+              src="https://i.ytimg.com/vi/IoZpwQDhbdU/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBcDyfaP4mDQ5t-XVSMp0erb4z_6w"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
 
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/vIiwlHdDGo0" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/2lc7j0iMlp0" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/Ttk_0_u8d_M" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/TTU5lS2JFgE" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/IPC6wcqf2t8" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/KoSKMvJbCdE" allowfullscreen></iframe></div>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="l44wfsPGuJ4">
+            <img
+              src="https://i.ytimg.com/vi/l44wfsPGuJ4/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCTE1J13xbA0SlTFBPc7JYRDsiB9w"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
 
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/7-Wa-Xw0cE8" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/XP7OFiHb1y8" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/Lwn4UVEzcps" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/Yb6Hi6vhtO0" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/0KmpXepr-tI" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/UEWGWnL-djo" allowfullscreen></iframe></div>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="UnFCJst5I6Q">
+            <img
+              src="https://i.ytimg.com/vi/UnFCJst5I6Q/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC_i4khyTNJ2XzOTD2aqg_AWBTjjQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
 
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/8bV_mvZlRG8" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/loMiDQGq7W4" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/62bRPQu6nRA" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/x1S2dUhY4H0" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/pLnFcNTQES0" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/w9-a-pBgWfY" allowfullscreen></iframe></div>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="5JHOo18s2uc">
+            <img
+              src="https://i.ytimg.com/vi/5JHOo18s2uc/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCC0kwV8YorhIaDqbojDRoiVbu7kA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
 
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/6uSbdw2PIjI" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/SCUcu9l-Kzc" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/_GdadcsJLds" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/gewlUF1VJ5E" allowfullscreen></iframe></div>
-          <div class="relative w-full pt-[56.25%]"><iframe
-              class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/o-JZyak-RZk" allowfullscreen></iframe></div>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="BtcdYe7ehBY">
+            <img
+              src="https://i.ytimg.com/vi/BtcdYe7ehBY/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDcXRYPQuqgHF913k2ksuE49YddSQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="b0AsEkK5q3I">
+            <img
+              src="https://i.ytimg.com/vi/b0AsEkK5q3I/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDrEfFTdqNfNNBfvIkvl0-tDQNbBQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="SWLF2qA3jwo">
+            <img
+              src="https://i.ytimg.com/vi/SWLF2qA3jwo/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCXRx-7W36JWXF50aTtYvUS0ny5og"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="540VkmqUCyI">
+            <img
+              src="https://i.ytimg.com/vi/540VkmqUCyI/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBmDheIfkimBInRcb2cuhanGQc-ZA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="gDT3dhL6ZXA">
+            <img
+              src="https://i.ytimg.com/vi/540VkmqUCyI/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBmDheIfkimBInRcb2cuhanGQc-ZA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="FDNsqKR9rrY">
+            <img
+              src="https://i.ytimg.com/vi/540VkmqUCyI/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBmDheIfkimBInRcb2cuhanGQc-ZA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="heOD_Gy3vjE">
+            <img
+              src="https://i.ytimg.com/vi/heOD_Gy3vjE/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDMbq6dZuwmKEjf2IQSQV6XsoztqQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="baZzJ1_R9ME">
+            <img
+              src="https://i.ytimg.com/vi/baZzJ1_R9ME/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGHIgRygsMA8=&rs=AOn4CLCbzyULAv-ar1dUQUrYKahni1zOQA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="OHuIYDsmHdU">
+            <img
+              src="https://i.ytimg.com/vi/OHuIYDsmHdU/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCpwO6ZnXs_fxVF-2WpcWVU8Fiuuw"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="Dovu6dtyjUQ">
+            <img
+              src="https://i.ytimg.com/vi/Dovu6dtyjUQ/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDFwFaIj4FqZJtQ5KDRby0iSRRwjQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="c7XRN9lc5LQ">
+            <img
+              src="https://i.ytimg.com/vi/c7XRN9lc5LQ/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC8zst5oCXvBuFgRuKz0l3pSurpiA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="PY1ULiA6c14">
+            <img
+              src="https://i.ytimg.com/vi/PY1ULiA6c14/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAgrzdpdFApAJk28Kjr8YyRIT4Ahg"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="m8OOkV0Ijr0">
+            <img
+              src="https://i.ytimg.com/vi/m8OOkV0Ijr0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDzl9wMcaRziTB69mUG9fCg3DfOnw"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="BP_Khla5mWc">
+            <img
+              src="https://i.ytimg.com/vi/BP_Khla5mWc/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDahBRrD7SXSOogIDLV8-sAg7sByw"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="LsgrwjrfVN8">
+            <img
+              src="https://i.ytimg.com/vi/LsgrwjrfVN8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAcmyxUcwvOG0V5U-SIX1jextJe3g"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="A3zFHFgqB_s">
+            <img
+              src="https://i.ytimg.com/vi/A3zFHFgqB_s/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDvWi4TN0OHWJFy7GTS8Zw3jGT_pg"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="vIiwlHdDGo0">
+            <img
+              src="https://i.ytimg.com/vi/vIiwlHdDGo0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD6c6ohxJJ11481LBagj5VxoYSa0g"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="2lc7j0iMlp0">
+            <img
+              src="https://i.ytimg.com/vi/2lc7j0iMlp0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLChLw9iJ-Yvt7hWW9c1yYcv48PFCg"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="Ttk_0_u8d_M">
+            <img
+              src="https://i.ytimg.com/vi/Ttk_0_u8d_M/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOvRC3iLTCuud1MUKdumdL6U7StQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="TTU5lS2JFgE">
+            <img
+              src="https://i.ytimg.com/vi/Ttk_0_u8d_M/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCOvRC3iLTCuud1MUKdumdL6U7StQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="IPC6wcqf2t8">
+            <img
+              src="https://i.ytimg.com/vi/IPC6wcqf2t8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCq1z2euhha3rIbR0hjpUqcTrHtQA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="KoSKMvJbCdE">
+            <img
+              src="https://i.ytimg.com/vi/KoSKMvJbCdE/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBDANsHMaUMhAcxta-yfvZ2AqVusg"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="7-Wa-Xw0cE8">
+            <img
+              src="https://i.ytimg.com/vi/7-Wa-Xw0cE8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAzgMjaxkp5lVBdY5n7i2AM2xOVQg"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="XP7OFiHb1y8">
+            <img
+              src="https://i.ytimg.com/vi/XP7OFiHb1y8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDRaPEjY2n7wwjI8Yefh3CW1SKVpA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="Lwn4UVEzcps">
+            <img
+              src="https://i.ytimg.com/vi/Lwn4UVEzcps/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCBcbbz0NyRFh39GzzOgmJwjgZDPg"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="Yb6Hi6vhtO0">
+            <img
+              src="https://i.ytimg.com/vi/Yb6Hi6vhtO0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDBt05Qe2U2kaxj6Ajn-N17M2QepQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="0KmpXepr-tI">
+            <img
+              src="https://i.ytimg.com/vi/0KmpXepr-tI/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA8rjSgQ2Xm49QL_QETl_HoN8R1WA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="UEWGWnL-djo">
+            <img
+              src="https://i.ytimg.com/vi/UEWGWnL-djo/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCrzgiqj0xpVa9UlHN9F-ABW0piCw"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="8bV_mvZlRG8">
+            <img
+              src="https://i.ytimg.com/vi/8bV_mvZlRG8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLB87C9GNQz27LLw0b5hU5-ibZj9-w"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="loMiDQGq7W4">
+            <img
+              src="https://i.ytimg.com/vi/loMiDQGq7W4/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBceUicc8g6pKXLXpSUh6NTIsFlBQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png"
+                class="flex items-center justify-center inset-0 w-20 h-20 object-cover rounded-2xl" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin">
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 1 -->
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="62bRPQu6nRA">
+            <img src="https://i.ytimg.com/vi/62bRPQu6nRA/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCe_04xvCNJkpIfO0HqC7M9iryXmw"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="x1S2dUhY4H0">
+            <img src="https://i.ytimg.com/vi/x1S2dUhY4H0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDo2hsSUBtlP61P5PE1LY_QC5izXg"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="pLnFcNTQES0">
+            <img src="https://i.ytimg.com/vi/pLnFcNTQES0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDtKQLMYEV2rNpwobeh3exjZP3QIw"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
+          </div>
+
+          <!-- Video 4 -->
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="w9-a-pBgWfY">
+            <img src="https://i.ytimg.com/vi/w9-a-pBgWfY/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA-VrDF1ZE3h6kvCYAGU8PUPKxhIA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
+          </div>
+
+          <!-- Video 5 -->
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="6uSbdw2PIjI">
+            <img src="https://i.ytimg.com/vi/6uSbdw2PIjI/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLB8mVopVqlONiwZDR1l39zZ_ymZHQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
+          </div>
+
+          <!-- Video 6 -->
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="SCUcu9l-Kzc">
+            <img src="https://i.ytimg.com/vi/SCUcu9l-Kzc/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDxt2pjbDcLTYHPLOUm2bBjKftzjA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
+          </div>
+
+          <!-- Video 7 -->
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="_GdadcsJLds">
+            <img src="https://i.ytimg.com/vi/_GdadcsJLds/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDpEHEqqK9BuT_WHkRKg0_F7TsAwA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
+          </div>
+
+          <!-- Video 8 -->
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="gewlUF1VJ5E">
+            <img src="https://i.ytimg.com/vi/gewlUF1VJ5E/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLASoi_srX6RJO4DyRlh-aC-8mRRJg"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
+          </div>
+
+          <!-- Video 9 -->
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="o-JZyak-RZk">
+            <img
+              src="https://i.ytimg.com/vi/o-JZyak-RZk/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBlaNdp9UofsjB3OXv3SCRppafdqw"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
+          </div>
+
+          <!-- <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/EYOe3YJEUs4" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/bsfCX1Rdnqk" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/T7-XPrJ3x-w" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/38utghhK_1o" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/5B6EF44PESU" allowfullscreen></iframe></div>
+
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/ixuDfOQ6SZs" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/RY-6Flm-DeM" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/d9ne69GD-3o" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/0d8bQmGFiyY" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/IoZpwQDhbdU" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/l44wfsPGuJ4" allowfullscreen></iframe></div>
+
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/UnFCJst5I6Q" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/5JHOo18s2uc" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/BtcdYe7ehBY" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/b0AsEkK5q3I" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/SWLF2qA3jwo" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/540VkmqUCyI" allowfullscreen></iframe></div>
+
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/gDT3dhL6ZXA" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/FDNsqKR9rrY" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/heOD_Gy3vjE" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/baZzJ1_R9ME" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/OHuIYDsmHdU" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/Dovu6dtyjUQ" allowfullscreen></iframe></div>
+
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/c7XRN9lc5LQ" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/PY1ULiA6c14" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/m8OOkV0Ijr0" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/BP_Khla5mWc" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/LsgrwjrfVN8" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/A3zFHFgqB_s" allowfullscreen></iframe></div>
+
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/vIiwlHdDGo0" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/2lc7j0iMlp0" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/Ttk_0_u8d_M" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/TTU5lS2JFgE" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/IPC6wcqf2t8" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/KoSKMvJbCdE" allowfullscreen></iframe></div>
+
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/7-Wa-Xw0cE8" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/XP7OFiHb1y8" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/Lwn4UVEzcps" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/Yb6Hi6vhtO0" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/0KmpXepr-tI" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/UEWGWnL-djo" allowfullscreen></iframe></div>
+
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/8bV_mvZlRG8" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/loMiDQGq7W4" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/62bRPQu6nRA" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/x1S2dUhY4H0" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/pLnFcNTQES0" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/w9-a-pBgWfY" allowfullscreen></iframe></div>
+
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/6uSbdw2PIjI" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/SCUcu9l-Kzc" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/_GdadcsJLds" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/gewlUF1VJ5E" allowfullscreen></iframe></div>
+          <div class="relative w-full pt-[56.25%]"><iframe loading="lazy"
+              class="lazy-yt absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              data-src="https://www.youtube.com/embed/o-JZyak-RZk" allowfullscreen></iframe></div> -->
         </div>
       </div>
 
@@ -659,147 +1385,369 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <!-- Video 1 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/W0YTGxufkvw" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="W0YTGxufkvw">
+            <img
+              src="https://i.ytimg.com/vi/W0YTGxufkvw/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDJu5A973am6t4ORth7OWaw9DMZ-g"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl overflow-hidden.2" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
 
           <!-- Video 2 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/Px6i4zZC-q4" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="Px6i4zZC-q4">
+            <img
+              src="https://i.ytimg.com/vi/Px6i4zZC-q4/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDltHZl8cL7NyV6WSe-Ahz2a1M1Gg"
+              class="absolute inset-0 w-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
 
           <!-- Video 3 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/kn1Ba3dzEic" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="kn1Ba3dzEic">
+            <img
+              src="https://i.ytimg.com/vi/kn1Ba3dzEic/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBgJM1aubkl_kw6wIhHfHAlTaSA9g"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 4 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/UYfVpQSMPhU" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="UYfVpQSMPhU">
+            <img
+              src="https://i.ytimg.com/vi/UYfVpQSMPhU/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGHIgWCg8MA8=&rs=AOn4CLDW4OtIVbJBcGGf_-G2ebgqlufDwg"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 5 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/v7nY2ab0Qk8" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="v7nY2ab0Qk8">
+            <img
+              src="https://i.ytimg.com/vi/v7nY2ab0Qk8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAKH-nLqgg9FdkR9SiBgTC__jkBUQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 6 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/B_LGxOYyd1s" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="B_LGxOYyd1s">
+            <img
+              src="https://i.ytimg.com/vi/B_LGxOYyd1s/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCcY5m30HcJmZYgC0IDvXrzWN1rfw"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 7 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/eSbME-Y5btk" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="eSbME-Y5btk">
+            <img
+              src="https://i.ytimg.com/vi/eSbME-Y5btk/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD1nWkSGHtqes2GC-7NdkxQXLbGjw"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 8 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/hiDRl0dUzJ8" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="hiDRl0dUzJ8">
+            <img
+              src="https://i.ytimg.com/vi/hiDRl0dUzJ8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC79lMJoCiEEQxhI-SdI35n7YBryA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 9 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/_gp7LPQMvMo" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="_gp7LPQMvMo">
+            <img
+              src="https://i.ytimg.com/vi/_gp7LPQMvMo/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDA3QnMZ1tOyrFVz-pZvVNhWNQbyQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 10 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/OITLQsr8U5U" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="OITLQsr8U5U">
+            <img
+              src="https://i.ytimg.com/vi/OITLQsr8U5U/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCsdXbb0paPxIN72ow7qO4DyIERvw"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 11 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/8MABQ-nCMzQ" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="8MABQ-nCMzQ">
+            <img
+              src="https://i.ytimg.com/vi/8MABQ-nCMzQ/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCqrgmE588pdew0_J_6rnxUKUQRhw"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 12 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/rDlKH3Hyywo" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="rDlKH3Hyywo">
+            <img
+              src="https://i.ytimg.com/vi/rDlKH3Hyywo/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAJKYQRRTp7R6BLv5kytSsz8rLXtA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 13 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/DStZNdSdJno" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="DStZNdSdJno">
+            <img
+              src="https://i.ytimg.com/vi/DStZNdSdJno/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBzl7c7d1L_MBhoBR9stKr7NjLqeA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 14 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/2ogAFAVGrLI" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="2ogAFAVGrLI">
+            <img
+              src="https://i.ytimg.com/vi/2ogAFAVGrLI/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLABdf5oXEc4Dgm_Tx0i2dwCf9P5_g"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 15 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/NROLLy-PpT8" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="NROLLy-PpT8">
+            <img
+              src="https://i.ytimg.com/vi/NROLLy-PpT8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBYVEjHk1QVcjwdiMdlHqZKtE1vqw"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 16 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/FPnXEDyco-c" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="FPnXEDyco-c">
+            <img
+              src="https://i.ytimg.com/vi/FPnXEDyco-c/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCYTT4zn_ZTPVhyP7jt5pH4UH7PCA"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 17 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/y6JytZyGQFE" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="y6JytZyGQFE">
+            <img
+              src="https://i.ytimg.com/vi/y6JytZyGQFE/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA2zlWZA_Yp7BHHxzt3U_LdUNMD8g"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 18 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/P6zLOsDHiCQ" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="P6zLOsDHiCQ">
+            <img
+              src="https://i.ytimg.com/vi/P6zLOsDHiCQ/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBQLUi15yI6YNNHUbw8voLFVSKQdQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 19 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/sbg-7fqrrWM" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="sbg-7fqrrWM">
+            <img
+              src="https://i.ytimg.com/vi/sbg-7fqrrWM/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCZ7wNM5FGemLLef27sty7_VQHrKQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 20 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/_hL0DyI-lDg" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="_hL0DyI-lDg">
+            <img
+              src="https://i.ytimg.com/vi/_hL0DyI-lDg/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAGOedzMule6nVzDnT5jERrXvMsYQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 21 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/-T0xpxneD3Y" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="-T0xpxneD3Y">
+            <img
+              src="https://i.ytimg.com/vi/-T0xpxneD3Y/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAd51ubexh8fTINaAWwlc0E6_h1Vw"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 22 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/yeMLKFj7pmg" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="yeMLKFj7pmg">
+            <img
+              src="https://i.ytimg.com/vi/yeMLKFj7pmg/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCUYXRj0gY9ArpCNyRc4FdK4uJjBw"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 23 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/u364JEc0um8" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="u364JEc0um8">
+            <img
+              src="https://i.ytimg.com/vi/u364JEc0um8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAEo5Sn7bhWugJ6DYHi4GId7MInHQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 24 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/pD5iiiDoIIQ" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="pD5iiiDoIIQ">
+            <img
+              src="https://i.ytimg.com/vi/pD5iiiDoIIQ/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH6BIAC4AOKAgwIABABGGUgZShlMA8=&rs=AOn4CLD0VtmDVf6D_0k_Ts33oqZ-IYolrQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 25 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/tG18bZgNfkk" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="tG18bZgNfkk">
+            <img
+              src="https://i.ytimg.com/vi/tG18bZgNfkk/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAjuzCEVh_9nx-cItcv3orVGA7CYw"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 26 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/8D4dzH98D-A" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="8D4dzH98D-A">
+            <img
+              src="https://i.ytimg.com/vi/8D4dzH98D-A/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBeXpdaMA0-yswTe5ZhJhlfXQ5RKg"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 27 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/qFxL9pBc2mI" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="qFxL9pBc2mI">
+            <img
+              src="https://i.ytimg.com/vi/qFxL9pBc2mI/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGFMgZShlMA8=&rs=AOn4CLD1kZWAIJBzyxF7Ghp76MHhueANIQ"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
           <!-- Video 28 -->
-          <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/gqlKktkRxUc" allowfullscreen></iframe>
+          <div class="yt-lite relative w-full pt-[56.25%] cursor-pointer" data-id="gqlKktkRxUc">
+            <img
+              src="https://i.ytimg.com/vi/gqlKktkRxUc/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYACwAWKAgwIABABGHIgUSg9MA8=&rs=AOn4CLD6ADXuJeB8R7OGhO5X14BvoINACg"
+              class="absolute inset-0 w-full h-full object-cover rounded-2xl" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="./images/youtube_icon.png" class="w-20 h-20" />
+            </div>
+            <div class="yt-loader absolute inset-0 hidden items-center justify-center bg-black/40">
+              <div class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+            </div>
           </div>
+
         </div>
       </div>
 
@@ -832,6 +1780,43 @@
             panel.classList.add('hidden');
           }
         });
+      });
+    });
+  </script>
+
+  <script>
+    document.querySelectorAll('.yt-lite').forEach(el => {
+      el.addEventListener('click', () => {
+        if (el.classList.contains('loaded')) return;
+
+        el.classList.add('loaded');
+
+        // 👉 START pulse
+        el.classList.add('animate-pulse');
+
+        // Show loader
+        const loader = el.querySelector('.yt-loader');
+        loader.classList.remove('hidden');
+        loader.classList.add('flex');
+
+        const videoId = el.dataset.id;
+
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`;
+        iframe.className = 'absolute inset-0 w-full h-full';
+        iframe.allow =
+          'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+
+        iframe.onload = () => {
+          // 👉 STOP pulse
+          loader.remove(); // hide loader when video is ready
+        };
+
+        // Remove thumbnail + play button
+        el.innerHTML = '';
+        el.classList.remove('animate-pulse');
+        el.appendChild(iframe);
       });
     });
   </script>
@@ -967,16 +1952,21 @@
           <h4 class="font-bold mb-4 text-white">Follow Us</h4>
 
           <div class="flex space-x-4 mb-4 text-2xl">
-            <a target="_blank" href="	https://www.facebook.com/people/Pioneer-Bio-Tank/100091440451887" class="transition-transform hover:scale-110" style="color:#1877F2;">
+            <a target="_blank" href="	https://www.facebook.com/people/Pioneer-Bio-Tank/100091440451887"
+              class="transition-transform hover:scale-110" style="color:#1877F2;">
               <i class="fab fa-facebook"></i>
             </a>
-            <a target="_blank" href="https://www.instagram.com/pioneerbiotank?igsh=bDl0b2xxbzF2OWdw" class="transition-transform hover:scale-110" style="color:#E4405F;">
+            <a target="_blank" href="https://www.instagram.com/pioneerbiotank?igsh=bDl0b2xxbzF2OWdw"
+              class="transition-transform hover:scale-110" style="color:#E4405F;">
               <i class="fab fa-instagram"></i>
             </a>
-            <a target="_blank" href="https://www.linkedin.com/in/pioneer-biotank-68612b1b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="transition-transform hover:scale-110" style="color:#0A66C2;">
+            <a target="_blank"
+              href="https://www.linkedin.com/in/pioneer-biotank-68612b1b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="transition-transform hover:scale-110" style="color:#0A66C2;">
               <i class="fab fa-linkedin"></i>
             </a>
-            <a target="_blank" href="https://youtube.com/@aruncp1112?si=UUGdnRbLXWU7TTfq" class="transition-transform hover:scale-110" style="color:#FF0000;">
+            <a target="_blank" href="https://youtube.com/@aruncp1112?si=UUGdnRbLXWU7TTfq"
+              class="transition-transform hover:scale-110" style="color:#FF0000;">
               <i class="fab fa-youtube"></i>
             </a>
           </div>
@@ -1053,6 +2043,20 @@
       window.scrollTo({
         top: 0,
         behavior: 'smooth'
+      });
+    });
+  </script>
+  <script>
+    document.querySelectorAll('.yt-lite').forEach(el => {
+      el.addEventListener('click', () => {
+        const id = el.dataset.id;
+        el.innerHTML = `
+        <iframe
+          src="https://www.youtube.com/embed/${id}?autoplay=1"
+          class="absolute inset-0 w-full h-full rounded-2xl"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>`;
       });
     });
   </script>

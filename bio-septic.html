@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./styles/common.css">
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="././scripts/modal.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
@@ -78,7 +79,7 @@
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
 
-          <a href="index.html" class="text-[#b7ed03] font-semibold pb-1">
+          <a href="index.html" class="nav-link-color  font-semibold pb-1">
             Home
           </a>
 
@@ -86,7 +87,7 @@
           <div class="relative group">
             <button
               class="nav-link-color border-b-2 border-[#b7ed03] flex items-center gap-1 text-white hover:text-[#b7ed03] py-2">
-              Products <i class="fas fa-chevron-down text-[10px]"></i>
+              Profile <i class="fas fa-chevron-down text-[10px]"></i>
             </button>
 
             <div
@@ -99,7 +100,7 @@
               </a>
             </div>
           </div>
-
+          <a onclick="openModal()" class="nav-link-color hover:text-[#b7ed03] cursor-pointer">Download</a>
           <a href="howitworks.html" class="nav-link-color hover:text-[#b7ed03]">How It Works</a>
           <a href="project.html" class="nav-link-color hover:text-[#b7ed03]">Projects</a>
           <a href="about.html" class="nav-link-color hover:text-[#b7ed03]">About Us</a>
@@ -218,9 +219,9 @@
 
           <!-- Heading -->
           <h1 class="mt-4 sm:mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-slate-900">
-            Where modern living<br class="hidden sm:block" />
+            Responsible Waste<br class="hidden sm:block" />
             <span class="bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-500 bg-clip-text text-transparent">
-              meets responsible living.
+            Solutions for Modern Homes
             </span>
           </h1>
 
@@ -278,7 +279,7 @@
 
               <!-- Image -->
               <div class="relative rounded-2xl overflow-hidden">
-                <img src="./images/TankInstallation.jpg" class="w-full h-[22rem] sm:h-[26rem] object-cover"
+                <img src="./images/bio_septic_tank.jpeg" class="w-full h-[22rem] sm:h-[26rem] object-cover"
                   alt="Pioneer FRP Bio-Septic Tank Installation" />
 
                 <div
