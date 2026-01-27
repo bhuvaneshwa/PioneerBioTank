@@ -1,7 +1,20 @@
 html {
   scroll-behavior: smooth;
+   overflow: auto;          /* enable scrolling */
+  scrollbar-width: none;   /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;           /* Chrome, Safari */
 }
 
 .nav-link-color {
   color: black;
+}
+
+.hide-scrollbar {
+  overflow: auto;          /* enable scrolling */
+  scrollbar-width: none;   /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
 }
