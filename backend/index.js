@@ -1,6 +1,4 @@
-const express = require("express");
-const app = express();
-const bodyParser = require("body-parser");
+express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
 const dotenv = require("dotenv");
@@ -8,48 +6,67 @@ const nodemailer = require("nodemailer");
 
 dotenv.config();
 
-//body parser
+const app = express();
+
+// body parser (built-in)
 app.use(express.json({ limit: "2mb" }));
 app.use(express.urlencoded({ extended: true }));
 
-//cors
-app.use(cors());
+// CORS
+app.use(cors({
+    origin: "https://pioneerbiotank.com"
+}));
 
-//morgan
-app.use(
-    morgan(":method :url :status :res[content-length] - :response-time ms")
-);
+// logger
+app.use(morgan("dev"));
 
-const PORT = process.env.PORT || 8000;
+// health check
+app.get("/", (req, res) => {
+    res.status(200).send("API is working");
+});
 
-app.get("/", async (req, res) => {
-    res.status(200).send("Hello")
-})
-
+// mail API
 app.post("/send_mail", async (req, res) => {
-    const { to, subject, text, html } = req.body;
+    try {
+        const { subject, text } = req.body;
 
-    console.log("Received data:", { to, subject, text });
+        let transporter = nodemailer.createTransport({
+            host: "smtp.gmail.com",
+            port: 587,
+            secure: false, // MUST be false for 587
+            auth: {
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS,
+            },
+            tls: {
+                rejectUnauthorized: false
+            }
+        });
 
-    let transporter = nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-            user: 'sunilprakash96@gmail.com',
-            pass: 'vjnl xpxz qqtp ynim',
-        },
-    });
-    let email = transporter.sendMail({
-        from: 'sunilprakash96@gmail.com',
-        to: 'sunilprakash96@gmail.com',
-        subject: subject,
-        text: text
-    });
-    const responseEmail = await email
-    res.status(200).send({ message: "Email is received", email: email, status: "success" });
+        await transporter.sendMail({
+            from: process.env.EMAIL_USER,
+            to: process.env.EMAIL_USER,
+            subject,
+            text,
+        });
+
+        res.status(200).json({
+            status: "success",
+            message: "Email sent successfully"
+        });
+
+    } catch (error) {
+        console.error("Mail error:", error);
+        res.status(500).json({
+            status: "error",
+            message: "Failed to send email"
+        });
+    }
 });
 
-app.listen(PORT, () => {
-    console.log("app listening on port " + PORT);
+// ⚠️ cPanel: DO NOT hardcode port
+app.listen(process.env.PORT, () => {
+    console.log("App started");
 });
 
-module.exports = app
+module.exports = app;
