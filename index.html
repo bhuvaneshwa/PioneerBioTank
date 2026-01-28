@@ -178,6 +178,15 @@
 </head>
 
 <body class="bg-gray-50">
+  <a href="/assets/brochure.pdf" download="brochure.pdf" 
+        class="fixed top-1/4 right-3 -translate-y-1/2 z-50
+         px-4 py-2 text-sm font-semibold
+         bg-[#004900] text-white rounded-lg
+         shadow-lg hover:bg-[#003b00] transition
+         transform -rotate-90 origin-right">
+    Download Brochure
+  </a>
+
   <!-- Top Banner -->
   <div id="top-banner" class="py-2 text-xs sm:text-sm fixed top-0 inset-x-0 z-40 transition-transform duration-300"
     style="background-color: #ffffff; color: #004900;">
@@ -220,8 +229,8 @@
         <!-- Logo -->
         <div class="flex items-center">
           <a href="index.html" class="flex items-center gap-2">
-            <img src="./images/PIONEER BIO TANK LOGO.png" alt="Pioneer BioTank Logo"
-              class="h-10 sm:h-12 md:h-14 w-auto object-contain flex-shrink-0" />
+            <img src="./images/Logo-v2.png" style="width: 40px;" alt="Pioneer BioTank Logo"
+              class=" object-contain flex-shrink-0" />
 
           </a>
         </div>
@@ -723,21 +732,21 @@
       // Start autoplay
       startAutoSlide();
 
-    /* --- FAQ ACCORDION --- */
-    // document.querySelectorAll('.faq-btn').forEach(btn => {
-    // btn.addEventListener('click', () => {
-    // const content = btn.nextElementSibling;
-    // const icon = btn.querySelector('i');
+      /* --- FAQ ACCORDION --- */
+      // document.querySelectorAll('.faq-btn').forEach(btn => {
+      // btn.addEventListener('click', () => {
+      // const content = btn.nextElementSibling;
+      // const icon = btn.querySelector('i');
 
-    // if (content.classList.contains('hidden')) {
-    // content.classList.remove('hidden');
-    // icon.classList.replace('fa-plus', 'fa-minus');
-    // } else {
-    // content.classList.add('hidden');
-    // icon.classList.replace('fa-minus', 'fa-plus');
-    // }
-    // });
-    // });
+      // if (content.classList.contains('hidden')) {
+      // content.classList.remove('hidden');
+      // icon.classList.replace('fa-plus', 'fa-minus');
+      // } else {
+      // content.classList.add('hidden');
+      // icon.classList.replace('fa-minus', 'fa-plus');
+      // }
+      // });
+      // });
     </script>
 
 
@@ -934,10 +943,10 @@
 
       <!-- Optional small heading (you can remove if you don’t want) -->
       <div class="text-center mb-10">
-        <p
-          class="text-sm sm:text-base md:text-lg lg:text-xl tracking-[0.15em] sm:tracking-[0.25em] uppercase text-emerald-500 mb-2">
+        <h1
+          class="text-xl sm:text-2xl md:text-3xl lg:text-4xl  font-bold tracking-[0.1em] sm:tracking-[0.1em] uppercase text-emerald-600 mb-3 font-medium">
           Why Pioneer BioTank
-        </p>
+        </h1>
         <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900">
           Built to last, backed by science.
         </h2>
@@ -1589,7 +1598,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <!-- Heading -->
           <div class="text-center mb-12">
-            <p class="uppercase tracking-[0.25em] text-xs font-semibold text-emerald-600">
+            <p class="uppercase tracking-[0.25em] text-2xl  font-semibold text-emerald-600">
               How It Works
             </p>
             <h2 class="mt-4 text-3xl md:text-4xl font-semibold text-slate-900 leading-tight">
@@ -1715,7 +1724,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <!-- Heading -->
           <div class="text-center mb-12">
-            <p class="uppercase tracking-[0.25em] text-xs font-semibold text-emerald-600">
+            <p class="uppercase tracking-[0.25em] text-1xl font-semibold text-emerald-600">
               The FRP Bio-Septic Solution
             </p>
             <h2 class="mt-4 text-3xl md:text-4xl font-semibold text-slate-900 leading-tight">
@@ -1725,130 +1734,137 @@
 
           <!-- Comparison Card -->
           <div
-            class="relative bg-white rounded-3xl shadow-[0_24px_70px_rgba(15,23,42,0.16)] overflow-hidden border border-emerald-50">
-            <!-- soft gradient highlight on our side -->
+            class="relative bg-white rounded-3xl shadow-[0_20px_60px_rgba(15,23,42,0.14)] overflow-hidden border border-emerald-50">
+
+            <!-- Desktop highlight -->
             <div
               class="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-emerald-50 via-emerald-25 to-transparent hidden md:block">
             </div>
 
             <div class="relative grid md:grid-cols-5">
-              <!-- Column labels -->
-              <div class="px-6 md:px-8 py-6 text-white md:col-span-1">
-                <div
-                  class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold uppercase tracking-wide">
-                  <!-- <span class="w-2 h-2 rounded-full bg-slate-500"></span> -->
-                  factor
-                </div>
+
+              <!-- Labels -->
+              <div class="px-5 py-5 md:px-8 md:py-6 md:col-span-1">
+                <span
+                  class="inline-block px-4 py-2 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold uppercase tracking-wide">
+                  Factor
+                </span>
               </div>
-              <div
-                class="border-b border-slate-100 md:border-b-0 md:border-r md:border-slate-100 px-6 md:px-8 py-6 md:col-span-2">
-                <div
-                  class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold uppercase tracking-wide">
-                  <span class="w-2 h-2 rounded-full bg-slate-500"></span>
+
+              <div class="px-5 py-5 md:px-8 md:py-6 md:col-span-2 border-t md:border-t-0 md:border-r border-slate-100">
+                <span
+                  class="inline-block px-4 py-2 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold uppercase tracking-wide">
                   Ordinary Septic Tank
-                </div>
-                <p class="mt-3 text-sm text-slate-500">
-                  What most homes still install by default.
+                </span>
+                <p class="mt-2 text-sm text-slate-500">
+                  Traditional tanks used in most homes.
                 </p>
               </div>
 
-              <div class="px-6 md:px-8 py-6 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white md:col-span-2">
-                <div
-                  class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-xs font-semibold uppercase tracking-wide">
-                  <span class="w-2 h-2 rounded-full bg-emerald-300"></span>
+              <div
+                class="px-5 py-5 md:px-8 md:py-6 md:col-span-2 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white">
+                <span
+                  class="inline-block px-4 py-2 rounded-full bg-white/15 text-xs font-semibold uppercase tracking-wide">
                   Pioneer FRP Bio-Septic Tank
-                </div>
-                <p class="mt-3 text-sm text-emerald-100">
-                  Factory-made, DRDO-based, designed to work trouble-free for decades.
+                </span>
+                <p class="mt-2 text-sm text-emerald-100">
+                  DRDO-based, factory-engineered for long life.
                 </p>
               </div>
 
               <!-- Rows -->
               <div class="md:col-span-5 divide-y divide-slate-100">
-                <!-- Row template -->
+
+                <!-- Smell -->
                 <div class="grid md:grid-cols-5">
-                  <div class="px-6 md:px-8 py-5 bg-slate-50/60 text-sm font-semibold text-slate-700 md:col-span-1">
+                  <div class="px-5 py-4 bg-slate-50 text-sm font-semibold text-slate-700 md:col-span-1">
                     Smell
                   </div>
-                  <div class="px-6 md:px-8 py-5 text-sm text-slate-600 md:col-span-2">
-                    Sometimes / often bad smell near the house
+                  <div class="px-5 py-4 text-sm text-slate-600 md:col-span-2">
+                    Bad odour is common around the house.
                   </div>
-                  <div class="px-6 md:px-8 py-5 text-sm bg-emerald-50/80 text-emerald-900 font-medium md:col-span-2">
-                    Odour-free in normal operation
+                  <div class="px-5 py-4 text-sm bg-emerald-50 text-emerald-900 font-medium md:col-span-2">
+                    Completely odour-free in normal use.
                   </div>
                 </div>
 
+                <!-- Cleaning -->
                 <div class="grid md:grid-cols-5">
-                  <div class="px-6 md:px-8 py-5 bg-slate-50/60 text-sm font-semibold text-slate-700 md:col-span-1">
+                  <div class="px-5 py-4 bg-slate-50 text-sm font-semibold text-slate-700 md:col-span-1">
                     Cleaning
                   </div>
-                  <div class="px-6 md:px-8 py-5 text-sm text-slate-600 md:col-span-2">
-                    Needs frequent pumping and septic lorry visits
+                  <div class="px-5 py-4 text-sm text-slate-600 md:col-span-2">
+                    Frequent pumping and lorry visits required.
                   </div>
-                  <div class="px-6 md:px-8 py-5 text-sm bg-emerald-50/80 text-emerald-900 font-medium md:col-span-2">
-                    Almost zero cleaning required
+                  <div class="px-5 py-4 text-sm bg-emerald-50 text-emerald-900 font-medium md:col-span-2">
+                    Almost zero maintenance.
                   </div>
                 </div>
 
+                <!-- Leakage -->
                 <div class="grid md:grid-cols-5">
-                  <div class="px-6 md:px-8 py-5 bg-slate-50/60 text-sm font-semibold text-slate-700 md:col-span-1">
+                  <div class="px-5 py-4 bg-slate-50 text-sm font-semibold text-slate-700 md:col-span-1">
                     Leakage
                   </div>
-                  <div class="px-6 md:px-8 py-5 text-sm text-slate-600 md:col-span-2">
-                    RCC can crack, leak, and contaminate soil &amp; borewell
+                  <div class="px-5 py-4 text-sm text-slate-600 md:col-span-2">
+                    RCC cracks may pollute soil & borewell.
                   </div>
-                  <div class="px-6 md:px-8 py-5 text-sm bg-emerald-50/80 text-emerald-900 font-medium md:col-span-2">
-                    100% leak-proof FRP body with single-piece shell
+                  <div class="px-5 py-4 text-sm bg-emerald-50 text-emerald-900 font-medium md:col-span-2">
+                    Single-piece FRP body. 100% leak-proof.
                   </div>
                 </div>
 
+                <!-- Life -->
                 <div class="grid md:grid-cols-5">
-                  <div class="px-6 md:px-8 py-5 bg-slate-50/60 text-sm font-semibold text-slate-700 md:col-span-1">
+                  <div class="px-5 py-4 bg-slate-50 text-sm font-semibold text-slate-700 md:col-span-1">
                     Life
                   </div>
-                  <div class="px-6 md:px-8 py-5 text-sm text-slate-600 md:col-span-2">
-                    10–15 years before major repairs or replacement
+                  <div class="px-5 py-4 text-sm text-slate-600 md:col-span-2">
+                    Lasts about 10–15 years.
                   </div>
-                  <div class="px-6 md:px-8 py-5 text-sm bg-emerald-50/80 text-emerald-900 font-medium md:col-span-2">
-                    50+ years design life under normal usage
+                  <div class="px-5 py-4 text-sm bg-emerald-50 text-emerald-900 font-medium md:col-span-2">
+                    Designed to last 50+ years.
                   </div>
                 </div>
 
+                <!-- Electricity -->
                 <div class="grid md:grid-cols-5">
-                  <div class="px-6 md:px-8 py-5 bg-slate-50/60 text-sm font-semibold text-slate-700 md:col-span-1">
+                  <div class="px-5 py-4 bg-slate-50 text-sm font-semibold text-slate-700 md:col-span-1">
                     Electricity
                   </div>
-                  <div class="px-6 md:px-8 py-5 text-sm text-slate-600 md:col-span-2">
-                    STP-style systems may need pumps, blowers and power
+                  <div class="px-5 py-4 text-sm text-slate-600 md:col-span-2">
+                    Pumps & blowers may be needed.
                   </div>
-                  <div class="px-6 md:px-8 py-5 text-sm bg-emerald-50/80 text-emerald-900 font-medium md:col-span-2">
-                    No electricity required for treatment
+                  <div class="px-5 py-4 text-sm bg-emerald-50 text-emerald-900 font-medium md:col-span-2">
+                    No electricity required.
                   </div>
                 </div>
 
+                <!-- Space -->
                 <div class="grid md:grid-cols-5">
-                  <div class="px-6 md:px-8 py-5 bg-slate-50/60 text-sm font-semibold text-slate-700 md:col-span-1">
+                  <div class="px-5 py-4 bg-slate-50 text-sm font-semibold text-slate-700 md:col-span-1">
                     Space
                   </div>
-                  <div class="px-6 md:px-8 py-5 text-sm text-slate-600 md:col-span-2">
-                    Bulky on-site construction; needs more space &amp; time
+                  <div class="px-5 py-4 text-sm text-slate-600 md:col-span-2">
+                    Bulky construction & long installation time.
                   </div>
-                  <div class="px-6 md:px-8 py-5 text-sm bg-emerald-50/80 text-emerald-900 font-medium md:col-span-2">
-                    Compact, factory-made tank – arrives ready to install
+                  <div class="px-5 py-4 text-sm bg-emerald-50 text-emerald-900 font-medium md:col-span-2">
+                    Compact, ready-to-install unit.
                   </div>
                 </div>
+
               </div>
             </div>
 
             <!-- CTA -->
-            <div class="mt-10 mb-10 flex justify-center">
-              <!-- change href to your actual form section id -->
+            <div class="py-8 flex justify-center">
               <a href="#contact-form"
-                class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-emerald-600 text-white text-sm md:text-base font-semibold shadow-[0_16px_40px_rgba(16,185,129,0.45)] hover:bg-emerald-700 transition">
+                class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-emerald-600 text-white text-sm md:text-base font-semibold shadow-[0_14px_35px_rgba(16,185,129,0.45)] hover:bg-emerald-700 transition">
                 Get price for my house
               </a>
             </div>
           </div>
+
         </div>
       </section>
 

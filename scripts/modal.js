@@ -1,20 +1,20 @@
 function openModal() {
-    // Prevent multiple modals
-    if (document.getElementById('jsModal')) return;
+  // Prevent multiple modals
+  if (document.getElementById("jsModal")) return;
 
-    // Overlay
-    const overlay = document.createElement('div');
-    overlay.id = 'jsModal';
-    overlay.className =
-        'fixed inset-0 z-50 flex items-center justify-center bg-black/60';
+  // Overlay
+  const overlay = document.createElement("div");
+  overlay.id = "jsModal";
+  overlay.className =
+    "fixed inset-0 z-50 flex items-center justify-center bg-black/60";
 
-    // Modal box
-    const modalBox = document.createElement('div');
-    modalBox.className =
-        'bg-white rounded-2xl shadow-2xl w-[90%] max-w-8xl h-[90%] m-6 p-6 ' +
-        'transform scale-95 opacity-0 transition-all duration-300';
+  // Modal box
+  const modalBox = document.createElement("div");
+  modalBox.className =
+    "bg-white rounded-2xl shadow-2xl w-[90%] max-w-8xl h-[90%] m-6 p-6 " +
+    "transform scale-95 opacity-0 transition-all duration-300";
 
-    modalBox.innerHTML = `
+  modalBox.innerHTML = `
      <button id="cancelBtn"
           class="px-4 py-2 text-slate-600 absolute right-5 top-5 bg-[#000000] rounded-full text-white cursor-pointer">
           X
@@ -44,47 +44,49 @@ function openModal() {
         </li>
       </ul>
       <div class="mt-4 flex justify-center gap-3">
-        <button
-          class="px-4 py-2 bg-[#004900] text-white rounded-lg">
-          Confirm
-        </button>
+        <a
+          href="/assets/brochure.pdf"
+          download
+          class="px-4 py-2 bg-[#004900] text-white rounded-lg inline-block">
+          Download brochure
+        </a>
       </div>
     `;
 
-    overlay.appendChild(modalBox);
-    document.body.appendChild(overlay);
+  overlay.appendChild(modalBox);
+  document.body.appendChild(overlay);
 
-    // Animate in
-    requestAnimationFrame(() => {
-        modalBox.classList.remove('scale-95', 'opacity-0');
-        modalBox.classList.add('scale-100', 'opacity-100');
-    });
+  // Animate in
+  requestAnimationFrame(() => {
+    modalBox.classList.remove("scale-95", "opacity-0");
+    modalBox.classList.add("scale-100", "opacity-100");
+  });
 
-    // Close handlers
-    overlay.addEventListener('click', (e) => {
-        if (e.target === overlay) closeModal();
-    });
+  // Close handlers
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) closeModal();
+  });
 
-    modalBox.querySelector('#cancelBtn').onclick = closeModal;
+  modalBox.querySelector("#cancelBtn").onclick = closeModal;
 
-    document.addEventListener('keydown', escClose);
+  document.addEventListener("keydown", escClose);
 }
 
 function closeModal() {
-    const overlay = document.getElementById('jsModal');
-    if (!overlay) return;
+  const overlay = document.getElementById("jsModal");
+  if (!overlay) return;
 
-    const modalBox = overlay.firstChild;
+  const modalBox = overlay.firstChild;
 
-    modalBox.classList.remove('scale-100', 'opacity-100');
-    modalBox.classList.add('scale-95', 'opacity-0');
+  modalBox.classList.remove("scale-100", "opacity-100");
+  modalBox.classList.add("scale-95", "opacity-0");
 
-    setTimeout(() => {
-        overlay.remove();
-        document.removeEventListener('keydown', escClose);
-    }, 300);
+  setTimeout(() => {
+    overlay.remove();
+    document.removeEventListener("keydown", escClose);
+  }, 300);
 }
 
 function escClose(e) {
-    if (e.key === 'Escape') closeModal();
+  if (e.key === "Escape") closeModal();
 }
