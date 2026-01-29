@@ -170,7 +170,7 @@
 
     @media (max-width: 1024px) {
       #statCards {
-        margin-top: 200px;
+        /* margin-top: 200px; */
       }
     }
   </style>
@@ -218,8 +218,8 @@
   </div>
 
 
-  <!-- Navigation -->
-  <nav id="main-nav" class="fixed inset-x-0 z-30
+   <!-- Navigation -->
+  <nav id="main-nav" class="fixed inset-x-0 top-9 z-30
          bg-white/90 backdrop-blur
          border-b border-white/10
          transition-all duration-300">
@@ -229,8 +229,8 @@
         <!-- Logo -->
         <div class="flex items-center">
           <a href="index.html" class="flex items-center gap-2">
-            <img src="./images/Logo-v2.png" style="width: 40px;" alt="Pioneer BioTank Logo"
-              class=" object-contain flex-shrink-0" />
+           <img src="./images/Logo-v2.png" style="width: 40px;" alt="Pioneer BioTank Logo"
+              class="h-10 sm:h-12 md:h-14 w-auto object-contain flex-shrink-0" />
 
           </a>
         </div>
@@ -238,14 +238,14 @@
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
 
-          <a href="index.html" class="nav-link-color font-semibold border-b-2 border-[#b7ed03] pb-1">
+          <a href="index.html" class="nav-link-color font-semibold border-b-2 border-[#b7ed03]">
             Home
           </a>
 
           <!-- Products Dropdown -->
           <div class="relative group">
-            <button class="nav-link-color flex items-center gap-1 text-white hover:text-red-500 py-2">
-              <span>Products</span> <i class="fas fa-chevron-down text-[10px]"></i>
+            <button class="nav-link-color flex items-center gap-1 text-white hover:text-[#b7ed03] py-2">
+              Products <i class="fas fa-chevron-down text-[10px]"></i>
             </button>
 
             <div
@@ -272,6 +272,7 @@
           </a>
         </div>
 
+
         <!-- Mobile Menu Button -->
         <div class="md:hidden flex items-center">
           <button id="mobile-menu-button" class="text-[#b7ed03]">
@@ -285,7 +286,7 @@
       <div id="mobile-menu" class="hidden md:hidden pb-4 border-t" style="border-color: rgba(255,255,255,0.1);">
 
         <div class="flex flex-col space-y-1 pt-3 text-sm font-medium">
-          <a href="index.html" class="py-3 text-[#b7ed03] font-semibold">Home</a>
+          <a href="index.html" class="py-3 font-semibold">Home</a>
 
           <button id="mobile-products-toggle"
             class="py-3 nav-link-color text-white hover:text-[#b7ed03] flex justify-between items-center">
@@ -301,7 +302,8 @@
               FRP Underground Water Tank
             </a>
           </div>
-          <a class="nav-link-color hover:text-[#b7ed03]">Download</a>
+
+          <a onclick="openModal()" class="nav-link-color hover:text-[#b7ed03] cursor-pointer">Download</a>
           <a href="howitworks.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">How It Works</a>
           <a href="project.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">Projects</a>
           <a href="about.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">About Us</a>
@@ -752,7 +754,7 @@
 
     <!-- LEFT CONTENT -->
     <div
-      class="mt-120 md:mt-0 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-10 sm:py-16 md:py-20 lg:py-32 relative z-10">
+      class="mt-83 md:mt-0 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-10 sm:py-16 md:py-20 lg:py-32 relative z-10">
       <div class="grid md:grid-cols-2 items-center gap-10">
 
         <div class="space-y-5 md:space-y-[40px]">
