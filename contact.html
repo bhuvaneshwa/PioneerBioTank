@@ -50,7 +50,13 @@
 </head>
 
 <body class="bg-slate-50 text-slate-900">
-
+  <a href="/assets/brochure.pdf" download="brochure.pdf" class="fixed top-1/4 right-3 -translate-y-1/2 z-50
+         px-4 py-2 text-sm font-semibold
+         bg-[#004900] text-white rounded-lg
+         shadow-lg hover:bg-[#003b00] transition
+         transform -rotate-90 origin-right">
+    Download Brochure
+  </a>
 
 
   <!-- Top Banner -->
@@ -94,7 +100,7 @@
         <!-- Logo -->
         <div class="flex items-center">
           <a href="index.html" class="flex items-center gap-2">
-           <img src="./images/Logo-v2.png" style="width: 40px;" alt="Pioneer BioTank Logo"
+            <img src="./images/Logo-v2.png" style="width: 40px;" alt="Pioneer BioTank Logo"
               class="h-10 sm:h-12 md:h-14 w-auto object-contain flex-shrink-0" />
 
           </a>
@@ -360,7 +366,7 @@
                 }
 
                 const textMessage = `
-                          New Enquiry Received
+                          New Enquiry Received from pioneerbiotank.com
 
                           Name: ${templateParams.name}
                           Phone: ${templateParams.phone}
@@ -378,7 +384,7 @@
                   subject: "User Requirement",
                   text: textMessage,
                 };
-                const response = await fetch("https://pioneerbackendmailfunc.vercel.app/send_mail", {
+                const response = await fetch("https://ksknkovilpatti.in/api/api/other/send-email", {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",
@@ -386,9 +392,11 @@
                   body: JSON.stringify(payload),
                 });
 
+                document.getElementById('submitBtn').innerText = "Sending email...";
+
                 const result = await response.json();
 
-                if (result?.status === "success") {
+                if (result?.success === "success") {
                   alert("Email sent successfully!");
                   // optional reset
                   Object.keys(templateParams).forEach(id => {
@@ -399,6 +407,8 @@
               } catch (err) {
                 alert("Failed to send. Please try again.");
                 console.error("Error:", err);
+              } finally{ 
+                document.getElementById('submitBtn').innerText = "Get Free Consultation";
               }
             });
           </script>
