@@ -73,7 +73,7 @@
 
         <!-- Left: Contact Info -->
         <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
-          <a href="tel:+919876543210" class="flex items-center hover:opacity-80" style="color: #004900;">
+          <a href="tel:+919790666231" class="flex items-center hover:opacity-80" style="color: #004900;">
             <i class="fas fa-phone mr-2" style="color: #004900;"></i>
             <span>+91 97906 66231</span>
           </a>
@@ -142,7 +142,7 @@
           <a href="contact.html" class="nav-link-color hover:text-[#b7ed03]">Contact Us</a>
 
           <!-- CTA -->
-          <a href="tel:+919876543210"
+          <a href="tel:+919790666231"
             class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
             style="background-color:#b7ed03; color:#004900;">
             <i class="fas fa-phone"></i> Enquire now
@@ -160,17 +160,19 @@
       </div>
 
       <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden pb-4 border-t" style="border-color: rgba(255,255,255,0.1);">
+     <div id="mobile-menu" class="hidden md:hidden pb-4 border-t" style="border-color: rgba(255,255,255,0.1);">
 
         <div class="flex flex-col space-y-1 pt-3 text-sm font-medium">
           <a href="index.html" class="py-3 font-semibold">Home</a>
 
+          <!-- Products toggle -->
           <button id="mobile-products-toggle"
-            class="py-3 nav-link-color text-white hover:text-[#b7ed03] flex justify-between items-center">
+            class="py-3 nav-link-color text-white hover:text-[#b7ed03] flex justify-between items-center w-full">
             <span>Products</span>
-            <i class="fas fa-chevron-down text-[10px]"></i>
+            <i id="products-chevron" class="fas fa-chevron-down text-[10px] transition-transform"></i>
           </button>
 
+          <!-- Products submenu -->
           <div id="mobile-products-menu" class="hidden pl-4 space-y-1">
             <a href="bio-septic.html" class="nav-link-color py-2 text-white hover:text-[#b7ed03] block">
               FRP Bio-Septic Tank
@@ -180,12 +182,16 @@
             </a>
           </div>
 
+          <a onclick="openModal()" class="nav-link-color py-3 hover:text-[#b7ed03] cursor-pointer">
+            Download
+          </a>
+
           <a href="howitworks.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">How It Works</a>
           <a href="project.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">Projects</a>
           <a href="about.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">About Us</a>
           <a href="contact.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">Contact Us</a>
 
-          <a href="tel:+919876543210"
+          <a href="tel:+919790666231"
             class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-sm font-semibold"
             style="background-color:#b7ed03; color:#004900;">
             <i class="fas fa-phone"></i> Enquire now
@@ -2076,9 +2082,9 @@
     });
   </script>
   <!-- Floating WhatsApp Button -->
-  <!-- replace the 919876543210 number with the actual WhatsApp number -->
+  <!-- replace the 919790666231 number with the actual WhatsApp number -->
   <a <a id="whatsapp-float"
-    href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
+    href="https://wa.me/919790666231?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
     target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>

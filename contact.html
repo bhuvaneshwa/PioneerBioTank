@@ -51,24 +51,22 @@
 </head>
 
 <body class="bg-slate-50 text-slate-900">
-  <a href="/assets/brochure.pdf" download="brochure.pdf" class="fixed top-1/4 right-3 -translate-y-1/2 z-50
+   <a href="/assets/brochure.pdf" download="brochure.pdf" class="fixed top-1/4 right-3 -translate-y-1/2 z-50
          px-4 py-2 text-sm font-semibold
          bg-[#004900] text-white rounded-lg
          shadow-lg hover:bg-[#003b00] transition
          transform -rotate-90 origin-right">
     Download Brochure
   </a>
-
-
   <!-- Top Banner -->
-  <div id="top-banner" class="py-2 text-md sm:text-sm fixed top-0 inset-x-0 z-40 transition-transform duration-300"
+  <div id="top-banner" class="py-2 text-2xlmd sm:text-sm fixed top-0 inset-x-0 z-40 transition-transform duration-300"
     style="background-color: #ffffff; color: #004900;">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row justify-between items-center gap-2">
 
         <!-- Left: Contact Info -->
         <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
-          <a href="tel:+919876543210" class="flex items-center hover:opacity-80" style="color: #004900;">
+          <a href="tel:+919790666231" class="flex items-center hover:opacity-80" style="color: #004900;">
             <i class="fas fa-phone mr-2" style="color: #004900;"></i>
             <span>+91 97906 66231</span>
           </a>
@@ -133,11 +131,11 @@
           <a onclick="openModal()" class="nav-link-color hover:text-[#b7ed03] cursor-pointer">Download</a>
           <a href="howitworks.html" class="nav-link-color hover:text-[#b7ed03]">How It Works</a>
           <a href="project.html" class="nav-link-color hover:text-[#b7ed03]">Projects</a>
-          <a href="about.html" class="nav-link-color hover:text-[#b7ed03]">About Us</a>
-          <a href="contact.html" class="nav-link-color border-b-2 border-[#b7ed03]  hover:text-[#b7ed03]">Contact Us</a>
+          <a href="about.html" class="nav-link-color  hover:text-[#b7ed03]">About Us</a>
+          <a href="contact.html" class="nav-link-color border-b-2 border-[#b7ed03] hover:text-[#b7ed03]">Contact Us</a>
 
           <!-- CTA -->
-          <a href="tel:+919876543210"
+          <a href="tel:+919790666231"
             class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
             style="background-color:#b7ed03; color:#004900;">
             <i class="fas fa-phone"></i> Enquire now
@@ -160,12 +158,14 @@
         <div class="flex flex-col space-y-1 pt-3 text-sm font-medium">
           <a href="index.html" class="py-3 font-semibold">Home</a>
 
+          <!-- Products toggle -->
           <button id="mobile-products-toggle"
-            class="py-3 nav-link-color text-white hover:text-[#b7ed03] flex justify-between items-center">
+            class="py-3 nav-link-color text-white hover:text-[#b7ed03] flex justify-between items-center w-full">
             <span>Products</span>
-            <i class="fas fa-chevron-down text-[10px]"></i>
+            <i id="products-chevron" class="fas fa-chevron-down text-[10px] transition-transform"></i>
           </button>
 
+          <!-- Products submenu -->
           <div id="mobile-products-menu" class="hidden pl-4 space-y-1">
             <a href="bio-septic.html" class="nav-link-color py-2 text-white hover:text-[#b7ed03] block">
               FRP Bio-Septic Tank
@@ -175,23 +175,59 @@
             </a>
           </div>
 
-          <a onclick="openModal()" class="nav-link-color hover:text-[#b7ed03] cursor-pointer">Download</a>
+          <a onclick="openModal()" class="nav-link-color py-3 hover:text-[#b7ed03] cursor-pointer">
+            Download
+          </a>
+
           <a href="howitworks.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">How It Works</a>
           <a href="project.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">Projects</a>
           <a href="about.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">About Us</a>
           <a href="contact.html" class="nav-link-color py-3 text-white hover:text-[#b7ed03]">Contact Us</a>
 
-          <a href="tel:+919876543210"
+          <a href="tel:+919790666231"
             class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-sm font-semibold"
             style="background-color:#b7ed03; color:#004900;">
             <i class="fas fa-phone"></i> Enquire now
           </a>
         </div>
       </div>
-
     </div>
   </nav>
 
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const mobileProductsToggle = document.getElementById('mobile-products-toggle');
+    const mobileProductsMenu = document.getElementById('mobile-products-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      // Toggle icon between bars and times (X)
+      if (mobileMenu.classList.contains('hidden')) {
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+      } else {
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-times');
+      }
+    });
+
+    mobileProductsToggle.addEventListener('click', () => {
+      mobileProductsMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+      });
+    });
+  </script>
 
   <!-- MAIN CONTENT WRAPPER -->
   <main class="pt-[84px]">
@@ -408,7 +444,7 @@
               } catch (err) {
                 alert("Failed to send. Please try again.");
                 console.error("Error:", err);
-              } finally{ 
+              } finally {
                 document.getElementById('submitBtn').innerText = "Get Free Consultation";
               }
             });
@@ -650,17 +686,17 @@
 
           <div class="mt-4 space-y-2">
             <p class="text-sm text-gray-100 font-bold">
-  <i class="fas fa-phone mr-2 text-[#004900]"></i>
-  +91 97906 66231
-</p>
-<p class="text-sm text-gray-100 font-bold">
-  <i class="fas fa-phone mr-2 text-[#004900]"></i>
-  +91  98427 47011
-</p>
-<p class="text-sm text-gray-100 font-bold">
-  <i class="fas fa-envelope mr-2 text-[#004900]"></i>
-  info@pioneerbiotank.com
-</p>
+              <i class="fas fa-phone mr-2 text-[#004900]"></i>
+              +91 97906 66231
+            </p>
+            <p class="text-sm text-gray-100 font-bold">
+              <i class="fas fa-phone mr-2 text-[#004900]"></i>
+              +91 98427 47011
+            </p>
+            <p class="text-sm text-gray-100 font-bold">
+              <i class="fas fa-envelope mr-2 text-[#004900]"></i>
+              info@pioneerbiotank.com
+            </p>
           </div>
         </div>
 
@@ -736,40 +772,7 @@
     </div>
   </footer>
 
-  <!-- Mobile menu JS -->
-  <script>
-    const mobileMenuBtn = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const menuIcon = document.getElementById('menu-icon');
-    const mobileProductsToggle = document.getElementById('mobile-products-toggle');
-    const mobileProductsMenu = document.getElementById('mobile-products-menu');
-
-    mobileMenuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-      // Toggle icon between bars and times (X)
-      if (mobileMenu.classList.contains('hidden')) {
-        menuIcon.classList.remove('fa-times');
-        menuIcon.classList.add('fa-bars');
-      } else {
-        menuIcon.classList.remove('fa-bars');
-        menuIcon.classList.add('fa-times');
-      }
-    });
-
-    mobileProductsToggle.addEventListener('click', () => {
-      mobileProductsMenu.classList.toggle('hidden');
-    });
-
-    // Close mobile menu when clicking on a link
-    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-    mobileMenuLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        menuIcon.classList.remove('fa-times');
-        menuIcon.classList.add('fa-bars');
-      });
-    });
-  </script>
+ 
   <!-- EmailJS -->
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
@@ -779,12 +782,53 @@
   </script>
 
   <!-- Floating WhatsApp Button -->
-  <!-- replace the 919876543210 number with the actual WhatsApp number -->
+  <!-- replace the 919790666231 number with the actual WhatsApp number -->
   <a id="whatsapp-float"
-    href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
+    href="https://wa.me/919790666231?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
     target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
+
+   <script>
+    let lastScrollTop = 0;
+    const banner = document.getElementById("top-banner");
+    const nav = document.getElementById("main-nav");
+    const scrollToTopBtn = document.getElementById("scroll-to-top");
+    const floatingCta = document.getElementById("floating-cta");
+
+    window.addEventListener("scroll", function () {
+      let scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      // Hide/Show banner on scroll
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        banner.style.transform = "translateY(-100%)";
+        nav.style.top = "0";
+      } else {
+        banner.style.transform = "translateY(0)";
+        nav.style.top = "36px";
+      }
+
+      lastScrollTop = scrollTop;
+
+      // Show/Hide scroll to top & CTA
+      if (scrollTop > 300) {
+        scrollToTopBtn.classList.remove("hidden");
+        floatingCta.classList.remove("hidden");
+      } else {
+        scrollToTopBtn.classList.add("hidden");
+        floatingCta.classList.add("hidden");
+      }
+    });
+
+    // Scroll to top functionality
+    scrollToTopBtn.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+  </script>
   <style>
     #whatsapp-float {
       position: fixed;

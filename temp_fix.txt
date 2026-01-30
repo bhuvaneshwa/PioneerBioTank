@@ -51,7 +51,7 @@
       <!-- Left: Contact Info -->
       <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
         <a
-          href="tel:+919876543210"
+          href="tel:+919790666231"
           class="flex items-center hover:opacity-80"
           style="color: #004900;"
         >
@@ -145,7 +145,7 @@
               Contact Us
             </a>
             <a
-              href="tel:+919876543210"
+              href="tel:+919790666231"
               class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
               style="background-color:#b7ed03; color:#004900;"
             >
@@ -215,7 +215,7 @@
               >Contact Us</a
             >
             <a
-              href="tel:+919876543210"
+              href="tel:+919790666231"
               class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-xs font-semibold text-white"
               style="background-color:#b7ed03; color:#004900;"
             >
@@ -1008,10 +1008,10 @@
       });
     </script>
 <!-- Floating WhatsApp Button -->
- <!-- replace the 919876543210 number with the actual WhatsApp number -->
+ <!-- replace the 919790666231 number with the actual WhatsApp number -->
 <a
   id="whatsapp-float"
-  href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
+  href="https://wa.me/919790666231?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
   target="_blank"
   rel="noopener noreferrer"
   aria-label="Chat on WhatsApp"
@@ -1104,7 +1104,7 @@
       <!-- Left: Contact Info -->
       <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
         <a
-          href="tel:+919876543210"
+          href="tel:+919790666231"
           class="flex items-center hover:opacity-80"
           style="color: #004900;"
         >
@@ -1196,7 +1196,7 @@
               Contact Us
             </a>
             <a
-              href="tel:+919876543210"
+              href="tel:+919790666231"
               class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
               style="background-color:#b7ed03; color:#004900;"
             >
@@ -1268,7 +1268,7 @@
               >Contact Us</a
             >
             <a
-              href="tel:+919876543210"
+              href="tel:+919790666231"
               class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-xs font-semibold text-white"
               style="background-color:#b7ed03; color:#004900;"
             >
@@ -1354,7 +1354,7 @@
         <!-- CTAs -->
         <div class="mt-7 flex flex-col sm:flex-row gap-3 sm:gap-4">
           <a
-            href="tel:+919876543210"
+            href="tel:+919790666231"
             class="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-600 px-6 sm:px-8 py-3 text-sm sm:text-base font-semibold text-white shadow-[0_18px_40px_rgba(16,185,129,0.5)] hover:bg-emerald-700 hover:-translate-y-0.5 transition"
           >
             <i class="fas fa-phone text-xs"></i>
@@ -2741,10 +2741,10 @@
       });
     </script>
 <!-- Floating WhatsApp Button -->
- <!-- replace the 919876543210 number with the actual WhatsApp number -->
+ <!-- replace the 919790666231 number with the actual WhatsApp number -->
 <a
   id="whatsapp-float"
-  href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
+  href="https://wa.me/919790666231?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
   target="_blank"
   rel="noopener noreferrer"
   aria-label="Chat on WhatsApp"
@@ -2839,7 +2839,7 @@
       <!-- Left: Contact Info -->
       <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
         <a
-          href="tel:+919876543210"
+          href="tel:+919790666231"
           class="flex items-center hover:opacity-80"
           style="color: #004900;"
         >
@@ -2918,7 +2918,7 @@
 
         <!-- CTA -->
         <a
-          href="tel:+919876543210"
+          href="tel:+919790666231"
           class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
           style="background-color:#b7ed03; color:#004900;"
         >
@@ -2965,7 +2965,7 @@
         <a href="Contact.html" class="py-3 text-white hover:text-[#b7ed03]">Contact Us</a>
 
         <a
-          href="tel:+919876543210"
+          href="tel:+919790666231"
           class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-sm font-semibold"
           style="background-color:#b7ed03; color:#004900;"
         >
@@ -3569,10 +3569,10 @@
   </script>
 
 <!-- Floating WhatsApp Button -->
- <!-- replace the 919876543210 number with the actual WhatsApp number -->
+ <!-- replace the 919790666231 number with the actual WhatsApp number -->
 <a
   id="whatsapp-float"
-  href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
+  href="https://wa.me/919790666231?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
   target="_blank"
   rel="noopener noreferrer"
   aria-label="Chat on WhatsApp"
@@ -3661,7 +3661,7 @@
       <!-- Left: Contact Info -->
       <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
         <a
-          href="tel:+919876543210"
+          href="tel:+919790666231"
           class="flex items-center hover:opacity-80"
           style="color: #004900;"
         >
@@ -3730,7 +3730,7 @@
               Contact Us
             </a>
             <a
-              href="tel:+919876543210"
+              href="tel:+919790666231"
               class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
               style="background-color:#b7ed03; color:#004900;"
             >
@@ -3770,7 +3770,7 @@
             <a href="About.html" class="py-3 text-white hover:text-[#b7ed03]">About Us</a>
             <a href="Contact.html" class="py-3 text-white hover:text-[#b7ed03]">Contact Us</a>
             <a
-              href="tel:+919876543210"
+              href="tel:+919790666231"
               class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-xs font-semibold text-white"
               style="background-color:#3F8BCF;"
             >
@@ -4445,10 +4445,10 @@
         });
     </script>
 <!-- Floating WhatsApp Button -->
-<!-- replace the 919876543210 number with the actual WhatsApp number -->
+<!-- replace the 919790666231 number with the actual WhatsApp number -->
 <a
   id="whatsapp-float"
-  href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
+  href="https://wa.me/919790666231?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
   target="_blank"
   rel="noopener noreferrer"
   aria-label="Chat on WhatsApp"
@@ -4623,7 +4623,7 @@
       <!-- Left: Contact Info -->
       <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
         <a
-          href="tel:+919876543210"
+          href="tel:+919790666231"
           class="flex items-center hover:opacity-80"
           style="color: #004900;"
         >
@@ -4707,7 +4707,7 @@
 
         <!-- CTA -->
         <a
-          href="tel:+919876543210"
+          href="tel:+919790666231"
           class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
           style="background-color:#b7ed03; color:#004900;"    
         >
@@ -4754,7 +4754,7 @@
         <a href="Contact.html" class="py-3 text-white hover:text-[#b7ed03]">Contact Us</a>
 
         <a
-          href="tel:+919876543210"
+          href="tel:+919790666231"
           class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-sm font-semibold"
           style="background-color:#b7ed03; color:#004900;"
         >
@@ -6012,7 +6012,7 @@
 
         <p class="text-xs md:text-sm text-slate-500">
           Prefer talking directly? Call us at
-          <a href="tel:+919876543210" class="text-emerald-700 font-semibold">+91 97906 66231</a>
+          <a href="tel:+919790666231" class="text-emerald-700 font-semibold">+91 97906 66231</a>
         </p>
       </div>
 
@@ -6222,7 +6222,7 @@
     ].filter(Boolean);
 
     const text = encodeURIComponent(msgLines.join("\n"));
-    const whatsappNumber = "919876543210";
+    const whatsappNumber = "919790666231";
     const waUrl = `https://wa.me/${whatsappNumber}?text=${text}`;
     
     if (whatsappLink) {
@@ -6483,11 +6483,11 @@
   <!-- Load shared form handler -->
   <script src="js/script.js"></script>
 <!-- Floating WhatsApp Button -->
- <!-- replace the 919876543210 number with the actual WhatsApp number -->
+ <!-- replace the 919790666231 number with the actual WhatsApp number -->
 <a
 <a
   id="whatsapp-float"
-  href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
+  href="https://wa.me/919790666231?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
   target="_blank"
   rel="noopener noreferrer"
   aria-label="Chat on WhatsApp"
@@ -6533,7 +6533,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col sm:flex-row justify-between items-center gap-2">
       <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
-        <a href="tel:+919876543210" class="flex items-center hover:text-gray-300">
+        <a href="tel:+919790666231" class="flex items-center hover:text-gray-300">
           <i class="fas fa-phone mr-2" style="color: #004900;"></i>
           <span class="text-xs sm:text-sm">+91 97906 66231</span>
         </a>
@@ -6677,7 +6677,7 @@
       <!-- Left: Contact Info -->
       <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
         <a
-          href="tel:+919876543210"
+          href="tel:+919790666231"
           class="flex items-center hover:opacity-80"
           style="color: #004900;"
         >
@@ -6748,7 +6748,7 @@
             Contact Us
           </a>
           <a
-            href="tel:+919876543210"
+            href="tel:+919790666231"
             class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
             style="background-color:#b7ed03; color:#004900;"
           >
@@ -6791,7 +6791,7 @@
           <a href="About.html" class="py-3 text-white hover:text-[#b7ed03]">About Us</a>
           <a href="Contact.html" class="py-3 text-white hover:text-[#b7ed03]">Contact Us</a>
           <a
-            href="tel:+919876543210"
+            href="tel:+919790666231"
             class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-xs font-semibold text-white"
             style="background-color:#3F8BCF;"
           >
@@ -7661,11 +7661,11 @@
     });
   </script>
 <!-- Floating WhatsApp Button -->
-<!-- replace the 919876543210 number with the actual WhatsApp number -->
+<!-- replace the 919790666231 number with the actual WhatsApp number -->
 <a
 <a
   id="whatsapp-float"
-  href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
+  href="https://wa.me/919790666231?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
   target="_blank"
   rel="noopener noreferrer"
   aria-label="Chat on WhatsApp"
@@ -7753,7 +7753,7 @@
       <!-- Left: Contact Info -->
       <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
         <a
-          href="tel:+919876543210"
+          href="tel:+919790666231"
           class="flex items-center hover:opacity-80"
           style="color: #004900;"
         >
@@ -7821,7 +7821,7 @@
               Contact Us
             </a>
             <a
-              href="tel:+919876543210"
+              href="tel:+919790666231"
               class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-md hover:shadow-lg transition"
               style="background-color:#b7ed03; color:#004900;"
             >
@@ -7861,7 +7861,7 @@
             <a href="About.html" class="py-3 text-white hover:text-[#b7ed03]">About Us</a>
             <a href="Contact.html" class="py-3 text-white hover:text-[#b7ed03]">Contact Us</a>
             <a
-              href="tel:+919876543210"
+              href="tel:+919790666231"
               class="mt-2 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-xs font-semibold text-white"
               style="background-color:#3F8BCF;"
             >
@@ -8267,11 +8267,11 @@
         });
     </script>
 <!-- Floating WhatsApp Button -->
-<!-- replace the 919876543210 number with the actual WhatsApp number -->
+<!-- replace the 919790666231 number with the actual WhatsApp number -->
 <a
 <a
   id="whatsapp-float"
-  href="https://wa.me/919876543210?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
+  href="https://wa.me/919790666231?text=Hello%20Pioneer%20BioTank%2C%20I%20would%20like%20a%20free%20consultation."
   target="_blank"
   rel="noopener noreferrer"
   aria-label="Chat on WhatsApp"
