@@ -984,7 +984,7 @@
           nav.style.top = "0";
         } else {
           banner.style.transform = "translateY(0)";
-          nav.style.top = "40px";
+          nav.style.top = "36px";
         }
 
         lastScrollTop = scrollTop;
@@ -2717,7 +2717,7 @@
         } else {
           // Scrolling up
           banner.style.transform = "translateY(0)";
-          nav.style.top = "40px";
+          nav.style.top = "36px";
         }
 
         lastScrollTop = scrollTop;
@@ -4421,7 +4421,7 @@
             } else {
                 // Scrolling up
                 banner.style.transform = 'translateY(0)';
-                nav.style.top = '40px';
+                nav.style.top = '36px'';
             }
             
             lastScrollTop = scrollTop;
@@ -6455,7 +6455,7 @@
       } else {
         // Scrolling up
         banner.style.transform = 'translateY(0)';
-        nav.style.top = '40px';
+        nav.style.top = '36px'';
       }
       lastScrollTop = scrollTop;
 
@@ -7637,7 +7637,7 @@
         nav.style.top = '0';
       } else {
         banner.style.transform = 'translateY(0)';
-        nav.style.top = '40px';
+        nav.style.top = '36px'';
       }
 
       lastScrollTop = scrollTop;
@@ -8243,7 +8243,7 @@
             } else {
                 // Scrolling up
                 banner.style.transform = 'translateY(0)';
-                nav.style.top = '40px';
+                nav.style.top = '36px'';
             }
             
             lastScrollTop = scrollTop;
