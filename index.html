@@ -2107,23 +2107,61 @@
             </div>
 
             <!-- Map -->
-            <div class=" mt-3">
+            <div class="mt-3 relative w-full overflow-hidden rounded-xl">
 
-              <!-- Map image -->
-              <div class="flex items-center justify-center">
-                <img src="./images/tamil_nadu_map.jpg" alt="Pioneer BioTank installations across South India"
-                  class="max-w-full max-h-full rounded-xl object-contain opacity-90" />
+              <!-- Slider Wrapper -->
+              <div id="map_slider" class="flex transition-transform duration-700 ease-in-out">
+
+                <img src="./images/Tanks Installation Tamil Nadu Map .jpg" class="w-full flex-shrink-0 object-contain opacity-90"
+                  alt="Map 1" />
+
+                <img src="./images/Tanks Installation Kerala Map.jpg" class="w-full flex-shrink-0 object-contain opacity-90"
+                  alt="Map 2" />
+
+                <img src="./images/Tanks Installation Karnataka Map.jpg" class="w-full flex-shrink-0 object-contain opacity-90"
+                  alt="Map 3" />
+
+                <img src="./images/Tanks Installation Andhra Pradesh Map.jpg" class="w-full flex-shrink-0 object-contain opacity-90"
+                  alt="Map 4" />
               </div>
 
+              <!-- Navigation Buttons -->
+              <button onclick="prevSlide()"
+                class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-1 rounded-full">
+                ❮
+              </button>
 
-              <!-- Caption -->
-              <p class="mt-4 text-xs sm:text-sm text-emerald-200">
-                From individual homes to hospitals and schools, Pioneer BioTank is trusted across South India.
-              </p>
+              <button onclick="nextSlide()"
+                class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-1 rounded-full">
+                ❯
+              </button>
             </div>
           </div>
         </div>
       </div>
+
+      <script>
+        const map_slider = document.getElementById("map_slider");
+        const map_slides = map_slider.children.length;
+        let map_index = 0;
+
+        function updateSlider() {
+          map_slider.style.transform = `translateX(-${map_index * 100}%)`;
+        }
+
+        function nextSlide() {
+          map_index = (map_index + 1) % map_slides;
+          updateSlider();
+        }
+
+        function prevSlide() {
+          map_index = (map_index - 1 + map_slides) % map_slides;
+          updateSlider();
+        }
+
+        // Auto slide every 4 seconds
+        setInterval(nextSlide, 4000);
+      </script>
 
       <!-- Counters -->
       <div class="text-black">

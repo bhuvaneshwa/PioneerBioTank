@@ -10,19 +10,28 @@ function openModal() {
 
   // Modal box
   const modalBox = document.createElement("div");
-  modalBox.className =
-    "bg-white rounded-2xl shadow-2xl w-[90%] max-w-8xl h-[90%] m-6 p-6 " +
-    "transform scale-95 opacity-0 transition-all duration-300";
+ modalBox.className =
+  "relative bg-white rounded-2xl shadow-2xl " +
+  "w-[95%] sm:w-[90%] max-w-7xl " +
+  "h-[90%] sm:h-[85%] " +
+  "p-4 sm:p-6 " +
+  "transform scale-95 opacity-0 transition-all duration-300 " +
+  "overflow-hidden";
 
   modalBox.innerHTML = `
-     <button id="cancelBtn"
-          class="px-4 py-2 text-slate-600 absolute right-5 top-5 bg-[#000000] rounded-full text-white cursor-pointer">
-          X
-        </button>
-      <h2 class="text-lg font-semibold">FRP - Bio Septic Tank - Single Tank 1.2KL to 60KL</h2>
-      <p class="mt-2 text-sm text-slate-600">
-        overview
-      </p>
+     <!-- Close Button -->
+  <button id="cancelBtn"
+    class="fixed sm:absolute right-3 top-3 sm:right-5 sm:top-5
+           z-50 px-3 py-1.5 text-white bg-black rounded-full cursor-pointer">
+    ✕
+  </button>
+      <!-- Scrollable Content -->
+  <div class="h-full overflow-y-auto pr-2 sm:pr-4 overflow-scroll">
+    <h2 class="text-base sm:text-lg font-semibold">
+      FRP - Bio Septic Tank - Single Tank 1.2KL to 60KL
+    </h2>
+
+    <p class="mt-2 text-sm text-slate-600">Overview</p>
       <ul>
         <li>
         The Bio-Septic tank is an anaerobic digester for treating septic water released from toilets.
@@ -43,14 +52,13 @@ function openModal() {
       The system is to be used for treating toilet water (black water) only. Grey water (bath and cloth rinse water) should not be mixed.
         </li>
       </ul>
-      <div class="mt-4 flex justify-center gap-3">
-        <a
-          href="/assets/brochure.pdf"
-          download
-          class="px-4 py-2 bg-[#004900] text-white rounded-lg inline-block">
-          Download brochure
-        </a>
-      </div>
+      <div class="mt-6 flex justify-center">
+      <a href="/assets/brochure.pdf" download
+        class="px-4 py-2 bg-[#004900] text-white rounded-lg">
+        Download brochure
+      </a>
+    </div>
+  </div>
     `;
 
   overlay.appendChild(modalBox);
