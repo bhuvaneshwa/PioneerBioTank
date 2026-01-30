@@ -212,7 +212,7 @@ npm test
 │  ┃ John Doe                               │
 │                                           │
 │  PHONE NUMBER *                           │
-│  ┃ 📞 +91 98765 43210                    │
+│  ┃ 📞 +91 97906 66231                    │
 │                                           │
 │  EMAIL                                    │
 │  ┃ ✉️ john@example.com                   │

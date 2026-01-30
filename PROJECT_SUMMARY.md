@@ -191,7 +191,7 @@ RECIPIENT_EMAIL=recipient@example.com
 {
   "sourcePage": "Contact Page",
   "name": "John Doe",
-  "phone": "+91 98765 43210",
+  "phone": "+91 97906 66231",
   "email": "john@example.com",
   "location": "Chennai",
   "property_type": "Individual house",

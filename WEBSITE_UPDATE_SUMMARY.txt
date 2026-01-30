@@ -18,7 +18,7 @@
 === FEATURES IMPLEMENTED ===
 
 ✓ Top Banner:
-  - Phone: +91 98765 43210
+  - Phone: +91 97906 66231
   - Email: info@pioneerbiotank.com
   - Social media icons (Facebook, Instagram, LinkedIn, YouTube)
   - Responsive layout (stacks on mobile)

@@ -20,7 +20,7 @@ $bannerCode = @'
         <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
           <a href="tel:+919876543210" class="flex items-center hover:text-gray-300">
             <i class="fas fa-phone mr-2" style="color: #00AD50;"></i>
-            <span class="text-xs sm:text-sm">+91 98765 43210</span>
+            <span class="text-xs sm:text-sm">+91 97906 66231</span>
           </a>
           <a href="mailto:info@pioneerbiotank.com" class="flex items-center hover:text-gray-300">
             <i class="fas fa-envelope mr-2" style="color: #00AD50;"></i>

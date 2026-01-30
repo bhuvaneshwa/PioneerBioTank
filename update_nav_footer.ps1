@@ -39,7 +39,7 @@ $newFooter = @'
                     <h3 class="text-2xl font-bold mb-4" style="color: #00AD50;">Pioneer BioTank</h3>
                     <p class="text-gray-300">Leading provider of eco-friendly FRP water storage and bio-septic solutions.</p>
                     <div class="mt-4">
-                        <p class="text-sm text-gray-300"><i class="fas fa-phone mr-2" style="color: #00AD50;"></i>+91 98765 43210</p>
+                        <p class="text-sm text-gray-300"><i class="fas fa-phone mr-2" style="color: #00AD50;"></i>+91 97906 66231</p>
                         <p class="text-sm text-gray-300 mt-2"><i class="fas fa-envelope mr-2" style="color: #00AD50;"></i>info@pioneerbiotank.com</p>
                     </div>
                 </div>
