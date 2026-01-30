@@ -396,7 +396,7 @@
 
                 const result = await response.json();
 
-                if (result?.success === "success") {
+                if (result?.success) {
                   alert("Email sent successfully!");
                   // optional reset
                   Object.keys(templateParams).forEach(id => {
