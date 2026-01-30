@@ -2569,25 +2569,95 @@
             </form>
           </div>
           <script>
-            document.getElementById("contact-form").addEventListener("submit", function (e) {
+            const formEle = document.querySelector("#contact-form form");
+            const submitBtn = formEle.querySelector("button[type='submit']");
+
+            formEle.addEventListener("submit", async function (e) {
               e.preventDefault();
 
-              emailjs.sendForm(
-                "YOUR_SERVICE_ID",
-                "template_3elw9qo",
-                this
-              ).then(
-                function () {
-                  alert("Thank you! Our team will contact you shortly.");
-                  document.getElementById("contact-form").reset();
-                },
-                function (error) {
-                  alert("Submission failed. Please try again.");
-                  console.error("EmailJS Error:", error);
+              try {
+                submitBtn.innerText = "Sending...";
+                submitBtn.disabled = true;
+
+                // Collect form values
+                const data = {
+                  name: document.getElementById("name").value.trim(),
+                  mobile: document.getElementById("mobile").value.trim(),
+                  location: document.getElementById("location").value.trim(),
+                  type: document.getElementById("type").value,
+                  people: document.getElementById("people").value,
+                  home_type: document.getElementById("homeTypeField").value,
+                  preferred_contact: document.querySelector(
+                    'input[name="preferred_contact"]:checked'
+                  )?.value || "Call"
+                };
+
+                // Basic validation
+                if (!data.mobile) {
+                  alert("Mobile number is required");
+                  submitBtn.innerText = "Get my free suggestion";
+                  submitBtn.disabled = false;
+                  return;
                 }
-              );
+
+                // Email body
+                const textMessage = `
+                  New Enquiry from pioneerbiotank.com
+
+                  Name: ${data.name}
+                  Mobile: ${data.mobile}
+                  Location: ${data.location}
+                  Property Type: ${data.type}
+                  Home Type: ${data.home_type}
+                  People Using Toilets: ${data.people}
+                  Preferred Contact: ${data.preferred_contact}
+                  `;
+
+                const payload = {
+                  to: 'avinashkumarairforce@gmail.com',
+                  subject: "New BioTank Enquiry",
+                  text: textMessage
+                };
+
+                const response = await fetch(
+                  "https://ksknkovilpatti.in/api/api/other/send-email",
+                  {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(payload)
+                  }
+                );
+
+                const result = await response.json();
+
+                if (result?.success) {
+                  // Hide form, show thank you
+                  document.getElementById("contact-form").classList.add("hidden");
+                  document.getElementById("thankyou-wrapper").classList.remove("hidden");
+
+                  // Optional WhatsApp link
+                  const whatsappMsg = encodeURIComponent(
+                    `Hi, I submitted an enquiry for BioTank.\nName: ${data.name}\nMobile: ${data.mobile}`
+                  );
+                  document.getElementById("whatsapp-link").href =
+                    `https://wa.me/91XXXXXXXXXX?text=${whatsappMsg}`;
+
+                  formEle.reset();
+                } else {
+                  throw new Error("Email API failed");
+                }
+              } catch (err) {
+                alert("Failed to submit. Please try again.");
+                console.error(err);
+              } finally {
+                submitBtn.innerText = "Get my free suggestion";
+                submitBtn.disabled = false;
+              }
             });
           </script>
+
 
           <!-- END FORM STATE -->
 
