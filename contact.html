@@ -384,8 +384,11 @@
           </div>
           <!-- script for Contact Form Card -->
           <script>
+            const submitBtn = document.getElementById("submitBtn");
             document.getElementById("submitBtn").addEventListener("click", async function () {
               try {
+                submitBtn.innerText = "Sending...";
+                submitBtn.disabled = true;
                 const templateParams = {
                   name: document.getElementById("name").value,
                   phone: document.getElementById("phone").value,
@@ -436,13 +439,18 @@
                 if (result?.success) {
                   alert("Email sent successfully!");
                   // optional reset
+                  submitBtn.innerText = "Get Free Consultation";
+                  submitBtn.disabled = false;
                   Object.keys(templateParams).forEach(id => {
                     const el = document.getElementById(id);
                     if (el) el.value = "";
                   });
+
                 }
               } catch (err) {
                 alert("Failed to send. Please try again.");
+                submitBtn.innerText = "Get Free Consultation";
+                submitBtn.disabled = false;
                 console.error("Error:", err);
               } finally {
                 document.getElementById('submitBtn').innerText = "Get Free Consultation";
